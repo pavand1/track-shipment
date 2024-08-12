@@ -54,32 +54,6 @@ body {
     // background: url('/images/abstractgradientcenter.png');
     background-repeat: no-repeat;
   }
-  &::before {
-    // left: -16%;
-    left: 0;
-    top: 0;
-    width: 15.1rem;
-    height: 30.7rem;
-    background: url('../../public/assets/images/abstractGradientLeft.png');
-    @media only screen and (max-width: $media-mobile) {
-      width: 7.3rem;
-      height: 17.5rem;
-    }
-  }
-  &::after {
-    right: 0;
-    bottom: 0;
-    width: 15.4rem;
-    height: 27.5rem;
-    background: url('../../public/assets/images/abstractGradientRight.png');
-
-    -webkit-filter: none;
-    filter: none;
-    @media only screen and (max-width: $media-mobile) {
-      width: 7.4rem;
-      height: 14.8rem;
-    }
-  }
 }
 
 img {
@@ -226,11 +200,6 @@ P {
       align-items: center;
     }
   }
-}
-
-footer {
-  position: relative;
-  margin-bottom: -2rem;
 }
 
 

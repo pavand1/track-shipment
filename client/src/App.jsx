@@ -3,8 +3,6 @@ import { useDispatch, useSelector } from 'react-redux';
 import Header from './components/Header/Header';
 import { fetchData, selectItems, selectError, selectStatus } from './features/data/dataSlice';
 import styles from './App.module.scss';
-import './styles/baseglobal.scss';
-import './styles/vendor.scss';
 const App = () => {
   const dispatch = useDispatch();
   const data = useSelector(selectItems);

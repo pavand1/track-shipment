@@ -1,9 +1,21 @@
-@import './variables';
-@import './mixins';
+@import '../styles/globalSass/reset.scss';
+@import '../styles/globalSass/font.scss';
+@import '../styles/globalSass/config.scss';
+@import '../styles/globalSass/variable.scss';
+@import '../styles/globalSass/common.scss';
+@import '../styles/globalSass/btn.scss';
+@import '../styles/globalSass/bsRadio.scss';
+@import '../styles/globalSass/bsTab.scss';
+@import '../styles/globalSass/bsForm.scss';
+@import '../styles/globalSass/bsTooltip.scss';
 
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f5f5f5;
-}
+
+// @import './variables';
+// @import './mixins';
+
+// body {
+//   font-family: Arial, sans-serif;
+//   margin: 0;
+//   padding: 0;
+//   background-color: #f5f5f5;
+// }
