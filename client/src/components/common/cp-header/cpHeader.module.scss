@@ -1,0 +1,196 @@
+@import '../../../styles/globalSass/variable.scss';
+/* src/header.module.scss */
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .menu {
+    display: none; // Default hidden on mobile
+    flex-grow: 1; // Allow the menu to take up remaining space on desktop
+    justify-content: flex-end; // Align menu items to the right on desktop
+
+    ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+
+      li {
+        position: relative;
+        text-align: left;
+        padding: 15px 0;
+
+        a {
+          color: #fff;
+          text-decoration: none;
+          display: block;
+          width: 100%;
+          padding: 10px 20px; // Padding for links inside the dropdown
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+
+        &.dropdown {
+          cursor: pointer;
+
+          .dropdownMenu {
+            max-height: 0;
+            overflow: hidden;
+            opacity: 0;
+            transition: max-height 0.3s ease, opacity 0.3s ease;
+            background-color: #444;
+            padding: 0;
+            list-style: none;
+            width: 200px; // Increase width for better display
+            margin-top: 5px;
+            border-radius: 4px; // Add some rounding for aesthetics
+
+            li {
+              padding: 10px 20px; // Better padding for dropdown items
+
+              a {
+                color: #fff;
+                text-decoration: none;
+                &:hover {
+                  text-decoration: underline;
+                }
+              }
+            }
+          }
+
+          &.active .dropdownMenu {
+            max-height: 500px; // Adjust based on content
+            opacity: 1;
+            padding: 10px 0;
+          }
+        }
+      }
+    }
+
+    &.open {
+      display: flex; // Show menu when open on mobile
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      background-color: #333;
+      text-align: center;
+
+      ul {
+        width: 100%;
+      }
+
+      .dropdownMenu {
+        width: 100%; // Ensure dropdowns take full width on mobile
+        padding: 0; // Reset padding for full-width dropdowns
+      }
+    }
+
+    @media (min-width: 769px) {
+      display: flex;
+      flex-direction: row; // Horizontal layout on desktop
+      justify-content: flex-end; // Align menu to the right
+      position: static;
+      width: auto;
+      text-align: left;
+
+      ul {
+        flex-direction: row;
+        gap: 20px;
+        align-items: center;
+      }
+
+      li {
+        padding: 0;
+
+        &.dropdown .dropdownMenu {
+          position: absolute;
+          top: 100%;
+          left: 0;
+          display: none;
+          background-color: #444;
+          width: 200px; // Ensure consistent width on desktop
+        }
+
+        &:hover .dropdownMenu {
+          display: block;
+        }
+      }
+    }
+  }
+
+  .search {
+    display: none;
+    position: relative;
+    margin-left: auto;
+
+    button {
+      background: none;
+      border: none;
+      cursor: pointer;
+      color: #fff;
+      padding: 0;
+      margin: 0;
+
+      svg {
+        width: 24px;
+        height: 24px;
+      }
+    }
+
+    @media (min-width: 769px) {
+      display: block;
+    }
+  }
+
+  .actionButton {
+    display: none;
+    padding: 5px 15px;
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-left: 20px;
+
+    &:hover {
+      background-color: #ff3300;
+    }
+
+    @media (min-width: 769px) {
+      display: block;
+    }
+  }
+
+  .menuToggle {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+
+    span {
+      background: #fff;
+      height: 2px;
+      width: 25px;
+      margin: 4px 0;
+    }
+
+    @media (min-width: 769px) {
+      display: none;
+    }
+  }
+}

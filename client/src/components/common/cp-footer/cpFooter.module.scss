@@ -1,0 +1,93 @@
+@import '../../../styles/globalSass/variable.scss';
+.footer {
+  background-color: #f8f9fa;
+  padding: 20px 0;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.column {
+  flex: 1 1 200px;
+  margin-bottom: 20px;
+
+  h4 {
+      font-size: 16px;
+      margin-bottom: 10px;
+      text-align: left; /* Align headings to the left on all screens */
+  }
+
+  ul {
+      list-style-type: none;
+      padding: 0;
+
+      li {
+          margin-bottom: 8px;
+          font-size: 14px;
+      }
+  }
+}
+
+.socialColumn {
+  h4 {
+      text-align: left; /* Ensure the "Follow Us" heading is aligned to the left */
+  }
+
+  .socialIcons {
+      justify-content: flex-start; /* Align social icons to the left */
+  }
+}
+
+.logo {
+  max-width: 150px;
+  margin-bottom: 10px;
+}
+
+.socialIcons {
+  display: flex;
+  gap: 10px;
+  
+  a {
+      display: inline-block;
+      img {
+          width: 24px;
+          height: 24px;
+      }
+  }
+}
+
+.contactInfo {
+  .contactItem {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+      
+      img {
+          width: 20px;
+          height: 20px;
+          margin-right: 10px;
+      }
+
+      span {
+          font-size: 14px;
+      }
+  }
+}
+
+@media (max-width: 768px) {
+  .column {
+      flex: 1 1 100%;
+      margin-bottom: 15px;
+      text-align: left; /* Ensure column content aligns to the left on mobile */
+
+      ul {
+          padding-left: 0; /* Remove any padding on the left side of the list */
+      }
+  }
+}
