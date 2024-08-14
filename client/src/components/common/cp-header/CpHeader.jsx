@@ -3,12 +3,14 @@
 import { useState } from 'react';
 import styles from './cpHeader.module.scss'; // Import CSS Module
 import mockMenuData from './CpHeader_data'; // Import the mock data
+import { Link, useNavigate } from 'react-router-dom';
 
 
 
 const CpHeader = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState(null);
+  const naviagate = useNavigate();
 
   const toggleMenu = () => {
     setMenuOpen(!isMenuOpen);
@@ -24,7 +26,7 @@ const CpHeader = () => {
 
   return (
     <header className={styles.header}>
-      <div className={styles.logo}>LOGO</div>
+      <div className={styles.logo} onClick={() => naviagate("/")}>LOGO</div>
       <nav className={`${styles.menu} ${isMenuOpen ? styles.open : ''}`}>
         <ul>
           {mockMenuData.map((item, index) => (
@@ -32,9 +34,10 @@ const CpHeader = () => {
               key={index}
               className={item.dropdown ? `${styles.dropdown} ${activeDropdown === index ? styles.active : ''}` : ''}
             >
-              <a href={item.link} onClick={item.dropdown ? (e) => { e.preventDefault(); toggleDropdown(index); } : null}>
+              {/* <a href={item.link} onClick={item.dropdown ? (e) => { e.preventDefault(); toggleDropdown(index); } : null}>
                 {item.name}
-              </a>
+              </a> */}
+              <Link to={item.route} onClick={item.dropdown ? (e) => { e.preventDefault(); toggleDropdown(index); } : null}>{item.name}</Link>
               {item.dropdown && (
                 <ul className={styles.dropdownMenu}>
                   {item.dropdown.map((dropdownItem, idx) => (
