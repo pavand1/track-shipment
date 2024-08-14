@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from './cpAboutBuckle.modul.scss';
+import styles from './cpAboutBuckle.module.scss';
 import { mockData } from './CpAboutBuckle_data';
 
 const CpAboutBuckle = () => {

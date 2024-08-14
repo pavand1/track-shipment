@@ -1,3 +1,4 @@
+import CpAboutBuckle from "../../components/cp-about-buckle/CpAboutBuckle";
 import CpHomeBanner from "../../components/cp-home-banner/CpHomeBanner";
 import CpOurServices from "../../components/cp-our-services/CpOurServices";
 import CpOurSolution from "../../components/cp-our-solution/CpOurSolution";
@@ -9,6 +10,7 @@ const Home = () => {
         <CpOurServices /> 
         <CpWhyBuckle /> 
         <CpOurSolution />
+        <CpAboutBuckle />
     </div>
 }
 
