@@ -1,0 +1,58 @@
+// Section.module.scss
+.section {
+  background-image: url('path/to/your/image.jpg'); // Update this path to your image
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: gray;
+}
+
+.centerColumn {
+  background-color: red;
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 300px; // Adjust as needed
+  max-width: 100%; // Ensure it doesn’t exceed viewport width
+
+  @media (max-width: 768px) {
+    width: 90%; // Adjust the width on smaller screens
+  }
+}
+
+.list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-align: left; // Align text to the left
+
+  @media (max-width: 768px) {
+    padding-left: 0; // Remove padding for small screens
+  }
+}
+
+.listItem {
+  position: relative;
+  padding-left: 30px; // Space for custom bullet
+  margin-bottom: 10px;
+
+  @media (max-width: 768px) {
+    padding-left: 25px; // Adjust padding for small screens
+  }
+}
+
+.listItem::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 20px; // Custom bullet width
+  height: 20px; // Custom bullet height
+  background-color: white; // Custom bullet color
+  border-radius: 50%;
+  transform: translateY(-50%);
+}
