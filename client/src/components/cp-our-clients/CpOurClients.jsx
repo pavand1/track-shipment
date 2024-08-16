@@ -1,36 +1,35 @@
-// src/components/ClientSlider.js
-import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/swiper.min.css'; // Updated Swiper styles import
-import '../../../public/';
-import 'swiper/modules/pagination/pagination.min.css';
-import { mockClients } from './CpOurClients_data';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+import { Pagination, Navigation } from 'swiper/modules';
+import { testimonials } from './CpOurClients_data'; // Import the mock data
+import styles from './cpOurClients.module.scss';
 
 const CpOurClients = () => {
   return (
-    <div className="client-slider">
+    <div className={styles.sliderContainer}>
       <Swiper
+        modules={[Pagination, Navigation]}
         spaceBetween={30}
-        slidesPerView={4}
+        slidesPerView={1}
         pagination={{ clickable: true }}
         navigation
         breakpoints={{
           640: {
             slidesPerView: 2,
           },
-          768: {
-            slidesPerView: 3,
-          },
           1024: {
-            slidesPerView: 4,
+            slidesPerView: 5,
           },
         }}
+        className={styles.swiper}
       >
-        {mockClients.map((client) => (
-          <SwiperSlide key={client.id}>
-            <div className="client-slide">
-              <img src={client.logo} alt={client.name} />
-              <p>{client.name}</p>
+        {testimonials.map((testimonial, index) => (
+          <SwiperSlide key={index} className={styles.swiperSlide}>
+            <div className={styles.testimonial}>
+              <p className={styles.feedback}>"{testimonial.feedback}"</p>
+              <h4 className={styles.client}>{testimonial.client}</h4>
             </div>
           </SwiperSlide>
         ))}

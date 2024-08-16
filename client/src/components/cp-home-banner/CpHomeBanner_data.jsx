@@ -1,35 +1,42 @@
 const mockData = {
-    heading: 'Welcome to Our Service',
-    subHeading: 'We offer the best solutions for your business.',
-    buttonText: 'Get Started',
+    heading: 'Lorem Ipsum is simply dummy text',
+    subHeading: 'Lorem Ipsum is simply dummy text',
+    buttonText: 'Read More',
     form: {
+      heading:'Get In Touch',
       fields: [
         {
           id: 'name',
           label: 'Name',
           type: 'text',
-          placeholder: 'Enter your name'
+          placeholder: 'Name'
         },
         {
           id: 'email',
           label: 'Email',
           type: 'email',
-          placeholder: 'Enter your email'
+          placeholder: 'Email'
         },
         {
           id: 'phone',
           label: 'Phone Number',
           type: 'tel',
-          placeholder: 'Enter your phone number'
+          placeholder: 'Phone'
+        },
+        {
+          id: 'phone',
+          label: 'Phone Number',
+          type: 'tel',
+          placeholder: 'Phone'
         },
         {
           id: 'message',
           label: 'Message',
           type: 'textarea',
-          placeholder: 'Enter your message'
+          placeholder: 'Message'
         }
       ],
-      submitButtonText: 'Submit'
+      submitButtonText: 'Talk To Our Expert'
     }
   };
   

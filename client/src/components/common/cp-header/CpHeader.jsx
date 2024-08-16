@@ -1,11 +1,7 @@
-// src/Header.js
-
 import { useState } from 'react';
 import styles from './cpHeader.module.scss'; // Import CSS Module
 import mockMenuData from './CpHeader_data'; // Import the mock data
 import { Link, useNavigate } from 'react-router-dom';
-
-
 
 const CpHeader = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
@@ -25,8 +21,19 @@ const CpHeader = () => {
   };
 
   return (
+    <> 
+    <div className={styles.topHeader}>
+        <div className={styles.contactItem}>
+          <span className={styles.icon}><img src="../../images/header/phone.png" alt="phone"/></span>91-022-2821-3835
+        </div>
+        <div className={styles.contactItem}>
+          <span className={styles.icon}><img src="../../images/header/email.png" alt="email"/></span>enquiry@buckletrack.in
+        </div>
+    </div>
     <header className={styles.header}>
-      <div className={styles.logo} onClick={() => naviagate("/")}>LOGO</div>
+      <div className={styles.logo} onClick={() => naviagate("/")}>
+        <img src="../../images/header/logo.png" alt="logo"/>
+      </div>
       <nav className={`${styles.menu} ${isMenuOpen ? styles.open : ''}`}>
         <ul>
           {mockMenuData.map((item, index) => (
@@ -51,6 +58,7 @@ const CpHeader = () => {
           ))}
         </ul>
       </nav>
+      <button className={styles.actionButton}>Get Quote</button>
       <div className={styles.search}>
         <button>
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="feather feather-search">
@@ -59,13 +67,13 @@ const CpHeader = () => {
           </svg>
         </button>
       </div>
-      <button className={styles.actionButton}>Get Started</button>
       <div className={styles.menuToggle} onClick={toggleMenu}>
         <span></span>
         <span></span>
         <span></span>
       </div>
     </header>
+    </>
   );
 };
 

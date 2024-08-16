@@ -9,6 +9,7 @@ import FeaturesRoute from "./routes/features/Features.jsx";
 import ServicesRoute from "./routes/services/Services.jsx";
 import TrackOrderRoute from "./routes/track-order/TrackOrder.jsx";
 import TestimonialsRoute from "./routes/testimonials/Testimonials.jsx";
+import '../src/styles/main.scss'
 import { ABOUT_US_ROUTE, CONTACTS_ROUTE, FEATURES_ROUTE, SERVICES_ROUTE, TESTIMONIALS_ROUTE, TRACK_ORDER_ROUTE } from "./utils/constants.js";
 const App = () => {
   return (

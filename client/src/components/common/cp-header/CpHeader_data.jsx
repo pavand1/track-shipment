@@ -16,9 +16,9 @@ const mockMenuData = [
       { name: 'Marketing', link: '#marketing' },
     ],
   },
-  { name: 'Contact', link: '#contact', route: CONTACTS_ROUTE },
-  { name: "Testimonials", link: "#testimonials", route: TESTIMONIALS_ROUTE},
-  { name: "Track Order", like: "#trackorder", route: TRACK_ORDER_ROUTE}
+  { name: 'Pricing', link: '#contact', route: CONTACTS_ROUTE },
+  { name: "Track Order", like: "#trackorder", route: TRACK_ORDER_ROUTE},
+  { name: "Account", link: "#testimonials", route: TESTIMONIALS_ROUTE}
 ];
 
 export default mockMenuData;

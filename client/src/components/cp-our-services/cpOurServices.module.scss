@@ -1,0 +1,124 @@
+@import '../../styles/globalSass/variable.scss';
+
+.sectionHeading{
+  font-size: 4rem;
+  color: $clr-base;
+  margin: 5rem 0rem;
+}
+
+.servicesContainer {
+    display: flex;
+    flex-wrap: wrap; // Allow columns to wrap if necessary
+    gap: 20px;
+    box-sizing: border-box;
+    height: 100vh; // Ensure the container takes full viewport height
+
+    .column {
+      flex: 1;
+      min-width: 200px;
+      max-width: 25%;
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      &:first-child {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%; // Ensure the first column takes full width on mobile
+        .card {
+          background-color: $clr-secondary;
+          .cardImageLeft{
+            margin: 0 auto;
+          }
+        }
+      }
+      
+      &.column2{
+        .card {
+          &:first-child {
+            background-color: $clr-primary;
+          }
+          &:nth-child(2) {
+            background-color: $clr-root;
+          }
+        }
+      }
+
+      .card {
+        background-color: #007bff; // Blue background color
+        color: white;
+        padding: 2rem;
+        margin-bottom: 2rem;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+        flex: 1; // Ensure the card stretches within its column
+        min-height: 200px; // Ensure consistent minimum height
+  
+        .cardContent {
+          // flex: 1;
+          z-index: 1;
+          h3{
+            font-size: 2rem;
+          }
+        }
+  
+        .cardImageLeft {
+          width: 6rem;
+          height: 6rem;
+          background-size: cover;
+          background-position: center;
+          z-index: 0;
+          position: absolute;
+          left: 0;
+          right: 0;
+          top: 9rem;
+        }
+       
+        .cardImageRight {
+          width: 2rem; // Adjust as needed
+          height: 2rem; // Adjust as needed
+          position: absolute;
+          bottom: 1.5rem;
+          background-size: cover;
+          background-position: center;
+          z-index: 0;
+        }
+  
+        .cardImageLeft {
+          left: 15px;
+        }
+  
+        .cardImageRight {
+          right: 15px;
+        }
+      }
+    }
+  
+    @media (max-width: 1024px) {
+      .column {
+        max-width: 50%; // Adjust columns to fit two in a row on medium screens
+      }
+    }
+  
+    @media (max-width: 768px) {
+      flex-direction: column; // Stack columns vertically on mobile
+  
+      .column {
+        width: 100%; // Ensure columns take full width on mobile
+        max-width: 100%; // Ensure columns take full width on mobile
+        display: flex;
+        flex-direction: column; // Stack cards vertically in each column
+        margin-bottom: 20px; // Add margin between stacked columns
+      }
+  
+      .card {
+        width: 100%; // Make cards take full width of their column on mobile
+        margin-bottom: 10px; // Adjust margin for mobile view
+      }
+    }
+  }
+  

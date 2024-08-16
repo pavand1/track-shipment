@@ -1,20 +1,21 @@
 @import '../../../styles/globalSass/variable.scss';
-/* src/header.module.scss */
 
 .header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 20px;
-  background-color: #333;
-  color: #fff;
+  background-color: $clr-primary;
   position: sticky;
   top: 0;
   z-index: 1000;
-
+  padding-right: 2rem;
+  @media (max-width: 769px) {
+    padding-right: 1rem;
+  }
   .logo {
-    font-size: 24px;
-    font-weight: bold;
+   width: 27rem;
+   background-color: $clr-root;
+   padding: 0rem 2rem;
   }
 
   .menu {
@@ -38,7 +39,9 @@
           text-decoration: none;
           display: block;
           width: 100%;
-          padding: 10px 20px; // Padding for links inside the dropdown
+          padding: 1rem 2rem; // Padding for links inside the dropdown
+          font-size: 1.6rem;
+          text-transform: uppercase;
           &:hover {
             text-decoration: underline;
           }
@@ -76,6 +79,7 @@
             max-height: 500px; // Adjust based on content
             opacity: 1;
             padding: 10px 0;
+            width: 100%;
           }
         }
       }
@@ -90,7 +94,6 @@
       width: 100%;
       background-color: #333;
       text-align: center;
-
       ul {
         width: 100%;
       }
@@ -111,7 +114,6 @@
 
       ul {
         flex-direction: row;
-        gap: 20px;
         align-items: center;
       }
 
@@ -148,8 +150,9 @@
       margin: 0;
 
       svg {
-        width: 24px;
-        height: 24px;
+        width: 2.2rem;
+        height: 2.3rem;
+        color:$clr-secondary;
       }
     }
 
@@ -160,13 +163,13 @@
 
   .actionButton {
     display: none;
-    padding: 5px 15px;
+    padding: 0.5rem 1.5rem;
     background-color: #ff6600;
-    color: #fff;
+    color: $clr-root;
     border: none;
-    border-radius: 3px;
+    border-radius: 0rem;
     cursor: pointer;
-    margin-left: 20px;
+    margin-right: 2rem;
 
     &:hover {
       background-color: #ff3300;
@@ -191,6 +194,31 @@
 
     @media (min-width: 769px) {
       display: none;
+    }
+  }
+
+}
+//top header css
+.topHeader{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: $clr-root;
+  padding: 10px 20px;
+  .contactItem {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    font-size: 14px;
+    color: #333;
+  
+    &:first-child {
+      margin-left: 0;
+    }
+  
+    .icon {
+      margin-right: 8px;
+      font-size: 18px;
     }
   }
 }

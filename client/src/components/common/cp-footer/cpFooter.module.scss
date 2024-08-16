@@ -1,7 +1,13 @@
 @import '../../../styles/globalSass/variable.scss';
 .footer {
-  background-color: #f8f9fa;
-  padding: 20px 0;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5rem 5rem 50rem 5rem;
+  background-image: url('../../images/footer/artboard.png');  // Ensure this path is correct
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  color: #fff;
 }
 
 .container {
@@ -14,12 +20,14 @@
 }
 
 .column {
-  flex: 1 1 200px;
-  margin-bottom: 20px;
+     /* flex: 1 1 200px; */
+     margin-bottom: 2rem;
+     text-align: justify;
 
-  h4 {
-      font-size: 16px;
-      margin-bottom: 10px;
+    .footerHeading {
+      font-size: 2.2rem;
+      margin-bottom: 1rem;
+      margin-bottom: 2.5rem;
       text-align: left; /* Align headings to the left on all screens */
   }
 
@@ -28,15 +36,17 @@
       padding: 0;
 
       li {
-          margin-bottom: 8px;
-          font-size: 14px;
+        margin-bottom: 1rem;
+        font-size: 1.6rem;
+        font-weight: 100;
       }
   }
 }
 
 .socialColumn {
-  h4 {
+  .socialHeading {
       text-align: left; /* Ensure the "Follow Us" heading is aligned to the left */
+      margin-bottom: 3rem;
   }
 
   .socialIcons {
@@ -45,8 +55,10 @@
 }
 
 .logo {
-  max-width: 150px;
-  margin-bottom: 10px;
+  max-width: 18rem;
+  margin-bottom: 4rem;
+  background: $clr-root;
+  padding: 1rem;
 }
 
 .socialIcons {
@@ -56,8 +68,8 @@
   a {
       display: inline-block;
       img {
-          width: 24px;
-          height: 24px;
+        width: 2.4rem;
+        height: 2.4rem;
       }
   }
 }
@@ -66,16 +78,18 @@
   .contactItem {
       display: flex;
       align-items: center;
-      margin-bottom: 10px;
+      margin-bottom: 2.5rem;
       
       img {
-          width: 20px;
-          height: 20px;
-          margin-right: 10px;
+        width: 2rem;
+        height: 2.5rem;
+        margin-right: 1rem;
+        object-fit: contain;
       }
 
       span {
-          font-size: 14px;
+        font-size: 1.6rem;
+        width: 60%;
       }
   }
 }

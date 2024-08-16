@@ -1,0 +1,83 @@
+// src/components/TestimonialSlider/TestimonialSlider.module.scss
+.slide {
+  text-align: center;
+  padding: 20px;
+}
+
+.avatarContainer {
+  margin: 0 auto 20px auto;
+  width: 100px;
+  height: 100px;
+}
+
+.avatar {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.heading {
+  font-size: 1.2rem;
+  margin: 10px 0 5px 0;
+  font-weight: bold;
+}
+
+.title {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: #666;
+}
+
+.testimonial {
+  font-size: 0.9rem;
+  color: #333;
+}
+
+/* Navigation Arrows */
+.swiperButtonPrev,
+.swiperButtonNext {
+  position: absolute;
+  top: 50%;
+  width: 27px;
+  height: 44px;
+  margin-top: -22px;
+  z-index: 10;
+  cursor: pointer;
+  background-size: 27px 44px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.swiperButtonPrev {
+  left: 10px;
+  background-image: url('path-to-left-arrow-icon.svg'); /* Replace with the actual path */
+}
+
+.swiperButtonNext {
+  right: 10px;
+  background-image: url('path-to-right-arrow-icon.svg'); /* Replace with the actual path */
+}
+
+/* Pagination */
+.swiperPagination {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  bottom: 10px;
+}
+
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  display: inline-block;
+  border-radius: 50%;
+  background-color: #ccc;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #000;
+}

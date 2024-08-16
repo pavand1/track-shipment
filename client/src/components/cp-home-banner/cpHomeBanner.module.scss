@@ -1,20 +1,24 @@
+@import '../../styles/globalSass/variable.scss';
+
 .section {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 50px;
-    background-color: #007bff;
-    background-image: url('/path/to/your/background-image.jpg');  // Ensure this path is correct
+    padding: 14rem 8rem;
+    background-image: url('.../../images/Home/banner/bgbanner.png');  // Ensure this path is correct
     background-size: cover;
     background-position: center;
     height: 100vh;
-    color: #fff;
+    color: $clr-root;
+    gap:25rem;
+    background-repeat: no-repeat;
   
     @media (max-width: 768px) {
       flex-direction: column;
       padding: 20px;
       text-align: center;
       height: auto;
+      gap:0rem;
     }
   }
   
@@ -24,11 +28,11 @@
     text-align: left;  // Align text to the left
   
     .heading {
-      font-size: 2.5rem;
-      margin-bottom: 20px;
-  
+      font-size: 4.5rem;
+      margin-bottom: 3rem;
       @media (max-width: 768px) {
-        font-size: 2rem;
+        font-size: 3rem;
+        margin-bottom: 2rem;
       }
     }
   
@@ -44,15 +48,15 @@
   
     .button {
       padding: 10px 20px;
-      font-size: 1rem;
-      background-color: #007bff;
-      color: #fff;
+      font-size: 1.6rem;
+      background-color: $clr-secondary;
+      color: $clr-root;
       border: none;
       cursor: pointer;
       transition: background-color 0.3s;
   
       &:hover {
-        background-color: #0056b3;
+        background-color: $clr-primary;
       }
   
       @media (max-width: 768px) {
@@ -65,26 +69,32 @@
     flex: 1;
     padding: 20px;
   
+    .heading{
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: $clr-base;
+      text-align: left;
+    }
+
     .form {
       display: flex;
       flex-direction: column;
-      background-color: #fff;  // Set the form background to white
-      padding: 20px;
-      border-radius: 8px;  // Add some border-radius for a modern look
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  // Optional: Add shadow for depth
+      background-color: $clr-root;  // Set the form background to white
+      padding: 4rem;
+      box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.1);  // Optional: Add shadow for depth
   
       .formGroup {
-        margin-bottom: 20px;
+        margin-bottom: 2.5rem;
   
         input,
         textarea {
-          padding: 10px;
+          padding: 1rem;
           font-size: 1rem;
           width: 100%;
-          border: 1px solid #ccc;
+          border: 0.1rem solid #ccc;
           border-radius: 4px;
-          background-color: #f0f0f0;  // Set input field background to grey
-          color: #333;  // Set text color to dark grey
+          background-color: #F1F1F1;  // Set input field background to grey
+          color: #727272;  // Set text color to dark grey
         }
   
         textarea {
@@ -93,16 +103,17 @@
       }
   
       .submitButton {
-        padding: 10px 20px;
-        font-size: 1rem;
-        background-color: #28a745;
-        color: #fff;
+        padding: 1.2rem;
+        font-size: 1.4rem;    
+        background-color: $clr-secondary;
+        color: $clr-root;
         border: none;
         cursor: pointer;
         transition: background-color 0.3s;
+        margin-bottom: 2rem;
   
         &:hover {
-          background-color: #218838;
+          background-color: $clr-primary;
         }
   
         @media (max-width: 768px) {
