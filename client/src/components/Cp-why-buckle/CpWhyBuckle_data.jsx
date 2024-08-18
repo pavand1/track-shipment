@@ -1,11 +1,11 @@
 const mockData = {
     headings: [
-      'Heading One',
-      'Heading Two',
-      'Heading Three',
-      'Heading Four',
-      'Heading Five',
-      'Heading Six'
+      'Tech Enable User Friendly Platform',
+      'Integrated Supply chain Solution',
+      'Reliable & Cost Effective',
+      'Customisation made easy',
+      'Exceptional Customer Support',
+      'Ex'
     ],
     imageSrc: 'https://via.placeholder.com/400x300' // Placeholder image URL
   };

@@ -28,8 +28,7 @@ const CpOurClients = () => {
         {testimonials.map((testimonial, index) => (
           <SwiperSlide key={index} className={styles.swiperSlide}>
             <div className={styles.testimonial}>
-              <p className={styles.feedback}>"{testimonial.feedback}"</p>
-              <h4 className={styles.client}>{testimonial.client}</h4>
+              <img className={styles.swiperImage} src={testimonial.image} alt="clients"/>
             </div>
           </SwiperSlide>
         ))}

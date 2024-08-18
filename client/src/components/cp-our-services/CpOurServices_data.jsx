@@ -45,7 +45,7 @@ export const servicesData = [
       title: 'Project Transportation',
       description: 'Description for Service Four',
       link: '#',
-      leftImage: '.../../images/Home/ourservices/tranportation.png', // URL for the left image
+      leftImage: '.../../images/Home/clients/tranportation.png', // URL for the left image
       rightImage: '.../../images/Home/ourservices/arrow.png', // URL for the right image
     },
     {

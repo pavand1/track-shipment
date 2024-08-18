@@ -1,9 +1,11 @@
+@import '../../styles/globalSass/variable.scss';
+
 .section {
   display: flex;
   flex-wrap: wrap;
   background-color: #333; /* Dark grey background for the whole section */
   color: #fff; /* White text color to contrast with dark background */
-
+  padding: 0rem 8rem;
   .column1 {
     flex: 1;
     padding: 20px;
@@ -75,5 +77,11 @@
         text-align: left;
       }
     }
+  }
+  .sectionHeading{
+    font-size: 4rem;
+    color: $clr-base;
+    margin: 5rem 0rem;
+    display: block;
   }
 }
