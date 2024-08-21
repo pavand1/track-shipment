@@ -5,7 +5,7 @@ const mockData = {
       'Reliable & Cost Effective',
       'Customisation made easy',
       'Exceptional Customer Support',
-      'Ex'
+      ''
     ],
     imageSrc: 'https://via.placeholder.com/400x300' // Placeholder image URL
   };
