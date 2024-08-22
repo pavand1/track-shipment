@@ -1,6 +1,6 @@
 @import '../../styles/globalSass/variable.scss';
 .section{
-  padding: 8rem 8rem;
+  padding: 2rem 8rem;
   margin: 8rem 0rem;
   background-color: $clr-primary;
   .mainHeading {
@@ -74,22 +74,28 @@
     }
   }
   .form {
-    display: flex;
-    flex-direction: column;
+    // display: flex;
+    // flex-direction: column;
     background-color: $clr-root;  // Set the form background to white
-    padding: 4rem;
+    padding: 2rem;
     box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.1);  // Optional: Add shadow for depth
 
+    .heading{
+      font-size: 2rem;
+      color:$clr-base;
+      text-align: left;
+      margin-left: 1rem;
+      margin-bottom: 1rem;
+      font-family: $font-semiBold;
+    }
     .formGroup {
       margin-bottom: 2.5rem;
-
+      
       input,
       textarea {
-        padding: 1rem;
-        font-size: 1rem;
+        padding: 1.2rem;
+        font-size: 1.2rem;
         width: 100%;
-        border: 0.1rem solid #ccc;
-        border-radius: 4px;
         background-color: #F1F1F1;  // Set input field background to grey
         color: #727272;  // Set text color to dark grey
       }
@@ -99,7 +105,13 @@
       }
     }
     .formGroupNew{
-      display: flex;
+      width: 46%;
+      float: left;
+      margin-left: 1rem;
+      margin-right: 1rem;
+      &:last-of-type{
+        width:96%;
+      }
     }
 
     .submitButton {
@@ -111,6 +123,10 @@
       cursor: pointer;
       transition: background-color 0.3s;
       margin-bottom: 2rem;
+      display: block;
+      width:96%;
+      margin-left: 1rem;
+      margin-right: 1rem;
 
       &:hover {
         background-color: $clr-primary;

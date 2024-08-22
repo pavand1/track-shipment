@@ -15,7 +15,7 @@ const CpOurClients = () => {
           modules={[Pagination, Navigation]}
           spaceBetween={30}
           slidesPerView={1}
-          pagination={{ clickable: true }}
+          pagination={false}
           navigation
           breakpoints={{
             640: {
@@ -25,7 +25,7 @@ const CpOurClients = () => {
               slidesPerView: 5,
             },
           }}
-          className={styles.swiper}
+          className={`bs-swiper ${styles.swiper}`}
         >
           {testimonials.map((testimonial, index) => (
             <SwiperSlide key={index} className={styles.swiperSlide}>

@@ -1,0 +1,43 @@
+@import '../variable.scss';
+.bs-swiper {
+    padding: 5rem 3rem !important;
+    .swiper-button-prev, .swiper-rtl .swiper-button-next {
+        left: var(--swiper-navigation-sides-offset, -7px);
+    }
+    .swiper-button-next, .swiper-rtl .swiper-button-prev {
+        right: var(--swiper-navigation-sides-offset, -7px);
+    }
+    .swiper-button-prev:after,
+    .swiper-button-next:after{
+        color: $clr-secondary;
+        font-size: 2.5rem;
+        font-weight: bolder;
+    }
+    .swiper-button-prev.swiper-button-disabled, 
+    .swiper-button-next.swiper-button-disabled {
+        opacity: 1;
+    }
+    .swiper-pagination-bullet {
+        background: $clr-secondary; 
+    }
+
+    .swiper-pagination-horizontal.swiper-pagination-bullets
+    .swiper-pagination-bullet {
+        padding: 0 4px;
+    }
+
+    .swiper-pagination-bullet-active {
+        background-color: $clr-secondary;
+    }
+
+    .swiper-pagination-bullet-active-next,
+    .swiper-pagination-bullet-active-next-next,
+    .swiper-pagination-bullet-active-prev {
+        background: $clr-secondary;
+    }
+
+    .swiper-pagination {
+        top: auto;
+        bottom: 0;
+    }
+}
