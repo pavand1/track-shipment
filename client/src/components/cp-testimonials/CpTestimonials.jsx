@@ -1,73 +1,54 @@
-// src/components/TestimonialSlider/TestimonialSlider.jsx
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination, EffectCoverflow } from 'swiper/modules';
 import 'swiper/css';
-import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import 'swiper/css/effect-coverflow';
-
+import 'swiper/css/navigation';
+import { Pagination, Navigation } from 'swiper/modules';
 import testimonials from './CpTestimonials_data';
 import styles from './cpTestimonials.module.scss';
 
 const CpTestimonials = () => {
   return (
-    <Swiper
-      modules={[Navigation, Pagination, EffectCoverflow]}
-      spaceBetween={30}
-      slidesPerView={1}
-      effect="coverflow"
-      coverflowEffect={{
-        rotate: 50,
-        stretch: 0,
-        depth: 100,
-        modifier: 1,
-        slideShadows: true,
-      }}
-      grabCursor={true}
-      centeredSlides={true}
-      loop={true}
-      navigation={{
-        nextEl: `.${styles.swiperButtonNext}`,
-        prevEl: `.${styles.swiperButtonPrev}`,
-      }}
-      pagination={{
-        clickable: true,
-        el: `.${styles.swiperPagination}`,
-      }}
-      breakpoints={{
-        640: {
-          slidesPerView: 1,
-        },
-        768: {
-          slidesPerView: 2,
-        },
-        1024: {
-          slidesPerView: 3,
-        },
-      }}
-    >
-      {testimonials.map((testimonial) => (
-        <SwiperSlide key={testimonial.id} className={styles.slide}>
-          <div className={styles.avatarContainer}>
-            <img
-              src={testimonial.avatar}
-              alt={`${testimonial.name}'s avatar`}
-              className={styles.avatar}
-            />
+    <>
+    <section className={styles.section}>
+      <h2 class={styles.mainHeading}>Testimonials</h2>
+      <div className={styles.sliderContainer}>
+        <Swiper
+          modules={[Pagination, Navigation]}
+          spaceBetween={0}
+          slidesPerView={1}
+          pagination={false}
+          navigation
+          breakpoints={{
+            640: {
+              slidesPerView: 1,
+            },
+            1024: {
+              slidesPerView: 3,
+            },
+          }}
+          className={`bs-swiper typ-testimonial ${styles.swiper}`}
+        >
+          {testimonials.map((testimonial, index) => (
+            <SwiperSlide key={testimonial.id} className={`testimonial-wrap ${styles.slide}`}>
+              <div className={` testimonialInfo ${styles.testimonial}`}>
+                <div className={`avatarContainer ${styles.avatarContainer}`}>
+                  <img src={testimonial.avatar} alt={`${testimonial.name}'s avatar`} className={styles.avatar} />
+                </div>
+                <p className={styles.desc}>{testimonial.testimonial}</p>
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
+    </section>
+    <section className={styles.sectionbg}>
+      <div className={styles.bgImg}>
+          <div className={`${styles.imageWrap}`}>
+              <img src=".../../images/Home/whybucklet/testimonialbg.png" className={styles.imageBg}/>
           </div>
-          <h3 className={styles.heading}>{testimonial.name}</h3>
-          <p className={styles.title}>{testimonial.title}</p>
-          <p className={styles.testimonial}>{testimonial.testimonial}</p>
-        </SwiperSlide>
-      ))}
-
-      {/* Add Navigation Arrows */}
-      <div className={styles.swiperButtonPrev}></div>
-      <div className={styles.swiperButtonNext}></div>
-
-      {/* Pagination */}
-      <div className={styles.swiperPagination}></div>
-    </Swiper>
+        </div>
+    </section>
+    </>
   );
 };
 

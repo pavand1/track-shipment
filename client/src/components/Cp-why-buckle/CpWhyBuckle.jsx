@@ -17,7 +17,7 @@ const CpWhyBuckle = () => {
           </div>
         </div>
         <div className={styles.column2}>
-          <img src={mockData.imageSrc} alt="Description" />
+          <img src={mockData.imageSrc} alt="Description" className={styles.trackimg}/>
         </div>
       </div>
     </section>

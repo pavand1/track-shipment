@@ -2,23 +2,36 @@
 
 .section {
   padding: 8rem 8rem;
-  margin: 8rem 0rem;
-  background-color: #333; 
+  margin: 8rem 0rem 0rem 0rem;
+  background-color: #cccccc; 
+  @media (max-width: 768px) {
+    padding: 2rem 2rem;
+    margin: 2rem 0rem 0rem 0rem;
+  }
   .mainHeading{
     font-size: 4rem;
     margin-bottom: 4rem;
-    color:$clr-root;
+    color:$clr-base;
     font-family: $font-bold;
+    @media (max-width: 768px) {
+      font-size: 2.4rem;
+      margin-bottom: 2rem;
+    }
   }
   .backlet {
     display: flex;
     flex-wrap: wrap;
+    padding-top: 7rem;
+    @media (max-width: 768px) {
+      padding-top: 0rem;
+    }
     .column1 {
       flex: 1;
-      padding: 14rem 4rem;
-      background-color: #fff;
+      padding: 7rem 0rem 7rem 4rem;
       color: #000; /* Black text color for the heading section */
-  
+      @media (max-width: 768px) {
+        padding: 3rem 0rem;
+      }
       .headingContainer {
         display: flex;
         flex-wrap: wrap;
@@ -30,16 +43,25 @@
           text-align: left;
           padding: 4rem 3rem 4rem 3rem;
           width: 33.33%;
+          @media (max-width: 768px) {
+            padding: 2rem;
+          }
           .heading {
             display: inline;
             font-size: 2rem;
             font-family: $font-medium;
             text-transform: capitalize;
+            @media (max-width: 768px) {
+              font-size: 1.4rem;
+            }
           }
           &::first-letter {
             color: $clr-secondary;
             font-size: 2.6rem; /* Larger font size for the first letter */
             font-weight: bold; /* Make the first letter bold */
+            @media (max-width: 768px) {
+              font-size: 2.2rem;
+            }
           }
           &:nth-child(1),
           &:nth-child(2) {
@@ -63,13 +85,11 @@
   
     .column2 {
       flex: 1;
-      padding: 20px;
-      background-color: grey;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-  
+      position: relative;
       h3 {
         color: #fff; /* White text color for the heading */
         margin-bottom: 10px;
@@ -78,6 +98,15 @@
       img {
         max-width: 100%;
         height: auto;
+      }
+      .trackimg{
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding-bottom: 3rem;
+        @media (max-width: 768px) {
+          position: relative;
+        }
       }
     }
   

@@ -3,11 +3,19 @@
   padding: 2rem 8rem;
   margin: 8rem 0rem;
   background-color: $clr-primary;
+  @media (max-width: 768px) {
+    padding: 2rem 2rem;
+    margin: 2rem 0rem 0rem 0rem;
+  }
   .mainHeading {
     font-size: 4rem;
     margin-bottom: 4rem;
     color: $clr-base;
-    font-family: $font-bold
+    font-family: $font-bold;
+    @media (max-width: 768px) {
+      font-size: 2.4rem;
+      margin-bottom: 2rem;
+    }
   }
 
   .about {
@@ -25,12 +33,13 @@
 
   .column {
     flex: 1;
-    padding: 10px;
+    padding: 3rem;
 
     &:first-of-type {
       text-align: left;
-
+      height: 46rem;
       @media (max-width: 768px) {
+        display: none;
         padding-right: 0;
         padding-bottom: 20px;
       }
@@ -67,10 +76,13 @@
 
   .image {
     width: 100%;
-    height: auto;
-
+    position: relative;
+    top: -10rem;
+    object-fit: contain;
+    height: 55.4rem;
     @media (max-width: 768px) {
       order: -1;
+      top: 0rem;
     }
   }
   .form {
@@ -87,10 +99,15 @@
       margin-left: 1rem;
       margin-bottom: 1rem;
       font-family: $font-semiBold;
+      @media (max-width: 768px) {
+        text-align: center;
+      }
     }
     .formGroup {
       margin-bottom: 2.5rem;
-      
+      @media (max-width: 768px) {
+        margin-bottom: 1rem;
+      }
       input,
       textarea {
         padding: 1.2rem;
@@ -98,6 +115,10 @@
         width: 100%;
         background-color: #F1F1F1;  // Set input field background to grey
         color: #727272;  // Set text color to dark grey
+        @media (max-width: 768px) {
+          padding: 1rem;
+          font-size: 1rem;
+        }
       }
 
       textarea {
@@ -109,8 +130,17 @@
       float: left;
       margin-left: 1rem;
       margin-right: 1rem;
+      @media (max-width: 768px) {
+        width: 100%;
+        float: left;
+        margin-left: 0;
+        margin-right: 0;
+      }
       &:last-of-type{
         width:96%;
+        @media (max-width: 768px) {
+          width: 100%;
+        }
       }
     }
 
@@ -127,6 +157,12 @@
       width:96%;
       margin-left: 1rem;
       margin-right: 1rem;
+      @media (max-width: 768px) {
+        margin-bottom: 0rem;
+        width:100%;
+        margin-left: 0rem;
+        margin-right: 0rem;
+      }
 
       &:hover {
         background-color: $clr-primary;

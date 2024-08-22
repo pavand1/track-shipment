@@ -7,7 +7,7 @@ const mockData = {
       'Exceptional Customer Support',
       ''
     ],
-    imageSrc: 'https://via.placeholder.com/400x300' // Placeholder image URL
+    imageSrc: '.../../images/Home/whybucklet/trackbg.png'
   };
   
   export default mockData;

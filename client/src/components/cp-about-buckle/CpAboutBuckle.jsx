@@ -4,8 +4,9 @@ import { mockData } from './CpAboutBuckle_data';
 
 const CpAboutBuckle = () => {
   return (
+    <>
     <section className={styles.section}>
-      <h2 class={styles.mainHeading}>About Buckle</h2>
+      <h2 class={styles.mainHeading}>About Buckle Track</h2>
       <div className={styles.about}>
         <div className={styles.column}>
           <div className={styles.description}>
@@ -18,6 +19,14 @@ const CpAboutBuckle = () => {
         </div>
       </div>
     </section>
+    <section className={styles.sectionbg}>
+      <div className={styles.bgImg}>
+        <div className={styles.imageWrap}>
+            <img src={mockData.imageBG} alt={mockData.imageAlt} className={styles.imageBg} />
+        </div>
+      </div>
+    </section>
+    </>
   );
 };
 

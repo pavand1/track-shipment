@@ -6,8 +6,12 @@
   background-image: url('../../images/footer/artboard.png');  // Ensure this path is correct
   background-size: cover;
   background-position: center;
-  height: 100vh;
+  //height: 100vh;
   color: #fff;
+  @media (max-width: 768px) {
+    padding: 2rem;
+    height: auto;
+  }
 }
 
 .container {
@@ -79,17 +83,21 @@
       display: flex;
       align-items: center;
       margin-bottom: 2.5rem;
+      position: relative;
       
       img {
         width: 2rem;
         height: 2.5rem;
         margin-right: 1rem;
         object-fit: contain;
+        top: 0;
+        position: absolute;
       }
 
       span {
         font-size: 1.6rem;
-        width: 60%;
+        width: 80%;
+        padding-left: 4rem;
       }
   }
 }

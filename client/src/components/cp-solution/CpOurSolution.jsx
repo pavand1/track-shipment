@@ -9,7 +9,7 @@ const CpOurSolution = () => {
       {/* First Column with Image */}
       <div
         className={`${styles.column} ${styles.firstColumn}`}
-        style={{ backgroundImage: 'url(.../../images/Home/banner/bgbanner.png)' }} // Update path
+        style={{ backgroundImage: 'url(.../../images/Home/whybucklet/global-business.png)' }} // Update path
       ></div>
 
       {/* Center Column with List */}
@@ -27,7 +27,7 @@ const CpOurSolution = () => {
       {/* Last Column with Image */}
       <div
         className={`${styles.column} ${styles.lastColumn}`}
-        style={{ backgroundImage: 'url(.../../images/Home/banner/bgbanner.png)' }} // Update path
+        style={{ backgroundImage: 'url(.../../images/Home/whybucklet/global-businessImg.png)' }} // Update path
       ></div>
     </div>
   );
