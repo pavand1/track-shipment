@@ -9,7 +9,7 @@ import styles from './cpOurClients.module.scss';
 const CpOurClients = () => {
   return (
     <section className={styles.section}>
-      <h2 class={styles.mainHeading}>Our Clients</h2>
+      <h2 className={styles.mainHeading}>Our Clients</h2>
       <div className={styles.sliderContainer}>
         <Swiper
           modules={[Pagination, Navigation]}

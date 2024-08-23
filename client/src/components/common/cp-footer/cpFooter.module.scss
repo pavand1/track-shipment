@@ -113,3 +113,16 @@
       }
   }
 }
+
+.copyRight{
+  position: relative;
+  width:100%;
+  .text{
+    color:$clr-root;
+    position: absolute;
+    bottom: 0rem;
+    font-family: $font-medium;
+    width:100%;
+    text-align: center;
+  }
+}

@@ -27,7 +27,7 @@ export const mockData = {
         placeholder: 'Phone'
       },
       {
-        id: 'phone',
+        id: 'phone1',
         label: 'Phone Number',
         type: 'tel',
         placeholder: 'Phone'

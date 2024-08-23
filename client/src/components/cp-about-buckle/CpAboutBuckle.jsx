@@ -6,7 +6,7 @@ const CpAboutBuckle = () => {
   return (
     <>
     <section className={styles.section}>
-      <h2 class={styles.mainHeading}>About Buckle Track</h2>
+      <h2 className={styles.mainHeading}>About Buckle Track</h2>
       <div className={styles.about}>
         <div className={styles.column}>
           <div className={styles.description}>

@@ -1,9 +1,9 @@
 // mockData.js
 export const listItems = [
-    'Item 1',
-    'Item 2',
-    'Item 3',
-    'Item 4',
-    'Item 5',
+    'Trasparent Truck Selection System',
+    'Multi Point Consolidated Delievry Solution',
+    'Multiple Mode Of Transportation',
+    'Real Time Tracking & Management Sysytem',
+    'Auto Notification Of In-Transit Movement',
   ];
   

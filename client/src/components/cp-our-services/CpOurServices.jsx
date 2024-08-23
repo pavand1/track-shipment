@@ -1,86 +1,60 @@
-import styles from "./cpOurServices.module.scss";
-import { servicesData } from './CpOurServices_data';
+// src/components/GridComponent/GridComponent.js
+import React, { useEffect, useRef, useState } from 'react';
+import styles from './cpOurServices.module.scss';
+import { mockData } from './CpOurServices_data';
 
 const CpOurServices = () => {
   return (
-    <>
-     <div className="container">
-      <h2 className={styles.sectionHeading}>Our Services</h2>
-      <div className={styles.servicesContainer}>
-        <div className={`${styles["column"]}`}>
-          <a href={servicesData[0].link} className={styles.cardLink}>
-            <div className={styles.card}>
-              <div className={styles.cardContent}>
-                <h3>{servicesData[0].title}</h3>
-              </div>
-              <img src={servicesData[0].leftImage} alt="Left" className={styles.cardImageLeft} />
-              <img src={servicesData[0].rightImage} alt="Right" className={styles.cardImageRight} />
+    <section className={styles.section}>
+      <h2 className={styles.mainHeading}>Our Services</h2>
+      <div className={styles.gridContainer}>
+        <div className={`${styles.column} ${styles.fullHeightColumn}`}>
+          <div className={styles.fullHeightCard}>
+            <h3>{mockData[0].heading}</h3>
+            <img src={mockData[0].image} alt={mockData[0].heading} className={styles.imageSection}/>
+            <div className={styles.arrowIcon}>
+              <img src={mockData[0].icon} alt="Icon" className={styles.icon} />
             </div>
-          </a>
+          </div>
         </div>
-        <div className={`${styles["column"]} ${styles["column2"]}`}>
-          <a href={servicesData[1].link} className={styles.cardLink}>
-            <div className={styles.card}>
-              <div className={styles.cardContent}>
-                <h3>{servicesData[1].title}</h3>
+
+        <div className={`${styles.column} ${styles.column2}`}>
+          {mockData.slice(1, 3).map((item) => (
+            <div className={styles.card} key={item.id}>
+              <h3>{item.heading}</h3>
+              <img src={item.image} alt={item.heading} className={styles.imageSection}/>
+              <div className={styles.arrowIcon}>
+                <img src={item.icon} alt="Icon" className={styles.icon} />
               </div>
-              <img src={servicesData[1].leftImage} alt="Left" className={styles.cardImageLeft} />
-              <img src={servicesData[1].rightImage} alt="Right" className={styles.cardImageRight} />
             </div>
-          </a>
-          <a href={servicesData[2].link} className={styles.cardLink}>
-            <div className={styles.card}>
-              <div className={styles.cardContent}>
-                <h3>{servicesData[2].title}</h3>
-              </div>
-              <img src={servicesData[2].leftImage} alt="Left" className={styles.cardImageLeft} />
-              <img src={servicesData[2].rightImage} alt="Right" className={styles.cardImageRight} />
-            </div>
-          </a>
+          ))}
         </div>
-        <div className={`${styles["column"]} ${styles["column3"]}`}>
-          <a href={servicesData[3].link} className={styles.cardLink}>
-            <div className={styles.card}>
-              <div className={styles.cardContent}>
-                <h3>{servicesData[3].title}</h3>
+
+        <div className={`${styles.column} ${styles.column3}`}>
+          {mockData.slice(3, 5).map((item) => (
+            <div className={styles.card} key={item.id}>
+              <h3>{item.heading}</h3>
+              <img src={item.image} alt={item.heading} className={styles.imageSection}/>
+              <div className={styles.arrowIcon}>
+                <img src={item.icon} alt="Icon" className={styles.icon} />
               </div>
-              <img src={servicesData[3].leftImage} alt="Left" className={styles.cardImageLeft} />
-              <img src={servicesData[3].rightImage} alt="Right" className={styles.cardImageRight} />
             </div>
-          </a>
-          <a href={servicesData[0].link} className={styles.cardLink}>
-            <div className={styles.card}>
-              <div className={styles.cardContent}>
-                <h3>{servicesData[0].title}</h3>
-              </div>
-              <img src={servicesData[0].leftImage} alt="Left" className={styles.cardImageLeft} />
-              <img src={servicesData[0].rightImage} alt="Right" className={styles.cardImageRight} />
-            </div>
-          </a>
+          ))}
         </div>
-        <div className={`${styles["column"]} ${styles["column2"]}`}>
-          <a href={servicesData[1].link} className={styles.cardLink}>
-            <div className={styles.card}>
-              <div className={styles.cardContent}>
-                <h3>{servicesData[1].title}</h3>
+
+        <div className={`${styles.column} ${styles.column4}`}>
+          {mockData.slice(5).map((item) => (
+            <div className={styles.card} key={item.id}>
+              <h3>{item.heading}</h3>
+              <img src={item.image} alt={item.heading} className={styles.imageSection}/>
+              <div className={styles.arrowIcon}>
+                <img src={item.icon} alt="Icon" className={styles.icon} />
               </div>
-              <img src={servicesData[1].leftImage} alt="Left" className={styles.cardImageLeft} />
-              <img src={servicesData[1].rightImage} alt="Right" className={styles.cardImageRight} />
             </div>
-          </a>
-          <a href={servicesData[2].link} className={styles.cardLink}>
-            <div className={styles.card}>
-              <div className={styles.cardContent}>
-                <h3>{servicesData[2].title}</h3>
-              </div>
-              <img src={servicesData[2].leftImage} alt="Left" className={styles.cardImageLeft} />
-              <img src={servicesData[2].rightImage} alt="Right" className={styles.cardImageRight} />
-            </div>
-          </a>
+          ))}
         </div>
       </div>
-     </div>
-    </>
+    </section>
   );
 };
 

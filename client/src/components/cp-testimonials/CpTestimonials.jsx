@@ -10,7 +10,7 @@ const CpTestimonials = () => {
   return (
     <>
     <section className={styles.section}>
-      <h2 class={styles.mainHeading}>Testimonials</h2>
+      <h2 className={styles.mainHeading}>Testimonials</h2>
       <div className={styles.sliderContainer}>
         <Swiper
           modules={[Pagination, Navigation]}

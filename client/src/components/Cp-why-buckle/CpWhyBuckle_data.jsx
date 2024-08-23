@@ -7,7 +7,7 @@ const mockData = {
       'Exceptional Customer Support',
       ''
     ],
-    imageSrc: '.../../images/Home/whybucklet/trackbg.png'
+    imageSrc: '../../images/Home/whybucklet/trackbg.png'
   };
   
   export default mockData;
