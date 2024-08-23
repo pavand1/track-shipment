@@ -17,12 +17,20 @@
    background-color: $clr-root;
    padding: 0rem 2rem;
   }
-
+  .menuList{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    position: static;
+    width: auto;
+    text-align: left;
+    align-items: center;
+  }
   .menu {
     display: none; // Default hidden on mobile
     flex-grow: 1; // Allow the menu to take up remaining space on desktop
     justify-content: flex-end; // Align menu items to the right on desktop
-
+   
     ul {
       list-style: none;
       display: flex;
@@ -32,10 +40,14 @@
       li {
         position: relative;
         text-align: left;
-        padding: 15px 0;
-
+        padding: 1.5rem 0;
+        &.active{
+          a{
+            font-family: $font-bold;
+          }
+        }
         a {
-          color: #fff;
+          color: $clr-root;
           text-decoration: none;
           display: block;
           width: 100%;
@@ -43,10 +55,10 @@
           font-size: 1.6rem;
           text-transform: uppercase;
           &:hover {
-            text-decoration: underline;
+            text-decoration: none;
           }
         }
-
+        
         &.dropdown {
           cursor: pointer;
 
@@ -55,31 +67,32 @@
             overflow: hidden;
             opacity: 0;
             transition: max-height 0.3s ease, opacity 0.3s ease;
-            background-color: #444;
+            background-color: $clr-primary;
             padding: 0;
             list-style: none;
-            width: 200px; // Increase width for better display
-            margin-top: 5px;
-            border-radius: 4px; // Add some rounding for aesthetics
+            width: 20rem; // Increase width for better display
+            margin-top: 0rem;
 
             li {
-              padding: 10px 20px; // Better padding for dropdown items
+              padding: 1rem 1rem; // Better padding for dropdown items
 
               a {
-                color: #fff;
-                text-decoration: none;
+                  color: $clr-root;
+                  text-decoration: none;
+                  font-size: 1.4rem;
+                  padding: 0rem 1rem;
                 &:hover {
-                  text-decoration: underline;
+                  text-decoration: none;
                 }
               }
             }
           }
 
           &.active .dropdownMenu {
-            max-height: 500px; // Adjust based on content
+            max-height: 50rem; // Adjust based on content
             opacity: 1;
-            padding: 10px 0;
-            width: 100%;
+            padding: 0.5rem 0;
+            // width: 100%;
           }
         }
       }
@@ -89,10 +102,10 @@
       display: flex; // Show menu when open on mobile
       flex-direction: column;
       position: absolute;
-      top: 60px;
+      top: 7rem;
       left: 0;
       width: 100%;
-      background-color: #333;
+      background-color: $clr-primary;
       text-align: center;
       ul {
         width: 100%;
@@ -111,6 +124,7 @@
       position: static;
       width: auto;
       text-align: left;
+      align-items: center;
 
       ul {
         flex-direction: row;
@@ -126,7 +140,7 @@
           left: 0;
           display: none;
           background-color: #444;
-          width: 200px; // Ensure consistent width on desktop
+          width: 20rem; // Ensure consistent width on desktop
         }
 
         &:hover .dropdownMenu {
@@ -139,7 +153,7 @@
   .search {
     display: none;
     position: relative;
-    margin-left: auto;
+    //margin-left: auto;
 
     button {
       background: none;
@@ -187,9 +201,9 @@
 
     span {
       background: #fff;
-      height: 2px;
-      width: 25px;
-      margin: 4px 0;
+      height: 0.2rem;
+      width: 2.5rem;
+      margin: 0.4rem 0;
     }
 
     @media (min-width: 769px) {
@@ -204,21 +218,30 @@
   justify-content: flex-end;
   align-items: center;
   background-color: $clr-root;
-  padding: 10px 20px;
+  padding: 1rem 2rem;
+  @media (max-width: 768px) {
+    padding: 1rem;
+    justify-content: center;
+  }
   .contactItem {
     display: flex;
     align-items: center;
-    margin-left: 20px;
-    font-size: 14px;
-    color: #333;
-  
+    margin-left: 2rem;
+    font-size: 1.4rem;
+    color: $clr-base;
+    @media (max-width: 768px) {
+      font-size: 1.1rem;
+    }
     &:first-child {
       margin-left: 0;
     }
   
     .icon {
-      margin-right: 8px;
-      font-size: 18px;
+      margin-right: 0.8rem;
+      font-size: 1.8rem;
+      @media (max-width: 768px) {
+        font-size: 1.4rem;
+      }
     }
   }
 }
