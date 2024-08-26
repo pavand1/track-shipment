@@ -28,11 +28,14 @@ const CpHeader = () => {
   return (
     <> 
     <div className={styles.topHeader}>
-        <div className={styles.contactItem}>
-          <span className={styles.icon}><img src="../../images/header/phone.png" alt="phone"/></span>91-022-2821-3835
-        </div>
-        <div className={styles.contactItem}>
-          <span className={styles.icon}><img src="../../images/header/email.png" alt="email"/></span>enquiry@buckletrack.in
+        <div className={styles.top}></div>
+        <div className={styles.topHeaderInfo}>
+          <div className={styles.contactItem}>
+            <span className={styles.icon}><img src="../../images/header/phone.png" alt="phone"/></span>91-022-2821-3835
+          </div>
+          <div className={styles.contactItem}>
+            <span className={styles.icon}><img src="../../images/header/email.png" alt="email"/></span>enquiry@buckletrack.in
+          </div>
         </div>
     </div>
     <header className={styles.header}>
