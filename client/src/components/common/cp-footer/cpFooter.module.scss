@@ -126,3 +126,19 @@
     text-align: center;
   }
 }
+
+
+.sectionbg{
+  .bgImg{
+    position: relative;
+    .imageWrap{
+      margin-top: -12rem;
+      .imageBg{
+        width: 100%;
+      }
+    }
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+}

@@ -5,6 +5,13 @@ import { Link } from 'react-router-dom';
 const CpFooter = () => {
     return (
         <>
+            <section className={styles.sectionbg}>
+                <div className={styles.bgImg}>
+                    <div className={`${styles.imageWrap}`}>
+                        <img src=".../../images/Home/whybucklet/testimonialbg.png" className={styles.imageBg}/>
+                    </div>
+                </div>
+            </section>
             <footer className={styles.footer}>
                 <div className={styles.container}>
                     <div className={`${styles.column} ${styles.socialColumn}`}>

@@ -41,13 +41,6 @@ const CpTestimonials = () => {
         </Swiper>
       </div>
     </section>
-    <section className={styles.sectionbg}>
-      <div className={styles.bgImg}>
-          <div className={`${styles.imageWrap}`}>
-              <img src=".../../images/Home/whybucklet/testimonialbg.png" className={styles.imageBg}/>
-          </div>
-        </div>
-    </section>
     </>
   );
 };
