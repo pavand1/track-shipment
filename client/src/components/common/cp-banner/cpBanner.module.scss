@@ -1,4 +1,4 @@
-@import '../../styles/globalSass/variable.scss';
+@import '../../../styles/globalSass/variable.scss';
 
 .section {
     display: flex;
@@ -19,6 +19,15 @@
       text-align: center;
       height: auto;
       gap:0rem;
+    }
+    &.sectionBanner{
+      height: 100vh;
+      @media (max-width: 768px) {
+        height: auto;
+      }
+    }
+    &.aboutBanner{
+      background-image: url('../../images/about/banner.png');
     }
   }
   

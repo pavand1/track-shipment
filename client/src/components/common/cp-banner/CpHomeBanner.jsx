@@ -1,5 +1,5 @@
-import styles from './cpHomeBanner.module.scss';
-import mockData from './CpHomeBanner_data';
+import styles from './cpBanner.module.scss';
+import {mockData} from './CpBanner_data';
 
 const CpHomeBanner = () => {
   return (

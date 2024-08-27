@@ -1,4 +1,5 @@
-const mockData = {
+//Home Page Mock Data
+export const mockData = {
     heading: 'Lorem Ipsum is simply dummy text',
     subHeading: 'Lorem Ipsum is simply dummy text',
     buttonText: 'Read More',
@@ -38,7 +39,13 @@ const mockData = {
       ],
       submitButtonText: 'Talk To Our Expert'
     }
-  };
-  
-  export default mockData;
+};
+ 
+//About Page Mock Data
+export const aboutData = {
+  heading: 'Lorem Ipsum is simply dummy text',
+  subHeading: 'Lorem Ipsum is simply dummy text',
+  buttonText: 'Read More',
+};
+
   

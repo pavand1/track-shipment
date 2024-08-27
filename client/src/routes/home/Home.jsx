@@ -1,6 +1,6 @@
+import CpHomeBanner from "../../components/common/cp-banner/CpHomeBanner";
 import CpAboutBuckle from "../../components/cp-about-buckle/CpAboutBuckle";
 import CpGetInTouch from "../../components/cp-getin-touch/CpGetInTouch";
-import CpHomeBanner from "../../components/cp-home-banner/CpHomeBanner";
 import CpOurClients from "../../components/cp-our-clients/CpOurClients";
 import CpOurServices from "../../components/cp-our-services/CpOurServices";
 import CpOurSolution from "../../components/cp-our-solution/CpOurSolution";
