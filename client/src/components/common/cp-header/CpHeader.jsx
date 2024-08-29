@@ -21,8 +21,13 @@ const CpHeader = () => {
     }
   };
 
-  const handleMenuClick = (index) => {
+  const handleMenuClick = (index, route) => {
     setActiveIndex(index);
+    if(route.name === "Account") {
+      const origin = window.location.origin;
+      window.open(origin, "_blank");// TODO: change this to a link to login page
+    }
+
 };
 
   return (
@@ -51,7 +56,7 @@ const CpHeader = () => {
                 //className={item.dropdown ? `${styles.dropdown} ${activeDropdown === index ? styles.active : ''}` : ''}
                 className={`${item.dropdown ? `${styles.dropdown} ${activeDropdown === index ? styles.active : ''}` : ''} ${index === activeIndex ? styles.active : ''}`}
 
-                onClick={() => handleMenuClick(index)}
+                onClick={() => handleMenuClick(index, item)}
               >
                 {/* <a href={item.link} onClick={item.dropdown ? (e) => { e.preventDefault(); toggleDropdown(index); } : null}>
                   {item.name}
