@@ -9,8 +9,9 @@ import FeaturesRoute from "./routes/features/Features.jsx";
 import ServicesRoute from "./routes/services/Services.jsx";
 import TrackOrderRoute from "./routes/track-order/TrackOrder.jsx";
 import TestimonialsRoute from "./routes/testimonials/Testimonials.jsx";
+import PrivacyPolicy from "./routes/privacy-policy/PrivacyPolicy";
 import '../src/styles/main.scss'
-import { ABOUT_US_ROUTE, CONTACTS_ROUTE, FEATURES_ROUTE, SERVICES_ROUTE, TESTIMONIALS_ROUTE, TRACK_ORDER_ROUTE } from "./utils/constants.js";
+import { ABOUT_US_ROUTE, CONTACTS_ROUTE, FEATURES_ROUTE, SERVICES_ROUTE, TESTIMONIALS_ROUTE, TRACK_ORDER_ROUTE, PRIVACY_POLICY_ROUTE } from "./utils/constants.js";
 const App = () => {
   return (
     <Router>
@@ -25,6 +26,7 @@ const App = () => {
           <Route path={CONTACTS_ROUTE} exact element={<ContactsRoute />}/>
           <Route path={TRACK_ORDER_ROUTE} exact element={<TrackOrderRoute />}/>
           <Route path={TESTIMONIALS_ROUTE} exact element={<TestimonialsRoute />}/>
+          <Route path={PRIVACY_POLICY_ROUTE} exact element={<PrivacyPolicy />}/>
           <Route path="*" exact element={<HomeRoute />}/>
           </Routes>
         </main>

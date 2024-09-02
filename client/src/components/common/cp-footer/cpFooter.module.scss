@@ -41,8 +41,11 @@
 
       li {
         margin-bottom: 1rem;
-        font-size: 1.6rem;
-        font-weight: 100;
+        .item{
+          color:$clr-root;
+          font-size: 1.6rem;
+          font-weight: 100;
+        }
       }
   }
 }

@@ -29,7 +29,9 @@ const CpFooter = () => {
                         <h4 className={styles.footerHeading}>Categories</h4>
                         <ul>
                             {linksColumn2.map((item, index) => (
-                                <li key={index}>{item}</li>
+                                <li key={index}>
+                                    <Link to={item.route} key={index} className={styles.item}>{item.name}</Link>
+                                </li>
                             ))}
                         </ul>
                     </div>
@@ -37,7 +39,9 @@ const CpFooter = () => {
                         <h4 className={styles.footerHeading}>Other Links</h4>
                         <ul>
                             {linksColumn3.map((item, index) => (
-                                <li key={index}>{item}</li>
+                                <li key={index}>
+                                    <Link to={item.route} key={index} className={styles.item}>{item.name}</Link>
+                                </li>
                             ))}
                         </ul>
                     </div>
