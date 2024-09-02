@@ -80,6 +80,9 @@
     top: -10rem;
     object-fit: contain;
     height: 55.4rem;
+    @media (min-width: 1024px) and (max-width: 1200px) {
+      top: -10.5rem;
+    }
     @media (max-width: 768px) {
       order: -1;
       top: 0rem;
@@ -130,6 +133,9 @@
       float: left;
       margin-left: 1rem;
       margin-right: 1rem;
+      @media (min-width: 1024px) and (max-width: 1200px) {
+        width: 45%;
+      }
       @media (max-width: 768px) {
         width: 100%;
         float: left;
