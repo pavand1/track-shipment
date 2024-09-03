@@ -11,14 +11,18 @@ const mockMenuData = [
     link: '#services',
     route: SERVICES_ROUTE,
     dropdown: [
-      { name: 'Web Development', link: '#web' },
-      { name: 'Design', link: '#design' },
-      { name: 'Marketing', link: '#marketing' },
+      { name: 'Full Truck Load', link: '#web' },
+      { name: 'Part Truck Load', link: '#design' },
+      { name: 'Exim Movement', link: '#marketing' },
+      { name: 'Project Transportation', link: '#marketing' },
+      { name: 'Express Delivery', link: '#marketing' },
+      { name: 'E-Commerce Delivery', link: '#marketing' },
+      { name: 'Milk Run', link: '#marketing' },
     ],
   },
-  { name: 'Pricing', link: '#contact', route: CONTACTS_ROUTE },
   { name: "Track Order", like: "#trackorder", route: TRACK_ORDER_ROUTE},
-  { name: "Account", link: "#testimonials", route: TESTIMONIALS_ROUTE}
+  { name: "Account", link: "#testimonials", route: TESTIMONIALS_ROUTE},
+  { name: 'Contact US', link: '#contact', route: CONTACTS_ROUTE },
 ];
 
 export default mockMenuData;

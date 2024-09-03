@@ -23,15 +23,6 @@ export const socialLinks = [
   { href: 'https://linkdin.com', src: '../../images/footer/linkdin-icon.png', alt: 'Lindin' },
 ];
 
-// export const linksColumn2 = [
-//   'Home', 
-//   'Features', 
-//   'About us', 
-//   'Pricing', 
-//   'Track Order', 
-//   'Account'
-// ];
-
 export const linksColumn2 = [
   { name: 'Home', link: '#home', route: "/" },
   { name: 'About', link: '#about', route: ABOUT_US_ROUTE },
@@ -52,18 +43,6 @@ export const linksColumn3 = [
   { name: 'Carrier', link: '#carrier', route: CARRIER_ROUTE },
   { name: 'Wallet', link: '#wallet', route: WALLET_ROUTE },
 ];
-
-// export const linksColumn3 = [
-//   'BlogTrack', 
-//   'Order', 
-//   'Terms and Conditions', 
-//   'Privacy and Policy', 
-//   'Return & Cancellation Policy',
-//   'Refund Policy',
-//   'FAQs',
-//   'Carrier',
-//   'Wallet'
-// ];
 
 export const contactInfo = {
   address: { icon: '../../images/footer/location.png', text: '223, Sahar Cargo Estate, J B Nagar, Andheri East, Mumbai - 400099' },

@@ -127,6 +127,7 @@
     font-family: $font-medium;
     width:100%;
     text-align: center;
+    margin-bottom: 2rem;
   }
 }
 
@@ -134,6 +135,7 @@
 .sectionbg{
   .bgImg{
     position: relative;
+    z-index: -1;
     .imageWrap{
       margin-top: -12rem;
       .imageBg{
