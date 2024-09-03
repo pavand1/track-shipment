@@ -2,6 +2,9 @@ import { useState } from 'react';
 import styles from './cpHeader.module.scss'; // Import CSS Module
 import mockMenuData from './CpHeader_data'; // Import the mock data
 import { Link, useNavigate } from 'react-router-dom';
+const accountURL = import.meta.env.VITE_ACCOUNT_URL;
+const rateCheckURL = import.meta.env.VITE_RATE_CHECK_URL;
+const trackOrderURL = import.meta.env.VITE_TRACK_ORDER_URL;
 
 const CpHeader = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
@@ -24,10 +27,14 @@ const CpHeader = () => {
   const handleMenuClick = (index, route) => {
     setActiveIndex(index);
     if(route.name === "Account") {
-      const origin = window.location.origin;
-      window.open(origin, "_blank");// TODO: change this to a link to login page
+      window.open(accountURL, "_blank");// TODO: change this to a link to login page
     }
-
+    if(route.name === "Pricing") {
+      window.open(rateCheckURL, "_blank");// TODO: change this to a link to track page
+    }
+    if(route.name === "Track Order") {
+      window.open(trackOrderURL, "_blank");// TODO: change this to a link to track page
+    }
 };
 
   return (

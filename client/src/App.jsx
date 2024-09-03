@@ -13,6 +13,7 @@ import PrivacyPolicy from "./routes/privacy-policy/PrivacyPolicy";
 import '../src/styles/main.scss'
 import { ABOUT_US_ROUTE, CONTACTS_ROUTE, FEATURES_ROUTE, SERVICES_ROUTE, TESTIMONIALS_ROUTE, TRACK_ORDER_ROUTE, PRIVACY_POLICY_ROUTE } from "./utils/constants.js";
 const App = () => {
+  console.log(import.meta.env);
   return (
     <Router>
       <div className={styles.app}>
@@ -23,9 +24,6 @@ const App = () => {
           <Route path={ABOUT_US_ROUTE} exact element={<AboutRoute />}/>
           <Route path={FEATURES_ROUTE} exact element={<FeaturesRoute />}/>
           <Route path={SERVICES_ROUTE} exact element={<ServicesRoute />}/>
-          <Route path={CONTACTS_ROUTE} exact element={<ContactsRoute />}/>
-          <Route path={TRACK_ORDER_ROUTE} exact element={<TrackOrderRoute />}/>
-          <Route path={TESTIMONIALS_ROUTE} exact element={<TestimonialsRoute />}/>
           <Route path={PRIVACY_POLICY_ROUTE} exact element={<PrivacyPolicy />}/>
           <Route path="*" exact element={<HomeRoute />}/>
           </Routes>
