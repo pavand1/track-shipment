@@ -2,9 +2,12 @@ import { useRef, useState } from 'react';
 import styles from './cpBanner.module.scss';
 import {mockData} from './CpBanner_data';
 import emailjs from '@emailjs/browser';
+import Loading from 'react-fullscreen-loading';
 
 const CpHomeBanner = () => {
   const form = useRef();
+
+  const [isLoading, setIsLoading] = useState(false);
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
@@ -18,6 +21,7 @@ const CpHomeBanner = () => {
       setError('All fields are required, except the secondary phone number');
       return;
     }
+    setIsLoading(true);
     emailjs
       .sendForm('service_f5bl48g', 'template_agxy0jb', form.current, {
         publicKey: 'UwYDiQ1gdS6YNU1C-',
@@ -31,12 +35,14 @@ const CpHomeBanner = () => {
           setMessage('');
           setPhone1('');
           setPhone2('');
+          setIsLoading(false);
           setTimeout(() => {
             setError('');
           }, 5000);
         },
         (error) => {
           console.log('FAILED...', error.text);
+          setIsLoading(false);
         },
       );
   };
@@ -110,6 +116,7 @@ const CpHomeBanner = () => {
             {error && <p className={styles.error}>{error}</p>}
           </form>
         </div>
+        <Loading loading={isLoading} background="transparent" loaderColor="#3498db"/>
     </section>
   );
 };

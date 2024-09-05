@@ -4,11 +4,12 @@ import emailjs from '@emailjs/browser';
 import styles from './cpContacUs.module.scss';
 import { contactInfo } from './CpContactUs_data';
 import { mockData } from '../cp-getin-touch/CpGetInTouch_data';
-
+import Loading from 'react-fullscreen-loading';
 
 const CpContactUs = () => {
 
   const form = useRef();
+  const [isLoading, setIsLoading] = useState(false);
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
@@ -21,6 +22,7 @@ const CpContactUs = () => {
       setError('All fields are required, except the secondary phone number');
       return;
     }
+    setIsLoading(true);
     emailjs
       .sendForm('service_f5bl48g', 'template_agxy0jb', form.current, {
         publicKey: 'UwYDiQ1gdS6YNU1C-',
@@ -34,12 +36,14 @@ const CpContactUs = () => {
           setMessage('');
           setPhone1('');
           setPhone2('');
+          setIsLoading(false);
           setTimeout(() => {
             setError('');
           }, 5000);
         },
         (error) => {
           console.log('FAILED...', error.text);
+          setIsLoading(false);
         },
       );
   };
@@ -131,6 +135,7 @@ const CpContactUs = () => {
           </form>
         </div>
       </div>
+      <Loading loading={isLoading} background="transparent" loaderColor="#3498db"/>
     </section>
     </>
   );
