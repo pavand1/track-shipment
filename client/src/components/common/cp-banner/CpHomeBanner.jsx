@@ -25,12 +25,15 @@ const CpHomeBanner = () => {
       .then(
         () => {
           console.log('SUCCESS!');
-          setError('');
+          setError('Our Expert will get in touch with you shortly');
           setName('');
           setEmail('');
           setMessage('');
           setPhone1('');
           setPhone2('');
+          setTimeout(() => {
+            setError('');
+          }, 5000);
         },
         (error) => {
           console.log('FAILED...', error.text);
@@ -71,7 +74,7 @@ const CpHomeBanner = () => {
             </div>
             <div className={styles.formGroup}>
             <input
-                    type={"number"}
+                    type={"text"}
                     id={"phone1"}
                     name={"phone"}
                     placeholder={"primary phone number"}
@@ -82,7 +85,7 @@ const CpHomeBanner = () => {
             </div>
             <div className={styles.formGroup}>
             <input
-                    type={"number"}
+                    type={"text"}
                     id={"phone2"}
                     name={"phone 2"}
                     placeholder={"secondary phone number"}
