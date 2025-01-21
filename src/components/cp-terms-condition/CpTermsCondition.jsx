@@ -6,7 +6,7 @@ const CpTermsCondition = () => {
   return (
     <>
       <section className={styles.section}>
-        <h2 className={styles.mainHeading}>Terams & Condition</h2>
+        <h2 className={styles.mainHeading}>Terms & Condition</h2>
         <div className={styles.description}>
           <h1>Scope</h1>
           <p>{mockData.description}</p>

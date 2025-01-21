@@ -11,17 +11,17 @@ const CpPrivacyPolicy = () => {
           <p>{mockData.description}</p>
           <p>{mockData.description1}</p>
         </div>
-        <h2 className={styles.mainHeading}>Access to Personal Data</h2>
+        <h1 className={styles.mainHeading1}>Access to Personal Data</h1>
         <div className={styles.description}>
           <p>{mockData.description2}</p>
           <p>{mockData.description3}</p>
         </div>
-        <h2 className={styles.mainHeading}>Our Commitment to Data Security</h2>
+        <h1 className={styles.mainHeading1}>Our Commitment to Data Security</h1>
         <div className={styles.description}>
           <p>{mockData.description4}</p>
           <p>{mockData.description5}</p>
         </div>
-        <h2 className={styles.mainHeading}>Opt out</h2>
+        <h1 className={styles.mainHeading1}>Opt out</h1>
         <div className={styles.description}>
           <p>{mockData.description4}</p>
           <p>{mockData.description5}</p>

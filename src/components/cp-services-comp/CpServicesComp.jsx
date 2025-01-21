@@ -9,7 +9,7 @@ const CpServicesComp = () => {
   }, []);
   return (
     <>
-      <section className={styles.section}>
+      <section className={styles.section} id="surface-transport">
         {/* first services */}
         <div className={styles.borderMain}>
           <div className={styles.borderDiv}></div>
@@ -30,7 +30,7 @@ const CpServicesComp = () => {
           </div>
         </div>
       </section>
-      <section className={styles.section}>
+      <section className={styles.section} id="express-delivery">
         {/* Second services */}
         <div className={styles.borderMainRight}>
           <div className={styles.borderDiv}></div>
@@ -51,7 +51,7 @@ const CpServicesComp = () => {
           </div>
         </div>
       </section>
-      <section className={styles.section}>
+      <section className={styles.section} id="project-transport">
         {/* Third services */}
         <div className={styles.borderMain}>
           <div className={styles.borderDiv}></div>

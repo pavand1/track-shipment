@@ -1,9 +1,9 @@
 @import "../../styles/globalSass/variable.scss";
 
 .section {
-  padding: 8rem 8rem 0rem 8rem;
+  padding: 8rem 8rem 8rem 8rem;
   @media (max-width: 768px) {
-    padding: 2rem 2rem 0rem 2rem;
+    padding: 2rem 2rem 2rem 2rem;
     margin: 2rem 0rem 0rem 0rem;
   }
   .mainHeading {
@@ -11,16 +11,20 @@
     margin-bottom: 2rem;
     color: $clr-base;
     font-family: $font-bold;
+    text-align: left;
     @media (max-width: 768px) {
       font-size: 2.4rem;
       margin-bottom: 0.25rem;
     }
   }
+  h1{
+    text-align: left;
+  }
   .description {
     p {
       margin: 0 0 2rem;
       text-align: justify;
-      font-size: 2.5rem;
+      font-size: 1.6rem;
       @media (max-width: 768px) {
         margin: 0 0 2rem;
         font-size: 1rem;

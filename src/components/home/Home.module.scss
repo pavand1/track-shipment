@@ -109,6 +109,10 @@
       padding: 6px;
       text-align: center;
       cursor: pointer;
+      &:hover{
+        background-color: #ff3300;
+        color: #ffffff;
+      }
     }
   }
 }

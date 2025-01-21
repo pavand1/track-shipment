@@ -122,6 +122,9 @@
                         position: relative;
                         left: -26rem;
                         top: -2rem;
+                        @media (max-width: 1920px) {
+                            width: 77rem;
+                        }
                         @media (max-width: 768px) {
                             display: none;
                             width: auto;

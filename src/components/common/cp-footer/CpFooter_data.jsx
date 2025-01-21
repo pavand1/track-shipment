@@ -70,7 +70,7 @@ export const linksColumn3 = [
   // },
   // { name: "Refund Policy", link: "#refundpolicy", route: REFUND_POLICY_ROUTE },
   { name: "FAQ's", link: "#faqs", route: FAQ_ROUTE },
-  { name: "Carrier", link: "#carrier", route: CARRIER_ROUTE },
+  { name: "careers", link: "#carrier", route: CARRIER_ROUTE },
   // { name: "Wallet", link: "#wallet", route: WALLET_ROUTE },
   { name: "Blog", link: "#blogtrack", route: RESOURCE },
 ];

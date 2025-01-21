@@ -41,7 +41,7 @@ const Services = () => {
               <div className={Styles.image}>
                 <img src="../../images/services/Surface Transport.png" alt="" />
                 <div className={Styles.tag}>
-                  <p>Surface Transport</p>
+                  <p style={{marginBottom:"0rem"}}>Surface Transport</p>
                 </div>
               </div>
               <div
@@ -68,7 +68,7 @@ const Services = () => {
               <div className={Styles.image}>
                 <img src="../../images/services/Express Delivery.png" alt="" />
                 <div className={Styles.tag}>
-                  <p>Express Delivery</p>
+                  <p style={{marginBottom:"0rem"}}>Express Delivery</p>
                 </div>
               </div>
               <div
@@ -95,7 +95,7 @@ const Services = () => {
               <div className={Styles.image}>
                 <img src="../../images/services/Project Transport.png" alt="" />
                 <div className={Styles.tag}>
-                  <p>Project Transport</p>
+                  <p style={{marginBottom:"0rem"}}>Project Transport</p>
                 </div>
               </div>
               <div
