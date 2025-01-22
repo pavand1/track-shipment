@@ -42,7 +42,6 @@ import Partner from "./routes/partner/Partner.jsx";
 import Blog1 from "./routes/resource/blog/logistics-solution-streamlining-your-business-oerations.jsx";
 import Blog2 from "./routes/resource/blog/B2B-logistics-the-backbone-of-efficient-business-operations.jsx";
 const App = () => {
-  console.log(import.meta.env);
   useEffect(() => {
     AOS.init({ duration: 2000 });
   }, []);
