@@ -59,7 +59,7 @@ const Services = () => {
               </div>
               <div
                 className={Styles.button}
-                onClick={() => navigate("/services")}
+                onClick={() => navigate("/our-services")}
               >
                 Read More
               </div>
@@ -86,7 +86,7 @@ const Services = () => {
               </div>
               <div
                 className={Styles.button}
-                onClick={() => navigate("/services")}
+                onClick={() => navigate("/our-services")}
               >
                 Read More
               </div>
@@ -113,7 +113,7 @@ const Services = () => {
               </div>
               <div
                 className={Styles.button}
-                onClick={() => navigate("/services")}
+                onClick={() => navigate("/our-services")}
               >
                 Read More
               </div>
