@@ -67,7 +67,7 @@ const CpHeader = () => {
 
   return (
     <header className={`${styles.header} ${isScrolled ? styles.scrolled : ""}`}>
-      {scrollY > 150 || window.innerWidth < 767 ? (
+      {scrollY > 250 || window.innerWidth < 767 ? (
         <div
           className={styles.mobileLogo}
           style={{
@@ -87,8 +87,8 @@ const CpHeader = () => {
         <div
           className={styles.headerLogo}
           style={{
-            transform: `translateY(${-(scrollY * 0.3)}px) translateX(${-(
-              scrollY * 0.3
+            transform: `translateY(${-(scrollY * 0.7)}px) translateX(${-(
+              scrollY * 0.6
             )}px) scale(${scaleFactor})`,
 
             width: `${width}px`,
