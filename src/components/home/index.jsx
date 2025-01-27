@@ -44,6 +44,7 @@ const HomeComponent = () => {
               window.location.href = `tel:hi`;
               e.preventDefault();
             }}
+            title={"+91-022-2821-3835"}
           >
             <img src="../../images/share/call.svg" alt="" />
           </div>
@@ -53,6 +54,7 @@ const HomeComponent = () => {
               window.location.href = `mailto:hi`;
               e.preventDefault();
             }}
+            title="sales@buckletrack.in"
           >
             <img src="../../images/share/email.svg" alt="" />
           </div>
@@ -62,6 +64,7 @@ const HomeComponent = () => {
               window.location.href = `whatsapp://send?text=Hi`;
               e.preventDefault();
             }}
+            title={"+91-022-2821-3835"}
           >
             <img src="../../images/share/whatsapp.svg" alt="" />
           </div>
