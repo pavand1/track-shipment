@@ -16,7 +16,6 @@ const CpServicesComp = () => {
   useEffect(() => {
     if(pathname) {
       const id = pathname.split("/")[2];
-      console.log(id, surfaceRef.current)
       if(id) {
         if (id=== "surface-transport" && surfaceRef.current) {
           surfaceRef.current.scrollIntoView({ behavior: "smooth" });
