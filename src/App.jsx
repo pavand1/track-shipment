@@ -39,7 +39,7 @@ import ReturnConcellation from "./routes/return-concellation/ReturnConcellation"
 import TermsCondition from "./routes/terms-condition/TermsCondition";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { useEffect } from "react";
+import { useEffect, useRef, useState } from "react";
 import Support from "./routes/support/Support.jsx";
 import Resource from "./routes/resource/Resource.jsx";
 import Partner from "./routes/partner/Partner.jsx";
@@ -51,13 +51,19 @@ import ViralDesai from "./routes/viralDesai/viralDesai.jsx";
 import SinjuPaulose from "./routes/sinjuPaulose/sinjuPaulose.jsx";
 
 const App = () => {
+  const ref = useRef();
+  const [routeChange, setRouteChange] = useState(null);
   useEffect(() => {
     AOS.init({ duration: 2000 });
+    
   }, []);
+  useEffect(() => {
+    if(routeChange && ref.current) ref.current.scrollIntoView({ behavior: "smooth" });
+  }, [routeChange]);
   return (
     <Router>
-      <div className={styles.app}>
-        <CpHeader />
+      <div className={styles.app} ref={ref}>
+        <CpHeader setRouteChange={setRouteChange}/>
         <main className={styles.content}>
           <Routes>
             <Route path="/" exact element={<HomeRoute />} />
