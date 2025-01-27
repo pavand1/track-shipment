@@ -30,7 +30,7 @@ const mockMenuData = [
     route: RESOURCE,
     link: "#features",
     dropdown: [
-      { name: "Blog", link: "#web" },
+      { name: "Blog", link: RESOURCE },
     ],
   },
   // { name: "Track Order", like: "#trackorder", route: TRACK_ORDER_ROUTE},

@@ -49,6 +49,7 @@ const CpHeader = () => {
   const handleMenuClick = (index, route) => {
     setMenuOpen(false);
     setActiveIndex(index);
+    setActiveDropdown(null);
     if (route.name === "Account") {
       window.open(accountURL, "_blank");
     }
@@ -63,8 +64,7 @@ const CpHeader = () => {
   const scaleFactor = Math.max(1 - scrollY * 0.0015, 0.5);
   const width = Math.max(550 - scrollY * 1.5, 200);
   const height = Math.max(200 - scrollY * 1.5, 60);
-  console.log(scrollY);
-
+  
   return (
     <header className={`${styles.header} ${isScrolled ? styles.scrolled : ""}`}>
       {scrollY > 250 || window.innerWidth < 767 ? (
@@ -133,6 +133,7 @@ const CpHeader = () => {
                       ? (e) => {
                           e.preventDefault();
                           toggleDropdown(index);
+                          setActiveIndex(index);
                         }
                       : null
                   }
@@ -147,13 +148,14 @@ const CpHeader = () => {
                   ) : null}
                 </Link>
                 {item.dropdown && activeDropdown === index && (
-                  <ul className={styles.dropdownMenu}>
+                  <ul className={styles.dropdownMenu} style={{display: activeDropdown === index ?"block":"none"}}>
                     {item.dropdown.map((dropdownItem, idx) => (
                       <li
                         key={idx}
                         onClick={(e) => {
                           e.preventDefault();
                           setMenuOpen(false);
+                          toggleDropdown(index)
                         }}
                       >
                         <Link to={dropdownItem.link}>{dropdownItem.name}</Link>
