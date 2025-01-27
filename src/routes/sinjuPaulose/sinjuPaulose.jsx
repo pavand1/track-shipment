@@ -1,12 +1,14 @@
 import CpTeam2 from "../../components/cp-team-page/CpTeamPage";
+import HomeComponent from "../../components/home";
 
-const sinjuPaulose = () => {
+const SinjuPaulose = () => {
   return (
     <>
+      <HomeComponent />
       <CpTeam2 />
     </>
   );
 };
 
-export default sinjuPaulose;
+export default SinjuPaulose;
 

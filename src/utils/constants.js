@@ -9,6 +9,10 @@ export const SUPPORT = "/support";
 export const PARTNER = "/partner-with-us";
 export const BLOG1 = "/blog/logistics-solution-streamlining-your-business-oerations";
 export const BLOG2 = "/blog/B2B-logistics-the-backbone-of-efficient-business-operations";
+export const KIRANWAKDE = "/kiranWakde";
+export const VIRALDESAI = "/viralDesai";
+export const SINJUPAULOSE = "/sinjuPaulose";
+export const VINAYAKSUKHDARE = "/vinayakSukhdare";
 
 //Footer links
 export const BLOG_TRACK_ROUTE = "/blogtrack";

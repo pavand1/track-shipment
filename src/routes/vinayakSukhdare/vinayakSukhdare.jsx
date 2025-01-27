@@ -1,12 +1,14 @@
 import CpTeam4 from "../../components/cp-team-page/CpTeamPage";
+import HomeComponent from "../../components/home";
 
-const vinayakSukhdare = () => {
+const VinayakSukhdare = () => {
   return (
     <>
+      <HomeComponent /> 
       <CpTeam4 />
     </>
   );
 };
 
-export default vinayakSukhdare;
+export default VinayakSukhdare;
 

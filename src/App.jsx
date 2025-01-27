@@ -28,6 +28,10 @@ import {
   PARTNER,
   BLOG1,
   BLOG2,
+  KIRANWAKDE,
+  VIRALDESAI,
+  SINJUPAULOSE,
+  VINAYAKSUKHDARE,
 } from "./utils/constants.js";
 import Faqs from "./routes/faqs/Faqs";
 import RefundPolicy from "./routes/refund-policy/RefundPolicy";
@@ -41,6 +45,11 @@ import Resource from "./routes/resource/Resource.jsx";
 import Partner from "./routes/partner/Partner.jsx";
 import Blog1 from "./routes/resource/blog/logistics-solution-streamlining-your-business-oerations.jsx";
 import Blog2 from "./routes/resource/blog/B2B-logistics-the-backbone-of-efficient-business-operations.jsx";
+import Kiranwakde from "./routes/kiranWakde/kiranWakde.jsx";
+import VinayakSukhdare from "./routes/vinayakSukhdare/vinayakSukhdare.jsx";
+import ViralDesai from "./routes/viralDesai/viralDesai.jsx";
+import SinjuPaulose from "./routes/sinjuPaulose/sinjuPaulose.jsx";
+
 const App = () => {
   useEffect(() => {
     AOS.init({ duration: 2000 });
@@ -60,6 +69,10 @@ const App = () => {
             <Route path={PARTNER} element={<Partner />} />
             <Route path={BLOG1} element={<Blog1 />} />
             <Route path={BLOG2} element={<Blog2 />} />
+            <Route path={KIRANWAKDE} element={<Kiranwakde />} />
+            <Route path={VIRALDESAI} element={<ViralDesai />} />
+            <Route path={SINJUPAULOSE} element={<SinjuPaulose />} />
+            <Route path={VINAYAKSUKHDARE} element={<VinayakSukhdare />} />
             <Route
               path={PRIVACY_POLICY_ROUTE}
               exact

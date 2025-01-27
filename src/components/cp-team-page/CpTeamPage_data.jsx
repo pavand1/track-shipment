@@ -28,7 +28,7 @@ export const mockData3 = {
 export const mockData4 = {
   description:
     "The Deep Thinker within!! <br>Truly someone whose favourite past time is thinking. Blessed with an innate sense of judgement, he is easily the most well thought through within our team. Like the best of sales people, he is driven to helping customers solve the most complex of issues and like all of us, he loves a job well done! Usually deep thinkers are introverts, true, but lesser here! His repertoire of one liner and jokes along with his poker-faced delivery will floor most. And yes in his pastime, he loves a freshly prepared and delicious home cooked meal. Prior to KSM, he was the erstwhile Head of Projects and Corporates and the Regional Head for the Western Region at APL Logistics.",
-  imageSrc: "../../images/about/team1.jpg",
+  imageSrc: "../../images/about/team3.jpg",
   imageAlt: "Description of image",
   name: "Vinayak Sukhdare",
   designation: "Director"
