@@ -151,7 +151,7 @@
           color: $clr-root;
           text-decoration: none;
           display: block;
-          padding: 1rem 2rem;
+          padding: 1rem 1.5rem;
           font-size: 1.6rem;
           text-transform: uppercase;
           &:hover {
@@ -285,7 +285,7 @@
     cursor: pointer;
     margin-right: 2rem;
     border-radius: 1rem;
-    width: 12rem;
+    width: auto;
 
     &:hover {
       background-color: #e7e1e1;

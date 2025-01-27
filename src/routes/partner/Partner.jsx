@@ -8,7 +8,7 @@ const Partner = () => {
       <HomeComponent />
       <div className="partner">
         <div className="container">
-          <h1>Partner with Us</h1>
+          <h2 className="mainHeading">Partner with Us</h2>
           <p>
             Our program for delivery partners allows agents to join us to do
             both pick-up and delivery services across India. It is a great

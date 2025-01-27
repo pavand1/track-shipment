@@ -1,5 +1,7 @@
+/* @import "../../../styles/globalSass/variable.scss"; */
+@import "../../styles/globalSass/variable.scss";
 .partner {
-   background-color: #ffffff;
+  background-color: #ffffff;
 }
 .container {
   max-width: 800px;
@@ -8,7 +10,12 @@
   background-color: #fff;
   border-radius: 8px;
 }
-
+.mainHeading {
+  font-size: 4rem;
+  margin-bottom: 4rem;
+  color: #000000;
+  font-family: "Poppins-Bold";
+}
 h1 {
   color: #007bff;
   text-align: center;
@@ -50,4 +57,11 @@ p {
 .contact span {
   color: #ef4136;
   font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .mainHeading {
+    font-size: 2.4rem;
+    margin-bottom: 2rem;
+  }
 }

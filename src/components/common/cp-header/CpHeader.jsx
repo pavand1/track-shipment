@@ -74,6 +74,7 @@ const CpHeader = () => {
             position: "absolute",
             width: `12%`,
             cursor: "pointer",
+            marginLeft: "2rem",
           }}
           onClick={() => navigate("/")}
         >
@@ -204,6 +205,15 @@ const CpHeader = () => {
             </div>
           </div>
           <div>
+            <button
+              className={styles.loginButton}
+              onClick={(e) => {
+                window.open("https://nol.ifreightbox.net/trackbyno", "_blank");
+                e.preventDefault();
+              }}
+            >
+              Track Your Order
+            </button>
             <button
               className={styles.loginButton}
               onClick={(e) => {

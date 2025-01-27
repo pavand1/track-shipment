@@ -1,0 +1,119 @@
+@import "../../styles/globalSass/variable.scss";
+.section {
+  padding: 6rem;
+  @media (max-width: 768px) {
+    padding: 2rem 0rem 2rem 0rem;
+  }
+  .mainHeading {
+    font-size: 4rem;
+    margin-bottom: 8rem;
+    color: $clr-base;
+    font-family: $font-bold;
+    @media (max-width: 768px) {
+      font-size: 2.4rem;
+      margin-bottom: 2rem;
+    }
+  }
+
+  .teamSection {
+    text-align: center;
+
+    .title {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      color: #333;
+    }
+
+    .teamGrid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.5rem;
+
+      @media (max-width: 768px) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      @media (max-width: 480px) {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .teamCard {
+      position: relative;
+      overflow: hidden;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+      .photoWrapper {
+        position: relative;
+
+        .photo {
+          width: 100%;
+          height: auto;
+          display: block;
+          border-radius: 8px;
+        }
+
+        .overlay {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: #093966;
+          color: #fff;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          opacity: 0;
+          transition: opacity 0.3s ease;
+
+          .description {
+            margin: 0 1.5rem;
+            font-size: 1.6rem;
+            text-align: center;
+            color: #ffffff;
+          }
+
+          .readMore {
+            margin-top: 1rem;
+            padding: 0.5rem 1.5rem;
+            background: #ef4136;
+            width: 16rem;
+            color: #ffffff;
+            border: none;
+            cursor: pointer;
+            border-radius: 1rem;
+            cursor: pointer;
+
+            &:hover {
+              background-color: #0056b3;
+            }
+          }
+        }
+
+        &:hover .overlay {
+          opacity: 0.8;
+        }
+      }
+
+      .info {
+        padding: 1rem;
+        text-align: center;
+
+        .name {
+          font-size: 2rem;
+          margin-bottom: 0.5rem;
+          font-family: $font-bold;
+        }
+
+        .designation {
+          font-size: 1.6rem;
+          color: #000000;
+          font-family: $font-medium;
+        }
+      }
+    }
+  }
+}
