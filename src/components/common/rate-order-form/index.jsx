@@ -31,7 +31,15 @@ const RateOrderForm = () => {
     <>
       <div className={Styles.container}>
         <div className={Styles.heading}>
-          <div
+        <div
+            className={`${Styles.calculator} ${
+              activeTab === "calc" ? Styles.activeCalculator : ""
+            }`}
+            onClick={() => setActiveTab("calc")}
+          >
+            Get Your Freight
+          </div>
+          {/* <div
             className={`${Styles.order} ${
               activeTab === "order" ? Styles.activeOrder : ""
             }`}
@@ -41,15 +49,7 @@ const RateOrderForm = () => {
             }}
           >
             Track Your Order
-          </div>
-          <div
-            className={`${Styles.calculator} ${
-              activeTab === "calc" ? Styles.activeCalculator : ""
-            }`}
-            onClick={() => setActiveTab("calc")}
-          >
-            Get Your Freight
-          </div>
+          </div> */}
         </div>
         {activeTab === "calc" ? (
           <form onSubmit={(e) => handleFormSumbit(e)}>

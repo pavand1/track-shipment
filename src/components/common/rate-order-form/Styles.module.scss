@@ -15,7 +15,7 @@
   .heading {
     display: flex;
     width: 100%;
-    cursor: pointer;
+    cursor: default;
 
     .order {
       flex: 1;
@@ -52,7 +52,7 @@
       background: #ef4136;
     }
     .activeCalculator {
-      border-radius: 0px 10px 0px 0px;
+      border-radius: 10px;
       opacity: 0px;
       background: #ffffff;
       color: #000000;
