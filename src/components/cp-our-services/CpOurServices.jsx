@@ -5,9 +5,18 @@ import { mockData } from "./CpOurServices_data";
 import Aos from "aos";
 
 const CpOurServices = () => {
+  const surfaceRef = useRef(null);
+  const expressRef = useRef(null);
+  const ProjectRef = useRef(null);
+
   useEffect(() => {
     Aos.init({ duration: 2000 });
   }, []);
+  // useEffect(() => {
+  //   if (targetDivRef.current) {
+  //     targetDivRef.current.scrollIntoView({ behavior: "smooth" });
+  //   }
+  // }, []);
   return (
     <section className={styles.section}>
       <h2 className={styles.mainHeading}>Our Services</h2>
@@ -28,7 +37,7 @@ const CpOurServices = () => {
 
         <div className={`${styles.column} ${styles.column2}`}>
           {mockData.slice(1, 3).map((item) => (
-            <div className={styles.card} key={item.id}>
+            <div className={styles.card} key={item.id} ref={targetDivRef}>
               <h3>{item.heading}</h3>
               <img
                 src={item.image}
