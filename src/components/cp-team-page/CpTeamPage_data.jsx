@@ -1,33 +1,33 @@
 export const mockData1 = {
   description:
-    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-  imageSrc: "../../images/about/team1.jpg",
+    "The Quintessential Fitness Freak !! <br>Apart from his love of dabbling successfully in various businesses, Kiran loves to crank up some weights whenever he can. He is our self-appointed fitness guru. Talk about eating out and there’s usually one person missing! Add to this, his boisterous laugh! He can light up a room with his laughter and he loves to use his repertoire of one liners that usually precedes it. In between yes he does find time to successfully run the business. An avid family man, his honesty is in your face. His innate ability to control costs and his keen business acumen are real standouts.",
+  imageSrc: "../../images/about/team2.jpg",
   imageAlt: "Description of image",
-  name: "Vinayak Sukhdare",
+  name: "Kiran Wakde",
   designation: "Director"
 };
 
 export const mockData2 = {
   description:
-    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-  imageSrc: "../../images/about/team1.jpg",
+    "The monk, who can sell his Ferrari !! <br>A simpleton at heart! Underplaying his own achievements is usually a way of life for him. He is brutally honest and his zen like demeanour helps bring about the much needed sanity that is required to run our business. His charming style means that most people who interact with him are usually in love with him. He is a firm believer in life beyond work and he literally lives it up that way and that’s why we call him the monk who could sell his Ferrari. Doing goodness comes naturally to him and this probably explains his ability to strike up long lasting partnerships in our business.",
+  imageSrc: "../../images/about/team4.jpeg",
   imageAlt: "Description of image",
-  name: "Vinayak Sukhdare",
+  name: "Sinju Paulose",
   designation: "Director"
 };
 
 export const mockData3 = {
   description:
-    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "Full of Smiles, is The Real Me <br>Easily the easiest person to get along with!! Viral has one of the most outgoing and friendly personalities that one can come across. Striking up meaningful relationships with people from all walks of life is his usual way of life. He is full of care and concern for the people around him and that’s his antidote! He enjoys challenging the status quo and inspires the team towards achieving the common goals. With him around, work can never be boring and he makes sure the team always has fun in doing what they do. His strong management skills bring about the much needed perspective in the team. Once in a while, like everyone else he does celebrate ‘imbalance’ and can be quite a riot. Prior to KSM, he was the Regional Director – South Asia region at APL Logistics.",
   imageSrc: "../../images/about/team1.jpg",
   imageAlt: "Description of image",
-  name: "Vinayak Sukhdare",
+  name: "Viral Desai",
   designation: "Director"
 };
 
 export const mockData4 = {
   description:
-    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "The Deep Thinker within!! <br>Truly someone whose favourite past time is thinking. Blessed with an innate sense of judgement, he is easily the most well thought through within our team. Like the best of sales people, he is driven to helping customers solve the most complex of issues and like all of us, he loves a job well done! Usually deep thinkers are introverts, true, but lesser here! His repertoire of one liner and jokes along with his poker-faced delivery will floor most. And yes in his pastime, he loves a freshly prepared and delicious home cooked meal. Prior to KSM, he was the erstwhile Head of Projects and Corporates and the Regional Head for the Western Region at APL Logistics.",
   imageSrc: "../../images/about/team1.jpg",
   imageAlt: "Description of image",
   name: "Vinayak Sukhdare",
