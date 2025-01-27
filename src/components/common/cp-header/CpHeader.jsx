@@ -22,7 +22,7 @@ const CpHeader = () => {
     setIsMenuRight(window.scrollY > 300);
     if (window.scrollY < 300) {
       setScrollY(window.scrollY);
-    }
+    } else setScrollY(300);
   };
 
   useEffect(() => {
