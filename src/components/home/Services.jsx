@@ -59,7 +59,7 @@ const Services = () => {
               </div>
               <div
                 className={Styles.button}
-                onClick={() => navigate("/our-services")}
+                onClick={() => navigate("/our-services/surface-transport")}
               >
                 Read More
               </div>

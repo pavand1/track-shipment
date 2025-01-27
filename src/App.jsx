@@ -54,7 +54,9 @@ const App = () => {
             <Route path="/" exact element={<HomeRoute />} />
             <Route path={ABOUT_US_ROUTE} exact element={<AboutRoute />} />
             <Route path={FEATURES_ROUTE} exact element={<FeaturesRoute />} />
-            <Route path={SERVICES_ROUTE} exact element={<ServicesRoute />} />
+            <Route path={`${SERVICES_ROUTE}/:surface-transport`} element={<ServicesRoute />} />
+            <Route path={`${SERVICES_ROUTE}/:express-delivery`} element={<ServicesRoute />} />
+            <Route path={`${SERVICES_ROUTE}/:project-transport`} element={<ServicesRoute />} />
             <Route path={SUPPORT} element={<Faqs />} />
             <Route path={RESOURCE} element={<Resource />} />
             <Route path={PARTNER} element={<Partner />} />

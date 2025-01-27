@@ -18,9 +18,9 @@ const mockMenuData = [
     link: "#services",
     route: SERVICES_ROUTE,
     dropdown: [
-      { name: "Surface Transport", link: "#web" },
-      { name: "Express Delivery", link: "#design" },
-      { name: "Project Transport", link: "#marketing" },
+      { name: "Surface Transport", link: `${SERVICES_ROUTE}/surface-transport` },
+      { name: "Express Delivery", link: `${SERVICES_ROUTE}/express-delivery` },
+      { name: "Project Transport", link: `${SERVICES_ROUTE}/project-transport` },
     ],
   },
   // { name: 'Home', link: '#home', route: "/" },

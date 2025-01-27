@@ -1,15 +1,38 @@
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
+import { useLocation, useParams } from "react-router-dom";
 import Aos from "aos";
 import styles from "./cpServicesComp.module.scss";
 import { mockData, mockData1, mockData2 } from "./CpServicesComp_data";
 
 const CpServicesComp = () => {
+  const surfaceRef = useRef(null);
+  const expressRef = useRef(null);
+  const projectRef = useRef(null);
+  const {pathname} = useLocation();
+  
   useEffect(() => {
     Aos.init({ duration: 2000 });
   }, []);
+  useEffect(() => {
+    if(pathname) {
+      const id = pathname.split("/")[2];
+      console.log(id, surfaceRef.current)
+      if(id) {
+        if (id=== "surface-transport" && surfaceRef.current) {
+          surfaceRef.current.scrollIntoView({ behavior: "smooth" });
+        }
+        if (id=== "express-delivery" && expressRef.current) {
+          expressRef.current.scrollIntoView({ behavior: "smooth" });
+        }
+        if (id=== "project-transport" && projectRef.current) {
+          projectRef.current.scrollIntoView({ behavior: "smooth" });
+        }
+      }
+    }
+  }, [pathname]);
   return (
     <>
-      <section className={styles.section} id="surface-transport">
+      <section className={styles.section} id="surface-transport" ref={surfaceRef}>
         {/* first services */}
         <div className={styles.borderMain}>
           <div className={styles.borderDiv}></div>
@@ -30,7 +53,7 @@ const CpServicesComp = () => {
           </div>
         </div>
       </section>
-      <section className={styles.section} id="express-delivery">
+      <section className={styles.section} id="express-delivery" ref={expressRef}>
         {/* Second services */}
         <div className={styles.borderMainRight}>
           <div className={styles.borderDiv}></div>
@@ -51,7 +74,7 @@ const CpServicesComp = () => {
           </div>
         </div>
       </section>
-      <section className={styles.section} id="project-transport">
+      <section className={styles.section} id="project-transport" ref={projectRef}>
         {/* Third services */}
         <div className={styles.borderMain}>
           <div className={styles.borderDiv}></div>

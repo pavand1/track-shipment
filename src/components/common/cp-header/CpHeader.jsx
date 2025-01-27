@@ -156,7 +156,7 @@ const CpHeader = () => {
                           setMenuOpen(false);
                         }}
                       >
-                        <Link to={item.route}>{dropdownItem.name}</Link>
+                        <Link to={dropdownItem.link}>{dropdownItem.name}</Link>
                       </li>
                     ))}
                   </ul>

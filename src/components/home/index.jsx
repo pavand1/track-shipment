@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import RateOrderForm from "../common/rate-order-form";
 import Styles from "./Home.module.scss";
 import { FacebookIcon, TwitterIcon, LinkedinIcon } from "react-share";
