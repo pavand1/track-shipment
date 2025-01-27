@@ -24,9 +24,9 @@ const RateOrderForm = () => {
     e.preventDefault();
   };
 
-  useEffect(() => {
-    if (ref.current) ref.current.focus();
-  }, []);
+  // useEffect(() => {
+  //   if (ref.current) ref.current.focus();
+  // }, []);
   return (
     <>
       <div className={Styles.container}>
