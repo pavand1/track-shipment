@@ -20,7 +20,7 @@ const CpAboutBuckle = () => {
               <p>{mockData.description1}</p>
               <button
                 className="btn-default"
-                onClick={() => navigate("/aboutus")}
+                onClick={() => navigate("/about-us")}
               >
                 {mockData.buttonText}
               </button>
