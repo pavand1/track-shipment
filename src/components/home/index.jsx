@@ -24,9 +24,9 @@ const HomeComponent = () => {
               {"Surface Transport  |  Express Delivery  |  Project Transport"}
             </div>
           </div>
-          <div className={Styles.calculator}>
+          {pathname === "/" && <div className={Styles.calculator}>
             <RateOrderForm />
-          </div>
+          </div>}
         </div>
         <div
           className={Styles.share}
