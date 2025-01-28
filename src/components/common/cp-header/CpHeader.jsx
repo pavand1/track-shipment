@@ -81,7 +81,10 @@ const CpHeader = ({setRouteChange, outsideClick}) => {
             cursor: "pointer",
             marginLeft: "2rem",
           }}
-          onClick={() => navigate("/")}
+          onClick={() => {
+            navigate("/");
+            setRouteChange("/");
+          }}
         >
           <img
             className="bt-logo"

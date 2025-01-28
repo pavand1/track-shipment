@@ -18,13 +18,16 @@ const CpServicesComp = () => {
       const id = pathname.split("/")[2];
       if(id) {
         if (id=== "surface-transport" && surfaceRef.current) {
-          surfaceRef.current.scrollIntoView({ behavior: "smooth" });
+          surfaceRef.current.scrollIntoView({ behavior: "smooth", screenX: 0 });
+          window.scroll({behavior: "smooth", top: 650});
         }
         if (id=== "express-delivery" && expressRef.current) {
           expressRef.current.scrollIntoView({ behavior: "smooth" });
+          window.scroll({behavior: "smooth", top: 1300});
         }
         if (id=== "project-transport" && projectRef.current) {
           projectRef.current.scrollIntoView({ behavior: "smooth" });
+          window.scroll({behavior: "smooth",top: 1950});
         }
       }
     }

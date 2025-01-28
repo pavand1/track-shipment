@@ -6,11 +6,6 @@ import { useEffect, useRef } from "react";
 
 const Services = () => {
     const ref = useRef();
-    useEffect(() => {
-        if (ref.current) {
-            ref.current.scrollIntoView({ behavior: "smooth" });
-          }
-    },[])
     return <div className={Styles.container} ref={ref}>
         <HomeComponent />
         <CpWhyBuckle />
