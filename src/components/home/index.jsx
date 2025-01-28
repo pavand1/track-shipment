@@ -24,8 +24,10 @@ const HomeComponent = () => {
               {"Surface Transport  |  Express Delivery  |  Project Transport"}
             </div>
           </div>
-          {pathname === "/" && <div className={Styles.calculator}>
+          {pathname === "/" ? <div className={Styles.calculator}>
             <RateOrderForm />
+          </div> : <div className={Styles.calculator}>
+            <div style={{fontSize: "4rem"}}>{pathname?.slice(1)?.toUpperCase()?.split("-")?.join(" ")}</div>
           </div>}
         </div>
         <div
