@@ -38,7 +38,7 @@ const Partner = () => {
               with <strong>BuckleTrack</strong>!
             </p>
             <p>
-              Mobile: <span>7039004442</span>
+              <strong>Mobile:</strong> <span><a style={{color: "#093966"}}href="tel:7039004442">7039004442</a></span>
             </p>
           </div>
         </div>

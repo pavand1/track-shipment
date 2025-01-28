@@ -11,7 +11,7 @@ const HomeComponent = () => {
     <>
       <div className={Styles.doodle}>
         {pathname === "/" ? (
-          <img src="../../images/Home/Doodle Background.png" alt="" />
+          <img src="../../images/Home/Doodle Background.png" alt="" style={{width:"inherit"}} />
         ) : (
           <img src="../../images/Our-service-bg.svg" alt="" />
         )}
@@ -27,7 +27,7 @@ const HomeComponent = () => {
           {pathname === "/" ? <div className={Styles.calculator}>
             <RateOrderForm />
           </div> : <div className={Styles.calculator}>
-            <div style={{fontSize: "4rem"}}>{pathname?.slice(1)?.toUpperCase()?.split("-")?.join(" ")}</div>
+            <div className={Styles.pageHeading}>{pathname?.slice(1)?.toUpperCase()?.split("-")?.join(" ")}</div>
           </div>}
         </div>
         <div

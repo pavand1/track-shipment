@@ -9,7 +9,7 @@ export const mockData = {
   mission: {
     heading: "Mission",
     description:"Our aim is to revolutionize the transportation outsourcing process by strategically leveraging technology, thus enhancing this vital aspect of the supply chain. We are committed to offering our clients increased efficiencies in planning and execution, enabling them to optimize their transport operations while concentrating on their core business activities. At the same time, we handle and execute the complex nuances of their transport requirements. Our objective is to provide an exceptional customer experience, heralding a new era in logistics defined by technological innovations that foster efficiency, accuracy, and expansion.",
-    description1:"“To unlock Transpot and Supply Chain Opportunities in the Indian market that help companies outsmart in their line of business”",
+    description1:"“We make complex transport simple, seamless and human, while leveraging data-based insights to drive on-going cost-effectiveness for our customers”",
     imageSrc: "../../images/about/mission.png",
     imageAlt: "Mission",
   },

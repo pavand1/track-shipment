@@ -1,12 +1,12 @@
 @import "../../styles/globalSass/variable.scss";
 .section {
-  padding: 6rem;
+  padding: 4rem 8rem;
   @media (max-width: 768px) {
     padding: 2rem 0rem 2rem 0rem;
   }
   .mainHeading {
     font-size: 4rem;
-    margin-bottom: 8rem;
+    margin-bottom: 4rem;
     color: $clr-base;
     font-family: $font-bold;
     @media (max-width: 768px) {

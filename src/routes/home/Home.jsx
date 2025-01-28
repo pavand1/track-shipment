@@ -18,9 +18,9 @@ const Home = ({setRouteChange}) => {
         {/* <CpGetInTouch />
         <CpOurClients /> */}
         <CpTestimonials />
-        <div className={Styles.doodle}>
+        {/* <div className={Styles.doodle}>
             <img src="../../images/Home/whybucklet/testimonialbg.png" alt="" />
-        </div>
+        </div> */}
     </div>
 }
 

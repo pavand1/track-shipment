@@ -1,7 +1,7 @@
 @import "../../styles/globalSass/variable.scss";
 .section {
-  padding: 8rem 8rem 2rem 8rem;
-  padding: 8rem 8rem;
+  // padding: 4rem 8rem 2rem 8rem;
+  padding: 4rem 8rem 3rem;
   margin: 0rem 0rem 0rem 0rem;
   background: url('../../images/Home/whyBanner.png');  // Ensure this path is correct
   background-size: cover;
@@ -19,7 +19,7 @@
   }
   .mainHeading {
     font-size: 4rem;
-    margin-bottom: 8rem;
+    margin-bottom: 0rem;
     color: $clr-primary;
     font-family: $font-bold;
     @media (max-width: 768px) {

@@ -3,13 +3,16 @@
 .section {
   padding: 0rem 8rem;
   margin: 4rem 0rem 0rem 0rem;
+  background-image: url(https://buckletrack.com/images/Home/whybucklet/testimonialbg.png);
+  background-position: bottom;
+  background-repeat: no-repeat;
   @media (max-width: 768px) {
     padding: 2rem 2rem;
     margin: 2rem 0rem 0rem 0rem;
   }
   .mainHeading {
     font-size: 4rem;
-    margin-bottom: 8rem;
+    margin-bottom: 4rem;
     color: $clr-base;
     font-family: $font-bold;
     @media (max-width: 768px) {
