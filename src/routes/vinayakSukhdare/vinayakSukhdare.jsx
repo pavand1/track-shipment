@@ -1,4 +1,4 @@
-import CpTeam4 from "../../components/cp-team-page/CpTeamPage";
+import CpTeam4 from "../../components/cp-team-page/CpTeamPage3";
 import HomeComponent from "../../components/home";
 
 const VinayakSukhdare = () => {

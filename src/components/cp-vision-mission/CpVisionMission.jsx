@@ -10,12 +10,12 @@ const CpVisionMission = () => {
   return (
     <>
       <section className={styles.section}>
-        <h2 className={styles.mainHeading}>Vision & Mission</h2>
+        {/* <h2 className={styles.mainHeading}>Vision & Mission</h2> */}
         <div className={styles.about}>
           <div className={styles.column} data-aos="fade-right">
             <div className={styles.description}>
               <h3 className={styles.heading}>{mockData.vision.heading}</h3>
-              <p>{mockData.vision.description}</p>
+              <p>{mockData.vision.description} <br /> <br /> {mockData.vision.description1}</p>
             </div>
             <img
               src={mockData.vision.imageSrc}
@@ -26,7 +26,7 @@ const CpVisionMission = () => {
           <div className={styles.column} data-aos="fade-left">
             <div className={styles.description}>
               <h3 className={styles.heading}>{mockData.mission.heading}</h3>
-              <p>{mockData.mission.description}</p>
+              <p>{mockData.mission.description} <br /> <br /> {mockData.mission.description1}</p>
             </div>
             <img
               src={mockData.mission.imageSrc}

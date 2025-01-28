@@ -1,4 +1,4 @@
-import CpTeam3 from "../../components/cp-team-page/CpTeamPage";
+import CpTeam3 from "../../components/cp-team-page/CpTeamPage2";
 import HomeComponent from "../../components/home";
 
 const ViralDesai = () => {
