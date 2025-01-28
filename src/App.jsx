@@ -53,6 +53,7 @@ import SinjuPaulose from "./routes/sinjuPaulose/sinjuPaulose.jsx";
 const App = () => {
   const ref = useRef();
   const [routeChange, setRouteChange] = useState(null);
+  const [outsideClick, setOutsideClick] = useState(false);
   useEffect(() => {
     AOS.init({ duration: 2000 });
     
@@ -62,8 +63,8 @@ const App = () => {
   }, [routeChange]);
   return (
     <Router>
-      <div className={styles.app} ref={ref}>
-        <CpHeader setRouteChange={setRouteChange}/>
+      <div className={styles.app} ref={ref} onClick={() => setOutsideClick(prev => !prev)}>
+        <CpHeader setRouteChange={setRouteChange} outsideClick={outsideClick} setOutsideClick={setOutsideClick}/>
         <main className={styles.content}>
           <Routes>
             <Route path="/" exact element={<HomeRoute />} />

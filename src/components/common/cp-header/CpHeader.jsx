@@ -1,14 +1,14 @@
 import { useState, useEffect } from "react";
 import styles from "./cpHeader.module.scss"; // Import CSS Module
 import mockMenuData from "./CpHeader_data"; // Import the mock data
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useNavigate, useLocation } from "react-router-dom";
 import { DownOutlined, UpOutlined } from "@ant-design/icons";
 
 const accountURL = import.meta.env.VITE_ACCOUNT_URL;
 const rateCheckURL = import.meta.env.VITE_RATE_CHECK_URL;
 const trackOrderURL = import.meta.env.VITE_TRACK_ORDER_URL;
 
-const CpHeader = ({setRouteChange}) => {
+const CpHeader = ({setRouteChange, outsideClick}) => {
   const [isMenuOpen, setMenuOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState(null);
   const [activeIndex, setActiveIndex] = useState(-1);
@@ -16,7 +16,7 @@ const CpHeader = ({setRouteChange}) => {
   const [isMenuRight, setIsMenuRight] = useState(false); // New state to track menu alignment
   const navigate = useNavigate();
   const [scrollY, setScrollY] = useState(0);
-  //const location = useLocation();
+  const {pathname} = useLocation();
   
   const handleScroll = () => {
     setIsMenuRight(window.scrollY > 300);
@@ -29,6 +29,10 @@ const CpHeader = ({setRouteChange}) => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  useEffect(() => {
+    setActiveDropdown(outsideClick)
+  },[outsideClick])
 
   // Toggle the menu visibility
   const toggleMenu = () => {
@@ -67,7 +71,7 @@ const CpHeader = ({setRouteChange}) => {
   const height = Math.max(200 - scrollY * 1.5, 60);
   
   return (
-    <header className={`${styles.header} ${isScrolled ? styles.scrolled : ""}`}>
+    <header className={`${styles.header} ${isScrolled ? styles.scrolled : ""}`} onClick={(e) => e.stopPropagation()}>
       {scrollY > 250 || window.innerWidth < 767 ? (
         <div
           className={styles.mobileLogo}
@@ -116,13 +120,15 @@ const CpHeader = ({setRouteChange}) => {
             {mockMenuData.map((item, index) => (
               <li
                 key={index}
-                className={`${
+                className={`
+                  ${
                   item.dropdown
                     ? `${styles.dropdown} ${
                         activeDropdown === index ? styles.active : ""
                       }`
                     : ""
-                } ${index === activeIndex ? styles.active : ""}`}
+                } 
+                ${pathname.includes(item.route) ? styles.active : ""}`}
                 onClick={() => {
                   !item.dropdown && handleMenuClick(index, item);
                 }}
