@@ -16,9 +16,10 @@ const Services = () => {
           className={Styles.subContainer}
           style={{
             flexDirection: "column",
-            gap: "3rem",
-            alignItems: "center",
-            justifyContent: "center",
+            gap: "2rem",
+            // alignItems: "center",
+            // justifyContent: "center",
+            padding:"4rem 8rem",
           }}
         >
           <h2 className={Styles.serviceMobHeading}>   

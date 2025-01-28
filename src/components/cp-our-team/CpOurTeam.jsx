@@ -28,6 +28,14 @@ const CpOurTeam = () => {
                     >
                       Read More
                     </button>
+                    <div className={styles.linkdinProfile}>
+                      <a href={member.linkdinHref}>
+                        <img
+                          src={member.linkdinSrc}
+                          className={styles.linkdin}
+                        />
+                      </a>
+                    </div>
                   </div>
                 </div>
                 <div className={styles.info}>

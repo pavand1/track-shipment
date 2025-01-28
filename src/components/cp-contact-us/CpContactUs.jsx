@@ -1,4 +1,3 @@
-import React from "react";
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import styles from "./cpContacUs.module.scss";
@@ -51,25 +50,6 @@ const CpContactUs = () => {
       <section className={styles.section}>
         <h2 className={styles.mainHeading}>Contact Us</h2>
         <div className={styles.about}>
-          <div className={styles.column}>
-            <div className={styles.description}>
-              <h4 className={styles.Heading}>Reach Us</h4>
-              <div className={styles.contactInfo}>
-                <div className={styles.contactItem}>
-                  <img src={contactInfo.address.icon} alt="Location" />
-                  <span>{contactInfo.address.text}</span>
-                </div>
-                <div className={styles.contactItem}>
-                  <img src={contactInfo.email.icon} alt="Email" />
-                  <span>{contactInfo.email.text}</span>
-                </div>
-                <div className={styles.contactItem}>
-                  <img src={contactInfo.phone.icon} alt="Phone" />
-                  <span>{contactInfo.phone.text}</span>
-                </div>
-              </div>
-            </div>
-          </div>
           <div className={styles.column}>
             <form
               className={styles.form}
@@ -138,12 +118,55 @@ const CpContactUs = () => {
               {error && <p className={styles.error}>{error}</p>}
             </form>
           </div>
+          <div className={styles.column}>
+            <div className={styles.description}>
+              <div className={styles.contactInfo}>
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7540.05365420838!2d72.863317!3d19.106479!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c948cafa8117%3A0x86293178cf902e04!2sKSM%20Marine%20Logistics%20Pvt.%20Ltd.!5e0!3m2!1sen!2sin!4v1738078220533!5m2!1sen!2sin"
+                  width="100%"
+                  height="370"
+                  style={{ border: 0 }}
+                  allowFullScreen=""
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="Google Map"
+                ></iframe>
+                {/* <div className={styles.contactItem}>
+                  <img src={contactInfo.address.icon} alt="Location" />
+                  <span>{contactInfo.address.text}</span>
+                </div>
+                <div className={styles.contactItem}>
+                  <img src={contactInfo.email.icon} alt="Email" />
+                  <span>{contactInfo.email.text}</span>
+                </div>
+                <div className={styles.contactItem}>
+                  <img src={contactInfo.phone.icon} alt="Phone" />
+                  <span>{contactInfo.phone.text}</span>
+                </div> */}
+              </div>
+            </div>
+          </div>
         </div>
         <Loading
           loading={isLoading}
           background="transparent"
           loaderColor="#3498db"
         />
+
+        <div className={styles.contactInfo1}>
+          <div className={styles.contactItem1}>
+            <img src={contactInfo.address.icon} alt="Location" />
+            <span>{contactInfo.address.text}</span>
+          </div>
+          <div className={styles.contactItem1}>
+            <img src={contactInfo.email.icon} alt="Email" />
+            <span>{contactInfo.email.text}</span>
+          </div>
+          <div className={styles.contactItem1}>
+            <img src={contactInfo.phone.icon} alt="Phone" />
+            <span>{contactInfo.phone.text}</span>
+          </div>
+        </div>
       </section>
     </>
   );
