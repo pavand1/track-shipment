@@ -107,7 +107,7 @@ const App = () => {
             <Route path="*" exact element={<HomeRoute />} />
           </Routes>
         </main>
-        <CpFooter />
+        <CpFooter setRouteChange={setRouteChange}/>
       </div>
     </Router>
   );

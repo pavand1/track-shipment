@@ -43,7 +43,7 @@ export const socialLinks = [
 ];
 
 export const linksColumn2 = [
-  { name: "Our Services", link: "#home", route: `${SERVICES_ROUTE}/surface-transport` },
+  { name: "Our Services", link: "#home", route: `${SERVICES_ROUTE}` },
   { name: "About Us", link: "#about", route: ABOUT_US_ROUTE },
   { name: "Resource", link: "#features", route: RESOURCE },
   { name: "Track Your Order", link: "#contact", route: "/" },

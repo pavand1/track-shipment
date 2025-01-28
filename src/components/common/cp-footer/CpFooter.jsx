@@ -7,7 +7,7 @@ import {
 } from "./CpFooter_data";
 import { Link, useNavigate } from "react-router-dom";
 
-const CpFooter = () => {
+const CpFooter = ({setRouteChange}) => {
   const navigate = useNavigate();
   return (
     <>
@@ -26,7 +26,10 @@ const CpFooter = () => {
               alt="Logo"
               className={styles.logo}
               style={{ cursor: "pointer" }}
-              onClick={() => navigate("/")}
+              onClick={() => {
+                navigate("/");
+                setRouteChange("/")
+              }}
             />
             <h4 className={styles.socialHeading}>Follow Us On</h4>
             <div className={styles.socialIcons}>
@@ -47,7 +50,7 @@ const CpFooter = () => {
             <ul>
               {linksColumn2.map((item, index) => (
                 <li key={index}>
-                  <Link to={item.route} key={index} className={styles.item}>
+                  <Link to={item.route} key={index} className={styles.item} onClick={() => setRouteChange(item.route)}>
                     {item.name}
                   </Link>
                 </li>
@@ -59,7 +62,7 @@ const CpFooter = () => {
             <ul>
               {linksColumn3.map((item, index) => (
                 <li key={index}>
-                  <Link to={item.route} key={index} className={styles.item}>
+                  <Link to={item.route} key={index} className={styles.item} onClick={() => setRouteChange(item.route)}>
                     {item.name}
                   </Link>
                 </li>
