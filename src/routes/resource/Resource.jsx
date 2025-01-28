@@ -2,13 +2,20 @@ import { useNavigate } from "react-router-dom";
 import HomeComponent from "../../components/home";
 import "./style.css";
 import { BLOG1, BLOG2 } from "../../utils/constants";
+import { useRef,useEffect } from "react";
 
 const Resource = () => {
   const navigator = useNavigate();
+  const ref = useRef();
+
+  useEffect(() => {
+      if(ref.current) ref.current.scrollIntoView({ behavior: "smooth" });
+    }, []);
+
   return (
     <>
       <HomeComponent />
-      <div className="blog-section">
+      <div className="blog-section" ref={ref}>
       <div className="blog-card">
             <img src="../../images/blog/blog-1.png" alt="Blog Image" />
             <div className="blog-content">

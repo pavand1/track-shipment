@@ -8,7 +8,7 @@ const accountURL = import.meta.env.VITE_ACCOUNT_URL;
 const rateCheckURL = import.meta.env.VITE_RATE_CHECK_URL;
 const trackOrderURL = import.meta.env.VITE_TRACK_ORDER_URL;
 
-const CpHeader = () => {
+const CpHeader = ({setRouteChange}) => {
   const [isMenuOpen, setMenuOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState(null);
   const [activeIndex, setActiveIndex] = useState(-1);
@@ -17,7 +17,7 @@ const CpHeader = () => {
   const navigate = useNavigate();
   const [scrollY, setScrollY] = useState(0);
   //const location = useLocation();
-
+  
   const handleScroll = () => {
     setIsMenuRight(window.scrollY > 300);
     if (window.scrollY < 300) {
@@ -50,6 +50,7 @@ const CpHeader = () => {
     setMenuOpen(false);
     setActiveIndex(index);
     setActiveDropdown(null);
+    setRouteChange(route?.name);
     if (route.name === "Account") {
       window.open(accountURL, "_blank");
     }
@@ -155,7 +156,7 @@ const CpHeader = () => {
                         onClick={(e) => {
                           e.preventDefault();
                           setMenuOpen(false);
-                          toggleDropdown(index)
+                          toggleDropdown(index);
                         }}
                       >
                         <Link to={dropdownItem.link}>{dropdownItem.name}</Link>
