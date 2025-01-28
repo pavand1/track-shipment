@@ -4,7 +4,7 @@ import { mockData } from "./CpAboutBuckle_data";
 import Aos from "aos";
 import { useNavigate } from "react-router-dom";
 
-const CpAboutBuckle = () => {
+const CpAboutBuckle = ({setRouteChange}) => {
   const navigate = useNavigate();
   useEffect(() => {
     Aos.init({ duration: 2000 });
@@ -20,7 +20,10 @@ const CpAboutBuckle = () => {
               <p>{mockData.description1}</p>
               <button
                 className="btn-default"
-                onClick={() => navigate("/about-us")}
+                onClick={() => {
+                  navigate("/about-us");
+                  setRouteChange("/about-us")
+                }}
               >
                 {mockData.buttonText}
               </button>

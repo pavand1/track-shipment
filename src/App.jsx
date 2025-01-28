@@ -67,7 +67,7 @@ const App = () => {
         <CpHeader setRouteChange={setRouteChange} outsideClick={outsideClick} setOutsideClick={setOutsideClick}/>
         <main className={styles.content}>
           <Routes>
-            <Route path="/" exact element={<HomeRoute />} />
+            <Route path="/" exact element={<HomeRoute setRouteChange={setRouteChange}/>} />
             <Route path={ABOUT_US_ROUTE} exact element={<AboutRoute />} />
             <Route path={FEATURES_ROUTE} exact element={<FeaturesRoute />} />
             <Route path={`${SERVICES_ROUTE}/:surface-transport`} element={<ServicesRoute />} />

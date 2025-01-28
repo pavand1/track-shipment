@@ -132,6 +132,18 @@ const CpHeader = ({setRouteChange, outsideClick}) => {
                 onClick={() => {
                   !item.dropdown && handleMenuClick(index, item);
                 }}
+                onMouseOver={!item.dropdown ? null : (e) => {
+                  e.preventDefault();
+                  setActiveDropdown(index);
+                  setActiveIndex(index);
+                }}
+                onMouseLeave={
+                  !item.dropdown ? null : (e) => {
+                    e.preventDefault();
+                    setActiveDropdown(null);
+                    setActiveIndex(index);
+                  }
+                }
               >
                 <Link
                   to={item.route}
@@ -141,6 +153,7 @@ const CpHeader = ({setRouteChange, outsideClick}) => {
                           e.preventDefault();
                           toggleDropdown(index);
                           setActiveIndex(index);
+                          navigate(item.route);
                         }
                       : null
                   }

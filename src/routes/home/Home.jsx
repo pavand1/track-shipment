@@ -8,13 +8,13 @@ import CpAboutBuckle from "../../components/cp-about-buckle/CpAboutBuckle";
 import CpWhyBuckle from "../../components/cp-why-buckle/CpWhyBuckle";
 import CpCounter from "../../components/cp-counter/CpCounter";
 
-const Home = () => {
+const Home = ({setRouteChange}) => {
     return <div className={Styles.container}>
         <HomeComponent />
         <CpWhyBuckle />
         <Services />
         <CpCounter />
-        <CpAboutBuckle />
+        <CpAboutBuckle setRouteChange={setRouteChange}/>
         {/* <CpGetInTouch />
         <CpOurClients /> */}
         <CpTestimonials />
