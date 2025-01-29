@@ -19,7 +19,7 @@ const CpServicesComp = () => {
       if(id) {
         if (id=== "surface-transport" && surfaceRef.current) {
           surfaceRef.current.scrollIntoView({ behavior: "smooth", screenX: 0 });
-          window.scroll({behavior: "smooth", top: 650});
+          window.scroll({behavior: "smooth", top: 700});
         }
         if (id=== "express-delivery" && expressRef.current) {
           expressRef.current.scrollIntoView({ behavior: "smooth" });
@@ -27,7 +27,7 @@ const CpServicesComp = () => {
         }
         if (id=== "project-transport" && projectRef.current) {
           projectRef.current.scrollIntoView({ behavior: "smooth" });
-          window.scroll({behavior: "smooth",top: 1950});
+          window.scroll({behavior: "smooth",top: 1900});
         }
       }
     }
