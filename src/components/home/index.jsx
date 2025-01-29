@@ -11,7 +11,7 @@ const HomeComponent = () => {
     <>
       <div className={Styles.doodle}>
         {pathname === "/" ? (
-          <img src="../../images/Home/Doodle Background.png" alt="" style={{width:"inherit"}} />
+          <img src="../../images/Home/Doodle Background.png" alt="" style={{width:"105%"}} />
         ) : (
           <img src="../../images/Our-service-bg.svg" alt="" />
         )}

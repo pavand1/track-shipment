@@ -1,17 +1,18 @@
 import { useEffect } from "react";
 import Styles from "./Home.module.scss";
 import Aos from "aos";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 
-const Services = () => {
+const ServicesHome = () => {
   const navigate = useNavigate();
+  const {pathname} = useLocation();
   useEffect(() => {
     Aos.init({ duration: 2000 });
   }, []);
   return (
     <>
       <div className={Styles.doodle}>
-        <img src="../../images/Home/Doodle Background-1.svg" alt="" />
+        <img src="../../images/Home/Doodle Background-1.svg" alt="" style={{visibility: pathname === "/our-services" ?"hidden":"visible"}}/>
         <div
           className={Styles.subContainer}
           style={{
@@ -126,4 +127,4 @@ const Services = () => {
   );
 };
 
-export default Services;
+export default ServicesHome;

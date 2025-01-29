@@ -3,13 +3,15 @@ import HomeComponent from "../../components/home";
 import CpWhyBuckle from "../../components/cp-why-buckle/CpWhyBuckle";
 import CpServicesComp from "../../components/cp-services-comp/CpServicesComp";
 import { useEffect, useRef } from "react";
+import ServicesHome from "../../components/home/Services";
 
-const Services = () => {
+const Services = ({isRoot}) => {
+
     const ref = useRef();
     return <div className={Styles.container} ref={ref}>
         <HomeComponent />
         <CpWhyBuckle />
-        <CpServicesComp />
+        {!isRoot ? <CpServicesComp /> : <ServicesHome />}
     </div>
 }
 

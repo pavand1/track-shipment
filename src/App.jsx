@@ -70,6 +70,7 @@ const App = () => {
             <Route path="/" exact element={<HomeRoute setRouteChange={setRouteChange}/>} />
             <Route path={ABOUT_US_ROUTE} exact element={<AboutRoute />} />
             <Route path={FEATURES_ROUTE} exact element={<FeaturesRoute />} />
+            <Route path={`${SERVICES_ROUTE}`} element={<ServicesRoute isRoot={true} />} />
             <Route path={`${SERVICES_ROUTE}/:surface-transport`} element={<ServicesRoute />} />
             <Route path={`${SERVICES_ROUTE}/:express-delivery`} element={<ServicesRoute />} />
             <Route path={`${SERVICES_ROUTE}/:project-transport`} element={<ServicesRoute />} />
