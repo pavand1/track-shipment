@@ -51,7 +51,7 @@
 
   .description {
     position: relative;
-    left: 6rem;
+    left: 4rem;
     z-index: 1;
     background-color: $clr-root;
     padding: 3rem;
@@ -128,7 +128,7 @@
     }
     .description {
       position: relative;
-      left: -6rem;
+      left: -4rem;
       @media (max-width: 768px) {
 left:0rem;
       }

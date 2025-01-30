@@ -30,11 +30,11 @@ export const socialLinks = [
     src: "../../images/footer/twitter-icon.png",
     alt: "Twitter",
   },
-  {
-    href: "https://instagram.com",
-    src: "../../images/footer/instagram-icon.png",
-    alt: "Instagram",
-  },
+  // {
+  //   href: "https://instagram.com",
+  //   src: "../../images/footer/instagram-icon.png",
+  //   alt: "Instagram",
+  // },
   {
     href: "https://linkdin.com",
     src: "../../images/footer/linkdin-icon.png",
@@ -55,12 +55,12 @@ export const linksColumn3 = [
   { name: "Contact Us", link: "#order", route: CONTACTS_ROUTE },
   {
     name: "Terms and Conditions",
-    link: "#termscondition",
+    link: "#terms-and-conditions",
     route: TERMS_CONDITION_ROUTE,
   },
   {
     name: "Privacy and Policy",
-    link: "#privacypolicy",
+    link: "#privacy-policy",
     route: PRIVACY_POLICY_ROUTE,
   },
   // {
@@ -70,7 +70,7 @@ export const linksColumn3 = [
   // },
   // { name: "Refund Policy", link: "#refundpolicy", route: REFUND_POLICY_ROUTE },
   { name: "FAQ's", link: "#faqs", route: FAQ_ROUTE },
-  { name: "Careers", link: "#carrier", route: CARRIER_ROUTE },
+  { name: "Careers", link: "#careers", route: CARRIER_ROUTE },
   // { name: "Wallet", link: "#wallet", route: WALLET_ROUTE },
   { name: "Blog", link: "#blogtrack", route: RESOURCE },
 ];
@@ -87,6 +87,6 @@ export const contactInfo = {
   phone: { icon: "../../images/footer/phone.png", text: "+91-022-2821-3835" },
   whatsapp: {
     icon: "../../images/footer/whatsapp.svg",
-    text: "+91-987-654-3210",
+    text: "7039004442",
   },
 };

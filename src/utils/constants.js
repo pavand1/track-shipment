@@ -17,10 +17,10 @@ export const VINAYAKSUKHDARE = "/vinayakSukhdare";
 //Footer links
 export const BLOG_TRACK_ROUTE = "/blogtrack";
 export const ORDER_ROUTE = "/order";
-export const TERMS_CONDITION_ROUTE = "/terms-condition";
+export const TERMS_CONDITION_ROUTE = "/terms-and-conditions";
 export const PRIVACY_POLICY_ROUTE = "/privacy-policy";
 export const RETURN_CANCELLATION_ROUTE = "/return-cancellation";
 export const REFUND_POLICY_ROUTE = "/refund-policy";
 export const FAQ_ROUTE = "/faqs";
-export const CARRIER_ROUTE = "/carrier";
+export const CARRIER_ROUTE = "/careers";
 export const WALLET_ROUTE = "/wallet";

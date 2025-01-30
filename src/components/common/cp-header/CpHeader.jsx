@@ -192,16 +192,7 @@ const CpHeader = ({setRouteChange, outsideClick}) => {
         </nav>
         <div className={styles.actionItems}>
           <div className={styles.social}>
-            <div
-              className={styles.circle}
-              onClick={(e) => {
-                window.open("https://instagram.com", "_blank");
-                e.preventDefault();
-              }}
-            >
-              <img src="../../images/header/instagram.svg" alt="" />
-            </div>
-            <div
+          <div
               className={styles.circle}
               onClick={(e) => {
                 window.open("https://facebook.com", "_blank");
@@ -213,12 +204,21 @@ const CpHeader = ({setRouteChange, outsideClick}) => {
             <div
               className={styles.circle}
               onClick={(e) => {
+                window.open("https://instagram.com", "_blank");
+                e.preventDefault();
+              }}
+            >
+              <img src="../../images/header/instagram.svg" alt="" />
+            </div>
+            {/* <div
+              className={styles.circle}
+              onClick={(e) => {
                 window.open("https://twitter.com", "_blank");
                 e.preventDefault();
               }}
             >
               <img src="../../images/header/twitter.svg" alt="" />
-            </div>
+            </div> */}
             <div
               className={styles.circle}
               onClick={(e) => {

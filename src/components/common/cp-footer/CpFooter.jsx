@@ -112,7 +112,7 @@ const CpFooter = ({setRouteChange}) => {
       </footer>
       <div className={styles.container}>
         <div className={styles.copyRight}>
-          <p className={styles.text}>@ All Right Reserved</p>
+          <p className={styles.text}>Copyright @ 2025 KSM Marine. All Right Reserved</p>
         </div>
       </div>
     </>

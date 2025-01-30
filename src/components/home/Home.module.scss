@@ -3,7 +3,7 @@
   position: relative;
   min-height: 475px;
   .share {
-    position: absolute;
+    position: fixed;
     right: 24px;
     bottom: 64px;
     height: 48px;
@@ -12,6 +12,7 @@
     background: #042f7c;
     padding: 12px;
     cursor: pointer;
+    z-index: 999999;
   }
   .shareItems {
     position: absolute;
