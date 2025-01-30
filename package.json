@@ -15,6 +15,7 @@
     "@ant-design/icons-react": "^2.0.1",
     "@emailjs/browser": "^4.4.1",
     "@reduxjs/toolkit": "^2.2.7",
+    "antd": "^5.23.3",
     "aos": "^2.3.4",
     "axios": "^1.7.3",
     "emailjs": "^4.0.3",

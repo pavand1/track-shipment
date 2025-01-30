@@ -14,6 +14,7 @@ import Styles from "./Resource.module.scss";
 import AllResources from "./AllResources";
 import Blogs from "./Blogs";
 import CpFaq from "../../components/cp-faq/CpFaq";
+import Career from "./Career";
 
 const Resource = () => {
   const ref = useRef();
@@ -22,9 +23,9 @@ const Resource = () => {
   const navigate = useNavigate();
   const { pathname } = useLocation();
 
-  // useEffect(() => {
-  //     if(ref.current) ref.current.scrollIntoView({ behavior: "smooth" });
-  //   }, []);
+  useEffect(() => {
+    if (ref.current) ref.current.scrollIntoView({ behavior: "smooth" });
+  }, []);
 
   useEffect(() => {
     const routes = pathname.split("/").slice(1);
@@ -37,12 +38,12 @@ const Resource = () => {
   return (
     <>
       <HomeComponent />
-      <div className={Styles.resourceSection}>
+      <div className={Styles.resourceSection} ref={ref}>
         <div className={Styles.breadcrumbDiv}>
           <div className={Styles.breadcrumb}>
             {breadcrumb.split(" ").map((item, index) => (
               <span
-                key={item}
+                key={item + index}
                 onClick={() =>
                   item !== ">" && index !== breadcrumb.split(" ").length - 1
                     ? navigate(`/${item}`)
@@ -76,7 +77,7 @@ const Resource = () => {
         {targetPage === "resources" && <AllResources />}
         {targetPage === "blogs" && <Blogs />}
         {targetPage === "faqs" && <CpFaq />}
-        {targetPage === "career" && <AllResources />}
+        {targetPage === "career" && <Career />}
         {targetPage === "case-studies" && <AllResources />}
       </div>
     </>

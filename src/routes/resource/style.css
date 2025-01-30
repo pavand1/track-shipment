@@ -63,3 +63,6 @@
 .blog-content:hover {
   background-color: #093966;
 }
+.ant-collapse-header {
+  align-items: center !important;
+}

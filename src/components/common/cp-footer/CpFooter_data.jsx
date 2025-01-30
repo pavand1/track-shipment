@@ -17,6 +17,7 @@ import {
   SUPPORT,
   RESOURCE,
   PARTNER,
+  RESOURCE_CAREER,
 } from "../../../utils/constants";
 
 export const socialLinks = [
@@ -70,7 +71,7 @@ export const linksColumn3 = [
   // },
   // { name: "Refund Policy", link: "#refundpolicy", route: REFUND_POLICY_ROUTE },
   { name: "FAQ's", link: "#faqs", route: FAQ_ROUTE },
-  { name: "Careers", link: "#careers", route: CARRIER_ROUTE },
+  { name: "Careers", link: "#careers", route: RESOURCE_CAREER },
   // { name: "Wallet", link: "#wallet", route: WALLET_ROUTE },
   { name: "Blog", link: "#blogtrack", route: RESOURCE },
 ];
