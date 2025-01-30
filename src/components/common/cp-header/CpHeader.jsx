@@ -157,6 +157,7 @@ const CpHeader = ({setRouteChange, outsideClick}) => {
                           toggleDropdown(index);
                           setActiveIndex(index);
                           navigate(item.route);
+                          setRouteChange(item.route);
                         }
                       : null
                   }

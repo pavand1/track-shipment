@@ -32,6 +32,10 @@ import {
   VIRALDESAI,
   SINJUPAULOSE,
   VINAYAKSUKHDARE,
+  RESOURCE_BLOGS,
+  RESOURCE_CASE_STUDIES,
+  RESOURCE_CAREER,
+  RESOURCE_FAQs,
 } from "./utils/constants.js";
 import Faqs from "./routes/faqs/Faqs";
 import RefundPolicy from "./routes/refund-policy/RefundPolicy";
@@ -56,24 +60,48 @@ const App = () => {
   const [outsideClick, setOutsideClick] = useState(false);
   useEffect(() => {
     AOS.init({ duration: 2000 });
-    
   }, []);
   useEffect(() => {
-    if(routeChange && ref.current) ref.current.scrollIntoView({ behavior: "smooth" });
+    if (routeChange && ref.current)
+      ref.current.scrollIntoView({ behavior: "smooth" });
   }, [routeChange]);
   return (
     <Router>
-      <div className={styles.app} ref={ref} onClick={() => setOutsideClick(prev => !prev)}>
-        <CpHeader setRouteChange={setRouteChange} outsideClick={outsideClick} setOutsideClick={setOutsideClick}/>
+      <div
+        className={styles.app}
+        ref={ref}
+        onClick={() => setOutsideClick((prev) => !prev)}
+      >
+        <CpHeader
+          setRouteChange={setRouteChange}
+          outsideClick={outsideClick}
+          setOutsideClick={setOutsideClick}
+        />
         <main className={styles.content}>
           <Routes>
-            <Route path="/" exact element={<HomeRoute setRouteChange={setRouteChange}/>} />
+            <Route
+              path="/"
+              exact
+              element={<HomeRoute setRouteChange={setRouteChange} />}
+            />
             <Route path={ABOUT_US_ROUTE} exact element={<AboutRoute />} />
             <Route path={FEATURES_ROUTE} exact element={<FeaturesRoute />} />
-            <Route path={`${SERVICES_ROUTE}`} element={<ServicesRoute isRoot={true} />} />
-            <Route path={`${SERVICES_ROUTE}/:surface-transport`} element={<ServicesRoute />} />
-            <Route path={`${SERVICES_ROUTE}/:express-delivery`} element={<ServicesRoute />} />
-            <Route path={`${SERVICES_ROUTE}/:project-transport`} element={<ServicesRoute />} />
+            <Route
+              path={`${SERVICES_ROUTE}`}
+              element={<ServicesRoute isRoot={true} />}
+            />
+            <Route
+              path={`${SERVICES_ROUTE}/:surface-transport`}
+              element={<ServicesRoute />}
+            />
+            <Route
+              path={`${SERVICES_ROUTE}/:express-delivery`}
+              element={<ServicesRoute />}
+            />
+            <Route
+              path={`${SERVICES_ROUTE}/:project-transport`}
+              element={<ServicesRoute />}
+            />
             <Route path={SUPPORT} element={<Faqs />} />
             <Route path={RESOURCE} element={<Resource />} />
             <Route path={PARTNER} element={<Partner />} />
@@ -105,10 +133,14 @@ const App = () => {
             />
             <Route path={FAQ_ROUTE} exact element={<Faqs />} />
             <Route path={CONTACTS_ROUTE} exact element={<ContactsRoute />} />
+            <Route path={RESOURCE_BLOGS} element={<Resource />} />
+            <Route path={RESOURCE_CASE_STUDIES} element={<Resource />} />
+            <Route path={RESOURCE_CAREER} element={<Resource />} />
+            <Route path={RESOURCE_FAQs} element={<Resource />} />
             <Route path="*" exact element={<HomeRoute />} />
           </Routes>
         </main>
-        <CpFooter setRouteChange={setRouteChange}/>
+        <CpFooter setRouteChange={setRouteChange} />
       </div>
     </Router>
   );

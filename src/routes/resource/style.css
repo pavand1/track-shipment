@@ -12,9 +12,18 @@
 }
 .blog-card img {
   width: 100%;
-  height: auto;
+  height: 500px;
 }
 .blog-content {
+  padding: 15px;
+  background-color: #ef4136;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 3rem;
+}
+.blogs-content {
   padding: 15px;
 }
 .blog-content h3 {
@@ -38,6 +47,19 @@
   border-radius: 5px;
   cursor: pointer;
 }
+.blogs-content .btn {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: #ef4136;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
 .blog-content .btn:hover {
+  background-color: #093966;
+}
+
+.blog-content:hover {
   background-color: #093966;
 }

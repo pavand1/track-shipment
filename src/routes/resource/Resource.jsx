@@ -1,40 +1,83 @@
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import HomeComponent from "../../components/home";
 import "./style.css";
-import { BLOG1, BLOG2 } from "../../utils/constants";
-import { useRef,useEffect } from "react";
+import {
+  BLOG1,
+  BLOG2,
+  FAQ_ROUTE,
+  RESOURCE_BLOGS,
+  RESOURCE_CAREER,
+  RESOURCE_CASE_STUDIES,
+} from "../../utils/constants";
+import { useRef, useEffect, useState } from "react";
+import Styles from "./Resource.module.scss";
+import AllResources from "./AllResources";
+import Blogs from "./Blogs";
+import CpFaq from "../../components/cp-faq/CpFaq";
 
 const Resource = () => {
-  const navigator = useNavigate();
   const ref = useRef();
+  const [breadcrumb, setBreadcrumb] = useState("Home");
+  const [targetPage, setTargetPage] = useState("");
+  const navigate = useNavigate();
+  const { pathname } = useLocation();
+
+  // useEffect(() => {
+  //     if(ref.current) ref.current.scrollIntoView({ behavior: "smooth" });
+  //   }, []);
 
   useEffect(() => {
-      if(ref.current) ref.current.scrollIntoView({ behavior: "smooth" });
-    }, []);
+    const routes = pathname.split("/").slice(1);
+    let newBreadcrumb = "";
+    routes.forEach((r) => (newBreadcrumb = newBreadcrumb + " > " + r));
+    setBreadcrumb("Home" + newBreadcrumb);
+    setTargetPage(routes[routes.length - 1]);
+  }, [pathname]);
 
   return (
     <>
       <HomeComponent />
-      <div className="blog-section" ref={ref}>
-      <div className="blog-card">
-            <img src="../../images/blog/blog-1.png" alt="Blog Image" />
-            <div className="blog-content">
-                <h3>Logistics Solution: Streamlining Your Business Operations</h3>
-                <p>The right logistics solution is the backbone of the organization, is cost-effective and aids in customer satisfaction in today’s dynamic business environment. Whether you’re a small business or an international operator, working with a logistics partner and strategy you can count on to transport goods and services is important for any organization. The article outlines how a logistics solution can be a game-changer for your business</p>
-                {/* <a href="#" className="btn">Read More</a> */}
-                <span className="btn" onClick={()=>navigator(BLOG1)}>Read More</span>
-            </div>
+      <div className={Styles.resourceSection}>
+        <div className={Styles.breadcrumbDiv}>
+          <div className={Styles.breadcrumb}>
+            {breadcrumb.split(" ").map((item, index) => (
+              <span
+                key={item}
+                onClick={() =>
+                  item !== ">" && index !== breadcrumb.split(" ").length - 1
+                    ? navigate(`/${item}`)
+                    : null
+                }
+                style={{
+                  cursor:
+                    index === breadcrumb.split(" ").length - 1
+                      ? "default"
+                      : "pointer",
+                  color:
+                    index === breadcrumb.split(" ").length - 1
+                      ? "black"
+                      : "rgb(4, 107, 210)",
+                }}
+              >
+                {item}
+              </span>
+            ))}
+          </div>
         </div>
-        <div className="blog-card">
-            <img src="../../images/blog/b2b-logistics.png" alt="Blog Image" />
-            <div className="blog-content">
-                <h3>B2B Logistics: The Backbone of Efficient Business Operations</h3>
-                <p>B2B logistics & Transportation refers to the part of the supply chain that synchronises the flow of products between businesses and users, one of the most important components in today’s persistently shifting landscape of commerce. No matter if the company you are dealing with is a manufacturer, a retailer, or a wholesaler, the core of a well-organized B2B logistics system, is to deliver products at their scheduled destinations and the lowest price. </p>
-                {/* <a href="#" className="btn">Read More</a> */}
-                <span className="btn" onClick={()=>navigator(BLOG2)}>Read More</span>
-            </div>
+        <div className={Styles.resources}>
+          <div className={Styles.heading}>
+            {targetPage === "resources" && "Resources"}
+            {targetPage === "blogs" && "Logistic Blogs"}
+            {targetPage === "faqs" && "FAQs"}
+            {targetPage === "career" && "Career"}
+            {targetPage === "case-studies" && "Case Studies"}
+          </div>
         </div>
-         
+        {targetPage === "resources" && <AllResources />}
+        {targetPage === "blogs" && <Blogs />}
+        {targetPage === "faqs" && <CpFaq />}
+        {targetPage === "career" && <AllResources />}
+        {targetPage === "case-studies" && <AllResources />}
       </div>
     </>
   );
