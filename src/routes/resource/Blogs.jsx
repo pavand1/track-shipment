@@ -3,12 +3,12 @@ import "./style.css";
 import { BLOG1, BLOG2 } from "../../utils/constants";
 import { useRef, useEffect } from "react";
 
-const Blogs = () => {
+const Blogs = ({ setRouteChange }) => {
   const navigator = useNavigate();
   const ref = useRef();
 
   useEffect(() => {
-    if (ref.current) ref.current.scrollIntoView({ behavior: "smooth" });
+    setRouteChange(ref);
   }, []);
 
   return (

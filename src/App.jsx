@@ -133,10 +133,10 @@ const App = () => {
             />
             <Route path={FAQ_ROUTE} exact element={<Faqs />} />
             <Route path={CONTACTS_ROUTE} exact element={<ContactsRoute />} />
-            <Route path={RESOURCE_BLOGS} element={<Resource />} />
-            <Route path={RESOURCE_CASE_STUDIES} element={<Resource />} />
-            <Route path={RESOURCE_CAREER} element={<Resource />} />
-            <Route path={RESOURCE_FAQs} element={<Resource />} />
+            <Route path={RESOURCE_BLOGS} element={<Resource setRouteChange={setRouteChange}/>} />
+            <Route path={RESOURCE_CASE_STUDIES} element={<Resource setRouteChange={setRouteChange}/>} />
+            <Route path={RESOURCE_CAREER} element={<Resource setRouteChange={setRouteChange}/>} />
+            <Route path={RESOURCE_FAQs} element={<Resource setRouteChange={setRouteChange}/>} />
             <Route path="*" exact element={<HomeRoute />} />
           </Routes>
         </main>

@@ -16,7 +16,7 @@ import Blogs from "./Blogs";
 import CpFaq from "../../components/cp-faq/CpFaq";
 import Career from "./Career";
 
-const Resource = () => {
+const Resource = ({ setRouteChange }) => {
   const ref = useRef();
   const [breadcrumb, setBreadcrumb] = useState("Home");
   const [targetPage, setTargetPage] = useState("");
@@ -33,6 +33,7 @@ const Resource = () => {
     routes.forEach((r) => (newBreadcrumb = newBreadcrumb + " > " + r));
     setBreadcrumb("Home" + newBreadcrumb);
     setTargetPage(routes[routes.length - 1]);
+    if (setRouteChange) setRouteChange(routes[routes.length - 1]);
   }, [pathname]);
 
   return (
@@ -75,7 +76,7 @@ const Resource = () => {
           </div>
         </div>
         {targetPage === "resources" && <AllResources />}
-        {targetPage === "blogs" && <Blogs />}
+        {targetPage === "blogs" && <Blogs setRouteChange={setRouteChange} />}
         {targetPage === "faqs" && <CpFaq />}
         {targetPage === "career" && <Career />}
         {targetPage === "case-studies" && <AllResources />}
