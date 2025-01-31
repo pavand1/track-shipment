@@ -7,7 +7,9 @@ import {
 } from "./CpFooter_data";
 import { Link, useNavigate } from "react-router-dom";
 
-const CpFooter = ({setRouteChange}) => {
+const trackOrderURL = import.meta.env.VITE_TRACK_ORDER_URL;
+
+const CpFooter = ({ setRouteChange }) => {
   const navigate = useNavigate();
   return (
     <>
@@ -28,7 +30,7 @@ const CpFooter = ({setRouteChange}) => {
               style={{ cursor: "pointer" }}
               onClick={() => {
                 navigate("/");
-                setRouteChange("/")
+                setRouteChange("/");
               }}
             />
             <h4 className={styles.socialHeading}>Follow Us On</h4>
@@ -48,13 +50,34 @@ const CpFooter = ({setRouteChange}) => {
           <div className={styles.column}>
             <h4 className={styles.footerHeading}>Quick Links</h4>
             <ul>
-              {linksColumn2.map((item, index) => (
-                <li key={index}>
-                  <Link to={item.route} key={index} className={styles.item} onClick={() => setRouteChange(item.route)}>
-                    {item.name}
-                  </Link>
-                </li>
-              ))}
+              {linksColumn2.map((item, index) => {
+                if (item.name === "Track Your Order")
+                  return (
+                    <li key={index}>
+                      <Link
+                        to={"#"}
+                        key={index}
+                        className={styles.item}
+                        onClick={() => window.open(trackOrderURL, "_blank")}
+                      >
+                        {item.name}
+                      </Link>
+                    </li>
+                  );
+                else
+                  return (
+                    <li key={index}>
+                      <Link
+                        to={item.route}
+                        key={index}
+                        className={styles.item}
+                        onClick={() => setRouteChange(item.route)}
+                      >
+                        {item.name}
+                      </Link>
+                    </li>
+                  );
+              })}
             </ul>
           </div>
           <div className={styles.column}>
@@ -62,7 +85,12 @@ const CpFooter = ({setRouteChange}) => {
             <ul>
               {linksColumn3.map((item, index) => (
                 <li key={index}>
-                  <Link to={item.route} key={index} className={styles.item} onClick={() => setRouteChange(item.route)}>
+                  <Link
+                    to={item.route}
+                    key={index}
+                    className={styles.item}
+                    onClick={() => setRouteChange(item.route)}
+                  >
                     {item.name}
                   </Link>
                 </li>
@@ -112,7 +140,9 @@ const CpFooter = ({setRouteChange}) => {
       </footer>
       <div className={styles.container}>
         <div className={styles.copyRight}>
-          <p className={styles.text}>Copyright @ 2025 KSM Marine. All Right Reserved</p>
+          <p className={styles.text}>
+            Copyright @ 2025 KSM Marine. All Right Reserved
+          </p>
         </div>
       </div>
     </>
