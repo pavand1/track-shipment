@@ -37,7 +37,7 @@
   position: absolute;
   background: transparent;
   display: flex;
-  left: -50px;
+  left: 0px;
   top: 0;
   width: 100%;
   height: 100%;
@@ -53,7 +53,7 @@
   justify-content: center;
   justify-items: center;
   font-family: $font-regular;
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 600;
   line-height: 33px;
   text-align: left;
@@ -62,8 +62,10 @@
 }
 .theme {
   margin-top: 16rem;
+  margin-left: -50px;
   @media (max-width: 769px) {
     margin-top: 5rem;
+    margin-left: 0;
   }
 }
 

@@ -10,6 +10,8 @@ const HomeComponent = () => {
 
   const getImgURL = () => {
     if (pathname === "/") return "../../images/Home/Doodle Background.png";
+    if (pathname.includes("case")) return "../../images/Home/Case Studies.png";
+    if (pathname.includes("faq")) return "../../images/Home/FAQs.png";
     if (pathname.includes("/resources"))
       return "../../images/Home/Resource.png";
     if (pathname.includes("services"))
@@ -18,6 +20,10 @@ const HomeComponent = () => {
       return "../../images/Home/Partner with us.png";
     if (pathname.includes("support")) return "../../images/Home/Support.png";
     if (pathname.includes("about")) return "../../images/Home/About Us.png";
+    if (pathname.includes("contact")) return "../../images/Home/Contact US.png";
+    if (pathname.includes("conditions")) return "../../images/Home/Terms & Conditions.png";
+    if (pathname.includes("privacy"))
+      return "../../images/Home/Privacy and Policy.png";
     return "../../images/Our-service-bg.svg";
   };
 

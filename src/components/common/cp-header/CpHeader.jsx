@@ -8,7 +8,7 @@ const accountURL = import.meta.env.VITE_ACCOUNT_URL;
 const rateCheckURL = import.meta.env.VITE_RATE_CHECK_URL;
 const trackOrderURL = import.meta.env.VITE_TRACK_ORDER_URL;
 
-const CpHeader = ({setRouteChange, outsideClick}) => {
+const CpHeader = ({ setRouteChange, outsideClick }) => {
   const [isMenuOpen, setMenuOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState(null);
   const [activeIndex, setActiveIndex] = useState(-1);
@@ -16,8 +16,8 @@ const CpHeader = ({setRouteChange, outsideClick}) => {
   const [isMenuRight, setIsMenuRight] = useState(false); // New state to track menu alignment
   const navigate = useNavigate();
   const [scrollY, setScrollY] = useState(0);
-  const {pathname} = useLocation();
-  
+  const { pathname } = useLocation();
+
   const handleScroll = () => {
     setIsMenuRight(window.scrollY > 300);
     if (window.scrollY < 300) {
@@ -31,8 +31,8 @@ const CpHeader = ({setRouteChange, outsideClick}) => {
   }, []);
 
   useEffect(() => {
-    setActiveDropdown(outsideClick)
-  },[outsideClick])
+    setActiveDropdown(outsideClick);
+  }, [outsideClick]);
 
   // Toggle the menu visibility
   const toggleMenu = () => {
@@ -67,11 +67,14 @@ const CpHeader = ({setRouteChange, outsideClick}) => {
   };
 
   const scaleFactor = Math.max(1 - scrollY * 0.0015, 0.5);
-  const width = Math.max(550 - scrollY * 1.5, 200);
+  const width = Math.max(530 - scrollY * 1.5, 200);
   const height = Math.max(200 - scrollY * 1.5, 60);
-  
+
   return (
-    <header className={`${styles.header} ${isScrolled ? styles.scrolled : ""}`} onClick={(e) => e.stopPropagation()}>
+    <header
+      className={`${styles.header} ${isScrolled ? styles.scrolled : ""}`}
+      onClick={(e) => e.stopPropagation()}
+    >
       {scrollY > 250 || window.innerWidth < 767 ? (
         <div
           className={styles.mobileLogo}
@@ -125,27 +128,33 @@ const CpHeader = ({setRouteChange, outsideClick}) => {
                 key={index}
                 className={`
                   ${
-                  item.dropdown
-                    ? `${styles.dropdown} ${
-                        activeDropdown === index ? styles.active : ""
-                      }`
-                    : ""
-                } 
+                    item.dropdown
+                      ? `${styles.dropdown} ${
+                          activeDropdown === index ? styles.active : ""
+                        }`
+                      : ""
+                  } 
                 ${pathname.includes(item.route) ? styles.active : ""}`}
                 onClick={() => {
                   !item.dropdown && handleMenuClick(index, item);
                 }}
-                onMouseOver={!item.dropdown ? null : (e) => {
-                  e.preventDefault();
-                  setActiveDropdown(index);
-                  setActiveIndex(index);
-                }}
+                onMouseOver={
+                  !item.dropdown
+                    ? null
+                    : (e) => {
+                        e.preventDefault();
+                        setActiveDropdown(index);
+                        setActiveIndex(index);
+                      }
+                }
                 onMouseLeave={
-                  !item.dropdown ? null : (e) => {
-                    e.preventDefault();
-                    setActiveDropdown(null);
-                    setActiveIndex(index);
-                  }
+                  !item.dropdown
+                    ? null
+                    : (e) => {
+                        e.preventDefault();
+                        setActiveDropdown(null);
+                        setActiveIndex(index);
+                      }
                 }
               >
                 <Link
@@ -172,7 +181,12 @@ const CpHeader = ({setRouteChange, outsideClick}) => {
                   ) : null}
                 </Link>
                 {item.dropdown && activeDropdown === index && (
-                  <ul className={styles.dropdownMenu} style={{display: activeDropdown === index ?"block":"none"}}>
+                  <ul
+                    className={styles.dropdownMenu}
+                    style={{
+                      display: activeDropdown === index ? "block" : "none",
+                    }}
+                  >
                     {item.dropdown.map((dropdownItem, idx) => (
                       <li
                         key={idx}
@@ -193,7 +207,7 @@ const CpHeader = ({setRouteChange, outsideClick}) => {
         </nav>
         <div className={styles.actionItems}>
           <div className={styles.social}>
-          <div
+            <div
               className={styles.circle}
               onClick={(e) => {
                 window.open("https://facebook.com", "_blank");
