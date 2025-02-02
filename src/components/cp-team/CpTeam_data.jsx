@@ -86,7 +86,7 @@ export const mockData = [
   {
     name: "Sinju Paulose",
     designation: "Director",
-    image: "../../images/about/sinju.jpeg",
+    image: "../../images/about/sinju.jpg",
     alt: "testimonial",
     socialLink: [
       {
