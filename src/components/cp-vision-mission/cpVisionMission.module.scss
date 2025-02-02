@@ -55,9 +55,10 @@
   }
 
   .description {
-    padding: 8rem 5rem 0rem 5rem;
+    padding: 3rem 5rem 0rem 5rem;
     @media (max-width: 768px) {
       padding: 3rem;
+      font-size: 14px;
     }
     .heading{
       font-size: 3rem;
@@ -72,6 +73,7 @@
       margin: 0 0 6rem;
       text-align: justify;
       color:$clr-root;
+      font-size: 14px;
       @media (max-width: 768px) {
         margin: 0 0 2rem;
       }

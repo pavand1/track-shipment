@@ -2,7 +2,7 @@ export const mockData = [
   {
     name: "Viral Desai",
     designation: "Director",
-    image: "../../images/about/team1.jpg",
+    image: "../../images/about/viral-desai.jpg",
     alt: "testimonial",
     socialLink: [
       {
@@ -30,7 +30,7 @@ export const mockData = [
   {
     name: "Kiran Wakde",
     designation: "Director",
-    image: "../../images/about/team2.jpg",
+    image: "../../images/about/kiran-wakade.jpg",
     alt: "testimonial",
     socialLink: [
       {
@@ -58,7 +58,7 @@ export const mockData = [
   {
     name: "Vinayak Sukhdare",
     designation: "Director",
-    image: "../../images/about/team3.jpg",
+    image: "../../images/about/vinayak.jpg",
     alt: "testimonial",
     socialLink: [
       {
@@ -86,7 +86,7 @@ export const mockData = [
   {
     name: "Sinju Paulose",
     designation: "Director",
-    image: "../../images/about/team4.jpeg",
+    image: "../../images/about/sinju.jpeg",
     alt: "testimonial",
     socialLink: [
       {
