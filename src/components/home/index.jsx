@@ -21,7 +21,8 @@ const HomeComponent = () => {
     if (pathname.includes("support")) return "../../images/Home/Support.png";
     if (pathname.includes("about")) return "../../images/Home/About Us.png";
     if (pathname.includes("contact")) return "../../images/Home/Contact US.png";
-    if (pathname.includes("conditions")) return "../../images/Home/Terms & Conditions.png";
+    if (pathname.includes("conditions"))
+      return "../../images/Home/Terms & Conditions.png";
     if (pathname.includes("privacy"))
       return "../../images/Home/Privacy and Policy.png";
     return "../../images/Our-service-bg.svg";
@@ -34,7 +35,7 @@ const HomeComponent = () => {
           <img
             src="../../images/Home/Doodle Background.png"
             alt=""
-            style={{ width: "105%" }}
+            style={{ width: "105%", minHeight: "500px" }}
           />
         ) : (
           <img src={getImgURL()} alt="" />
