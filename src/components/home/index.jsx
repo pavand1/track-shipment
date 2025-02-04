@@ -65,42 +65,42 @@ const HomeComponent = () => {
           className={Styles.share}
           onClick={() => setShowSocial((prev) => !prev)}
         >
+          <div
+            className={Styles.shareItems}
+            style={{ display: showSocial ? "flex" : "none" }}
+          >
+            <div
+              style={{ height: "48px", width: "48px" }}
+              onClick={(e) => {
+                window.location.href = `tel:hi`;
+                e.preventDefault();
+              }}
+              title={"+91-022-2821-3835"}
+            >
+              <img src="../../images/share/call.svg" alt="" />
+            </div>
+            <div
+              style={{ height: "48px", width: "48px" }}
+              onClick={(e) => {
+                window.location.href = `mailto:hi`;
+                e.preventDefault();
+              }}
+              title="sales@buckletrack.in"
+            >
+              <img src="../../images/share/email.svg" alt="" />
+            </div>
+            <div
+              style={{ height: "48px", width: "48px" }}
+              onClick={(e) => {
+                window.location.href = `whatsapp://send?text=Hi`;
+                e.preventDefault();
+              }}
+              title={"+91-022-2821-3835"}
+            >
+              <img src="../../images/share/whatsapp.svg" alt="" />
+            </div>
+          </div>
           <img src="../../images/Home/share.svg" alt="" />
-        </div>
-        <div
-          className={Styles.shareItems}
-          style={{ display: showSocial ? "flex" : "none" }}
-        >
-          <div
-            style={{ height: "48px", width: "48px" }}
-            onClick={(e) => {
-              window.location.href = `tel:hi`;
-              e.preventDefault();
-            }}
-            title={"+91-022-2821-3835"}
-          >
-            <img src="../../images/share/call.svg" alt="" />
-          </div>
-          <div
-            style={{ height: "48px", width: "48px" }}
-            onClick={(e) => {
-              window.location.href = `mailto:hi`;
-              e.preventDefault();
-            }}
-            title="sales@buckletrack.in"
-          >
-            <img src="../../images/share/email.svg" alt="" />
-          </div>
-          <div
-            style={{ height: "48px", width: "48px" }}
-            onClick={(e) => {
-              window.location.href = `whatsapp://send?text=Hi`;
-              e.preventDefault();
-            }}
-            title={"+91-022-2821-3835"}
-          >
-            <img src="../../images/share/whatsapp.svg" alt="" />
-          </div>
         </div>
       </div>
       {/* <div className={Styles.trackInfo}>
