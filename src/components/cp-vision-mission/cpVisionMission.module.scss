@@ -1,7 +1,7 @@
-@import '../../styles/globalSass/variable.scss';
-.section{
+@import "../../styles/globalSass/variable.scss";
+.section {
   padding: 4rem 8rem 4rem 8rem;
-  background-image: url('../../images/about/bgImg.png');  // Ensure this path is correct
+  background-image: url("../../images/about/bgImg.png"); // Ensure this path is correct
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -24,11 +24,11 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: stretch;
-    gap:6rem;
-    color:$clr-root;
+    gap: 6rem;
+    color: $clr-root;
     @media (max-width: 768px) {
       flex-direction: column-reverse;
-      gap:0rem;
+      gap: 0rem;
     }
   }
 
@@ -60,10 +60,13 @@
       padding: 3rem;
       font-size: 14px;
     }
-    .heading{
+    .heading {
       font-size: 3rem;
       margin-bottom: 3rem;
       font-family: $font-bold;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
       @media (max-width: 768px) {
         font-size: 2rem;
         margin-bottom: 1.5rem;
@@ -72,7 +75,7 @@
     p {
       margin: 0 0 6rem;
       text-align: justify;
-      color:$clr-root;
+      color: $clr-root;
       font-size: 14px;
       @media (max-width: 768px) {
         margin: 0 0 2rem;
@@ -81,8 +84,8 @@
   }
 
   .image {
-    width: 22rem;
-    height: 22rem;
+    width: 16rem;
+    height: 16rem;
     object-fit: contain;
     @media (max-width: 768px) {
       width: 10rem;

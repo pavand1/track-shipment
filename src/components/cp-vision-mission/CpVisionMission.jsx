@@ -14,25 +14,35 @@ const CpVisionMission = () => {
         <div className={styles.about}>
           <div className={styles.column} data-aos="fade-right">
             <div className={styles.description}>
-              <h3 className={styles.heading}>{mockData.vision.heading}</h3>
-              <p>{mockData.vision.description} <br /> <br /> {mockData.vision.description1}</p>
+              <h3 className={styles.heading}>
+                <img
+                  src={mockData.vision.imageSrc}
+                  alt={mockData.vision.imageAlt}
+                  className={styles.image}
+                />
+                {mockData.vision.heading}
+              </h3>
+              <p>
+                {mockData.vision.description} <br /> <br />{" "}
+                {mockData.vision.description1}
+              </p>
             </div>
-            <img
-              src={mockData.vision.imageSrc}
-              alt={mockData.vision.imageAlt}
-              className={styles.image}
-            />
           </div>
           <div className={styles.column} data-aos="fade-left">
             <div className={styles.description}>
-              <h3 className={styles.heading}>{mockData.mission.heading}</h3>
-              <p>{mockData.mission.description} <br /> <br /> {mockData.mission.description1}</p>
+              <h3 className={styles.heading}>
+                <img
+                  src={mockData.mission.imageSrc}
+                  alt={mockData.mission.imageAlt}
+                  className={styles.image}
+                />
+                {mockData.mission.heading}
+              </h3>
+              <p>
+                {mockData.mission.description} <br /> <br />{" "}
+                {mockData.mission.description1}
+              </p>
             </div>
-            <img
-              src={mockData.mission.imageSrc}
-              alt={mockData.mission.imageAlt}
-              className={styles.image}
-            />
           </div>
         </div>
       </section>
