@@ -22,9 +22,15 @@ const mockMenuData = [
     link: "#services",
     route: SERVICES_ROUTE,
     dropdown: [
-      { name: "Surface Transport", link: `${SERVICES_ROUTE}/surface-transport` },
+      {
+        name: "Surface Transport",
+        link: `${SERVICES_ROUTE}/surface-transport`,
+      },
       { name: "Express Delivery", link: `${SERVICES_ROUTE}/express-delivery` },
-      { name: "Project Transport", link: `${SERVICES_ROUTE}/project-transport` },
+      {
+        name: "Project Transport",
+        link: `${SERVICES_ROUTE}/project-transport`,
+      },
     ],
   },
   // { name: 'Home', link: '#home', route: "/" },
@@ -43,7 +49,7 @@ const mockMenuData = [
   // { name: "Track Order", like: "#trackorder", route: TRACK_ORDER_ROUTE},
   // { name: "Account", link: "#testimonials", route: TESTIMONIALS_ROUTE},
   // { name: 'Contact US', link: '#contact', route: CONTACTS_ROUTE },
-  { name: "Support", link: "#support", route: SUPPORT },
+  // { name: "Support", link: "#support", route: SUPPORT },
   { name: "Partner with us", link: "#partner", route: PARTNER },
 ];
 
