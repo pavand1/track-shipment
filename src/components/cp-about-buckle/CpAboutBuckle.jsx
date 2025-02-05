@@ -12,7 +12,7 @@ const CpAboutBuckle = ({setRouteChange}) => {
   return (
     <>
       <section className={styles.section} data-aos="fade-up">
-        <h2 className={styles.mainHeading}>About Buckle Track</h2>
+        <h2 className={styles.mainHeading}>About BuckleTrack</h2>
         <div className={styles.about}>
           <div className={styles.column}>
             <div className={styles.description}>

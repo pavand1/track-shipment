@@ -14,7 +14,7 @@ const About = () => {
             justifyContent: "center",
           }}
         >
-          <h1>About Buckle Track</h1>
+          <h1>About BuckleTrack</h1>
           <div className={Styles.about}>
             <div className={Styles.info}>
               <div className={Styles.text}>

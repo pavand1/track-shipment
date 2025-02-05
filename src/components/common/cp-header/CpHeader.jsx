@@ -261,7 +261,7 @@ const CpHeader = ({ setRouteChange, outsideClick }) => {
                 e.preventDefault();
               }}
             >
-              Login
+              Login My Account
             </button>
             <button
               className={styles.signupButton}

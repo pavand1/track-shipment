@@ -55,7 +55,7 @@ const CpCounter = () => {
       data-aos="fade-up"
       onMouseEnter={resetCounters}
     >
-      <h2 className={styles.mainHeading}>Why Buckle Track </h2>
+      <h2 className={styles.mainHeading}>Why BuckleTrack </h2>
       <div className={styles.imageTop}>
         <img src="../../images/Home/Why Buckle track-1.svg" alt="Image" />
       </div>

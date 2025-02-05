@@ -10,7 +10,7 @@ const CpStory = () => {
   return (
     <>
       <section className={styles.section}>
-        <h2 className={styles.mainHeading}>Why Choose Buckle Track?</h2>
+        <h2 className={styles.mainHeading}>Why Choose BuckleTrack?</h2>
         <div className={styles.about}>
           <div className={styles.column} data-aos="fade-right">
             <div className={styles.description}>
