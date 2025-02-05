@@ -141,11 +141,21 @@ const CpFooter = ({ setRouteChange }) => {
           <div className={styles.copyRight}>
             <p className={styles.text}>Copyright 2025 @ BuckleTrack</p>
             <p className={styles.text}>
-              <span onClick={() => navigate("/terms-and-conditions")}>
+              <span
+                onClick={() => {
+                  navigate("/terms-and-conditions");
+                  setRouteChange("/terms-and-conditions");
+                }}
+              >
                 Terms & Conditions
               </span>{" "}
               |{" "}
-              <span onClick={() => navigate("/privacy-policy")}>
+              <span
+                onClick={() => {
+                  navigate("/privacy-policy");
+                  setRouteChange("/privacy-policy");
+                }}
+              >
                 Privacy & Policy
               </span>
             </p>
