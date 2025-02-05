@@ -137,14 +137,21 @@ const CpFooter = ({ setRouteChange }) => {
             </div>
           </div>
         </div>
-      </footer>
-      <div className={styles.container}>
+        <div className={styles.container}>
         <div className={styles.copyRight}>
+          <p className={styles.text}>
+          Copyright 2025 @ BuckleTrack
+          </p>
+          <p className={styles.text}>
+            <span>Terms & Conditions</span> | <span>Privacy & Policy</span>
+          </p>
           <p className={styles.text}>
             Copyright @ 2025 KSM Marine. All Right Reserved
           </p>
         </div>
       </div>
+      </footer>
+
     </>
   );
 };

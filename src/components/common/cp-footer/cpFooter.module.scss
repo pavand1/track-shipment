@@ -2,7 +2,7 @@
 .footer {
   justify-content: space-between;
   align-items: center;
-  padding: 7rem 5rem 7rem 5rem;
+  padding: 7rem 3rem 2rem 3rem;
   background-image: url("../../images/footer/footernew.png"); // Ensure this path is correct
   background-size: contain;
   background-position: center;
@@ -124,9 +124,10 @@
 .copyRight {
   position: relative;
   width: 100%;
+  display: flex;
   .text {
     color: $clr-root;
-    position: absolute;
+    position: relative;
     bottom: 0rem;
     font-family: $font-medium;
     width: 100%;
