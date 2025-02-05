@@ -206,7 +206,7 @@ const CpHeader = ({ setRouteChange, outsideClick }) => {
           </ul>
         </nav>
         <div className={styles.actionItems}>
-          <div className={styles.social}>
+          {/* <div className={styles.social}>
             <div
               className={styles.circle}
               onClick={(e) => {
@@ -225,15 +225,6 @@ const CpHeader = ({ setRouteChange, outsideClick }) => {
             >
               <img src="../../images/header/instagram.svg" alt="" />
             </div>
-            {/* <div
-              className={styles.circle}
-              onClick={(e) => {
-                window.open("https://twitter.com", "_blank");
-                e.preventDefault();
-              }}
-            >
-              <img src="../../images/header/twitter.svg" alt="" />
-            </div> */}
             <div
               className={styles.circle}
               onClick={(e) => {
@@ -243,7 +234,7 @@ const CpHeader = ({ setRouteChange, outsideClick }) => {
             >
               <img src="../../images/header/linkedin.svg" alt="" />
             </div>
-          </div>
+          </div> */}
           <div>
             <button
               className={styles.loginButton}
