@@ -43,7 +43,7 @@ const mockMenuData = [
       { name: "Case Studies", link: RESOURCE_CASE_STUDIES },
       { name: "Blogs", link: RESOURCE_BLOGS },
       { name: "FAQs", link: RESOURCE_FAQs },
-      { name: "Career", link: RESOURCE_CAREER },
+      // { name: "Career", link: RESOURCE_CAREER },
     ],
   },
   // { name: "Track Order", like: "#trackorder", route: TRACK_ORDER_ROUTE},
