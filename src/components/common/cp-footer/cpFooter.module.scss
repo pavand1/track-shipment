@@ -18,10 +18,14 @@
 .container {
   display: flex;
   justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
+  // max-width: 1200px;
+  // margin: 0 auto;
+  padding: 2rem;
+  margin-top: 2rem;
+  padding-bottom: 0;
+  border-top: 1px solid #cccccc;
 }
 
 .column {
@@ -122,9 +126,10 @@
 }
 
 .copyRight {
-  position: relative;
   width: 100%;
   display: flex;
+  justify-content: space-between;
+  gap: 4rem;
   .text {
     color: $clr-root;
     position: relative;
@@ -132,7 +137,13 @@
     font-family: $font-medium;
     width: 100%;
     text-align: center;
-    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    display: flex;
+    gap: 1rem;
+
+    span {
+      cursor: pointer;
+    }
   }
 }
 

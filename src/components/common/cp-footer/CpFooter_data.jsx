@@ -54,16 +54,16 @@ export const linksColumn2 = [
 
 export const linksColumn3 = [
   { name: "Contact Us", link: "#order", route: CONTACTS_ROUTE },
-  {
-    name: "Terms and Conditions",
-    link: "#terms-and-conditions",
-    route: TERMS_CONDITION_ROUTE,
-  },
-  {
-    name: "Privacy and Policy",
-    link: "#privacy-policy",
-    route: PRIVACY_POLICY_ROUTE,
-  },
+  // {
+  //   name: "Terms and Conditions",
+  //   link: "#terms-and-conditions",
+  //   route: TERMS_CONDITION_ROUTE,
+  // },
+  // {
+  //   name: "Privacy and Policy",
+  //   link: "#privacy-policy",
+  //   route: PRIVACY_POLICY_ROUTE,
+  // },
   // {
   //   name: "Return & Cancellation Policy",
   //   link: "#returncancellation",

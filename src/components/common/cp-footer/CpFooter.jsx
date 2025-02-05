@@ -33,7 +33,7 @@ const CpFooter = ({ setRouteChange }) => {
                 setRouteChange("/");
               }}
             />
-            <h4 className={styles.socialHeading}>Follow Us On</h4>
+            {/* <h4 className={styles.socialHeading}>Follow Us On</h4>
             <div className={styles.socialIcons}>
               {socialLinks.map((link, index) => (
                 <Link
@@ -45,7 +45,7 @@ const CpFooter = ({ setRouteChange }) => {
                   <img src={link.src} alt={link.alt} />
                 </Link>
               ))}
-            </div>
+            </div> */}
           </div>
           <div className={styles.column}>
             <h4 className={styles.footerHeading}>Quick Links</h4>
@@ -138,20 +138,32 @@ const CpFooter = ({ setRouteChange }) => {
           </div>
         </div>
         <div className={styles.container}>
-        <div className={styles.copyRight}>
-          <p className={styles.text}>
-          Copyright 2025 @ BuckleTrack
-          </p>
-          <p className={styles.text}>
-            <span>Terms & Conditions</span> | <span>Privacy & Policy</span>
-          </p>
-          <p className={styles.text}>
-            Copyright @ 2025 KSM Marine. All Right Reserved
-          </p>
+          <div className={styles.copyRight}>
+            <p className={styles.text}>Copyright 2025 @ BuckleTrack</p>
+            <p className={styles.text}>
+              <span onClick={() => navigate("/terms-and-conditions")}>
+                Terms & Conditions
+              </span>{" "}
+              |{" "}
+              <span onClick={() => navigate("/privacy-policy")}>
+                Privacy & Policy
+              </span>
+            </p>
+            <div className={styles.socialIcons}>
+              {socialLinks.map((link, index) => (
+                <Link
+                  key={index}
+                  href={link.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src={link.src} alt={link.alt} />
+                </Link>
+              ))}
+            </div>
+          </div>
         </div>
-      </div>
       </footer>
-
     </>
   );
 };
