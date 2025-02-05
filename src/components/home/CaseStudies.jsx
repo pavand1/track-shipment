@@ -12,12 +12,12 @@ const CaseStudies = () => {
   }, []);
   return (
     <>
-      <div className={Styles.doodle}>
+      <div className={Styles.doodle} style={{ background: "rgb(241 238 238)" }}>
         <img
           src="../../images/Home/Doodle Background-1.svg"
           alt=""
           style={{
-            visibility: pathname === "/our-services" ? "hidden" : "visible",
+            visibility: "hidden",
           }}
         />
         <div
