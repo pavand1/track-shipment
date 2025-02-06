@@ -20,37 +20,28 @@ const AllResources = () => {
 
   return (
     <div className={Styles.allResources}>
-      <div className={Styles.resource}>
+      <div
+        className="blog-card"
+        onClick={() => navigate(RESOURCE_CASE_STUDIES)}
+      >
+        <img src="../../images/resource/Case Studies.png" alt="Blog Image" />
         <div
-          className="blog-card"
+          className="blog-content"
           onClick={() => navigate(RESOURCE_CASE_STUDIES)}
         >
-          <img src="../../images/resource/Case Studies.png" alt="Blog Image" />
-          <div
-            className="blog-content"
-            onClick={() => navigate(RESOURCE_CASE_STUDIES)}
-          >
-            Case Studies
-          </div>
+          Case Studies
         </div>
       </div>
-      <div className={Styles.resource}>
-        <div className="blog-card">
-          <img src="../../images/resource/blogs.jpg" alt="Blog Image" />
-          <div
-            className="blog-content"
-            onClick={() => navigate(RESOURCE_BLOGS)}
-          >
-            Blogs
-          </div>
+      <div className="blog-card">
+        <img src="../../images/resource/blogs.jpg" alt="Blog Image" />
+        <div className="blog-content" onClick={() => navigate(RESOURCE_BLOGS)}>
+          Blogs
         </div>
       </div>
-      <div className={Styles.resource}>
-        <div className="blog-card">
-          <img src="../../images/resource/FAQs.png" alt="Blog Image" />
-          <div className="blog-content" onClick={() => navigate(RESOURCE_FAQs)}>
-            FAQ's
-          </div>
+      <div className="blog-card">
+        <img src="../../images/resource/FAQs.png" alt="Blog Image" />
+        <div className="blog-content" onClick={() => navigate(RESOURCE_FAQs)}>
+          FAQ's
         </div>
       </div>
       {/* <div className={Styles.resource}>
