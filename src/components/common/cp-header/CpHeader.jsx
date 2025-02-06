@@ -82,7 +82,6 @@ const CpHeader = ({ setRouteChange, outsideClick }) => {
             position: "absolute",
             width: `12%`,
             cursor: "pointer",
-            marginLeft: "2rem",
           }}
           onClick={() => {
             navigate("/");
