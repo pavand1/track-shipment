@@ -137,7 +137,7 @@ const CpFooter = ({ setRouteChange }) => {
             </div>
           </div>
         </div>
-        <div className={styles.container}>
+        <div className={styles.container + " " + styles.borderTop}>
           <div className={styles.copyRight}>
             <p className={styles.text}>Copyright 2025 @ BuckleTrack</p>
             <p className={styles.text}>
