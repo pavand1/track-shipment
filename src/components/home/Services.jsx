@@ -5,14 +5,20 @@ import { useLocation, useNavigate } from "react-router-dom";
 
 const ServicesHome = () => {
   const navigate = useNavigate();
-  const {pathname} = useLocation();
+  const { pathname } = useLocation();
   useEffect(() => {
     Aos.init({ duration: 2000 });
   }, []);
   return (
     <>
       <div className={Styles.doodle}>
-        <img src="../../images/Home/Doodle Background-1.svg" alt="" style={{visibility: pathname === "/our-services" ?"hidden":"visible"}}/>
+        <img
+          src="../../images/Home/Doodle Background-1.svg"
+          alt=""
+          style={{
+            visibility: pathname === "/our-services" ? "hidden" : "visible",
+          }}
+        />
         <div
           className={Styles.subContainer}
           style={{
@@ -20,12 +26,10 @@ const ServicesHome = () => {
             gap: "2rem",
             // alignItems: "center",
             // justifyContent: "center",
-            padding:"4rem 8rem",
+            padding: "4rem 8rem",
           }}
         >
-          <h2 className={Styles.serviceMobHeading}>   
-            Our Services
-          </h2>
+          <h2 className={Styles.serviceMobHeading}>Our Services</h2>
           <p
             style={{
               fontFamily: "Poppins-Regular",
@@ -40,10 +44,13 @@ const ServicesHome = () => {
           </p>
           <div className={Styles.services}>
             <div className={Styles.card} data-aos="fade-up">
-              <div className={Styles.image}>
+              <div
+                className={Styles.image}
+                onClick={() => navigate("/our-services/surface-transport")}
+              >
                 <img src="../../images/services/Surface Transport.png" alt="" />
                 <div className={Styles.tag}>
-                  <p style={{marginBottom:"0rem"}}>Surface Transport</p>
+                  <p style={{ marginBottom: "0rem" }}>Surface Transport</p>
                 </div>
               </div>
               <div
@@ -67,10 +74,13 @@ const ServicesHome = () => {
               </div>
             </div>
             <div className={Styles.card} data-aos="fade-up">
-              <div className={Styles.image}>
+              <div
+                className={Styles.image}
+                onClick={() => navigate("/our-services/express-delivery")}
+              >
                 <img src="../../images/services/Express Delivery.png" alt="" />
                 <div className={Styles.tag}>
-                  <p style={{marginBottom:"0rem"}}>Express Delivery</p>
+                  <p style={{ marginBottom: "0rem" }}>Express Delivery</p>
                 </div>
               </div>
               <div
@@ -94,10 +104,13 @@ const ServicesHome = () => {
               </div>
             </div>
             <div className={Styles.card} data-aos="fade-up">
-              <div className={Styles.image}>
+              <div
+                className={Styles.image}
+                onClick={() => navigate("/our-services/project-transport")}
+              >
                 <img src="../../images/services/Project Transport.png" alt="" />
                 <div className={Styles.tag}>
-                  <p style={{marginBottom:"0rem"}}>Project Transport</p>
+                  <p style={{ marginBottom: "0rem" }}>Project Transport</p>
                 </div>
               </div>
               <div

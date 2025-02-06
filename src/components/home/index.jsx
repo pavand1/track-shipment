@@ -2,11 +2,12 @@ import { useEffect, useRef, useState } from "react";
 import RateOrderForm from "../common/rate-order-form";
 import Styles from "./Home.module.scss";
 import { FacebookIcon, TwitterIcon, LinkedinIcon } from "react-share";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 
 const HomeComponent = () => {
   const { pathname } = useLocation();
   const [showSocial, setShowSocial] = useState(false);
+  const navigate = useNavigate();
 
   const getImgURL = () => {
     if (pathname === "/") return "../../images/Home/Doodle Background.png";
@@ -46,7 +47,15 @@ const HomeComponent = () => {
               {/* <img src="../../images/Home/Buckle Track Option.svg" alt="" /> */}
             </div>
             <div className={Styles.theme}>
-              {"Surface Transport  |  Express Delivery  |  Project Transport"}
+              <span onClick={() => navigate("/our-services/surface-transport")}>
+                {"Surface Transport  |"}
+              </span>
+              <span onClick={() => navigate("/our-services/express-delivery")}>
+                {"  Express Delivery  |"}
+              </span>
+              <span onClick={() => navigate("/our-services/project-transport")}>
+                {"  Project Transport"}
+              </span>
             </div>
           </div>
           {pathname === "/" ? (

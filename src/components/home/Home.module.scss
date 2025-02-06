@@ -67,6 +67,9 @@
     margin-top: 5rem;
     margin-left: 0;
   }
+  span {
+    cursor: pointer;
+  }
 }
 
 .calculator {
@@ -91,6 +94,7 @@
 
     .image {
       position: relative;
+      cursor: pointer;
       img {
         height: 25.7rem;
         object-fit: cover;
