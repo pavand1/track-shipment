@@ -99,8 +99,8 @@ const CpHeader = ({ setRouteChange, outsideClick }) => {
         <div
           className={styles.headerLogo}
           style={{
-            transform: `translateY(${-(scrollY * 1)}px) translateX(${-(
-              scrollY * 0.4
+            transform: `translateY(${-(scrollY * 0.8)}px) translateX(${-(
+              scrollY * 0.35
             )}px) scale(${scaleFactor})`,
 
             width: `${width}px`,
