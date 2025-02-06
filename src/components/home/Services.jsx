@@ -34,6 +34,7 @@ const ServicesHome = () => {
             style={{
               fontFamily: "Poppins-Regular",
               color: "#000000",
+              fontSize: "2rem",
             }}
           >
             At BuckleTrack (BT), we offer services that leverage the latest
@@ -53,15 +54,7 @@ const ServicesHome = () => {
                   <p style={{ marginBottom: "0rem" }}>Surface Transport</p>
                 </div>
               </div>
-              <div
-                className={Styles.text}
-                style={{
-                  fontSize: "1.6rem",
-                  lineHeight: "2.2rem",
-                  fontFamily: "Poppins-Regular",
-                  color: "#000000",
-                }}
-              >
+              <div className={Styles.text}>
                 At BuckleTrack, our surface transport solutions are crafted to
                 offer streamlined connectivity and reliability for businesses of
                 all sizes...
@@ -83,15 +76,7 @@ const ServicesHome = () => {
                   <p style={{ marginBottom: "0rem" }}>Express Delivery</p>
                 </div>
               </div>
-              <div
-                className={Styles.text}
-                style={{
-                  fontSize: "1.6rem",
-                  lineHeight: "2.2rem",
-                  fontFamily: "Poppins-Regular",
-                  color: "#000000",
-                }}
-              >
+              <div className={Styles.text}>
                 BuckleTrack’s Express Delivery Service is custom-made for
                 time-sensitive shipments based on speed and precision.
                 Leveraging a vast network...
@@ -113,15 +98,7 @@ const ServicesHome = () => {
                   <p style={{ marginBottom: "0rem" }}>Project Transport</p>
                 </div>
               </div>
-              <div
-                className={Styles.text}
-                style={{
-                  fontSize: "1.6rem",
-                  lineHeight: "2.2rem",
-                  fontFamily: "Poppins-Regular",
-                  color: "#000000",
-                }}
-              >
+              <div className={Styles.text}>
                 BuckleTrack’s Project Transportation Services are tailor-made to
                 handle complex, large-scale logistical tasks with precision and
                 proficiency...

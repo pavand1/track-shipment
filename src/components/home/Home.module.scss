@@ -92,11 +92,19 @@
     gap: 2rem;
     text-align: left;
 
+    .text {
+      font-size: 1.6rem;
+      line-height: 2.2rem;
+      font-family: $font-regular;
+      color: #000000;
+      height: 70px;
+    }
+
     .image {
       position: relative;
       cursor: pointer;
       img {
-        height: 25.7rem;
+        height: 30rem;
         object-fit: cover;
       }
 

@@ -37,7 +37,8 @@ const CaseStudies = () => {
               color: "#000000",
             }}
           >
-            Our client's success reflects the impact of our tech-driven solutions and exceptional service. Here are some examples:
+            Our client's success reflects the impact of our tech-driven
+            solutions and exceptional service. Here are some examples:
           </p>
           <div className={Styles.services}>
             <div className={Styles.card} data-aos="fade-up">
@@ -47,17 +48,10 @@ const CaseStudies = () => {
                   <p style={{ marginBottom: "0rem" }}>Case Study 1</p>
                 </div>
               </div>
-              <div
-                className={Styles.text}
-                style={{
-                  fontSize: "1.6rem",
-                  lineHeight: "2.2rem",
-                  fontFamily: "Poppins-Regular",
-                  color: "#000000",
-                }}
-              >
-                A major retailer sought to enhance its supply chain efficiency through advanced technology. 
-                BuckleTrack implemented an integrated TMS, resulting in improved logistics management, 
+              <div className={Styles.text}>
+                A major retailer sought to enhance its supply chain efficiency
+                through advanced technology. BuckleTrack implemented an
+                integrated TMS, resulting in improved logistics management,
                 reduced lead times, and higher customer satisfaction.
               </div>
               {/* <div
@@ -74,18 +68,11 @@ const CaseStudies = () => {
                   <p style={{ marginBottom: "0rem" }}>Case Study 2</p>
                 </div>
               </div>
-              <div
-                className={Styles.text}
-                style={{
-                  fontSize: "1.6rem",
-                  lineHeight: "2.2rem",
-                  fontFamily: "Poppins-Regular",
-                  color: "#000000",
-                }}
-              >
-                A giant logistics provider needed a solution for tailored packaging solutions 
-                designed to protect the products and streamline handling. Our experience-rich 
-                team ensures that packaging is optimized for both efficiency and sustainability, 
+              <div className={Styles.text}>
+                A giant logistics provider needed a solution for tailored
+                packaging solutions designed to protect the products and
+                streamline handling. Our experience-rich team ensures that
+                packaging is optimized for both efficiency and sustainability,
                 reducing waste and improving cost-effectiveness.
               </div>
               {/* <div
@@ -102,18 +89,11 @@ const CaseStudies = () => {
                   <p style={{ marginBottom: "0rem" }}>Case Study 3</p>
                 </div>
               </div>
-              <div
-                className={Styles.text}
-                style={{
-                  fontSize: "1.6rem",
-                  lineHeight: "2.2rem",
-                  fontFamily: "Poppins-Regular",
-                  color: "#000000",
-                }}
-              >
-                A giant logistics provider needed a solution for tailored packaging solutions 
-                designed to protect the products and streamline handling. Our experience-rich 
-                team ensures that packaging is optimized for both efficiency and sustainability, 
+              <div className={Styles.text}>
+                A giant logistics provider needed a solution for tailored
+                packaging solutions designed to protect the products and
+                streamline handling. Our experience-rich team ensures that
+                packaging is optimized for both efficiency and sustainability,
                 reducing waste and improving cost-effectiveness.
               </div>
               {/* <div
