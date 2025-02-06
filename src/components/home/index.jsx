@@ -36,7 +36,7 @@ const HomeComponent = () => {
           <img
             src="../../images/Home/Doodle Background.png"
             alt=""
-            style={{ width: "105%", minHeight: "500px" }}
+            style={{ width: "105%", minHeight: "550px" }}
           />
         ) : (
           <img src={getImgURL()} alt="" />
