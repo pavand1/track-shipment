@@ -9,6 +9,11 @@ const RateOrderForm = () => {
   const [activeTab, setActiveTab] = useState("calc");
   const [isOtpSent, setIsOtpSent] = useState(false);
   const [isOtpValid, setIsOtpValid] = useState(false);
+
+  const [startPin, setStartPin] = useState("");
+  const [endPin, setEndPin] = useState("");
+  const [weight, setWeight] = useState("");
+  const [vehicalType, setVehicalType] = useState("");
   const ref = useRef();
 
   const handleRadioChange = (e) => {
@@ -18,6 +23,12 @@ const RateOrderForm = () => {
 
   const handleSendOtp = () => {
     //call API to send user OTP
+  };
+
+  const handleSubmit = () => {
+    if (!startPin || !endPin) return;
+    if (orderType === "ftl" && !vehicalType) return;
+    else if (!weight) return;
   };
 
   const handleFormSumbit = (e) => {
@@ -31,7 +42,7 @@ const RateOrderForm = () => {
     <>
       <div className={Styles.container}>
         <div className={Styles.heading}>
-        <div
+          <div
             className={`${Styles.calculator} ${
               activeTab === "calc" ? Styles.activeCalculator : ""
             }`}
@@ -85,7 +96,7 @@ const RateOrderForm = () => {
                 <label htmlFor="express">EXPRESS</label>
               </div>
             </div>
-            <div className={Styles.mobile}>
+            {/* <div className={Styles.mobile}>
               <input
                 type="text"
                 className={Styles.textBox}
@@ -94,6 +105,44 @@ const RateOrderForm = () => {
               />
               <div className={Styles.button} onClick={handleSendOtp}>
                 Get OTP
+              </div>
+            </div> */}
+            <div className={Styles.row}>
+              <input
+                type="text"
+                className={Styles.textBox}
+                placeholder="Start Pincode"
+                value={startPin}
+                onChange={(e) => setStartPin(e.target.value)}
+              />
+              <input
+                type="text"
+                className={Styles.textBox}
+                placeholder="Destination Pincode"
+                value={endPin}
+                onChange={(e) => setEndPin(e.target.value)}
+              />
+            </div>
+            <div className={Styles.row}>
+              {orderType === "ftl" ? (
+                <input
+                  type="text"
+                  className={Styles.textBox}
+                  placeholder="Vehical Type"
+                  value={vehicalType}
+                  onChange={(e) => setVehicalType(e.target.value)}
+                />
+              ) : (
+                <input
+                  type="text"
+                  className={Styles.textBox}
+                  placeholder="Weight"
+                  value={weight}
+                  onChange={(e) => setWeight(e.target.value)}
+                />
+              )}
+              <div className={Styles.button} onClick={handleSubmit}>
+                Submit
               </div>
             </div>
             {isOtpSent && (

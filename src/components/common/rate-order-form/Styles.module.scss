@@ -192,6 +192,25 @@
         text-decoration-skip-ink: none;
         color: #042f7c;
       }
+      .button {
+        width: 50%;
+        border-radius: 7px;
+        opacity: 0px;
+        background: #ef4136;
+        color: white;
+        padding: 1rem 2rem;
+        font-family: $font-regular;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 19.5px;
+        text-align: center;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        cursor: pointer;
+      }
+      ::placeholder {
+        color: #000000;
+      }
       .orderNoText {
         width: 100%;
         border-radius: 7px;
@@ -227,8 +246,8 @@
   }
 }
 
-@media only screen and (max-width: 768px){
-  .container{
-padding: 1.5rem;
+@media only screen and (max-width: 768px) {
+  .container {
+    padding: 1.5rem;
   }
 }
