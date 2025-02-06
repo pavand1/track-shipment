@@ -236,7 +236,7 @@ const CpHeader = ({ setRouteChange, outsideClick }) => {
             </div>
           </div> */}
           <div>
-            <button
+            {/* <button
               className={styles.loginButton}
               onClick={(e) => {
                 window.open("https://nol.ifreightbox.net/trackbyno", "_blank");
@@ -244,7 +244,7 @@ const CpHeader = ({ setRouteChange, outsideClick }) => {
               }}
             >
               Track Your Order
-            </button>
+            </button> */}
             <button
               className={styles.loginButton}
               onClick={(e) => {

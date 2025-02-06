@@ -83,7 +83,7 @@ export const contactInfo = {
   },
   email: {
     icon: "../../images/footer/email.svg",
-    text: "sales@buckletrack.in",
+    text: "sales@buckletrack.com",
   },
   phone: { icon: "../../images/footer/phone.png", text: "+91-022-2821-3835" },
   whatsapp: {

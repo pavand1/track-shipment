@@ -41,7 +41,7 @@ const AllResources = () => {
             className="blog-content"
             onClick={() => navigate(RESOURCE_BLOGS)}
           >
-            Logistic Blogs
+            Blogs
           </div>
         </div>
       </div>
@@ -49,11 +49,11 @@ const AllResources = () => {
         <div className="blog-card">
           <img src="../../images/resource/FAQs.png" alt="Blog Image" />
           <div className="blog-content" onClick={() => navigate(RESOURCE_FAQs)}>
-            FAQs
+            FAQ's
           </div>
         </div>
       </div>
-      <div className={Styles.resource}>
+      {/* <div className={Styles.resource}>
         <div className="blog-card">
           <img src="../../images/resource/career.jpg" alt="Blog Image" />
           <div
@@ -63,7 +63,7 @@ const AllResources = () => {
             Career
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
