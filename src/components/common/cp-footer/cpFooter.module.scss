@@ -2,7 +2,7 @@
 .footer {
   justify-content: space-between;
   align-items: center;
-  padding: 7rem 3rem 2rem 3rem;
+  padding: 5rem 3rem 2rem 3rem;
   background-image: url("../../images/footer/footernew.png"); // Ensure this path is correct
   background-size: contain;
   background-position: center;
@@ -72,8 +72,8 @@
 }
 
 .logo {
-  max-width: 18rem;
-  margin-bottom: 4rem;
+  max-width: 28rem;
+  margin-bottom: 0rem;
 }
 
 .socialIcons {
@@ -139,7 +139,7 @@
     font-family: $font-medium;
     width: 100%;
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     display: flex;
     gap: 1rem;
 

@@ -4,7 +4,7 @@ const teamData = [
     name: "Kiran Wakde",
     designation: "Director",
     photo: "../../images/about/team2.jpg",
-    description: "The Quintessential Fitness Freak!!<br>Apart from his love of dabbling successfully in various businesses, Kiran loves to crank up some weights...",
+    description: "The Quintessential Fitness Freak!! Apart from his love of dabbling successfully in various businesses, Kiran loves to crank up some weights...",
     moreInfo: "/kiranWakde",
     descriptionMain:
     "The Quintessential Fitness Freak !! <br>Apart from his love of dabbling successfully in various businesses, Kiran loves to crank up some weights whenever he can. He is our self-appointed fitness guru. Talk about eating out and there’s usually one person missing! Add to this, his boisterous laugh! He can light up a room with his laughter and he loves to use his repertoire of one liners that usually precedes it. In between yes he does find time to successfully run the business. An avid family man, his honesty is in your face. His innate ability to control costs and his keen business acumen are real standouts.",
@@ -13,7 +13,7 @@ const teamData = [
     id: 2,
     name: "Sinju Paulose",
     designation: "Director",
-    photo: "../../images/about/team4.jpeg",
+    photo: "../../images/about/team4.jpg",
     description: "The monk, who can sell his Ferrari !! A simpleton at heart! Underplaying his own achievements is usually a way of life for him...",
     moreInfo: "/sinjuPaulose",
     linkdinHref: "#",

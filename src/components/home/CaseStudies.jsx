@@ -37,18 +37,14 @@ const CaseStudies = () => {
               color: "#000000",
             }}
           >
-            At BuckleTrack (BT), we offer services that leverage the latest
-            technological advancements to deliver the best transport solutions.
-            We manage supply chain complexity, integrate partners network and
-            create seamless physical and document flow while maintaining
-            simplicity
+            Our client's success reflects the impact of our tech-driven solutions and exceptional service. Here are some examples:
           </p>
           <div className={Styles.services}>
             <div className={Styles.card} data-aos="fade-up">
               <div className={Styles.image}>
                 <img src="../../images/services/Surface Transport.png" alt="" />
                 <div className={Styles.tag}>
-                  <p style={{ marginBottom: "0rem" }}>Surface Transport</p>
+                  <p style={{ marginBottom: "0rem" }}>Case Study 1</p>
                 </div>
               </div>
               <div
@@ -60,22 +56,22 @@ const CaseStudies = () => {
                   color: "#000000",
                 }}
               >
-                At BuckleTrack, our surface transport solutions are crafted to
-                offer streamlined connectivity and reliability for businesses of
-                all sizes...
+                A major retailer sought to enhance its supply chain efficiency through advanced technology. 
+                BuckleTrack implemented an integrated TMS, resulting in improved logistics management, 
+                reduced lead times, and higher customer satisfaction.
               </div>
-              <div
+              {/* <div
                 className={Styles.button}
                 onClick={() => navigate(RESOURCE_CASE_STUDIES)}
               >
                 Read More
-              </div>
+              </div> */}
             </div>
             <div className={Styles.card} data-aos="fade-up">
               <div className={Styles.image}>
                 <img src="../../images/services/Express Delivery.png" alt="" />
                 <div className={Styles.tag}>
-                  <p style={{ marginBottom: "0rem" }}>Express Delivery</p>
+                  <p style={{ marginBottom: "0rem" }}>Case Study 2</p>
                 </div>
               </div>
               <div
@@ -87,22 +83,23 @@ const CaseStudies = () => {
                   color: "#000000",
                 }}
               >
-                BuckleTrack’s Express Delivery Service is custom-made for
-                time-sensitive shipments based on speed and precision.
-                Leveraging a vast network...
+                A giant logistics provider needed a solution for tailored packaging solutions 
+                designed to protect the products and streamline handling. Our experience-rich 
+                team ensures that packaging is optimized for both efficiency and sustainability, 
+                reducing waste and improving cost-effectiveness.
               </div>
-              <div
+              {/* <div
                 className={Styles.button}
                 onClick={() => navigate(RESOURCE_CASE_STUDIES)}
               >
                 Read More
-              </div>
+              </div> */}
             </div>
             <div className={Styles.card} data-aos="fade-up">
               <div className={Styles.image}>
                 <img src="../../images/services/Project Transport.png" alt="" />
                 <div className={Styles.tag}>
-                  <p style={{ marginBottom: "0rem" }}>Project Transport</p>
+                  <p style={{ marginBottom: "0rem" }}>Case Study 3</p>
                 </div>
               </div>
               <div
@@ -114,16 +111,17 @@ const CaseStudies = () => {
                   color: "#000000",
                 }}
               >
-                BuckleTrack’s Project Transportation Services are tailor-made to
-                handle complex, large-scale logistical tasks with precision and
-                proficiency...
+                A giant logistics provider needed a solution for tailored packaging solutions 
+                designed to protect the products and streamline handling. Our experience-rich 
+                team ensures that packaging is optimized for both efficiency and sustainability, 
+                reducing waste and improving cost-effectiveness.
               </div>
-              <div
+              {/* <div
                 className={Styles.button}
                 onClick={() => navigate(RESOURCE_CASE_STUDIES)}
               >
                 Read More
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
