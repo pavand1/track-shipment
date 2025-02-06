@@ -292,7 +292,28 @@
 
     &:hover {
       background-color: #ffffff;
-      color:#000;
+      color: #000;
+    }
+
+    @media (min-width: 769px) {
+      display: block;
+    }
+  }
+  .trackorderButton {
+    display: none;
+    padding: 0.5rem 1.5rem;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    margin-right: 2rem;
+    border-radius: 1rem;
+    width: auto;
+    border: 1px solid #cccccc;
+    font-size: 1.6rem;
+
+    &:hover {
+      background-color: #ffffff;
+      color: #000;
     }
 
     @media (min-width: 769px) {

@@ -99,8 +99,8 @@ const CpHeader = ({ setRouteChange, outsideClick }) => {
         <div
           className={styles.headerLogo}
           style={{
-            transform: `translateY(${-(scrollY * 0.7)}px) translateX(${-(
-              scrollY * 0.6
+            transform: `translateY(${-(scrollY * 1)}px) translateX(${-(
+              scrollY * 0.4
             )}px) scale(${scaleFactor})`,
 
             width: `${width}px`,
@@ -203,6 +203,20 @@ const CpHeader = ({ setRouteChange, outsideClick }) => {
                 )}
               </li>
             ))}
+            <li>
+              <div
+                className={styles.trackorderButton}
+                onClick={(e) => {
+                  window.open(
+                    "https://nol.ifreightbox.net/trackbyno",
+                    "_blank"
+                  );
+                  e.preventDefault();
+                }}
+              >
+                Track Your Order
+              </div>
+            </li>
           </ul>
         </nav>
         <div className={styles.actionItems}>
@@ -236,15 +250,6 @@ const CpHeader = ({ setRouteChange, outsideClick }) => {
             </div>
           </div> */}
           <div>
-            {/* <button
-              className={styles.loginButton}
-              onClick={(e) => {
-                window.open("https://nol.ifreightbox.net/trackbyno", "_blank");
-                e.preventDefault();
-              }}
-            >
-              Track Your Order
-            </button> */}
             <button
               className={styles.loginButton}
               onClick={(e) => {

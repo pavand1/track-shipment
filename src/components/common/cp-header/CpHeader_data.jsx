@@ -51,7 +51,7 @@ const mockMenuData = [
   // { name: 'Contact US', link: '#contact', route: CONTACTS_ROUTE },
   // { name: "Support", link: "#support", route: SUPPORT },
   { name: "Partner with us", link: "#partner", route: PARTNER },
-   { name: "Track Your Order", like: "#trackorder", route: TRACK_ORDER_ROUTE},
+  //  { name: "Track Your Order", like: "#trackorder", route: TRACK_ORDER_ROUTE},
 ];
 
 export default mockMenuData;
