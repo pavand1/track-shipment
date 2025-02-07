@@ -1,5 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import Styles from "./Styles.module.scss";
+import emailjs from "@emailjs/browser";
+import Loading from "react-fullscreen-loading";
 
 const trackOrderURL = import.meta.env.VITE_TRACK_ORDER_URL;
 
@@ -9,6 +11,8 @@ const RateOrderForm = () => {
   const [activeTab, setActiveTab] = useState("calc");
   const [isOtpSent, setIsOtpSent] = useState(false);
   const [isOtpValid, setIsOtpValid] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
+  const [error, setError] = useState("");
 
   const [startPin, setStartPin] = useState("");
   const [endPin, setEndPin] = useState("");
@@ -28,7 +32,32 @@ const RateOrderForm = () => {
   const handleSubmit = () => {
     if (!startPin || !endPin) return;
     if (orderType === "ftl" && !vehicalType) return;
-    else if (!weight) return;
+    if (orderType !== "ftl" && !weight) return;
+    const formData = new FormData();
+    formData.append("startPinCode", startPin);
+    formData.append("destinationPinCode", endPin);
+    formData.append("weight", weight);
+    formData.append("vehicalType", vehicalType);
+    setIsLoading(true);
+    emailjs
+      .sendForm("service_f5bl48g", "template_agxy0jb", formData, {
+        publicKey: "UwYDiQ1gdS6YNU1C-",
+      })
+      .then(() => {
+        setStartPin("");
+        setEndPin("");
+        setWeight("");
+        setVehicalType("");
+        setIsLoading(false);
+        setError("Our Expert will get in touch with you shortly");
+        setTimeout(() => setError(""), 5000);
+      })
+      .catch((e) => {
+        console.log(e);
+        setIsLoading(false);
+        setError("Something went wrong, please try later!");
+        setTimeout(() => setError(""), 5000);
+      });
   };
 
   const handleFormSumbit = (e) => {
@@ -145,6 +174,7 @@ const RateOrderForm = () => {
                 Submit
               </div>
             </div>
+            {error && <p className={Styles.error}>{error}</p>}
             {isOtpSent && (
               <div className={Styles.row}>
                 <input
@@ -262,6 +292,11 @@ const RateOrderForm = () => {
           </form>
         )}
       </div>
+      <Loading
+        loading={isLoading}
+        background="transparent"
+        loaderColor="#3498db"
+      />
     </>
   );
 };

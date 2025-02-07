@@ -246,6 +246,11 @@
   }
 }
 
+.error {
+  color: $clr-secondary;
+  font-size: 1.2rem;
+}
+
 @media only screen and (max-width: 768px) {
   .container {
     padding: 1.5rem;
