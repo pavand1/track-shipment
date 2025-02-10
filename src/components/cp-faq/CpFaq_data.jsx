@@ -1,18 +1,38 @@
 const faqData = [
   {
-    question: "What should I do if my shipment is delayed?",
+    question: "What services do you offer?",
     answer:
-      "You can contact the BuckleTrack customer support team for assistance. They will provide updates and resolve any issues promptly.",
+      "BuckleTrack provides surface transportation, express delivery & project transport solutions across India.",
   },
   {
-    question: "What happens if my shipment is damaged during transit?",
+    question: "What types of logistics solutions do you offer?",
     answer:
-      "In case of damage, the BuckleTrack team will assist you with the claims process if insurance coverage is in place. Please contact us immediately.",
+      "BuckleTrack offers full truckload (FTL), partial truckload (PTL), express delivery options in selective cities, and supply chain management.",
   },
   {
-    question: "Can I change the delivery address after booking a shipment?",
+    question: "How can I book a shipment?",
     answer:
-      "Yes, address changes can be requested, but additional charges or delays may apply depending on the progress of the shipment.",
+      "You can book online at www.buckletrack.com or call our customer support.",
+  },
+  {
+    question: "Do you provide intra-city logistics?",
+    answer:
+      "Yes, BuckleTrack offers intra-city transportation, including same-day and on-demand delivery services. BuckleTrack also covers all major cities, towns, and remote locations across India.",
+  },
+  {
+    question: "Can individuals book shipments, or is it only for businesses?",
+    answer:
+      "Yes, Both individuals and businesses can book shipments with BuckleTrack.",
+  },
+  {
+    question: "Do you offer doorstep pickup and delivery?",
+    answer:
+      "Yes, BuckleTrack offers end-to-end logistics with doorstep pickup and delivery.",
+  },
+  {
+    question: "What are your operating hours?",
+    answer:
+      "BuckleTrack operates 24/7 for transportation and customer support services.",
   },
 ];
 
