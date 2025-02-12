@@ -15,6 +15,8 @@ export const BLOG1 =
   "/blog/logistics-solution-streamlining-your-business-oerations";
 export const BLOG2 =
   "/blog/B2B-logistics-the-backbone-of-efficient-business-operations";
+export const BLOG3 =
+  "/blog/when-to-use-full-truckload-vs-partial-truckload-for-cost-effective-freight-management";
 export const KIRANWAKDE = "/kiranWakde";
 export const VIRALDESAI = "/viralDesai";
 export const SINJUPAULOSE = "/sinjuPaulose";

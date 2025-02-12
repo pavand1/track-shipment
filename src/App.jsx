@@ -28,6 +28,7 @@ import {
   PARTNER,
   BLOG1,
   BLOG2,
+  BLOG3,
   KIRANWAKDE,
   VIRALDESAI,
   SINJUPAULOSE,
@@ -49,6 +50,7 @@ import Resource from "./routes/resource/Resource.jsx";
 import Partner from "./routes/partner/Partner.jsx";
 import Blog1 from "./routes/resource/blog/logistics-solution-streamlining-your-business-oerations.jsx";
 import Blog2 from "./routes/resource/blog/B2B-logistics-the-backbone-of-efficient-business-operations.jsx";
+import Blog3 from "./routes/resource/blog/when-to-use-full-truckload-vs-partial-truckload-for-cost-effective-freight-management.jsx";
 import Kiranwakde from "./routes/kiranWakde/kiranWakde.jsx";
 import VinayakSukhdare from "./routes/vinayakSukhdare/vinayakSukhdare.jsx";
 import ViralDesai from "./routes/viralDesai/viralDesai.jsx";
@@ -107,6 +109,7 @@ const App = () => {
             <Route path={PARTNER} element={<Partner />} />
             <Route path={BLOG1} element={<Blog1 />} />
             <Route path={BLOG2} element={<Blog2 />} />
+            <Route path={BLOG3} element={<Blog3 />} />
             <Route path={KIRANWAKDE} element={<Kiranwakde />} />
             <Route path={VIRALDESAI} element={<ViralDesai />} />
             <Route path={SINJUPAULOSE} element={<SinjuPaulose />} />
