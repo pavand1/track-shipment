@@ -18,6 +18,9 @@ import {
   RESOURCE,
   PARTNER,
   RESOURCE_CAREER,
+  RESOURCE_CASE_STUDIES,
+  RESOURCE_BLOGS,
+  RESOURCE_FAQs,
 } from "../../../utils/constants";
 
 export const socialLinks = [
@@ -48,7 +51,7 @@ export const linksColumn2 = [
   { name: "About Us", link: "#about", route: ABOUT_US_ROUTE },
   { name: "Resources", link: "#features", route: RESOURCE },
   { name: "Track Your Order", link: "#contact", route: "/" },
-  { name: "Support", like: "#trackorder", route: SUPPORT },
+  // { name: "Support", like: "#trackorder", route: SUPPORT },
   { name: "Partner With Us", link: "#testimonials", route: PARTNER },
 ];
 
@@ -74,6 +77,42 @@ export const linksColumn3 = [
   { name: "Careers", link: "#careers", route: RESOURCE_CAREER },
   // { name: "Wallet", link: "#wallet", route: WALLET_ROUTE },
   { name: "Blog", link: "#blogtrack", route: RESOURCE },
+];
+
+export const ourServicesOptions = [
+  {
+    name: "Surface Transport",
+    link: "#surface",
+    route: `${SERVICES_ROUTE}/surface-transport`,
+  },
+  {
+    name: "Express Delivery",
+    link: "#express",
+    route: `${SERVICES_ROUTE}/express-delivery`,
+  },
+  {
+    name: "Project Transport",
+    link: "#project",
+    route: `${SERVICES_ROUTE}/project-transport`,
+  },
+];
+
+export const resourceOptions = [
+  {
+    name: "Case Study",
+    link: "#case",
+    route: RESOURCE_CASE_STUDIES,
+  },
+  {
+    name: "Blogs",
+    link: "#blog",
+    route: RESOURCE_BLOGS,
+  },
+  {
+    name: "FAQ's",
+    link: "#faqs",
+    route: RESOURCE_FAQs,
+  },
 ];
 
 export const contactInfo = {

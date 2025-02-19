@@ -4,6 +4,8 @@ import {
   linksColumn2,
   linksColumn3,
   contactInfo,
+  ourServicesOptions,
+  resourceOptions,
 } from "./CpFooter_data";
 import { Link, useNavigate } from "react-router-dom";
 
@@ -81,15 +83,30 @@ const CpFooter = ({ setRouteChange }) => {
             </ul>
           </div>
           <div className={styles.column}>
-            <h4 className={styles.footerHeading}>Other Links</h4>
+            <h4 className={styles.footerHeading}>Our Services</h4>
             <ul>
-              {linksColumn3.map((item, index) => (
+              {ourServicesOptions.map((item, index) => (
                 <li key={index}>
                   <Link
                     to={item.route}
                     key={index}
                     className={styles.item}
-                    onClick={() => setRouteChange(item.route)}
+                    // onClick={() => setRouteChange(item.route)}
+                  >
+                    {item.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+            <h4 className={styles.footerHeading}>Resource</h4>
+            <ul>
+              {resourceOptions.map((item, index) => (
+                <li key={index}>
+                  <Link
+                    to={item.route}
+                    key={index}
+                    className={styles.item}
+                    // onClick={() => setRouteChange(item.route)}
                   >
                     {item.name}
                   </Link>
@@ -140,7 +157,7 @@ const CpFooter = ({ setRouteChange }) => {
         <div className={styles.container + " " + styles.borderTop}>
           <div className={styles.copyRight}>
             <p className={styles.text}>Copyright 2025 @ BuckleTrack</p>
-            <p style={{marginLeft: "-85px"}} className={styles.text}>
+            <p style={{ marginLeft: "-85px" }} className={styles.text}>
               <span
                 onClick={() => {
                   navigate("/terms-and-conditions");
