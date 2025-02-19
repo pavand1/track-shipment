@@ -83,15 +83,15 @@ const CpHeader = ({ setRouteChange, outsideClick }) => {
             width: `12%`,
             cursor: "pointer",
           }}
-          onClick={() => {
-            navigate("/");
-            setRouteChange("/");
-          }}
         >
           <img
             className="bt-logo"
             src="../../images/Home/Buckle Track Option.svg"
             alt=""
+            onClick={() => {
+              navigate("/");
+              setRouteChange("/");
+            }}
           />
         </div>
       ) : (
@@ -105,9 +105,9 @@ const CpHeader = ({ setRouteChange, outsideClick }) => {
             width: `${width}px`,
             height: `${height}px`,
           }}
-          onClick={() => navigate("/")}
         >
-          <img src="../../images/Home/Buckle Track Option.svg" alt="" />
+          <img src="../../images/Home/Buckle Track Option.svg" alt=""   onClick={() => navigate("/")}
+        />
         </div>
       )}
       <div
