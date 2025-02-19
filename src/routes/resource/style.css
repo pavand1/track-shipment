@@ -5,14 +5,20 @@
   padding: 3rem 9rem;
 }
 .blogs-content h3 {
-  font-size: 23px;
-  line-height: 31px;
+  font-size: 22px;
+  line-height: 29px;
   margin-bottom: 30px;
-  font-weight: 600;
+  font-weight: 500;
   margin-top: 20px;
+  text-align: left;
+}
+.blogs-content p {
+  text-align: left;
 }
 .blogs-content .btn:hover {
-  background-color: #093966;
+  background-color: #ffffff;
+    color: #000;
+    border: 1px solid;
 }
 .cta span:hover {
   background-color: #093966;
@@ -53,22 +59,28 @@
   font-size: 1.6rem;
 }
 .blog-content .btn {
-  display: inline-block;
-  padding: 10px 15px;
+  display: block;
+  padding: 7px 15px;
   background-color: #ef4136;
   color: #fff;
   text-decoration: none;
   border-radius: 5px;
   cursor: pointer;
+  width: 109px;
+  height: 35px;
+  border: 1px solid;
 }
 .blogs-content .btn {
-  display: inline-block;
-  padding: 10px 15px;
+  display: block;
+  padding: 7px 15px;
   background-color: #ef4136;
   color: #fff;
   text-decoration: none;
   border-radius: 5px;
   cursor: pointer;
+  width: 109px;
+  height: 35px;
+  border: 1px solid;
 }
 .blog-content .btn:hover {
   background-color: #093966;

@@ -124,15 +124,16 @@
       width: 109px;
       height: 33px;
       border-radius: 5px;
-      border: 1px solid #4a4a4a;
       opacity: 0px;
-      background: #ffffff;
+      background: #ff3300;
+      color:#ffffff;
       padding: 6px;
       text-align: center;
       cursor: pointer;
       &:hover {
-        background-color: #ff3300;
-        color: #ffffff;
+        background-color: #ffffff;
+        color: #000000;
+        border: 1px solid #4a4a4a;
       }
     }
   }

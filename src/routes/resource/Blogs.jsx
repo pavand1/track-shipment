@@ -27,7 +27,7 @@ const Blogs = ({ setRouteChange = () => {}, notBlogsPage = false }) => {
           <img src="../../images/blog/blog-1.png" alt="Blog Image" />
           <div className="blogs-content">
             <h3>Logistics Solution: Streamlining Your Business Operations</h3>
-            <p>
+            <p style={{paddingBottom:"30px"}}>
               {notBlogsPage
                 ? `The right logistics solution is the backbone of the organization,
               is cost-effective and aids in customer satisfaction in today’s
@@ -59,7 +59,7 @@ const Blogs = ({ setRouteChange = () => {}, notBlogsPage = false }) => {
             <h3>
               B2B Logistics: The Backbone of Efficient Business Operations
             </h3>
-            <p>
+            <p style={{paddingBottom:"30px"}}>
               {notBlogsPage
                 ? `B2B logistics & Transportation refers to the part of the supply
               chain that synchronises the flow of products between businesses

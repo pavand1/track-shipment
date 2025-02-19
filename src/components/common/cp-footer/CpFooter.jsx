@@ -140,7 +140,7 @@ const CpFooter = ({ setRouteChange }) => {
         <div className={styles.container + " " + styles.borderTop}>
           <div className={styles.copyRight}>
             <p className={styles.text}>Copyright 2025 @ BuckleTrack</p>
-            <p className={styles.text}>
+            <p style={{marginLeft: "-85px"}} className={styles.text}>
               <span
                 onClick={() => {
                   navigate("/terms-and-conditions");

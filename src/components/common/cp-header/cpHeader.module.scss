@@ -162,6 +162,7 @@
           text-transform: uppercase;
           &:hover {
             text-decoration: none;
+            font-family: $font-bold;
           }
           @media (max-width: 1024px) {
             font-size: 1.4rem;
