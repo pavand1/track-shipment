@@ -74,7 +74,7 @@ const CpContactUs = () => {
                   type={"email"}
                   id={"email"}
                   name={"email"}
-                  placeholder={"email"}
+                  placeholder={"Email"}
                   required
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
@@ -85,7 +85,7 @@ const CpContactUs = () => {
                   type={"text"}
                   id={"phone1"}
                   name={"phone"}
-                  placeholder={"primary phone number"}
+                  placeholder={"Phone Number"}
                   required
                   value={phone1}
                   onChange={(e) => setPhone1(e.target.value)}
@@ -105,7 +105,7 @@ const CpContactUs = () => {
                 <textarea
                   id={"message"}
                   name={"message"}
-                  placeholder={"message"}
+                  placeholder={"Message"}
                   rows="4"
                   required
                   value={message}
