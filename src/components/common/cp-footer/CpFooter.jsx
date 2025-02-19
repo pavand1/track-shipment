@@ -1,3 +1,4 @@
+import { CONTACTS_ROUTE } from "../../../utils/constants";
 import styles from "./cpFooter.module.scss";
 import {
   socialLinks,
@@ -98,7 +99,18 @@ const CpFooter = ({ setRouteChange }) => {
                 </li>
               ))}
             </ul>
-            <h4 className={styles.footerHeading}>Resource</h4>
+            <ul>
+              <li>
+                <Link
+                  to={CONTACTS_ROUTE}
+                  className={styles.item}
+                  onClick={() => setRouteChange(CONTACTS_ROUTE)}
+                >
+                  Contact Us
+                </Link>
+              </li>
+            </ul>
+            <h4 className={styles.footerHeading}>Resources</h4>
             <ul>
               {resourceOptions.map((item, index) => (
                 <li key={index}>
