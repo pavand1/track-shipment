@@ -36,7 +36,7 @@ const mockMenuData = [
   // { name: 'Home', link: '#home', route: "/" },
   { name: "About Us", link: "#about", route: ABOUT_US_ROUTE },
   {
-    name: "Resource",
+    name: "Resources",
     route: RESOURCE,
     link: "#features",
     dropdown: [

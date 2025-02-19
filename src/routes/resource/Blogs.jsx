@@ -84,7 +84,7 @@ const Blogs = ({ setRouteChange = () => {}, notBlogsPage = false }) => {
             </span>
           </div>
         </div>
-        {notBlogsPage && (
+        
         <div className="blog-card">
         <img src="../../images/blog/blog-3.png" alt="Blog Image" />
         <div className="blogs-content">
@@ -93,26 +93,26 @@ const Blogs = ({ setRouteChange = () => {}, notBlogsPage = false }) => {
             {notBlogsPage
               ? `Efficient freight management is important for businesses that depend 
               on transportation to move goods from one location to another. 
-              Choosing the right shipping method—Full Truckload (FTL) or 
-              Partial Truckload (PTL)—can significantly impact cost, 
-              delivery speed, and overall logistics efficiency. 
-              Knowing when to use Full Truckload (FTL) or Part Truckload (PTL) 
-              ensures cost-effective freight management...`.slice(0, 150)
+              Choosing the right shipping method—Full Truckload (FTL) or Partial 
+              Truckload (PTL)—can significantly impact cost, delivery speed, and 
+              overall logistics efficiency. Knowing when to use Full Truckload 
+              (FTL) or Part Truckload (PTL) ensures cost-effective freight management 
+              while optimising operations.`.slice(0, 150)
               : `Efficient freight management is important for businesses that depend 
               on transportation to move goods from one location to another. 
-              Choosing the right shipping method—Full Truckload (FTL) or 
-              Partial Truckload (PTL)—can significantly impact cost, 
-              delivery speed, and overall logistics efficiency. 
-              Knowing when to use Full Truckload (FTL) or Part Truckload (PTL) 
-              ensures cost-effective freight management...`}
+              Choosing the right shipping method—Full Truckload (FTL) or Partial 
+              Truckload (PTL)—can significantly impact cost, delivery speed, and 
+              overall logistics efficiency. Knowing when to use Full Truckload 
+              (FTL) or Part Truckload (PTL) ensures cost-effective freight management 
+              while optimising operations.`}
           </p>
           {/* <a href="#" className="btn">Read More</a> */}
-          <span className="btn" onClick={() => navigator(BLOG3)}>
+          <span style={{paddingBottom:"20px"}} className="btn" onClick={() => navigator(BLOG3)}>
             Read More
           </span>
         </div>
       </div>
-        )}
+        
       </div>
     </>
   );
