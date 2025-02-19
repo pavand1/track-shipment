@@ -99,6 +99,7 @@ const CpFooter = ({ setRouteChange }) => {
                 </li>
               ))}
             </ul>
+            <h4 className={styles.footerHeading}>Resources</h4>
             <ul>
               <li>
                 <Link
@@ -109,9 +110,6 @@ const CpFooter = ({ setRouteChange }) => {
                   Contact Us
                 </Link>
               </li>
-            </ul>
-            <h4 className={styles.footerHeading}>Resources</h4>
-            <ul>
               {resourceOptions.map((item, index) => (
                 <li key={index}>
                   <Link
