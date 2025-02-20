@@ -19,7 +19,7 @@ const Ourteam = () => {
     <>
       <HomeComponent />
       <div className={Styles.resourceSection} ref={ref}>
-        {pathname.includes("kiran") ? (
+        {/* {pathname.includes("kiran") ? (
           <Kiranwakde />
         ) : pathname.includes("sinju") ? (
           <SinjuPaulose />
@@ -29,7 +29,11 @@ const Ourteam = () => {
           <VinayakSukhdare />
         ) : (
           <CpOurTeam />
-        )}
+        )} */}
+        <Kiranwakde />
+        <SinjuPaulose />
+        <ViralDesai />
+        <VinayakSukhdare />
       </div>
     </>
   );
