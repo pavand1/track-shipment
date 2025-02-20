@@ -113,6 +113,11 @@ export const resourceOptions = [
     link: "#faqs",
     route: RESOURCE_FAQs,
   },
+  {
+    name: "Contact Us",
+    link: "#contacts",
+    route: CONTACTS_ROUTE,
+  },
   { name: "Careers", 
     link: "#careers", 
     route: RESOURCE_CAREER 

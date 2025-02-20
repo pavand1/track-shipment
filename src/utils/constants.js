@@ -21,7 +21,7 @@ export const KIRANWAKDE = "/kiranWakde";
 export const VIRALDESAI = "/viralDesai";
 export const SINJUPAULOSE = "/sinjuPaulose";
 export const VINAYAKSUKHDARE = "/vinayakSukhdare";
-
+export const OURTEAM = "/our-team";
 //Footer links
 export const BLOG_TRACK_ROUTE = "/blogtrack";
 export const ORDER_ROUTE = "/order";

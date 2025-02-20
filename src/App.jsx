@@ -37,6 +37,7 @@ import {
   RESOURCE_CASE_STUDIES,
   RESOURCE_CAREER,
   RESOURCE_FAQs,
+  OURTEAM,
 } from "./utils/constants.js";
 import Faqs from "./routes/faqs/Faqs";
 import RefundPolicy from "./routes/refund-policy/RefundPolicy";
@@ -140,6 +141,7 @@ const App = () => {
             <Route path={RESOURCE_CASE_STUDIES} element={<Resource setRouteChange={setRouteChange}/>} />
             <Route path={RESOURCE_CAREER} element={<Resource setRouteChange={setRouteChange}/>} />
             <Route path={RESOURCE_FAQs} element={<Resource setRouteChange={setRouteChange}/>} />
+            <Route path={OURTEAM} element={<Resource setRouteChange={setRouteChange}/>} />
             <Route path="*" exact element={<HomeRoute />} />
           </Routes>
         </main>
