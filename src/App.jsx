@@ -112,10 +112,10 @@ const App = () => {
             <Route path={BLOG1} element={<Blog1 />} />
             <Route path={BLOG2} element={<Blog2 />} />
             <Route path={BLOG3} element={<Blog3 />} />
-            {/* <Route path={KIRANWAKDE} element={<Ourteam />} />
+            <Route path={KIRANWAKDE} element={<Ourteam />} />
             <Route path={VIRALDESAI} element={<Ourteam />} />
             <Route path={SINJUPAULOSE} element={<Ourteam />} />
-            <Route path={VINAYAKSUKHDARE} element={<Ourteam />} /> */}
+            <Route path={VINAYAKSUKHDARE} element={<Ourteam />} />
             <Route
               path={PRIVACY_POLICY_ROUTE}
               exact

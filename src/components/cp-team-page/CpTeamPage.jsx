@@ -1,17 +1,21 @@
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import Aos from "aos";
 import styles from "./cpTeamPageTrack.module.scss";
 import { mockData1 } from "./CpTeamPage_data";
 
-const CpTeam1 = () => {
+const CpTeam1 = ({isCurrent}) => {
+  const ref = useRef();
   useEffect(() => {
-      Aos.init({ duration: 2000 });
-    }, []);
+    if (ref.current && isCurrent) ref.current.scrollIntoView({ behavior: "smooth" });
+  }, []);
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
   return (
     <>
-      <section className={styles.section}>
+      <section className={styles.section} ref={ref}>
         <div className={styles.about}>
-        <div className={styles.column} data-aos="fade-left">
+          <div className={styles.column} data-aos="fade-left">
             <img
               src={mockData1.imageSrc}
               alt={mockData1.imageAlt}
