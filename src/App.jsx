@@ -56,6 +56,7 @@ import Kiranwakde from "./routes/kiranWakde/kiranWakde.jsx";
 import VinayakSukhdare from "./routes/vinayakSukhdare/vinayakSukhdare.jsx";
 import ViralDesai from "./routes/viralDesai/viralDesai.jsx";
 import SinjuPaulose from "./routes/sinjuPaulose/sinjuPaulose.jsx";
+import Ourteam from "./routes/our-teams/Ourteam.jsx";
 
 const App = () => {
   const ref = useRef();
@@ -111,10 +112,10 @@ const App = () => {
             <Route path={BLOG1} element={<Blog1 />} />
             <Route path={BLOG2} element={<Blog2 />} />
             <Route path={BLOG3} element={<Blog3 />} />
-            <Route path={KIRANWAKDE} element={<Kiranwakde />} />
-            <Route path={VIRALDESAI} element={<ViralDesai />} />
-            <Route path={SINJUPAULOSE} element={<SinjuPaulose />} />
-            <Route path={VINAYAKSUKHDARE} element={<VinayakSukhdare />} />
+            <Route path={KIRANWAKDE} element={<Ourteam />} />
+            <Route path={VIRALDESAI} element={<Ourteam />} />
+            <Route path={SINJUPAULOSE} element={<Ourteam />} />
+            <Route path={VINAYAKSUKHDARE} element={<Ourteam />} />
             <Route
               path={PRIVACY_POLICY_ROUTE}
               exact
@@ -137,11 +138,26 @@ const App = () => {
             />
             <Route path={FAQ_ROUTE} exact element={<Faqs />} />
             <Route path={CONTACTS_ROUTE} exact element={<ContactsRoute />} />
-            <Route path={RESOURCE_BLOGS} element={<Resource setRouteChange={setRouteChange}/>} />
-            <Route path={RESOURCE_CASE_STUDIES} element={<Resource setRouteChange={setRouteChange}/>} />
-            <Route path={RESOURCE_CAREER} element={<Resource setRouteChange={setRouteChange}/>} />
-            <Route path={RESOURCE_FAQs} element={<Resource setRouteChange={setRouteChange}/>} />
-            <Route path={OURTEAM} element={<Resource setRouteChange={setRouteChange}/>} />
+            <Route
+              path={RESOURCE_BLOGS}
+              element={<Resource setRouteChange={setRouteChange} />}
+            />
+            <Route
+              path={RESOURCE_CASE_STUDIES}
+              element={<Resource setRouteChange={setRouteChange} />}
+            />
+            <Route
+              path={RESOURCE_CAREER}
+              element={<Resource setRouteChange={setRouteChange} />}
+            />
+            <Route
+              path={RESOURCE_FAQs}
+              element={<Resource setRouteChange={setRouteChange} />}
+            />
+            <Route
+              path={OURTEAM}
+              element={<Ourteam setRouteChange={setRouteChange} />}
+            />
             <Route path="*" exact element={<HomeRoute />} />
           </Routes>
         </main>

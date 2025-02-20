@@ -4,7 +4,7 @@ import HomeComponent from "../../components/home";
 const ViralDesai = () => {
   return (
     <>
-      <HomeComponent />
+      {/* <HomeComponent /> */}
       <CpTeam3 />
     </>
   );

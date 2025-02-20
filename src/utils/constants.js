@@ -17,10 +17,10 @@ export const BLOG2 =
   "/blog/B2B-logistics-the-backbone-of-efficient-business-operations";
 export const BLOG3 =
   "/blog/when-to-use-full-truckload-vs-partial-truckload-for-cost-effective-freight-management";
-export const KIRANWAKDE = "/kiranWakde";
-export const VIRALDESAI = "/viralDesai";
-export const SINJUPAULOSE = "/sinjuPaulose";
-export const VINAYAKSUKHDARE = "/vinayakSukhdare";
+export const KIRANWAKDE = "/our-team/kiranWakde";
+export const VIRALDESAI = "/our-team/viralDesai";
+export const SINJUPAULOSE = "/our-team/sinjuPaulose";
+export const VINAYAKSUKHDARE = "/our-team/vinayakSukhdare";
 export const OURTEAM = "/our-team";
 //Footer links
 export const BLOG_TRACK_ROUTE = "/blogtrack";

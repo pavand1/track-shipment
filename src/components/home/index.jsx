@@ -13,7 +13,7 @@ const HomeComponent = () => {
     if (pathname === "/") return "../../images/Home/Doodle Background.png";
     if (pathname.includes("case")) return "../../images/Home/Case Studies.png";
     if (pathname.includes("faq")) return "../../images/Home/FAQs.png";
-    if(pathname.includes("blogs")) return "../../images/Home/blogs.png";
+    if (pathname.includes("blogs")) return "../../images/Home/blogs.png";
     if (pathname.includes("/resources"))
       return "../../images/Home/Resource.png";
     if (pathname.includes("services"))
@@ -27,6 +27,7 @@ const HomeComponent = () => {
       return "../../images/Home/Terms & Conditions.png";
     if (pathname.includes("privacy"))
       return "../../images/Home/Privacy and Policy.png";
+    if (pathname.includes("team")) return "../../images/our-team/Our-Team.jpg";
     return "../../images/Our-service-bg.svg";
   };
 

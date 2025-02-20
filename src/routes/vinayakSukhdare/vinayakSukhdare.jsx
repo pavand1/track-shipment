@@ -4,7 +4,7 @@ import HomeComponent from "../../components/home";
 const VinayakSukhdare = () => {
   return (
     <>
-      <HomeComponent /> 
+      {/* <HomeComponent />  */}
       <CpTeam4 />
     </>
   );

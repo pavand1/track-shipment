@@ -2,7 +2,9 @@ import { useEffect } from "react";
 import Aos from "aos";
 import styles from "./cpOurTeam.module.scss";
 import teamData from "./CpOurTeam_data";
+import { useNavigate } from "react-router-dom";
 const CpOurTeam = () => {
+  const navigate = useNavigate();
   useEffect(() => {
     Aos.init({ duration: 2000 });
   }, []);
@@ -24,7 +26,7 @@ const CpOurTeam = () => {
                     <p className={styles.description}>{member.description}</p>
                     <button
                       className={styles.readMore}
-                      onClick={() => window.open(member.moreInfo, "_blank")}
+                      onClick={() => navigate(member.moreInfo)}
                     >
                       Read More
                     </button>

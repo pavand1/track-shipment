@@ -4,7 +4,7 @@ import HomeComponent from "../../components/home";
 const SinjuPaulose = () => {
   return (
     <>
-      <HomeComponent />
+      {/* <HomeComponent /> */}
       <CpTeam2 />
     </>
   );

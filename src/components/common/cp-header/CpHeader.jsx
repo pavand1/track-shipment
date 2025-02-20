@@ -90,7 +90,7 @@ const CpHeader = ({ setRouteChange, outsideClick }) => {
             alt=""
             onClick={() => {
               navigate("/");
-              setRouteChange("/");
+              setRouteChange(pathname + "/");
             }}
           />
         </div>
@@ -106,8 +106,11 @@ const CpHeader = ({ setRouteChange, outsideClick }) => {
             height: `${height}px`,
           }}
         >
-          <img src="../../images/Home/Buckle Track Option.svg" alt=""   onClick={() => navigate("/")}
-        />
+          <img
+            src="../../images/Home/Buckle Track Option.svg"
+            alt=""
+            onClick={() => navigate("/")}
+          />
         </div>
       )}
       <div
