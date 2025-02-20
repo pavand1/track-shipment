@@ -157,7 +157,7 @@
           color: $clr-root;
           text-decoration: none;
           display: block;
-          padding: 1rem 1.5rem;
+          padding: 1rem 0.8rem;
           font-size: 1.6rem;
           text-transform: uppercase;
           &:hover {
@@ -239,6 +239,9 @@
       ul {
         flex-direction: row; // Horizontal layout
         gap: 1.6rem; // Ensure consistent spacing
+      }
+      .logoPlaceholder ul{
+        gap: 0.6rem;
       }
 
       li {

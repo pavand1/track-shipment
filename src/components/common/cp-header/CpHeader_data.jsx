@@ -43,6 +43,7 @@ const mockMenuData = [
       { name: "Case Studies", link: RESOURCE_CASE_STUDIES },
       { name: "Blogs", link: RESOURCE_BLOGS },
       { name: "FAQs", link: RESOURCE_FAQs },
+      {name: "Contact us", link: CONTACTS_ROUTE},
       // { name: "Career", link: RESOURCE_CAREER },
     ],
   },

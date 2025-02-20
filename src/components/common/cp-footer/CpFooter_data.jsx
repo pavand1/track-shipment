@@ -56,7 +56,7 @@ export const linksColumn2 = [
 ];
 
 export const linksColumn3 = [
-  { name: "Contact Us", link: "#order", route: CONTACTS_ROUTE },
+ // { name: "Contact Us", link: "#order", route: CONTACTS_ROUTE },
   // {
   //   name: "Terms and Conditions",
   //   link: "#terms-and-conditions",
@@ -99,7 +99,7 @@ export const ourServicesOptions = [
 
 export const resourceOptions = [
   {
-    name: "Case Study",
+    name: "Case Studies",
     link: "#case",
     route: RESOURCE_CASE_STUDIES,
   },
@@ -112,6 +112,10 @@ export const resourceOptions = [
     name: "FAQ's",
     link: "#faqs",
     route: RESOURCE_FAQs,
+  },
+  { name: "Careers", 
+    link: "#careers", 
+    route: RESOURCE_CAREER 
   },
 ];
 
