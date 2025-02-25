@@ -15,6 +15,7 @@ import AllResources from "./AllResources";
 import Blogs from "./Blogs";
 import CpFaq from "../../components/cp-faq/CpFaq";
 import Career from "./Career";
+import CaseStudies from "./CaseStudies";
 
 const Resource = ({ setRouteChange }) => {
   const ref = useRef();
@@ -79,7 +80,9 @@ const Resource = ({ setRouteChange }) => {
         {targetPage === "blogs" && <Blogs setRouteChange={setRouteChange} />}
         {targetPage === "faqs" && <CpFaq />}
         {targetPage === "career" && <Career />}
-        {targetPage === "case-studies" && <AllResources />}
+        {targetPage === "case-studies" && (
+          <CaseStudies setRouteChange={setRouteChange} />
+        )}
       </div>
     </>
   );

@@ -2,7 +2,12 @@ import { useEffect } from "react";
 import Styles from "./Home.module.scss";
 import Aos from "aos";
 import { useLocation, useNavigate } from "react-router-dom";
-import { RESOURCE_CASE_STUDIES } from "../../utils/constants";
+import {
+  CASE1,
+  CASE2,
+  CASE3,
+  RESOURCE_CASE_STUDIES,
+} from "../../utils/constants";
 
 const CaseStudies = () => {
   const navigate = useNavigate();
@@ -45,18 +50,23 @@ const CaseStudies = () => {
               <div className={Styles.image}>
                 <img src="../../images/services/Surface Transport.png" alt="" />
                 <div className={Styles.tag}>
-                  <p style={{ marginBottom: "0rem",fontSize:"1.6rem",lineHeight:"2rem" }}>BuckleTrack TMS Boosts Efficiency</p>
+                  <p
+                    style={{
+                      marginBottom: "0rem",
+                      fontSize: "1.6rem",
+                      lineHeight: "2rem",
+                    }}
+                  >
+                    BuckleTrack TMS Boosts Efficiency
+                  </p>
                 </div>
               </div>
               <div className={Styles.text}>
-              A major retailer faced challenges in optimizing its supply chain operations, 
-              including inefficient logistics management
+                A major retailer faced challenges in optimizing its supply chain
+                operations, including inefficient logistics management
               </div>
-              
-             <div
-                className={Styles.button}
-                onClick={() => navigate(RESOURCE_CASE_STUDIES)}
-              >
+
+              <div className={Styles.button} onClick={() => navigate(CASE1)}>
                 Read More
               </div>
             </div>
@@ -64,17 +74,22 @@ const CaseStudies = () => {
               <div className={Styles.image}>
                 <img src="../../images/services/Express Delivery.png" alt="" />
                 <div className={Styles.tag}>
-                  <p style={{ marginBottom: "0rem",fontSize:"1.6rem",lineHeight:"2rem" }}>Sustainable & Secure Packaging by BuckleTrack</p>
+                  <p
+                    style={{
+                      marginBottom: "0rem",
+                      fontSize: "1.6rem",
+                      lineHeight: "2rem",
+                    }}
+                  >
+                    Sustainable & Secure Packaging by BuckleTrack
+                  </p>
                 </div>
               </div>
               <div className={Styles.text}>
-              A giant logistics provider faced challenges in protecting products 
-              during transit and streamlining handling processes
+                A giant logistics provider faced challenges in protecting
+                products during transit and streamlining handling processes
               </div>
-             <div
-                className={Styles.button}
-                onClick={() => navigate(RESOURCE_CASE_STUDIES)}
-              >
+              <div className={Styles.button} onClick={() => navigate(CASE2)}>
                 Read More
               </div>
             </div>
@@ -82,17 +97,22 @@ const CaseStudies = () => {
               <div className={Styles.image}>
                 <img src="../../images/services/Project Transport.png" alt="" />
                 <div className={Styles.tag}>
-                  <p style={{ marginBottom: "0rem",fontSize:"1.6rem",lineHeight:"2rem" }}>Smart Route Planning with Real-Time Tracking</p>
+                  <p
+                    style={{
+                      marginBottom: "0rem",
+                      fontSize: "1.6rem",
+                      lineHeight: "2rem",
+                    }}
+                  >
+                    Smart Route Planning with Real-Time Tracking
+                  </p>
                 </div>
               </div>
               <div className={Styles.text}>
-              A leading e-commerce company struggled with timely deliveries due to fluctuating 
-              demand and last-mile inefficiencies
+                A leading e-commerce company struggled with timely deliveries
+                due to fluctuating demand and last-mile inefficiencies
               </div>
-             <div
-                className={Styles.button}
-                onClick={() => navigate(RESOURCE_CASE_STUDIES)}
-              >
+              <div className={Styles.button} onClick={() => navigate(CASE3)}>
                 Read More
               </div>
             </div>

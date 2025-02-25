@@ -38,6 +38,9 @@ import {
   RESOURCE_CAREER,
   RESOURCE_FAQs,
   OURTEAM,
+  CASE1,
+  CASE2,
+  CASE3,
 } from "./utils/constants.js";
 import Faqs from "./routes/faqs/Faqs";
 import RefundPolicy from "./routes/refund-policy/RefundPolicy";
@@ -57,6 +60,9 @@ import VinayakSukhdare from "./routes/vinayakSukhdare/vinayakSukhdare.jsx";
 import ViralDesai from "./routes/viralDesai/viralDesai.jsx";
 import SinjuPaulose from "./routes/sinjuPaulose/sinjuPaulose.jsx";
 import Ourteam from "./routes/our-teams/Ourteam.jsx";
+import Case1 from "./routes/resource/case-studies/Case1.jsx";
+import Case2 from "./routes/resource/case-studies/Case2.jsx";
+import Case3 from "./routes/resource/case-studies/Case3.jsx";
 
 const App = () => {
   const ref = useRef();
@@ -112,6 +118,9 @@ const App = () => {
             <Route path={BLOG1} element={<Blog1 />} />
             <Route path={BLOG2} element={<Blog2 />} />
             <Route path={BLOG3} element={<Blog3 />} />
+            <Route path={CASE1} element={<Case1 />} />
+            <Route path={CASE2} element={<Case2 />} />
+            <Route path={CASE3} element={<Case3 />} />
             <Route path={KIRANWAKDE} element={<Ourteam />} />
             <Route path={VIRALDESAI} element={<Ourteam />} />
             <Route path={SINJUPAULOSE} element={<Ourteam />} />
