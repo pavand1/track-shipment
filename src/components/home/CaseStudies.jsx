@@ -45,63 +45,56 @@ const CaseStudies = () => {
               <div className={Styles.image}>
                 <img src="../../images/services/Surface Transport.png" alt="" />
                 <div className={Styles.tag}>
-                  <p style={{ marginBottom: "0rem" }}>Case Study 1</p>
+                  <p style={{ marginBottom: "0rem",fontSize:"1.6rem",lineHeight:"2rem" }}>BuckleTrack TMS Boosts Efficiency</p>
                 </div>
               </div>
               <div className={Styles.text}>
-                A major retailer sought to enhance its supply chain efficiency
-                through advanced technology. BuckleTrack implemented an
-                integrated TMS, resulting in improved logistics management,
-                reduced lead times, and higher customer satisfaction.
+              A major retailer faced challenges in optimizing its supply chain operations, 
+              including inefficient logistics management
               </div>
-              {/* <div
+              
+             <div
                 className={Styles.button}
                 onClick={() => navigate(RESOURCE_CASE_STUDIES)}
               >
                 Read More
-              </div> */}
+              </div>
             </div>
             <div className={Styles.card} data-aos="fade-up">
               <div className={Styles.image}>
                 <img src="../../images/services/Express Delivery.png" alt="" />
                 <div className={Styles.tag}>
-                  <p style={{ marginBottom: "0rem" }}>Case Study 2</p>
+                  <p style={{ marginBottom: "0rem",fontSize:"1.6rem",lineHeight:"2rem" }}>Sustainable & Secure Packaging by BuckleTrack</p>
                 </div>
               </div>
               <div className={Styles.text}>
-                A giant logistics provider needed a solution for tailored
-                packaging solutions designed to protect the products and
-                streamline handling. Our experience-rich team ensures that
-                packaging is optimized for both efficiency and sustainability,
-                reducing waste and improving cost-effectiveness.
+              A giant logistics provider faced challenges in protecting products 
+              during transit and streamlining handling processes
               </div>
-              {/* <div
+             <div
                 className={Styles.button}
                 onClick={() => navigate(RESOURCE_CASE_STUDIES)}
               >
                 Read More
-              </div> */}
+              </div>
             </div>
             <div className={Styles.card} data-aos="fade-up">
               <div className={Styles.image}>
                 <img src="../../images/services/Project Transport.png" alt="" />
                 <div className={Styles.tag}>
-                  <p style={{ marginBottom: "0rem" }}>Case Study 3</p>
+                  <p style={{ marginBottom: "0rem",fontSize:"1.6rem",lineHeight:"2rem" }}>Smart Route Planning with Real-Time Tracking</p>
                 </div>
               </div>
               <div className={Styles.text}>
-                A giant logistics provider needed a solution for tailored
-                packaging solutions designed to protect the products and
-                streamline handling. Our experience-rich team ensures that
-                packaging is optimized for both efficiency and sustainability,
-                reducing waste and improving cost-effectiveness.
+              A leading e-commerce company struggled with timely deliveries due to fluctuating 
+              demand and last-mile inefficiencies
               </div>
-              {/* <div
+             <div
                 className={Styles.button}
                 onClick={() => navigate(RESOURCE_CASE_STUDIES)}
               >
                 Read More
-              </div> */}
+              </div>
             </div>
           </div>
         </div>
