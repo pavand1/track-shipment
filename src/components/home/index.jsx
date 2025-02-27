@@ -41,7 +41,7 @@ const HomeComponent = () => {
             style={{ width: "105%", minHeight: "550px" }}
           />
         ) : (
-          <img src={getImgURL()} alt="" />
+          <img src={getImgURL()} alt="" style={{ minHeight: "550px" }} />
         )}
         <div className={Styles.subContainer}>
           <div className={Styles.mojo}>
