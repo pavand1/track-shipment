@@ -29,7 +29,13 @@
       gap: 0rem;
     }
   }
+  .about > *:first-child {
+    flex: 0 0 50%;
+}
 
+.about > *:last-child {
+    flex: 0 0 50%;
+}
   .column {
     flex: 1;
 
@@ -58,6 +64,7 @@
   }
   .list {
     padding-left: 2rem;
+    text-align: justify;
     li {
       font-size: 1.8rem;
       line-height: 2.8rem;

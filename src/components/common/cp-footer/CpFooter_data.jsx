@@ -127,7 +127,7 @@ export const resourceOptions = [
 export const contactInfo = {
   address: {
     icon: "../../images/footer/location.png",
-    text: "223, Sahar Cargo Estate, J B Nagar, Andheri East, Mumbai - 400099",
+    text: "225, SAHAR CARGO ESTATE, V M SHAH MARG, J B NAGAR, Greater Bombay Bank, Andheri East, Mumbai, Mumbai Suburban, Maharashtra, 400059",
   },
   email: {
     icon: "../../images/footer/email.svg",
