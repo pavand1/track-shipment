@@ -1,8 +1,10 @@
 import { useEffect } from "react";
 import Aos from "aos";
 import styles from "./cpOurTeam.module.scss";
-import teamData from "./CpOurTeam_data";
+import teamData, { restTeam } from "./CpOurTeam_data";
 import { useNavigate } from "react-router-dom";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination, Navigation } from "swiper/modules";
 const CpOurTeam = () => {
   const navigate = useNavigate();
   useEffect(() => {
@@ -48,6 +50,60 @@ const CpOurTeam = () => {
             ))}
           </div>
         </div>
+      </section>
+      <section className={styles.section}>
+        <Swiper
+          slidesPerView={4}
+          spaceBetween={30}
+          loop={true}
+          pagination={{
+            clickable: true,
+          }}
+          navigation={true}
+          modules={[Pagination, Navigation]}
+          className="mySwiper"
+        >
+          {restTeam.map((member) => (
+            <SwiperSlide key={member.id}>
+              <div className={styles.teamCard}>
+                <div className={styles.photoWrapper}>
+                  <img
+                    src={member.photo}
+                    alt={member.name}
+                    className={styles.photo}
+                  />
+                  <div className={styles.overlay}>
+                    <div className={styles.linkdinProfile}>
+                      <a href={member.linkdinHref}>
+                        <img
+                          src={member.linkdinSrc}
+                          className={styles.linkdin}
+                        />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  className={styles.info}
+                  style={{ padding: "1rem", background: "#ef4136" }}
+                >
+                  <h3
+                    className={styles.name}
+                    style={{ color: "#FFFFFF", fontSize: "18px" }}
+                  >
+                    {member.name}
+                  </h3>
+                  <p
+                    className={styles.designation}
+                    style={{ color: "#FFFFFF", fontSize: "16px" }}
+                  >
+                    {member.designation}
+                  </p>
+                </div>
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </section>
     </>
   );
