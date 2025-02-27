@@ -99,7 +99,9 @@ const CpFooter = ({ setRouteChange }) => {
                 </li>
               ))}
             </ul>
-            <h4 style={{marginTop: "30px"}} className={styles.footerHeading}>Resources</h4>
+            <h4 style={{ marginTop: "30px" }} className={styles.footerHeading}>
+              Resources
+            </h4>
             <ul>
               {/* <li>
                 <Link
@@ -116,7 +118,11 @@ const CpFooter = ({ setRouteChange }) => {
                     to={item.route}
                     key={index}
                     className={styles.item}
-                    // onClick={() => setRouteChange(item.route)}
+                    onClick={
+                      item.name === "Contact Us"
+                        ? () => setRouteChange(item.route)
+                        : () => {}
+                    }
                   >
                     {item.name}
                   </Link>
