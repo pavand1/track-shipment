@@ -36,8 +36,8 @@ const RateOrderForm = () => {
     const payload = {
       MobileNo: mobileNumber,
       OTPlen: 5,
-      UserName: "YourUserName@ifreightbox.com",
-      password: "YourPassword",
+      UserName: "otpuser@ifb.com",
+      password: "123@ifb",
     };
     //call API to send user OTP
     try {
