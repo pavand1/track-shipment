@@ -13,7 +13,9 @@ const RateOrderForm = () => {
   const [isOtpValid, setIsOtpValid] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState("");
+  const [otp, setOtp] = useState("");
 
+  const [mobileNumber, setMobileNumber] = useState("");
   const [startPin, setStartPin] = useState("");
   const [endPin, setEndPin] = useState("");
   const [weight, setWeight] = useState("");
@@ -25,39 +27,123 @@ const RateOrderForm = () => {
     else setOrderType(e?.target?.id);
   };
 
-  const handleSendOtp = () => {
+  const handleSendOtp = async () => {
+    if (mobileNumber.length !== 10) {
+      setError("Mobile number is invalid");
+      return;
+    }
+    setError("");
+    const payload = {
+      MobileNo: mobileNumber,
+      OTPlen: 5,
+      UserName: "YourUserName@ifreightbox.com",
+      password: "YourPassword",
+    };
     //call API to send user OTP
+    try {
+      setIsLoading(true);
+      const response = await fetch(
+        "https://nol.ifreightbox.net/api/StepVerification/GenerateOTP",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "text/plain",
+          },
+          body: JSON.stringify(payload),
+        }
+      );
+      const data = await response.json();
+      setIsLoading(false);
+      console.log(data);
+      setIsOtpSent(true);
+    } catch (error) {
+      setIsLoading(false);
+      console.log(error);
+    }
   };
 
-  const handleSubmit = () => {
-    if (!startPin || !endPin) return;
-    if (orderType === "ftl" && !vehicalType) return;
-    if (orderType !== "ftl" && !weight) return;
-    const formData = new FormData();
-    formData.append("startPinCode", startPin);
-    formData.append("destinationPinCode", endPin);
-    formData.append("weight", weight);
-    formData.append("vehicalType", vehicalType);
-    setIsLoading(true);
-    emailjs
-      .sendForm("service_f5bl48g", "template_agxy0jb", formData, {
-        publicKey: "UwYDiQ1gdS6YNU1C-",
-      })
-      .then(() => {
-        setStartPin("");
-        setEndPin("");
-        setWeight("");
-        setVehicalType("");
-        setIsLoading(false);
-        setError("Our Expert will get in touch with you shortly");
+  const handleSubmit = async () => {
+    if (!otp) {
+      setError("Enter OTP");
+      return;
+    }
+    if (!startPin || !endPin) {
+      setError("Start Pin & Destination Pin can not be empty");
+      return;
+    }
+    if (orderType === "ftl" && !vehicalType) {
+      setError("Enter Vehical type");
+      return;
+    }
+    if (orderType !== "ftl" && !weight) {
+      setError("Enter Weight");
+      return;
+    }
+    // const formData = new FormData();
+    // formData.append("startPinCode", startPin);
+    // formData.append("destinationPinCode", endPin);
+    // formData.append("weight", weight);
+    // formData.append("vehicalType", vehicalType);
+    // setIsLoading(true);
+    // emailjs
+    //   .sendForm("service_f5bl48g", "template_agxy0jb", formData, {
+    //     publicKey: "UwYDiQ1gdS6YNU1C-",
+    //   })
+    //   .then(() => {
+    //     setStartPin("");
+    //     setEndPin("");
+    //     setWeight("");
+    //     setVehicalType("");
+    //     setIsLoading(false);
+    //     setError("Our Expert will get in touch with you shortly");
+    //     setTimeout(() => setError(""), 5000);
+    //   })
+    //   .catch((e) => {
+    //     console.log(e);
+    //     setIsLoading(false);
+    //     setError("Something went wrong, please try later!");
+    //     setTimeout(() => setError(""), 5000);
+    //   });
+
+    const payload = {
+      MobileNo: mobileNumber,
+      OTP: otp,
+    };
+    try {
+      setIsLoading(true);
+      const response = await fetch(
+        "https://nol.ifreightbox.net/api/StepVerification/ValidateOTP",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "text/plain",
+          },
+          body: JSON.stringify(payload),
+        }
+      );
+      const data = await response.json();
+      setIsLoading(false);
+      if (data === "Invalid OTP!") {
+        setError("OTP you entered is invalid");
         setTimeout(() => setError(""), 5000);
-      })
-      .catch((e) => {
-        console.log(e);
-        setIsLoading(false);
-        setError("Something went wrong, please try later!");
-        setTimeout(() => setError(""), 5000);
-      });
+        return;
+      }
+      setError("We got your details, Our representative will call you.");
+      setTimeout(() => setError(""), 5000);
+      clearStates();
+    } catch (error) {
+      setIsLoading(false);
+      console.log(error);
+    }
+  };
+
+  const clearStates = () => {
+    setStartPin("");
+    setEndPin("");
+    setIsOtpValid(false);
+    setVehicalType("");
+    setWeight("");
+    setMobileNumber("");
   };
 
   const handleFormSumbit = (e) => {
@@ -125,17 +211,30 @@ const RateOrderForm = () => {
                 <label htmlFor="express">EXPRESS</label>
               </div>
             </div>
-            {/* <div className={Styles.mobile}>
+            <div className={Styles.mobile}>
               <input
                 type="text"
                 className={Styles.textBox}
                 ref={ref}
                 placeholder="Enter your mobile number"
+                value={mobileNumber}
+                onChange={(e) => setMobileNumber(e.target.value)}
               />
               <div className={Styles.button} onClick={handleSendOtp}>
                 Get OTP
               </div>
-            </div> */}
+            </div>
+            {isOtpSent && (
+              <div className={Styles.row}>
+                <input
+                  type="text"
+                  className={Styles.orderNoText}
+                  placeholder="Enter Valid OTP"
+                  value={otp}
+                  onChange={(e) => setOtp(e.target.value)}
+                />
+              </div>
+            )}
             <div className={Styles.row}>
               <input
                 type="text"
@@ -170,21 +269,17 @@ const RateOrderForm = () => {
                   onChange={(e) => setWeight(e.target.value)}
                 />
               )}
-              <div className={Styles.button} onClick={handleSubmit}>
+              <div
+                className={Styles.button}
+                onClick={isOtpSent ? handleSubmit : () => {}}
+                style={{ cursor: isOtpSent ? "pointer" : "not-allowed" }}
+              >
                 Submit
               </div>
             </div>
             {error && <p className={Styles.error}>{error}</p>}
-            {isOtpSent && (
-              <div className={Styles.row}>
-                <input
-                  type="text"
-                  className={Styles.orderNoText}
-                  placeholder="Enter Valid OTP"
-                />
-              </div>
-            )}
-            {isOtpValid && (
+
+            {/* {isOtpValid && (
               <>
                 <div className={Styles.row}>
                   <input
@@ -237,7 +332,7 @@ const RateOrderForm = () => {
                   </button>
                 </div>
               </>
-            )}
+            )} */}
           </form>
         ) : (
           <form onSubmit={(e) => handleFormSumbit(e)}>
