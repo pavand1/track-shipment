@@ -13,12 +13,12 @@ const Case1 = () => {
       <HomeComponent />
       <div className="blog" ref={ref}>
         <div className="section-blog">
-          <img
+          {/* <img
             className="blog-featured-img"
             src="../../images/blog/b2b-logistics.png"
-          />
+          /> */}
           <h1>BuckleTrack TMS Boosts Efficiency</h1>
-          <p className="specialHeading">Proble Statement</p>
+          <p className="specialHeading">Problem Statement</p>
           <p>
             A major retailer faced challenges in optimizing its supply chain
             operations, including inefficient logistics management, prolonged

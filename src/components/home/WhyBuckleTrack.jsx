@@ -30,7 +30,7 @@ const WhyBuckleTrack = () => {
                   style={{ height: "inherit", width: "inherit" }}
                 />
               </div>
-              <div className={Styles.number}>{"3000+"}</div>
+              <div className={Styles.number}>{"300000+"}</div>
               <div className={Styles.text}>{"No. of Trips"}</div>
             </div>
             <div className={Styles.column}>
@@ -41,7 +41,7 @@ const WhyBuckleTrack = () => {
                   style={{ height: "inherit", width: "inherit" }}
                 />
               </div>
-              <div className={Styles.number}>{"95+"}</div>
+              <div className={Styles.number}>{"15000+"}</div>
               <div className={Styles.text}>{"No. of Pincode Served"}</div>
             </div>
             <div className={Styles.column}>
@@ -52,7 +52,7 @@ const WhyBuckleTrack = () => {
                   style={{ height: "inherit", width: "inherit" }}
                 />
               </div>
-              <div className={Styles.number}>{"82+"}</div>
+              <div className={Styles.number}>{"250+"}</div>
               <div className={Styles.text}>{"No. of Customers Served"}</div>
             </div>
             <div className={Styles.column}>
@@ -63,7 +63,7 @@ const WhyBuckleTrack = () => {
                   style={{ height: "inherit", width: "inherit" }}
                 />
               </div>
-              <div className={Styles.number}>{"7.5 lakh Km+"}</div>
+              <div className={Styles.number}>{"75 Mn KM+"}</div>
               <div className={Styles.text}>{"Distance Covered"}</div>
             </div>
           </div>

@@ -13,12 +13,12 @@ const Case3 = () => {
       <HomeComponent />
       <div className="blog" ref={ref}>
         <div className="section-blog">
-          <img
+          {/* <img
             className="blog-featured-img"
             src="../../images/blog/b2b-logistics.png"
-          />
+          /> */}
           <h1>Smart Route Planning with Real-Time Tracking</h1>
-          <p className="specialHeading">Proble Statement</p>
+          <p className="specialHeading">Problem Statement</p>
           <p>
             A leading e-commerce company struggled with timely deliveries due to
             fluctuating demand and last-mile inefficiencies. These challenges

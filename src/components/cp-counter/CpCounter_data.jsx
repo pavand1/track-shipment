@@ -1,7 +1,7 @@
 const mockData = [
   {
     id: 1,
-    count: 30000,
+    count: 300000,
     currentCount: 5000,
     title: "Item 1",
     image: "../../images/Home/whybucklet/no-of-trips.svg",
@@ -10,7 +10,7 @@ const mockData = [
   {
     id: 2,
     title: "Item 2",
-    count: 5000,
+    count: 15000,
     currentCount: 0,
     image: "../../images/Home/whybucklet/no-of-pincodes.svg",
     description: "No. of Pincode Served",
@@ -18,7 +18,7 @@ const mockData = [
   {
     id: 3,
     title: "Item 4",
-    count: 1500,
+    count: 250,
     currentCount: 0,
     image: "../../images/Home/whybucklet/no-of-customers.svg",
     description: "No. of Customers Served",
@@ -29,7 +29,7 @@ const mockData = [
     count: 7500,
     currentCount: 0,
     image: "../../images/Home/whybucklet/distance.svg",
-    description: "Distance Coverd",
+    description: "Distance Covered",
   },
 ];
 

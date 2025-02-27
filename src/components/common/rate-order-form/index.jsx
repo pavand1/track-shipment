@@ -157,7 +157,7 @@ const RateOrderForm = () => {
                 <input
                   type="text"
                   className={Styles.textBox}
-                  placeholder="Vehical Type"
+                  placeholder="Vehicle Type"
                   value={vehicalType}
                   onChange={(e) => setVehicalType(e.target.value)}
                 />

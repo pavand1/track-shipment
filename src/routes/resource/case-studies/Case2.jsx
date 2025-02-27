@@ -12,12 +12,12 @@ const Case2 = () => {
       <HomeComponent />
       <div className="blog" ref={ref}>
         <div className="section-blog">
-          <img
+          {/* <img
             className="blog-featured-img"
             src="../../images/blog/b2b-logistics.png"
-          />
+          /> */}
           <h1>Sustainable & Secure Packaging by BuckleTrack</h1>
-          <p className="specialHeading">Proble Statement</p>
+          <p className="specialHeading">Problem Statement</p>
           <p>
             A giant logistics provider faced challenges in protecting products
             during transit and streamlining handling processes. Existing

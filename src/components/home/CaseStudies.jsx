@@ -48,7 +48,7 @@ const CaseStudies = () => {
           <div className={Styles.services}>
             <div className={Styles.card} data-aos="fade-up">
               <div className={Styles.image}>
-                <img src="../../images/services/Surface Transport.png" alt="" />
+                <img src="../../images/services/Boosts-Efficiency.jpg" alt="" />
                 <div className={Styles.tag}>
                   <p
                     style={{
@@ -72,7 +72,7 @@ const CaseStudies = () => {
             </div>
             <div className={Styles.card} data-aos="fade-up">
               <div className={Styles.image}>
-                <img src="../../images/services/Express Delivery.png" alt="" />
+                <img src="../../images/services/Secure-Packaging.jpg" alt="" />
                 <div className={Styles.tag}>
                   <p
                     style={{
@@ -95,7 +95,7 @@ const CaseStudies = () => {
             </div>
             <div className={Styles.card} data-aos="fade-up">
               <div className={Styles.image}>
-                <img src="../../images/services/Project Transport.png" alt="" />
+                <img src="../../images/services/real-time-tracking.jpg" alt="" />
                 <div className={Styles.tag}>
                   <p
                     style={{

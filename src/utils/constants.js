@@ -17,13 +17,13 @@ export const BLOG2 =
   "/blog/B2B-logistics-the-backbone-of-efficient-business-operations";
 export const BLOG3 =
   "/blog/when-to-use-full-truckload-vs-partial-truckload-for-cost-effective-freight-management";
-export const CASE1 = "/case-studies/case-1";
-export const CASE2 = "/case-studies/case-2";
-export const CASE3 = "/case-studies/case-3";
-export const KIRANWAKDE = "/our-team/kiranWakde";
-export const VIRALDESAI = "/our-team/viralDesai";
-export const SINJUPAULOSE = "/our-team/sinjuPaulose";
-export const VINAYAKSUKHDARE = "/our-team/vinayakSukhdare";
+export const CASE1 = "/case-studies/tms-boosts-efficiency";
+export const CASE2 = "/case-studies/sustainable-and-secure-packaging";
+export const CASE3 = "/case-studies/smart-route-planning-with-real-time-tracking";
+export const KIRANWAKDE = "/our-team/kiran-wakde";
+export const VIRALDESAI = "/our-team/viral-desai";
+export const SINJUPAULOSE = "/our-team/sinju-paulose";
+export const VINAYAKSUKHDARE = "/our-team/vinayak-sukhdare";
 export const OURTEAM = "/our-team";
 //Footer links
 export const BLOG_TRACK_ROUTE = "/blogtrack";
