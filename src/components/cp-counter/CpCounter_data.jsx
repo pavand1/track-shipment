@@ -5,7 +5,7 @@ const mockData = [
     currentCount: 5000,
     title: "Item 1",
     image: "../../images/Home/whybucklet/no-of-trips.svg",
-    description: "No. of Trips",
+    description: "Shipment Delivered",
   },
   {
     id: 2,
@@ -13,7 +13,7 @@ const mockData = [
     count: 15000,
     currentCount: 0,
     image: "../../images/Home/whybucklet/no-of-pincodes.svg",
-    description: "No. of Pincode Served",
+    description: "Pincode Served",
   },
   {
     id: 3,
@@ -21,7 +21,7 @@ const mockData = [
     count: 250,
     currentCount: 0,
     image: "../../images/Home/whybucklet/no-of-customers.svg",
-    description: "No. of Customers Served",
+    description: "Customers Served",
   },
   {
     id: 4,
