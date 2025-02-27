@@ -26,7 +26,7 @@ const mockData = [
   {
     id: 4,
     title: "Item 3",
-    count: 7500,
+    count: 75000,
     currentCount: 0,
     image: "../../images/Home/whybucklet/distance.svg",
     description: "Distance Covered",

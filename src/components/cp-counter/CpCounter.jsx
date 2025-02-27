@@ -6,7 +6,7 @@ import Aos from "aos";
 const formatNumber = (value) => {
   // Function to format numbers (e.g., 750000 -> 7.5 Lakh Km+)
   if (value >= 1000) {
-    return `${(value / 1000).toFixed(1)} Mn KM+`;
+    return `${(value / 1000).toFixed(0)} Mn KM+`;
   }
   return value.toLocaleString(); // Fallback for other values
 };

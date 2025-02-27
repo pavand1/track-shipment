@@ -14,7 +14,7 @@ const CpTeam4 = ({ isCurrent }) => {
   }, []);
   return (
     <>
-      <section className={styles.section} ref={ref}>
+      <section style={{marginBottom:"5rem"}}className={styles.section} ref={ref}>
         <div className={styles.about}>
           <div className={styles.column} data-aos="fade-left">
             <img

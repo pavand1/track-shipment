@@ -1,6 +1,6 @@
 @import "../../styles/globalSass/variable.scss";
 .section {
-  padding: 8rem 16rem;
+  padding: 8rem 16rem 1rem;
   @media (max-width: 768px) {
     padding: 2rem 2rem 0rem 2rem;
     margin: 2rem 2rem 0rem 0rem;
@@ -66,6 +66,9 @@
       margin-bottom: 2rem;
       font-family: $font-bold;
     }
+    .designation{
+font-size: 20px;
+    }
     p {
       text-align: justify;
       @media (max-width: 768px) {
@@ -75,7 +78,7 @@
   }
 
   .image {
-    width: 100%;
+    width: 93%;
     height: auto;
 
     @media (max-width: 768px) {

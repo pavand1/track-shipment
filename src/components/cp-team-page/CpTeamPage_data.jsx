@@ -1,4 +1,5 @@
 export const mockData1 = {
+
   description:
     "The Quintessential Fitness Freak !! Apart from his love of dabbling successfully in various businesses, Kiran loves to crank up some weights whenever he can. He is our self-appointed fitness guru. Talk about eating out and there’s usually one person missing! Add to this, his boisterous laugh! He can light up a room with his laughter and he loves to use his repertoire of one liners that usually precedes it. In between yes he does find time to successfully run the business. An avid family man, his honesty is in your face. His innate ability to control costs and his keen business acumen are real standouts.",
   imageSrc: "../../images/about/team2.jpg",
@@ -10,7 +11,7 @@ export const mockData1 = {
 export const mockData2 = {
   description:
     "The monk, who can sell his Ferrari !! A simpleton at heart! Underplaying his own achievements is usually a way of life for him. He is brutally honest and his zen like demeanour helps bring about the much needed sanity that is required to run our business. His charming style means that most people who interact with him are usually in love with him. He is a firm believer in life beyond work and he literally lives it up that way and that’s why we call him the monk who could sell his Ferrari. Doing goodness comes naturally to him and this probably explains his ability to strike up long lasting partnerships in our business.",
-  imageSrc: "../../images/about/team4.jpeg",
+  imageSrc: "../../images/about/team4.jpg",
   imageAlt: "Description of image",
   name: "Sinju Paulose",
   designation: "Director"
