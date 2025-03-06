@@ -14,6 +14,7 @@ const RateOrderForm = () => {
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState("");
   const [otp, setOtp] = useState("");
+  const [dataSubmitted, setDataSubmitted] = useState(false);
 
   const [mobileNumber, setMobileNumber] = useState("");
   const [startPin, setStartPin] = useState("");
@@ -21,6 +22,7 @@ const RateOrderForm = () => {
   const [weight, setWeight] = useState("");
   const [vehicalType, setVehicalType] = useState("");
   const ref = useRef();
+  const form = useRef();
 
   const handleRadioChange = (e) => {
     if (e?.target?.name === "orderDetail") setOrderDetail(e.target.id);
@@ -62,49 +64,12 @@ const RateOrderForm = () => {
     }
   };
 
-  const handleSubmit = async () => {
+  const handleValidateOTP = async () => {
     if (!otp) {
       setError("Enter OTP");
       return;
     }
-    if (!startPin || !endPin) {
-      setError("Start Pin & Destination Pin can not be empty");
-      return;
-    }
-    if (orderType === "ftl" && !vehicalType) {
-      setError("Enter Vehical type");
-      return;
-    }
-    if (orderType !== "ftl" && !weight) {
-      setError("Enter Weight");
-      return;
-    }
-    // const formData = new FormData();
-    // formData.append("startPinCode", startPin);
-    // formData.append("destinationPinCode", endPin);
-    // formData.append("weight", weight);
-    // formData.append("vehicalType", vehicalType);
-    // setIsLoading(true);
-    // emailjs
-    //   .sendForm("service_f5bl48g", "template_agxy0jb", formData, {
-    //     publicKey: "UwYDiQ1gdS6YNU1C-",
-    //   })
-    //   .then(() => {
-    //     setStartPin("");
-    //     setEndPin("");
-    //     setWeight("");
-    //     setVehicalType("");
-    //     setIsLoading(false);
-    //     setError("Our Expert will get in touch with you shortly");
-    //     setTimeout(() => setError(""), 5000);
-    //   })
-    //   .catch((e) => {
-    //     console.log(e);
-    //     setIsLoading(false);
-    //     setError("Something went wrong, please try later!");
-    //     setTimeout(() => setError(""), 5000);
-    //   });
-
+    setError("");
     const payload = {
       MobileNo: mobileNumber,
       OTP: otp,
@@ -123,8 +88,8 @@ const RateOrderForm = () => {
       );
       const data = await response.json();
       setIsLoading(false);
-      if (data === "Invalid OTP!") {
-        setError("OTP you entered is invalid");
+      if (data === "Invalid OTP!" || data === "Invalid MobileNo") {
+        setError("OTP or Mobile number you entered is invalid");
         setTimeout(() => setError(""), 5000);
         return;
       }
@@ -137,6 +102,37 @@ const RateOrderForm = () => {
     }
   };
 
+  const handleSubmit = async () => {
+    if (!startPin || !endPin) {
+      setError("Start Pin & Destination Pin can not be empty");
+      return;
+    }
+    if (orderType === "ftl" && !vehicalType) {
+      setError("Enter Vehical type");
+      return;
+    }
+    if (orderType !== "ftl" && !weight) {
+      setError("Enter Weight");
+      return;
+    }
+    setError("");
+    setIsLoading(true);
+    emailjs
+      .sendForm("service_f5bl48g", "template_0i4e6ha", form.current, {
+        publicKey: "UwYDiQ1gdS6YNU1C-",
+      })
+      .then(() => {
+        setIsLoading(false);
+        setDataSubmitted(true);
+      })
+      .catch((e) => {
+        console.log(e);
+        setIsLoading(false);
+        setError("Something went wrong, please try later!");
+        setTimeout(() => setError(""), 5000);
+      });
+  };
+
   const clearStates = () => {
     setStartPin("");
     setEndPin("");
@@ -144,6 +140,9 @@ const RateOrderForm = () => {
     setVehicalType("");
     setWeight("");
     setMobileNumber("");
+    setOtp("");
+    setIsOtpSent(false);
+    setDataSubmitted(false);
   };
 
   const handleFormSumbit = (e) => {
@@ -178,7 +177,7 @@ const RateOrderForm = () => {
           </div> */}
         </div>
         {activeTab === "calc" ? (
-          <form onSubmit={(e) => handleFormSumbit(e)}>
+          <form onSubmit={(e) => handleFormSumbit(e)} ref={form}>
             <div className={Styles.radio}>
               <div style={{ flex: "33%" }}>
                 <input
@@ -211,36 +210,13 @@ const RateOrderForm = () => {
                 <label htmlFor="express">EXPRESS</label>
               </div>
             </div>
-            <div className={Styles.mobile}>
-              <input
-                type="text"
-                className={Styles.textBox}
-                ref={ref}
-                placeholder="Enter your mobile number"
-                value={mobileNumber}
-                onChange={(e) => setMobileNumber(e.target.value)}
-              />
-              <div className={Styles.button} onClick={handleSendOtp}>
-                Get OTP
-              </div>
-            </div>
-            {isOtpSent && (
-              <div className={Styles.row}>
-                <input
-                  type="text"
-                  className={Styles.orderNoText}
-                  placeholder="Enter Valid OTP"
-                  value={otp}
-                  onChange={(e) => setOtp(e.target.value)}
-                />
-              </div>
-            )}
             <div className={Styles.row}>
               <input
                 type="text"
                 className={Styles.textBox}
                 placeholder="Start Pincode"
                 value={startPin}
+                name="startPin"
                 onChange={(e) => setStartPin(e.target.value)}
               />
               <input
@@ -248,6 +224,7 @@ const RateOrderForm = () => {
                 className={Styles.textBox}
                 placeholder="Destination Pincode"
                 value={endPin}
+                name="endPin"
                 onChange={(e) => setEndPin(e.target.value)}
               />
             </div>
@@ -258,6 +235,7 @@ const RateOrderForm = () => {
                   className={Styles.textBox}
                   placeholder="Vehicle Type"
                   value={vehicalType}
+                  name="vehicalType"
                   onChange={(e) => setVehicalType(e.target.value)}
                 />
               ) : (
@@ -266,17 +244,56 @@ const RateOrderForm = () => {
                   className={Styles.textBox}
                   placeholder="Weight"
                   value={weight}
+                  name="weight"
                   onChange={(e) => setWeight(e.target.value)}
                 />
               )}
               <div
                 className={Styles.button}
-                onClick={isOtpSent ? handleSubmit : () => {}}
-                style={{ cursor: isOtpSent ? "pointer" : "not-allowed" }}
+                onClick={!dataSubmitted ? handleSubmit : () => {}}
+                style={{ cursor: !dataSubmitted ? "pointer" : "not-allowed" }}
               >
                 Submit
               </div>
             </div>
+            {dataSubmitted && (
+              <div className={Styles.row}>
+                <input
+                  type="text"
+                  className={Styles.textBox}
+                  ref={ref}
+                  placeholder="Enter your mobile number"
+                  value={mobileNumber}
+                  onChange={(e) => setMobileNumber(e.target.value)}
+                />
+                <div
+                  className={Styles.button}
+                  onClick={mobileNumber ? handleSendOtp : () => {}}
+                  style={{ cursor: mobileNumber ? "pointer" : "not-allowed" }}
+                >
+                  Get OTP
+                </div>
+              </div>
+            )}
+            {isOtpSent && (
+              <div className={Styles.row}>
+                <input
+                  type="text"
+                  className={Styles.textBox}
+                  placeholder="Enter Valid OTP"
+                  value={otp}
+                  onChange={(e) => setOtp(e.target.value)}
+                />
+                <div
+                  className={Styles.button}
+                  onClick={isOtpSent ? handleValidateOTP : () => {}}
+                  style={{ cursor: isOtpSent ? "pointer" : "not-allowed" }}
+                >
+                  Validate OTP
+                </div>
+              </div>
+            )}
+
             {error && <p className={Styles.error}>{error}</p>}
 
             {/* {isOtpValid && (
