@@ -19,7 +19,7 @@ const WhyBuckleTrack = () => {
               fontFamily: "Poppins-Bold",
             }}>Why BuckleTrack</h2>
           <div className={Styles.image}>
-            <img src="../../images/Home/Why Buckle track-1.svg" alt="" />
+            <img src="../../images/Home/Why-Buckle-Track.png" alt="" />
           </div>
           <div className={Styles.matrix}>
             <div className={Styles.column}>

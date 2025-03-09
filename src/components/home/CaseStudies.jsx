@@ -46,7 +46,7 @@ const CaseStudies = () => {
             solutions and exceptional service. Here are some examples:
           </p>
           <div className={Styles.services}>
-            <div className={Styles.card} data-aos="fade-up">
+            <div style={{backgroundColor:"#ffffff", padding:"15px", borderRadius:"10px"}} className={Styles.card} data-aos="fade-up">
               <div className={Styles.image}>
                 <img src="../../images/services/Boosts-Efficiency.jpg" alt="" />
                 <div className={Styles.tag}>
@@ -70,7 +70,7 @@ const CaseStudies = () => {
                 Read More
               </div>
             </div>
-            <div className={Styles.card} data-aos="fade-up">
+            <div style={{backgroundColor:"#ffffff", padding:"15px", borderRadius:"10px"}} className={Styles.card} data-aos="fade-up">
               <div className={Styles.image}>
                 <img src="../../images/services/Secure-Packaging.jpg" alt="" />
                 <div className={Styles.tag}>
@@ -93,7 +93,7 @@ const CaseStudies = () => {
                 Read More
               </div>
             </div>
-            <div className={Styles.card} data-aos="fade-up">
+            <div style={{backgroundColor:"#ffffff", padding:"15px", borderRadius:"10px"}} className={Styles.card} data-aos="fade-up">
               <div className={Styles.image}>
                 <img src="../../images/services/real-time-tracking.jpg" alt="" />
                 <div className={Styles.tag}>

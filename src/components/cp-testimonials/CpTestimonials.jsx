@@ -15,7 +15,7 @@ const CpTestimonials = () => {
   return (
     <>
       <section className={styles.section} data-aos="fade-up">
-        <h2 className={styles.mainHeading}>What Our Customer Says</h2>
+        <h2 className={styles.mainHeading}>What Our Customers Say</h2>
         <div className={styles.sliderContainer}>
           <Swiper
             modules={[Pagination, Navigation]}

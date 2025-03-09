@@ -289,8 +289,8 @@
   .loginButton {
     display: none;
     padding: 0.5rem 1.5rem;
-    background-color: #ef4136;
-    color: #ffffff;
+    background-color: #ffffff;
+    color: #000000;
     border: none;
     cursor: pointer;
     margin-right: 2rem;
@@ -298,8 +298,8 @@
     width: auto;
 
     &:hover {
-      background-color: #ffffff;
-      color: #000;
+      background-color: #ef4136;
+      color: #ffffff;
       font-weight: 800;
     }
 
@@ -310,18 +310,18 @@
   .trackorderButton {
     display: none;
     padding: 0.5rem 1.5rem;
-    color: #ffffff;
+    color: #000000;
+    background-color: #ffffff;
     border: none;
     cursor: pointer;
     margin-right: 2rem;
     border-radius: 1rem;
     width: auto;
-    border: 1px solid #cccccc;
     font-size: 1.6rem;
 
     &:hover {
-      background-color: #ffffff;
-      color: #000;
+      background-color: #ef4136;
+      color: #ffffff;
       font-weight: 800;
     }
 
@@ -332,16 +332,17 @@
   .signupButton {
     display: none;
     padding: 0.5rem 1.5rem;
-    background: #ef4136;
+    background: #ffffff;
     width: 16rem;
     color: $clr-root;
     border: none;
     cursor: pointer;
+    color: #000;
     border-radius: 1rem;
 
     &:hover {
-      background-color: #ffffff;
-      color: #000000;
+      background-color: #ef4136;
+      color: #fff;
       font-weight: 800;
     }
 

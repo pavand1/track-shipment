@@ -281,6 +281,11 @@
     font-family: "Poppins-Bold";
   }
   .doodle {
+    position: relative;
+    min-height: 540px;
+    background-image: url("/images/Home/Doodle%20Background-1.svg");
+    background-repeat: no-repeat;
+    background-position: center;
     .share {
       bottom: 0;
     }
@@ -288,6 +293,19 @@
       right: 84px;
       bottom: 0;
       flex-direction: row;
+    }
+    &.homeServices {
+      position: relative;
+      min-height: 540px;
+      background-image: url("/images/Home/Doodle%20Background-1.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      .servicesImage {
+        display: none;
+      }
+      .subContainer {
+        padding: 2rem;
+      }
     }
   }
 }

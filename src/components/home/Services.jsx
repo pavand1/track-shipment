@@ -11,13 +11,14 @@ const ServicesHome = () => {
   }, []);
   return (
     <>
-      <div className={Styles.doodle}>
+      <div className={`${Styles.doodle} ${Styles.homeServices}`}>
         <img
           src="../../images/Home/Doodle Background-1.svg"
           alt=""
           style={{
             visibility: pathname === "/our-services" ? "hidden" : "visible",
           }}
+          className={Styles.servicesImage}
         />
         <div
           className={Styles.subContainer}
