@@ -119,6 +119,9 @@
       p {
         color: white;
         font-weight: 800;
+        @media only screen and (max-width: 768px) {
+          text-align: center;
+        }
       }
     }
     .button {
@@ -304,7 +307,16 @@
         display: none;
       }
       .subContainer {
-        padding: 2rem;
+        padding: 2rem !important;
+        display: block;
+        position: relative;
+      }
+    }
+    &.caseStudyDoodle {
+      .subContainer {
+        padding: 2rem !important;
+        display: block;
+        position: relative;
       }
     }
   }

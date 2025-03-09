@@ -17,12 +17,13 @@ const CaseStudies = () => {
   }, []);
   return (
     <>
-      <div className={Styles.doodle} style={{ background: "rgb(241 238 238)" }}>
+      <div className={`${Styles.doodle} ${Styles.caseStudyDoodle}`} style={{ background: "rgb(241 238 238)" }}>
         <img
           src="../../images/Home/Doodle Background-1.svg"
           alt=""
           style={{
             visibility: "hidden",
+            display:"none",
           }}
         />
         <div
