@@ -34,6 +34,8 @@ const CaseStudies = () => {
             // alignItems: "center",
             // justifyContent: "center",
             padding: "4rem 8rem",
+            height: "765px",
+            backgroundColor: "#f1eeee"
           }}
         >
           <h2 className={Styles.serviceMobHeading}>Our Case Studies</h2>
