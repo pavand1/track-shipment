@@ -10,25 +10,57 @@ const HomeComponent = () => {
   const navigate = useNavigate();
 
   const getImgURL = () => {
-    if (pathname === "/") return "../../images/Home/Doodle Background.png";
-    if (pathname.includes("case")) return "../../images/Home/Case Studies.png";
-    if (pathname.includes("faq")) return "../../images/Home/FAQs.png";
-    if (pathname.includes("blogs")) return "../../images/Home/blogs.png";
-    if (pathname.includes("/resources"))
-      return "../../images/Home/Resource.png";
-    if (pathname.includes("services"))
-      return "../../images/Home/Our services.png";
-    if (pathname.includes("partner"))
-      return "../../images/Home/Partner with us.png";
-    if (pathname.includes("support")) return "../../images/Home/Support.png";
-    if (pathname.includes("about")) return "../../images/Home/About Us.png";
-    if (pathname.includes("contact")) return "../../images/Home/Contact US.png";
-    if (pathname.includes("conditions"))
-      return "../../images/Home/Terms & Conditions.png";
-    if (pathname.includes("privacy"))
-      return "../../images/Home/Privacy and Policy.png";
-    if (pathname.includes("team")) return "../../images/our-team/Our-Team.jpg";
-    return "../../images/Our-service-bg.svg";
+    if (window.innerWidth < 770) {
+      if (pathname === "/") return "../../images/Home/Doodle Background.png";
+      if (pathname.includes("case"))
+        return "../../images/mobile/partner-with-us-mobile.jpeg";
+      if (pathname.includes("faq"))
+        return "../../images/mobile/partner-with-us-mobile.jpeg";
+      if (pathname.includes("blogs"))
+        return "../../images/mobile/partner-with-us-mobile.jpeg";
+      if (pathname.includes("/resources"))
+        return "../../images/mobile/partner-with-us-mobile.jpeg";
+      if (pathname.includes("services"))
+        return "../../images/mobile/partner-with-us-mobile.jpeg";
+      if (pathname.includes("partner"))
+        return "../../images/mobile/partner-with-us-mobile.jpeg";
+      if (pathname.includes("support"))
+        return "../../images/mobile/partner-with-us-mobile.jpeg";
+      if (pathname.includes("about"))
+        return "../../images/mobile/partner-with-us-mobile.jpeg";
+      if (pathname.includes("contact"))
+        return "../../images/mobile/partner-with-us-mobile.jpeg";
+      if (pathname.includes("conditions"))
+        return "../../images/mobile/partner-with-us-mobile.jpeg";
+      if (pathname.includes("privacy"))
+        return "../../images/mobile/partner-with-us-mobile.jpeg";
+      if (pathname.includes("team"))
+        return "../../images/mobile/partner-with-us-mobile.jpeg";
+      return "../../images/mobile/partner-with-us-mobile.jpeg";
+    } else {
+      if (pathname === "/") return "../../images/Home/Doodle Background.png";
+      if (pathname.includes("case"))
+        return "../../images/Home/Case Studies.png";
+      if (pathname.includes("faq")) return "../../images/Home/FAQs.png";
+      if (pathname.includes("blogs")) return "../../images/Home/blogs.png";
+      if (pathname.includes("/resources"))
+        return "../../images/Home/Resource.png";
+      if (pathname.includes("services"))
+        return "../../images/Home/Our services.png";
+      if (pathname.includes("partner"))
+        return "../../images/Home/Partner with us.png";
+      if (pathname.includes("support")) return "../../images/Home/Support.png";
+      if (pathname.includes("about")) return "../../images/Home/About Us.png";
+      if (pathname.includes("contact"))
+        return "../../images/Home/Contact US.png";
+      if (pathname.includes("conditions"))
+        return "../../images/Home/Terms & Conditions.png";
+      if (pathname.includes("privacy"))
+        return "../../images/Home/Privacy and Policy.png";
+      if (pathname.includes("team"))
+        return "../../images/our-team/Our-Team.jpg";
+      return "../../images/Our-service-bg.svg";
+    }
   };
 
   return (
