@@ -15,9 +15,9 @@ const Partner = () => {
           looking to expand your logistics business, enhance service offerings, or maximize earnings through 
           referrals, our partnership program is designed to fuel growth for both of US!
           </p>
+          <h4 className="sec-heading">Who Can Partner with BuckleTrack?</h4>
+
           <div className="custom-two-column-container">
-              <div className="custom-column">
-              <h4 className="sec-heading">Who Can Partner with BuckleTrack?</h4>
 
                   <ul className="associate-list">
                     <li>
@@ -37,8 +37,9 @@ const Partner = () => {
                         <span className="associate-description">Refer & earn exciting rewards</span>
                     </li>
                 </ul>
-              </div>
-              <div className="custom-column">
+          </div>
+          <div className="custom-two-column-container">
+          <div className="custom-column">
                 {/* <img src="../../images/partner/partner-with-us.jpg" /> */}
                 <h4 className="sec-heading">New Associate – Unlock Exclusive Benefits</h4>
               <p>Join BuckleTrack and gain access to premium logistics solutions tailored to your business needs.</p>
@@ -57,10 +58,17 @@ const Partner = () => {
                         <span className="associate-description">Fast, transparent, and hassle-free shipment handling.</span>
                     </li>
                 </ul>
+                <p className="register-txt"><b>Register now</b> and become a BuckleTrack partner!!</p>
+              </div>
+              <div className="custom-column1">
+                <img src="../../images/partner/new-associate.png" />
               </div>
           </div>
 
           <div className="custom-two-column-container">
+          <div className="custom-column1">
+          <img src="../../images/partner/Existing-Associate.png" />
+          </div>
           <div className="custom-column">
               <h4 className="sec-heading">Existing Associate – Earn More with Every Referral</h4>
               <p>Already working with BuckleTrack? Take advantage of our referral program and maximize your earnings</p>
@@ -76,7 +84,11 @@ const Partner = () => {
                         <span className="associate-description">Gain access to our exclusive Ambassador Program and unlock additional incentives.</span>
                     </li>
                 </ul>
+                <p className="register-txt"><b>Register now</b> and become a BuckleTrack partner!!</p>
               </div>
+          </div>
+
+          <div className="custom-two-column-container">
               <div className="custom-column">
               <h4 className="sec-heading">DSA Associate – Grow Your Business with BuckleTrack</h4>
               <p>As a DSA Associate, you are key in expanding our network.</p>
@@ -101,10 +113,17 @@ const Partner = () => {
                         <span className="associate-description">Revenue generation from qualified leads referred by your agency.</span>
                     </li>
                 </ul>
+                <p className="register-txt"><b>Register now</b> and become a BuckleTrack partner!!</p>
+              </div>
+              <div className="custom-column1">
+              <img src="../../images/partner/dsa-partner.png" />
               </div>
 
           </div>
           <div className="custom-two-column-container">
+          <div className="custom-column1">
+          <img src="../../images/partner/Ambassador-Partner.png" />
+              </div>
           <div className="custom-column">
               <h4 className="sec-heading">Ambassador Associate – Refer & Earn Big!</h4>
               <p>The BuckleTrack Ambassador Associate program is an exciting referral opportunity for individuals and businesses to generate passive income:</p>
@@ -123,6 +142,7 @@ const Partner = () => {
                         <span className="associate-description">Get rewarded for every qualified lead that converts into a BuckleTrack customer.</span>
                     </li>
                 </ul>
+                <p className="register-txt"><b>Register now</b> and become a BuckleTrack partner!!</p>
               </div>
 
           </div>
@@ -135,7 +155,7 @@ const Partner = () => {
           >
             <span>Sign Up Now</span>
           </div> */}
-          <div className="contact">
+          {/* <div className="contact">
             <p>
              <strong>Start Your Journey with BuckleTrack Today!</strong>!
             </p>
@@ -145,7 +165,7 @@ const Partner = () => {
             <p>
              <strong>Register now and become a BuckleTrack partner!</strong>!
             </p>
-          </div>
+          </div> */}
         </div>
       </div>
     </>

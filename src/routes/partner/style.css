@@ -36,7 +36,7 @@ p {
 }
 .custom-two-column-container{
   display: flex;
-  gap: 40px;
+  gap: 0px;
   width: 100%;
   padding-top: 20px;
   margin-bottom: 30px;
@@ -47,7 +47,17 @@ p {
   text-align: center;
   background-color: #ebebeb;
   padding: 20px;
-  border-radius: 10px;
+  border-radius: 0px;
+  min-width: 50%;
+}
+.custom-column{
+  min-width: 50%;
+}
+.custom-column1 img{
+height: 100%;
+}
+.register-txt{
+  padding-top:20px;
 }
 .associate-list {
   list-style: none;
