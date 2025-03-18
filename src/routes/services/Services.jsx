@@ -14,16 +14,11 @@ const Services = ({ isRoot }) => {
       <CpWhyBuckle />
       {!isRoot ? <CpServicesComp /> : <ServicesHome />}
       {
-        <div className={Styles.doodle}>
-          <img src="../../images/Home/Doodle Background-1.svg" alt="" async />
-          <div
-            className={Styles.subContainer}
-            style={{
-              flexDirection: "column",
-              gap: "2rem",
-              padding: "4rem 8rem",
-            }}
-          >
+        <div className={`${Styles.doodle} ${Styles.homeServices}`}>
+          {window.innerWidth > 768 && (
+            <img src="../../images/Home/Doodle Background-1.svg" alt="" async />
+          )}
+          <div className={`${Styles.subContainer} ${Styles.blogs}`}>
             <h1
               style={{
                 fontSize: "4rem",

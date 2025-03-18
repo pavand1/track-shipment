@@ -1,6 +1,6 @@
 .blog-section {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   padding: 3rem 9rem;
 }
@@ -91,4 +91,9 @@
 }
 .ant-collapse-header {
   align-items: center !important;
+}
+@media (max-width: 768px) {
+  .blog-section {
+    grid-template-columns: none;
+  }
 }

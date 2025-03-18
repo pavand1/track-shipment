@@ -6,6 +6,21 @@
 
 .doodle {
   position: relative;
+  &.homeServices {
+    position: relative;
+    min-height: 540px;
+    background-image: url("/images/Home/Doodle%20Background-1.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    .servicesImage {
+      display: none;
+    }
+    .subContainer {
+      padding: 2rem !important;
+      display: block;
+      position: relative;
+    }
+  }
 }
 
 .subContainer {
@@ -18,4 +33,9 @@
   height: 100%;
   padding: 0 6%;
   font-family: $font-medium;
+}
+.blogs {
+  flex-direction: column;
+  gap: 2rem;
+  padding: 4rem 8rem;
 }

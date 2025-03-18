@@ -16,9 +16,6 @@ const CaseStudies = ({ setRouteChange = () => {}, notBlogsPage = false }) => {
         className="blog-section"
         ref={ref}
         style={{
-          gridTemplateColumns: notBlogsPage
-            ? "repeat(3, 1fr)"
-            : "repeat(3, 1fr)",
           padding: notBlogsPage ? "0" : "3rem 9rem",
         }}
       >

@@ -17,9 +17,6 @@ const Blogs = ({ setRouteChange = () => {}, notBlogsPage = false }) => {
         className="blog-section"
         ref={ref}
         style={{
-          gridTemplateColumns: notBlogsPage
-            ? "repeat(3, 1fr)"
-            : "repeat(3, 1fr)",
           padding: notBlogsPage ? "0" : "3rem 9rem",
         }}
       >
@@ -27,7 +24,7 @@ const Blogs = ({ setRouteChange = () => {}, notBlogsPage = false }) => {
           <img src="../../images/blog/blog-1.png" alt="Blog Image" />
           <div className="blogs-content">
             <h3>Logistics Solution: Streamlining Your Business Operations</h3>
-            <p style={{paddingBottom:"30px"}}>
+            <p style={{ paddingBottom: "30px" }}>
               {notBlogsPage
                 ? `The right logistics solution is the backbone of the organization,
               is cost-effective and aids in customer satisfaction in today’s
@@ -59,7 +56,7 @@ const Blogs = ({ setRouteChange = () => {}, notBlogsPage = false }) => {
             <h3>
               B2B Logistics: The Backbone of Efficient Business Operations
             </h3>
-            <p style={{paddingBottom:"30px"}}>
+            <p style={{ paddingBottom: "30px" }}>
               {notBlogsPage
                 ? `B2B logistics & Transportation refers to the part of the supply
               chain that synchronises the flow of products between businesses
@@ -84,35 +81,41 @@ const Blogs = ({ setRouteChange = () => {}, notBlogsPage = false }) => {
             </span>
           </div>
         </div>
-        
+
         <div className="blog-card">
-        <img src="../../images/blog/blog-3.png" alt="Blog Image" />
-        <div className="blogs-content">
-          <h3>When to Use Full Truckload (FTL) vs. Partial Truckload (PTL) for Cost-Effective Freight Management</h3>
-          <p>
-            {notBlogsPage
-              ? `Efficient freight management is important for businesses that depend 
+          <img src="../../images/blog/blog-3.png" alt="Blog Image" />
+          <div className="blogs-content">
+            <h3>
+              When to Use Full Truckload (FTL) vs. Partial Truckload (PTL) for
+              Cost-Effective Freight Management
+            </h3>
+            <p>
+              {notBlogsPage
+                ? `Efficient freight management is important for businesses that depend 
               on transportation to move goods from one location to another. 
               Choosing the right shipping method—Full Truckload (FTL) or Partial 
               Truckload (PTL)—can significantly impact cost, delivery speed, and 
               overall logistics efficiency. Knowing when to use Full Truckload 
               (FTL) or Part Truckload (PTL) ensures cost-effective freight management 
               while optimising operations.`.slice(0, 150)
-              : `Efficient freight management is important for businesses that depend 
+                : `Efficient freight management is important for businesses that depend 
               on transportation to move goods from one location to another. 
               Choosing the right shipping method—Full Truckload (FTL) or Partial 
               Truckload (PTL)—can significantly impact cost, delivery speed, and 
               overall logistics efficiency. Knowing when to use Full Truckload 
               (FTL) or Part Truckload (PTL) ensures cost-effective freight management 
               while optimising operations.`}
-          </p>
-          {/* <a href="#" className="btn">Read More</a> */}
-          <span style={{paddingBottom:"20px"}} className="btn" onClick={() => navigator(BLOG3)}>
-            Read More
-          </span>
+            </p>
+            {/* <a href="#" className="btn">Read More</a> */}
+            <span
+              style={{ paddingBottom: "20px" }}
+              className="btn"
+              onClick={() => navigator(BLOG3)}
+            >
+              Read More
+            </span>
+          </div>
         </div>
-      </div>
-        
       </div>
     </>
   );

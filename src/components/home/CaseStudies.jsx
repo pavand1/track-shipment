@@ -17,13 +17,16 @@ const CaseStudies = () => {
   }, []);
   return (
     <>
-      <div className={`${Styles.doodle} ${Styles.caseStudyDoodle}`} style={{ background: "rgb(241 238 238)" }}>
+      <div
+        className={`${Styles.doodle} ${Styles.homeServices}`}
+        style={{ background: "rgb(241 238 238)" }}
+      >
         <img
           src="../../images/Home/Doodle Background-1.svg"
           alt=""
           style={{
             visibility: "hidden",
-            display:"none",
+            display: "none",
           }}
         />
         <div
@@ -34,8 +37,8 @@ const CaseStudies = () => {
             // alignItems: "center",
             // justifyContent: "center",
             padding: "4rem 8rem",
-            height: "765px",
-            backgroundColor: "#f1eeee"
+            minHeight: "765px",
+            backgroundColor: "#f1eeee",
           }}
         >
           <h2 className={Styles.serviceMobHeading}>Our Case Studies</h2>
@@ -49,7 +52,15 @@ const CaseStudies = () => {
             solutions and exceptional service. Here are some examples:
           </p>
           <div className={Styles.services}>
-            <div style={{backgroundColor:"#ffffff", padding:"15px", borderRadius:"10px"}} className={Styles.card} data-aos="fade-up">
+            <div
+              style={{
+                backgroundColor: "#ffffff",
+                padding: "15px",
+                borderRadius: "10px",
+              }}
+              className={Styles.card}
+              data-aos="fade-up"
+            >
               <div className={Styles.image}>
                 <img src="../../images/services/Boosts-Efficiency.jpg" alt="" />
                 <div className={Styles.tag}>
@@ -73,7 +84,15 @@ const CaseStudies = () => {
                 Read More
               </div>
             </div>
-            <div style={{backgroundColor:"#ffffff", padding:"15px", borderRadius:"10px"}} className={Styles.card} data-aos="fade-up">
+            <div
+              style={{
+                backgroundColor: "#ffffff",
+                padding: "15px",
+                borderRadius: "10px",
+              }}
+              className={Styles.card}
+              data-aos="fade-up"
+            >
               <div className={Styles.image}>
                 <img src="../../images/services/Secure-Packaging.jpg" alt="" />
                 <div className={Styles.tag}>
@@ -96,9 +115,20 @@ const CaseStudies = () => {
                 Read More
               </div>
             </div>
-            <div style={{backgroundColor:"#ffffff", padding:"15px", borderRadius:"10px"}} className={Styles.card} data-aos="fade-up">
+            <div
+              style={{
+                backgroundColor: "#ffffff",
+                padding: "15px",
+                borderRadius: "10px",
+              }}
+              className={Styles.card}
+              data-aos="fade-up"
+            >
               <div className={Styles.image}>
-                <img src="../../images/services/real-time-tracking.jpg" alt="" />
+                <img
+                  src="../../images/services/real-time-tracking.jpg"
+                  alt=""
+                />
                 <div className={Styles.tag}>
                   <p
                     style={{
