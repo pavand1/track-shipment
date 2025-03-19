@@ -125,4 +125,7 @@ height: 100%;
   .custom-two-column-container{
     flex-direction: column;
   }
+  .container {
+    padding: 2rem;
+  }
 }

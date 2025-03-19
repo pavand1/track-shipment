@@ -64,8 +64,9 @@
   margin-top: 20rem;
   margin-left: -21rem;
   @media (max-width: 769px) {
-    margin-top: 20rem;
+    margin-top: 10rem;
     margin-left: 0;
+    text-align: center;
   }
   span {
     cursor: pointer;
@@ -98,6 +99,7 @@
       font-family: $font-regular;
       color: #000000;
       height: 70px;
+      margin-bottom: 1.4rem;
     }
 
     .image {
@@ -282,11 +284,16 @@
     font-size: 2.5rem;
     color: #000000;
     font-family: "Poppins-Bold";
+    margin: 2rem 0rem;
+    text-align: left;
+  }
+  .subContainer p{
+    font-size: 1.8rem !important;
   }
   .doodle {
     position: relative;
     min-height: 540px;
-    background-image: url("/images/Home/Doodle%20Background-1.svg");
+    //background-image: url("/images/Home/Doodle%20Background-1.svg");
     background-repeat: no-repeat;
     background-position: center;
     .share {
@@ -300,7 +307,7 @@
     &.homeServices {
       position: relative;
       min-height: 540px;
-      background-image: url("/images/Home/Doodle%20Background-1.svg");
+      //background-image: url("/images/Home/Doodle%20Background-1.svg");
       background-repeat: no-repeat;
       background-position: center;
       .servicesImage {

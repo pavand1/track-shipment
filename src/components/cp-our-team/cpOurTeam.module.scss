@@ -18,6 +18,10 @@
   .teamSection {
     text-align: center;
 
+    @media (max-width: 768px) {
+      padding: 2rem;
+    }
+
     .title {
       font-size: 2rem;
       margin-bottom: 2rem;
@@ -114,6 +118,7 @@
           font-size: 1.6rem;
           color: #000000;
           font-family: $font-medium;
+          text-align: center;
         }
       }
     }

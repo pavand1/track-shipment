@@ -57,7 +57,8 @@ const CpCounter = () => {
     >
       <h2 className={styles.mainHeading}>Why BuckleTrack </h2>
       <div className={styles.imageTop}>
-        <img src="../../images/Home/Why-Buckle-Track.png" alt="Image" />
+        <img className={styles.deskImg} src="../../images/Home/Why-Buckle-Track.png" alt="Image" />
+        <img className={styles.mobileImg} src="../../images/Home/why-buckle-track-mobile.png" alt="Image" />
       </div>
       <div className={styles.counterContainer}>
         {counters.map((item) => (

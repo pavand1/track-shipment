@@ -73,3 +73,26 @@ table {
 ul.blog-list li {
   padding-bottom: 20px;
 }
+
+@media (max-width:768px) {
+  
+  .section-blog {
+    text-align: left;
+    padding: 20px 20px !important;
+  }
+  .section-blog h1 {
+    text-align: left;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 34px;
+}
+.blog-head {
+  color: #030303;
+  font-size: 2.2rem;
+  font-weight: 800;
+  padding-bottom: 16px;
+}
+.specialHeading{
+  text-align: center;
+}
+}

@@ -46,8 +46,8 @@ const CpTestimonials = () => {
                       className={styles.avatar}
                     />
                   </div>
-                  <p className={styles.title}>{testimonial.name}</p>
-                  <p className={styles.desc}>{testimonial.testimonial}</p>
+                  <p style={{textAlign:"center"}} className={styles.title}>{testimonial.name}</p>
+                  <p style={{textAlign:"center"}} className={styles.desc}>{testimonial.testimonial}</p>
                 </div>
               </SwiperSlide>
             ))}

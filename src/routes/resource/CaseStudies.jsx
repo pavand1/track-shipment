@@ -15,9 +15,9 @@ const CaseStudies = ({ setRouteChange = () => {}, notBlogsPage = false }) => {
       <div
         className="blog-section"
         ref={ref}
-        style={{
-          padding: notBlogsPage ? "0" : "3rem 9rem",
-        }}
+        // style={{
+        //   padding: notBlogsPage ? "0" : "3rem 9rem",
+        // }}
       >
         <div className="blog-card">
           <img src="../../images/blog/blog-1.png" alt="Blog Image" />

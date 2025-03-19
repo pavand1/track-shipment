@@ -17,7 +17,7 @@ const WhyBuckleTrack = () => {
           <h2 className={Styles.heading} style={{
               fontSize: "4rem",
               fontFamily: "Poppins-Bold",
-            }}>Why BuckleTrack</h2>
+            }}>Why BuckleTrac</h2>
           <div className={Styles.image}>
             <img src="../../images/Home/Why-Buckle-Track.png" alt="" />
           </div>

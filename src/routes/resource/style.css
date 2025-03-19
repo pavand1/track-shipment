@@ -95,5 +95,6 @@
 @media (max-width: 768px) {
   .blog-section {
     grid-template-columns: none;
+    padding: 2rem !important;
   }
 }

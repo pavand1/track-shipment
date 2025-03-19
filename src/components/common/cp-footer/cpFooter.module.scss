@@ -143,14 +143,23 @@
     display: flex;
     gap: 1rem;
     @media (max-width: 768px) {
-      font-size: 1rem;
+      font-size: 1.4rem;
       bottom: -0.5rem;
+      margin-left: 0 !important;
     }
-
     span {
       cursor: pointer;
     }
   }
+}
+@media (max-width: 768px) {
+  .copyRight{
+    width: 100%;
+  display: flex;
+  gap: 1rem !important;
+  flex-direction: column-reverse !important;
+  }
+  
 }
 
 .sectionbg {
