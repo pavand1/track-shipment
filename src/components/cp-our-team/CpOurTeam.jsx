@@ -52,58 +52,121 @@ const CpOurTeam = () => {
         </div>
       </section>
       <section className={styles.section}>
-        <Swiper
-          slidesPerView={4}
-          spaceBetween={30}
-          loop={true}
-          pagination={{
-            clickable: true,
-          }}
-          navigation={true}
-          modules={[Pagination, Navigation]}
-          className="mySwiper"
-        >
-          {restTeam.map((member) => (
-            <SwiperSlide key={member.id}>
-              <div className={styles.teamCard}>
-                <div className={styles.photoWrapper}>
-                  <img
-                    src={member.photo}
-                    alt={member.name}
-                    className={styles.photo}
-                  />
-                  <div className={styles.overlay}>
-                    <div className={styles.linkdinProfile}>
-                      <a href={member.linkdinHref}>
-                        <img
-                          src={member.linkdinSrc}
-                          className={styles.linkdin}
-                        />
-                      </a>
+        {window.innerWidth < 768 ? (
+          <Swiper
+            slidesPerView={1}
+            spaceBetween={30}
+            loop={true}
+            pagination={{
+              clickable: true,
+            }}
+            navigation={true}
+            modules={[Pagination, Navigation]}
+            className="mySwiper"
+          >
+            {restTeam.map((member) => (
+              <SwiperSlide key={member.id}>
+                <div className={styles.teamCard}>
+                  <div className={styles.photoWrapper}>
+                    <img
+                      src={member.photo}
+                      alt={member.name}
+                      className={styles.photo}
+                    />
+                    <div className={styles.overlay}>
+                      <div className={styles.linkdinProfile}>
+                        <a href={member.linkdinHref}>
+                          <img
+                            src={member.linkdinSrc}
+                            className={styles.linkdin}
+                          />
+                        </a>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div
-                  className={styles.info}
-                  style={{ padding: "1rem", background: "#ef4136" }}
-                >
-                  <h3
-                    className={styles.name}
-                    style={{ color: "#FFFFFF", fontSize: "18px" }}
+                  <div
+                    className={styles.info}
+                    style={{ padding: "1rem", background: "#ef4136" }}
                   >
-                    {member.name}
-                  </h3>
-                  <p
-                    className={styles.designation}
-                    style={{ color: "#FFFFFF", fontSize: "16px" }}
-                  >
-                    {member.designation}
-                  </p>
+                    <h3
+                      className={styles.name}
+                      style={{ color: "#FFFFFF", fontSize: "18px" }}
+                    >
+                      {member.name}
+                    </h3>
+                    <p
+                      className={styles.designation}
+                      style={{
+                        color: "#FFFFFF",
+                        fontSize: "16px",
+                        textAlign: "center",
+                      }}
+                    >
+                      {member.designation}
+                    </p>
+                  </div>
                 </div>
-              </div>
-            </SwiperSlide>
-          ))}
-        </Swiper>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        ) : (
+          <Swiper
+            slidesPerView={4}
+            spaceBetween={30}
+            loop={true}
+            pagination={{
+              clickable: true,
+            }}
+            navigation={true}
+            modules={[Pagination, Navigation]}
+            className="mySwiper"
+          >
+            {restTeam.map((member) => (
+              <SwiperSlide key={member.id}>
+                <div className={styles.teamCard}>
+                  <div className={styles.photoWrapper}>
+                    <img
+                      src={member.photo}
+                      alt={member.name}
+                      className={styles.photo}
+                    />
+                    <div className={styles.overlay}>
+                      <div className={styles.linkdinProfile}>
+                        <a href={member.linkdinHref}>
+                          <img
+                            src={member.linkdinSrc}
+                            className={styles.linkdin}
+                          />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    className={styles.info}
+                    style={{ padding: "1rem", background: "#ef4136" }}
+                  >
+                    <h3
+                      className={styles.name}
+                      style={{ color: "#FFFFFF", fontSize: "18px" }}
+                    >
+                      {member.name}
+                    </h3>
+                    <p
+                      className={styles.designation}
+                      style={{
+                        color: "#FFFFFF",
+                        fontSize: "16px",
+                        textAlign: "center",
+                      }}
+                    >
+                      {member.designation}
+                    </p>
+                  </div>
+                </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        )}
       </section>
     </>
   );
