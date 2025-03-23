@@ -18,51 +18,39 @@ const teamData = [
 export const restTeam = [
   {
     id: 1,
-    name: "Kunal Shukla",
-    designation: "Regional Sales Manager",
-    photo: "../../images/our-team/kunal.jpg",
-  },
-  {
-    id: 2,
-    name: "Nikhil Salvi",
-    designation: "Customer Service, Imports",
-    photo: "../../images/our-team/NikhilS.png",
-  },
-  {
-    id: 3,
-    name: "Amit Nambiar",
-    designation: "Customer Service, Exports",
-    photo: "../../images/our-team/Amit.jpg",
-  },
-  {
-    id: 4,
-    name: "Jyoti Pandey",
-    designation: "Manager - Inside Sales",
-    photo: "../../images/our-team/Jyoti.png",
-  },
-  {
-    id: 5,
     name: "Anuj Burde",
     designation: "Business Planning & Strategy",
     photo: "../../images/our-team/Anuj.jpg",
   },
   {
-    id: 6,
+    id: 2,
+    name: "Aaron Mascarenhas",
+    designation: "GM - Operations / Commertials & Products",
+    photo: "../../images/our-team/aaron.png",
+  },
+  {
+    id: 3,
     name: "Naresh Pujari",
     designation: "Head - Fianance & Accounts",
     photo: "../../images/our-team/Naresh.png",
   },
   {
-    id: 7,
+    id: 4,
     name: "Vinitesh Thakur",
     designation: "Head Marketing",
     photo: "../../images/our-team/Vinitesh.png",
   },
   {
-    id: 8,
+    id: 5,
     name: "Poornima Chandrasekharan",
     designation: "Head HR and L&D",
     photo: "../../images/our-team/Poornima.png",
+  },
+  {
+    id: 6,
+    name: "Aman Mishra",
+    designation: "Customer Service",
+    photo: "../../images/our-team/Aman-Mishra.png",
   },
 ];
 
