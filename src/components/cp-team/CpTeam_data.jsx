@@ -28,7 +28,7 @@ export const mockData = [
     ],
   },
   {
-    name: "Kiran Wakde",
+    name: "Kiran Wakd",
     designation: "Director",
     image: "../../images/about/kiran-wakade.jpg",
     alt: "testimonial",
