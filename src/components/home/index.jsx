@@ -118,7 +118,7 @@ const HomeComponent = () => {
                 window.location.href = `tel:hi`;
                 e.preventDefault();
               }}
-              title={"+91-022-2821-3835"}
+              title={"7039004442"}
             >
               <img src="../../images/share/call.svg" alt="" />
             </div>
@@ -135,10 +135,11 @@ const HomeComponent = () => {
             <div
               style={{ height: "48px", width: "48px" }}
               onClick={(e) => {
-                window.location.href = `whatsapp://send?text=Hi`;
+                // window.location.href = `https://api.whatsapp.com/send?phone=7039004442`;
                 e.preventDefault();
+                window.open(`https://api.whatsapp.com/send?phone=7039004442`, '_blank');
               }}
-              title={"+91-022-2821-3835"}
+              title={"7039004442"}
             >
               <img src="../../images/share/whatsapp.svg" alt="" />
             </div>

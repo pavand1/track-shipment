@@ -37,7 +37,7 @@ export const mockData = {
           placeholder: 'Message'
         }
       ],
-      submitButtonText: 'Talk To Our Expert'
+      submitButtonText: 'Submit'
     }
 };
  

@@ -25,25 +25,25 @@ export const restTeam = [
   {
     id: 2,
     name: "Aaron Mascarenhas",
-    designation: "GM - Operations / Commertials & Products",
+    designation: "Operation/Commercial/Product",
     photo: "../../images/our-team/aaron.png",
   },
   {
     id: 3,
     name: "Naresh Pujari",
-    designation: "Head - Fianance & Accounts",
+    designation: "Finance & Accounts",
     photo: "../../images/our-team/Naresh.png",
   },
   {
     id: 4,
     name: "Vinitesh Thakur",
-    designation: "Head Marketing",
+    designation: "Marketing Operations",
     photo: "../../images/our-team/Vinitesh.png",
   },
   {
     id: 5,
     name: "Poornima Chandrasekharan",
-    designation: "Head HR and L&D",
+    designation: "HR and L&D",
     photo: "../../images/our-team/Poornima.png",
   },
   {

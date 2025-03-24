@@ -74,7 +74,7 @@ const GetQuote = ({ partnerWithUs = false, close = () => {} }) => {
               type={"email"}
               id={"email"}
               name={"email"}
-              placeholder={"email"}
+              placeholder={"Email"}
               required
               value={email}
               onChange={(e) => setEmail(e.target.value)}
@@ -85,7 +85,7 @@ const GetQuote = ({ partnerWithUs = false, close = () => {} }) => {
               type={"text"}
               id={"phone1"}
               name={"phone"}
-              placeholder={"primary phone number"}
+              placeholder={"Phone Number"}
               required
               value={phone1}
               onChange={(e) => setPhone1(e.target.value)}
@@ -96,7 +96,7 @@ const GetQuote = ({ partnerWithUs = false, close = () => {} }) => {
               type={"text"}
               id={"phone2"}
               name={"phone 2"}
-              placeholder={"secondary phone number"}
+              placeholder={"City"}
               value={phone2}
               onChange={(e) => setPhone2(e.target.value)}
             />
@@ -105,7 +105,7 @@ const GetQuote = ({ partnerWithUs = false, close = () => {} }) => {
             <textarea
               id={"message"}
               name={"message"}
-              placeholder={"message"}
+              placeholder={"Message"}
               rows="4"
               required
               value={message}

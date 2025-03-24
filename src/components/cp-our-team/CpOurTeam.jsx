@@ -65,8 +65,8 @@ const CpOurTeam = () => {
         </div>
         <div className="custom-text-wrapper">
             <h2>Viral Desai</h2>
-            <h3>Director</h3>
-            <p><b>Full of Smiles, is The Real Me Easily the easiest person to get along with!!</b> <br/><br/>Viral has one of the most outgoing and friendly personalities that one can come across. Striking up meaningful relationships with people from all walks of life is his usual way of life. He is full of care and concern for the people around him and that’s his antidote! He enjoys challenging the status quo and inspires the team towards achieving the common goals. With him around, work can never be boring and he makes sure the team always has fun in doing what they do. His strong management skills bring about the much needed perspective in the team. Once in a while, like everyone else he does celebrate ‘imbalance’ and can be quite a riot. Prior to KSM, he was the Regional Director – South Asia region at APL Logistics.</p>
+            <h3>CEO</h3>
+            <p><b>Full of Smiles, is The Real Me Easily the easiest person to get along with!!</b> <br/><br/>Viral has one of the most outgoing and friendly personalities that one can come across. Striking up meaningful relationships with people from all walks of life is his usual way of life. He is full of care and concern for the people around him and that’s his antidote! He enjoys challenging the status quo and inspires the team towards achieving the common goals. With him around, work can never be boring and he makes sure the team always has fun in doing what they do. His strong management skills bring about the much needed perspective in the team. Once in a while, like everyone else he does celebrate ‘imbalance’ and can be quite a riot. Prior to BuckleTrack, he was the Regional Director – South Asia region at APL Logistics.</p>
         </div>
     </div>
       <section className={styles.section}>
