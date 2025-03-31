@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import Styles from "./Styles.module.scss";
 import emailjs from "@emailjs/browser";
 import Loading from "react-fullscreen-loading";
+import Dropdown from "./Dropdown";
 
 const trackOrderURL = import.meta.env.VITE_TRACK_ORDER_URL;
 
@@ -23,6 +24,7 @@ const RateOrderForm = () => {
   const [vehicalType, setVehicalType] = useState("");
   const ref = useRef();
   const form = useRef();
+  const [shouldDDClose, setShouldDDClose] = useState(false);
 
   const handleRadioChange = (e) => {
     if (e?.target?.name === "orderDetail") setOrderDetail(e.target.id);
@@ -154,7 +156,12 @@ const RateOrderForm = () => {
   // }, []);
   return (
     <>
-      <div className={Styles.container}>
+      <div
+        className={Styles.container}
+        onMouseLeave={() => {
+          setShouldDDClose(() => true);
+        }}
+      >
         <div className={Styles.heading}>
           <div
             className={`${Styles.calculator} ${
@@ -186,6 +193,7 @@ const RateOrderForm = () => {
                   name="orderType"
                   onChange={handleRadioChange}
                   checked={orderType === "ftl"}
+                  disabled={dataSubmitted}
                 />
                 <label htmlFor="ftl">FTL</label>
               </div>
@@ -196,6 +204,7 @@ const RateOrderForm = () => {
                   name="orderType"
                   onChange={handleRadioChange}
                   checked={orderType === "ptl"}
+                  disabled={dataSubmitted}
                 />
                 <label htmlFor="ptl">PTL</label>
               </div>
@@ -206,6 +215,7 @@ const RateOrderForm = () => {
                   name="orderType"
                   checked={orderType === "express"}
                   onChange={handleRadioChange}
+                  disabled={dataSubmitted}
                 />
                 <label htmlFor="express">EXPRESS</label>
               </div>
@@ -229,7 +239,17 @@ const RateOrderForm = () => {
               />
             </div>
             <div className={Styles.row}>
-              {orderType === "ftl" ? (
+              <Dropdown
+                type={orderType}
+                setWeight={setWeight}
+                setVehicalType={setVehicalType}
+                shouldDDClose={shouldDDClose}
+                setShouldDDClose={setShouldDDClose}
+              />
+            </div>
+
+            <div className={Styles.row}>
+              {/* {orderType === "ftl" ? (
                 <input
                   type="text"
                   className={Styles.textBox}
@@ -247,11 +267,14 @@ const RateOrderForm = () => {
                   name="weight"
                   onChange={(e) => setWeight(e.target.value)}
                 />
-              )}
+              )} */}
               <div
                 className={Styles.button}
                 onClick={!dataSubmitted ? handleSubmit : () => {}}
-                style={{ cursor: !dataSubmitted ? "pointer" : "not-allowed" }}
+                style={{
+                  cursor: !dataSubmitted ? "pointer" : "not-allowed",
+                  width: "100%",
+                }}
               >
                 Submit
               </div>

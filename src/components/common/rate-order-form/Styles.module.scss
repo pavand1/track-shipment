@@ -191,6 +191,43 @@
         text-underline-position: from-font;
         text-decoration-skip-ink: none;
       }
+      .dropdown {
+        width: 100%;
+        border-radius: 7px;
+        border: 1px;
+        opacity: 0px;
+        padding: 1.25rem 2rem;
+        font-family: $font-regular;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 12px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        background-color: #ffffff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+        position: relative;
+
+        .items {
+          position: absolute;
+          display: flex;
+          flex-direction: column;
+          top: 36px;
+          border-radius: 5px;
+          background-color: #ffffff;
+          width: 100%;
+          left: 0;
+          div {
+            padding: 1rem 2rem;
+          }
+          div:hover {
+            background-color: #ddd;
+          }
+        }
+      }
       button {
         border-radius: 7px;
         opacity: 0px;
