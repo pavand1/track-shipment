@@ -15,9 +15,9 @@ const Services = ({ isRoot }) => {
       {!isRoot ? <CpServicesComp /> : <ServicesHome />}
       {
         <div className={`${Styles.doodle} ${Styles.homeServices}`}>
-          {window.innerWidth > 768 && (
+          {/* {window.innerWidth > 768 && (
             <img src="../../images/Home/Doodle Background-1.svg" alt="" async />
-          )}
+          )} */}
           <div className={`${Styles.subContainer} ${Styles.blogs}`}>
             <h1
               style={{

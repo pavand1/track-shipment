@@ -134,4 +134,12 @@
   text-align: left;
   align-items: flex-start !important;
 }
+.allResources {
+  padding: 2rem !important;
+  display: grid;
+  grid-template-columns: auto !important;
+  gap: 3rem;
+  max-width: 1200px;
+  margin: auto;
+}
 }

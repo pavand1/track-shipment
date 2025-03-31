@@ -46,6 +46,7 @@ const CaseStudies = () => {
             style={{
               fontFamily: "Poppins-Regular",
               color: "#000000",
+              textAlign: "center",
             }}
           >
             Our client's success reflects the impact of our tech-driven

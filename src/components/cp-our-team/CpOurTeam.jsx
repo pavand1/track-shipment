@@ -130,11 +130,11 @@ const CpOurTeam = () => {
         ) : (
           <Swiper
             slidesPerView={4}
-            spaceBetween={30}
+            spaceBetween={20}
             loop={true}
-            pagination={{
-              clickable: true,
-            }}
+            // pagination={{
+            //   clickable: false,
+            // }}
             navigation={true}
             modules={[Pagination, Navigation]}
             className="mySwiper"

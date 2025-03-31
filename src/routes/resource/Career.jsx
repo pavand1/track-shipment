@@ -28,6 +28,10 @@ const dataElement = (
         <div className={Styles.key}>Work Location</div>
         <div className={Styles.value}>Mumbai (Andheri East)</div>
       </div>
+      <div className={Styles.column}>
+        <div className={Styles.key}>No. of Positions</div>
+        <div className={Styles.value}>1</div>
+      </div>
     </div>
   </div>
 );

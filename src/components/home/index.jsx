@@ -13,29 +13,29 @@ const HomeComponent = () => {
     if (window.innerWidth < 770) {
       if (pathname === "/") return "../../images/Home/Doodle Background.png";
       if (pathname.includes("case"))
-        return "../../images/mobile/partner-with-us-mobile.jpeg";
+        return "../../images/mobile/Case-study-Mobile.jpg";
       if (pathname.includes("faq"))
-        return "../../images/mobile/partner-with-us-mobile.jpeg";
+        return "../../images/mobile/FAQ-Mobile.jpg";
       if (pathname.includes("blogs"))
-        return "../../images/mobile/partner-with-us-mobile.jpeg";
+        return "../../images/mobile/Blog-Mobile.jpg";
       if (pathname.includes("/resources"))
-        return "../../images/mobile/partner-with-us-mobile.jpeg";
+        return "../../images/mobile/Resource-Mobile.jpg";
       if (pathname.includes("services"))
-        return "../../images/mobile/partner-with-us-mobile.jpeg";
+        return "../../images/mobile/Our-Services-Mobile.jpg";
       if (pathname.includes("partner"))
         return "../../images/mobile/partner-with-us-mobile.jpeg";
       if (pathname.includes("support"))
-        return "../../images/mobile/partner-with-us-mobile.jpeg";
+        return "../../images/mobile/SUPPORT-Mobile.jpg";
       if (pathname.includes("about"))
-        return "../../images/mobile/partner-with-us-mobile.jpeg";
+        return "../../images/mobile/About-Us.jpg";
       if (pathname.includes("contact"))
-        return "../../images/mobile/partner-with-us-mobile.jpeg";
+        return "../../images/mobile/Contact-Us-Mobile.jpg";
       if (pathname.includes("conditions"))
-        return "../../images/mobile/partner-with-us-mobile.jpeg";
+        return "../../images/mobile/terms-mobile.jpg";
       if (pathname.includes("privacy"))
-        return "../../images/mobile/partner-with-us-mobile.jpeg";
+        return "../../images/mobile/Privacy-Policy-Mobile.jpg";
       if (pathname.includes("team"))
-        return "../../images/mobile/partner-with-us-mobile.jpeg";
+        return "../../images/mobile/Our-Team-Mobile.jpg";
       return "../../images/mobile/partner-with-us-mobile.jpeg";
     } else {
       if (pathname === "/") return "../../images/Home/Doodle Background.png";
@@ -57,6 +57,8 @@ const HomeComponent = () => {
         return "../../images/Home/Terms & Conditions.png";
       if (pathname.includes("privacy"))
         return "../../images/Home/Privacy and Policy.png";
+      if (pathname.includes("career"))
+        return "../../images/Home/Career.jpg";
       if (pathname.includes("team"))
         return "../../images/our-team/Our-Team.jpg";
       return "../../images/Our-service-bg.svg";
@@ -128,7 +130,7 @@ const HomeComponent = () => {
                 window.location.href = `mailto:hi`;
                 e.preventDefault();
               }}
-              title="sales@buckletrack.in"
+              title="sales@buckletrack.com"
             >
               <img src="../../images/share/email.svg" alt="" />
             </div>
