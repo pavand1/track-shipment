@@ -8,33 +8,37 @@ const CpServicesComp = () => {
   const surfaceRef = useRef(null);
   const expressRef = useRef(null);
   const projectRef = useRef(null);
-  const {pathname} = useLocation();
-  
+  const { pathname } = useLocation();
+
   useEffect(() => {
     Aos.init({ duration: 2000 });
   }, []);
   useEffect(() => {
-    if(pathname) {
+    if (pathname) {
       const id = pathname.split("/")[2];
-      if(id) {
-        if (id=== "surface-transport" && surfaceRef.current) {
+      if (id) {
+        if (id === "surface-transport" && surfaceRef.current) {
           surfaceRef.current.scrollIntoView({ behavior: "smooth", screenX: 0 });
-          window.scroll({behavior: "smooth", top: 700});
+          // window.scroll({behavior: "smooth", top: 700});
         }
-        if (id=== "express-delivery" && expressRef.current) {
+        if (id === "express-delivery" && expressRef.current) {
           expressRef.current.scrollIntoView({ behavior: "smooth" });
-          window.scroll({behavior: "smooth", top: 1300});
+          // window.scroll({ behavior: "smooth", top: 1300 });
         }
-        if (id=== "project-transport" && projectRef.current) {
+        if (id === "project-transport" && projectRef.current) {
           projectRef.current.scrollIntoView({ behavior: "smooth" });
-          window.scroll({behavior: "smooth",top: 1900});
+          // window.scroll({ behavior: "smooth", top: 1900 });
         }
       }
     }
   }, [pathname]);
   return (
     <>
-      <section className={styles.section} id="surface-transport" ref={surfaceRef}>
+      <section
+        className={styles.section}
+        id="surface-transport"
+        ref={surfaceRef}
+      >
         {/* first services */}
         <div className={styles.borderMain}>
           <div className={styles.borderDiv}></div>
@@ -55,7 +59,11 @@ const CpServicesComp = () => {
           </div>
         </div>
       </section>
-      <section className={styles.section} id="express-delivery" ref={expressRef}>
+      <section
+        className={styles.section}
+        id="express-delivery"
+        ref={expressRef}
+      >
         {/* Second services */}
         <div className={styles.borderMainRight}>
           <div className={styles.borderDiv}></div>
@@ -76,7 +84,11 @@ const CpServicesComp = () => {
           </div>
         </div>
       </section>
-      <section className={styles.section} id="project-transport" ref={projectRef}>
+      <section
+        className={styles.section}
+        id="project-transport"
+        ref={projectRef}
+      >
         {/* Third services */}
         <div className={styles.borderMain}>
           <div className={styles.borderDiv}></div>
