@@ -63,7 +63,9 @@ const CaseStudies = () => {
               data-aos="fade-up"
             >
               <div className={Styles.image}>
+              <div onClick={() => navigate(CASE1)}>
                 <img src="../../images/services/Boosts-Efficiency.jpg" alt="" />
+              </div>
                 <div className={Styles.tag}>
                   <p
                     style={{
@@ -95,7 +97,9 @@ const CaseStudies = () => {
               data-aos="fade-up"
             >
               <div className={Styles.image}>
+              <div onClick={() => navigate(CASE2)}>
                 <img src="../../images/services/Secure-Packaging.jpg" alt="" />
+                </div>
                 <div className={Styles.tag}>
                   <p
                     style={{
@@ -126,10 +130,12 @@ const CaseStudies = () => {
               data-aos="fade-up"
             >
               <div className={Styles.image}>
+              <div onClick={() => navigate(CASE3)}>
                 <img
                   src="../../images/services/real-time-tracking.jpg"
                   alt=""
                 />
+                </div>
                 <div className={Styles.tag}>
                   <p
                     style={{

@@ -58,7 +58,8 @@
     padding: 12px;
 }
 .sectionTestimonials, .swiper-button-prev:after, .swiper-button-next:after{
-    background: #ffffff !important;
+    background: #ffffff00;
+    color: #000000;
 }
 /* Responsive Design */
 @media (max-width: 768px) {

@@ -30,6 +30,7 @@ const CpAboutBuckle = ({setRouteChange}) => {
             </div>
           </div>
           <div className={styles.column}>
+          
             <img
               src={mockData.imageSrc}
               alt={mockData.imageAlt}
