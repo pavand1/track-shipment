@@ -5,7 +5,7 @@ export const contactInfo = {
   },
   email: {
     icon: "../../images/footer/email.png",
-    text: "sales@buckletrack.in",
+    text: "sales@buckletrack.com",
   },
   phone: { icon: "../../images/footer/phone.png", text: "7039004442" },
 };
