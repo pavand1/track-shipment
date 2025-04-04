@@ -5,11 +5,24 @@ import CpServicesComp from "../../components/cp-services-comp/CpServicesComp";
 import { useEffect, useRef } from "react";
 import ServicesHome from "../../components/home/Services";
 import Blogs from "../resource/Blogs";
+import { Helmet } from "react-helmet-async";
 
 const Services = ({ isRoot }) => {
   const ref = useRef();
   return (
     <div className={Styles.container} ref={ref}>
+      <Helmet>
+        <title>Buckletrack Services</title>
+        <meta
+          name="description"
+          content="This is the Services page of Buckletrack"
+        />
+        <meta property="og:title" content="Buckletrack Services Page" />
+        <meta
+          property="og:description"
+          content="This is the Services page for Buckletrack"
+        />
+      </Helmet>
       <HomeComponent />
       <CpWhyBuckle />
       {!isRoot ? <CpServicesComp /> : <ServicesHome />}

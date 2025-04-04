@@ -1,6 +1,7 @@
 import { useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import { CASE1, CASE2, CASE3 } from "../../utils/constants";
+import { Helmet } from "react-helmet-async";
 
 const CaseStudies = ({ setRouteChange = () => {}, notBlogsPage = false }) => {
   const navigator = useNavigate();
@@ -12,6 +13,18 @@ const CaseStudies = ({ setRouteChange = () => {}, notBlogsPage = false }) => {
 
   return (
     <>
+      <Helmet>
+        <title>Buckletrack Case Studies</title>
+        <meta
+          name="description"
+          content="This is the Case Studies page of Buckletrack"
+        />
+        <meta property="og:title" content="Buckletrack Case Studies Page" />
+        <meta
+          property="og:description"
+          content="This is the Case Studies page for Buckletrack"
+        />
+      </Helmet>
       <div
         className="blog-section"
         ref={ref}

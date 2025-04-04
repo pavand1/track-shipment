@@ -8,10 +8,23 @@ import CpWhyBuckle from "../../components/cp-why-buckle/CpWhyBuckle";
 import CpCounter from "../../components/cp-counter/CpCounter";
 import ServicesHome from "../../components/home/Services";
 import CaseStudies from "../../components/home/CaseStudies";
+import { Helmet } from "react-helmet-async";
 
 const Home = ({ setRouteChange }) => {
   return (
     <div className={Styles.container}>
+      <Helmet>
+        <title>Buckletrack Home</title>
+        <meta
+          name="description"
+          content="This is the home page of my React app."
+        />
+        <meta property="og:title" content="Buckletrack Home Page" />
+        <meta
+          property="og:description"
+          content="This is the home page for Buckletrack"
+        />
+      </Helmet>
       <HomeComponent />
       <CpWhyBuckle />
       <ServicesHome />

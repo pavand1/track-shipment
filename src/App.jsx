@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Helmet, HelmetProvider } from "react-helmet-async";
 import styles from "./App.module.scss";
 import CpHeader from "./components/common/cp-header/CpHeader";
 import CpFooter from "./components/common/cp-footer/CpFooter";
@@ -76,103 +77,105 @@ const App = () => {
       ref.current.scrollIntoView({ behavior: "smooth" });
   }, [routeChange]);
   return (
-    <Router>
-      <div
-        className={styles.app}
-        ref={ref}
-        onClick={() => setOutsideClick((prev) => !prev)}
-      >
-        <CpHeader
-          setRouteChange={setRouteChange}
-          outsideClick={outsideClick}
-          setOutsideClick={setOutsideClick}
-        />
-        <main className={styles.content}>
-          <Routes>
-            <Route
-              path="/"
-              exact
-              element={<HomeRoute setRouteChange={setRouteChange} />}
-            />
-            <Route path={ABOUT_US_ROUTE} exact element={<AboutRoute />} />
-            <Route path={FEATURES_ROUTE} exact element={<FeaturesRoute />} />
-            <Route
-              path={`${SERVICES_ROUTE}`}
-              element={<ServicesRoute isRoot={true} />}
-            />
-            <Route
-              path={`${SERVICES_ROUTE}/:surface-transport`}
-              element={<ServicesRoute />}
-            />
-            <Route
-              path={`${SERVICES_ROUTE}/:express-delivery`}
-              element={<ServicesRoute />}
-            />
-            <Route
-              path={`${SERVICES_ROUTE}/:project-transport`}
-              element={<ServicesRoute />}
-            />
-            <Route path={SUPPORT} element={<Faqs />} />
-            <Route path={RESOURCE} element={<Resource />} />
-            <Route path={PARTNER} element={<Partner />} />
-            <Route path={BLOG1} element={<Blog1 />} />
-            <Route path={BLOG2} element={<Blog2 />} />
-            <Route path={BLOG3} element={<Blog3 />} />
-            <Route path={CASE1} element={<Case1 />} />
-            <Route path={CASE2} element={<Case2 />} />
-            <Route path={CASE3} element={<Case3 />} />
-            <Route path={KIRANWAKDE} element={<Ourteam />} />
-            <Route path={VIRALDESAI} element={<Ourteam />} />
-            <Route path={SINJUPAULOSE} element={<Ourteam />} />
-            <Route path={VINAYAKSUKHDARE} element={<Ourteam />} />
-            <Route
-              path={PRIVACY_POLICY_ROUTE}
-              exact
-              element={<PrivacyPolicy />}
-            />
-            <Route
-              path={TERMS_CONDITION_ROUTE}
-              exact
-              element={<TermsCondition />}
-            />
-            <Route
-              path={RETURN_CANCELLATION_ROUTE}
-              exact
-              element={<ReturnConcellation />}
-            />
-            <Route
-              path={REFUND_POLICY_ROUTE}
-              exact
-              element={<RefundPolicy />}
-            />
-            <Route path={FAQ_ROUTE} exact element={<Faqs />} />
-            <Route path={CONTACTS_ROUTE} exact element={<ContactsRoute />} />
-            <Route
-              path={RESOURCE_BLOGS}
-              element={<Resource setRouteChange={setRouteChange} />}
-            />
-            <Route
-              path={RESOURCE_CASE_STUDIES}
-              element={<Resource setRouteChange={setRouteChange} />}
-            />
-            <Route
-              path={RESOURCE_CAREER}
-              element={<Resource setRouteChange={setRouteChange} />}
-            />
-            <Route
-              path={RESOURCE_FAQs}
-              element={<Resource setRouteChange={setRouteChange} />}
-            />
-            <Route
-              path={OURTEAM}
-              element={<Ourteam setRouteChange={setRouteChange} />}
-            />
-            <Route path="*" exact element={<HomeRoute />} />
-          </Routes>
-        </main>
-        <CpFooter setRouteChange={setRouteChange} />
-      </div>
-    </Router>
+    <HelmetProvider>
+      <Router>
+        <div
+          className={styles.app}
+          ref={ref}
+          onClick={() => setOutsideClick((prev) => !prev)}
+        >
+          <CpHeader
+            setRouteChange={setRouteChange}
+            outsideClick={outsideClick}
+            setOutsideClick={setOutsideClick}
+          />
+          <main className={styles.content}>
+            <Routes>
+              <Route
+                path="/"
+                exact
+                element={<HomeRoute setRouteChange={setRouteChange} />}
+              />
+              <Route path={ABOUT_US_ROUTE} exact element={<AboutRoute />} />
+              <Route path={FEATURES_ROUTE} exact element={<FeaturesRoute />} />
+              <Route
+                path={`${SERVICES_ROUTE}`}
+                element={<ServicesRoute isRoot={true} />}
+              />
+              <Route
+                path={`${SERVICES_ROUTE}/:surface-transport`}
+                element={<ServicesRoute />}
+              />
+              <Route
+                path={`${SERVICES_ROUTE}/:express-delivery`}
+                element={<ServicesRoute />}
+              />
+              <Route
+                path={`${SERVICES_ROUTE}/:project-transport`}
+                element={<ServicesRoute />}
+              />
+              <Route path={SUPPORT} element={<Faqs />} />
+              <Route path={RESOURCE} element={<Resource />} />
+              <Route path={PARTNER} element={<Partner />} />
+              <Route path={BLOG1} element={<Blog1 />} />
+              <Route path={BLOG2} element={<Blog2 />} />
+              <Route path={BLOG3} element={<Blog3 />} />
+              <Route path={CASE1} element={<Case1 />} />
+              <Route path={CASE2} element={<Case2 />} />
+              <Route path={CASE3} element={<Case3 />} />
+              <Route path={KIRANWAKDE} element={<Ourteam />} />
+              <Route path={VIRALDESAI} element={<Ourteam />} />
+              <Route path={SINJUPAULOSE} element={<Ourteam />} />
+              <Route path={VINAYAKSUKHDARE} element={<Ourteam />} />
+              <Route
+                path={PRIVACY_POLICY_ROUTE}
+                exact
+                element={<PrivacyPolicy />}
+              />
+              <Route
+                path={TERMS_CONDITION_ROUTE}
+                exact
+                element={<TermsCondition />}
+              />
+              <Route
+                path={RETURN_CANCELLATION_ROUTE}
+                exact
+                element={<ReturnConcellation />}
+              />
+              <Route
+                path={REFUND_POLICY_ROUTE}
+                exact
+                element={<RefundPolicy />}
+              />
+              <Route path={FAQ_ROUTE} exact element={<Faqs />} />
+              <Route path={CONTACTS_ROUTE} exact element={<ContactsRoute />} />
+              <Route
+                path={RESOURCE_BLOGS}
+                element={<Resource setRouteChange={setRouteChange} />}
+              />
+              <Route
+                path={RESOURCE_CASE_STUDIES}
+                element={<Resource setRouteChange={setRouteChange} />}
+              />
+              <Route
+                path={RESOURCE_CAREER}
+                element={<Resource setRouteChange={setRouteChange} />}
+              />
+              <Route
+                path={RESOURCE_FAQs}
+                element={<Resource setRouteChange={setRouteChange} />}
+              />
+              <Route
+                path={OURTEAM}
+                element={<Ourteam setRouteChange={setRouteChange} />}
+              />
+              <Route path="*" exact element={<HomeRoute />} />
+            </Routes>
+          </main>
+          <CpFooter setRouteChange={setRouteChange} />
+        </div>
+      </Router>
+    </HelmetProvider>
   );
 };
 

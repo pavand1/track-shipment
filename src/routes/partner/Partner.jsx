@@ -4,12 +4,25 @@ import "./style.css";
 import CpContactUs from "../../components/cp-contact-us/CpContactUs";
 import { useState } from "react";
 import GetQuote from "../../components/get-quote/GetQuote";
+import { Helmet } from "react-helmet-async";
 
 const accountURL = import.meta.env.VITE_ACCOUNT_URL;
 const Partner = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   return (
     <>
+      <Helmet>
+        <title>Buckletrack Partner with us</title>
+        <meta
+          name="description"
+          content="This is the Partner with us page of Buckletrack"
+        />
+        <meta property="og:title" content="Buckletrack Partner with us Page" />
+        <meta
+          property="og:description"
+          content="This is the Partner with us page for Buckletrack"
+        />
+      </Helmet>
       <HomeComponent />
       <div className="partner">
         <div className="container">

@@ -2,6 +2,7 @@ import { useNavigate } from "react-router-dom";
 import "./style.css";
 import { BLOG1, BLOG2, BLOG3 } from "../../utils/constants";
 import { useRef, useEffect } from "react";
+import { Helmet } from "react-helmet-async";
 
 const Blogs = ({ setRouteChange = () => {}, notBlogsPage = false }) => {
   const navigator = useNavigate();
@@ -13,6 +14,18 @@ const Blogs = ({ setRouteChange = () => {}, notBlogsPage = false }) => {
 
   return (
     <>
+      <Helmet>
+        <title>Buckletrack Blogs</title>
+        <meta
+          name="description"
+          content="This is the Blogs page of my React app."
+        />
+        <meta property="og:title" content="Buckletrack Blogs Page" />
+        <meta
+          property="og:description"
+          content="This is the Blogs page for Buckletrack"
+        />
+      </Helmet>
       <div
         className="blog-section"
         ref={ref}

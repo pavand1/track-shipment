@@ -9,6 +9,7 @@ import {
 } from "../../utils/constants";
 import { useRef, useEffect, useState } from "react";
 import Styles from "./Resource.module.scss";
+import { Helmet } from "react-helmet-async";
 
 const AllResources = () => {
   const ref = useRef();
@@ -20,6 +21,18 @@ const AllResources = () => {
 
   return (
     <div className={Styles.allResources}>
+      <Helmet>
+        <title>Buckletrack Resources</title>
+        <meta
+          name="description"
+          content="This is the Resources page of Buckletrack"
+        />
+        <meta property="og:title" content="Buckletrack Resources Page" />
+        <meta
+          property="og:description"
+          content="This is the Resources page for Buckletrack"
+        />
+      </Helmet>
       <div
         className="blog-card"
         onClick={() => navigate(RESOURCE_CASE_STUDIES)}

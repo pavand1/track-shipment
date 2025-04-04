@@ -1,6 +1,7 @@
 import { Collapse } from "antd";
 import Styles from "./Resource.module.scss";
 import "./style.css";
+import { Helmet } from "react-helmet-async";
 const text = `
   A dog is a type of domesticated animal.
   Known for its loyalty and faithfulness,
@@ -93,6 +94,18 @@ const Career = () => {
   };
   return (
     <div className={Styles.career}>
+      <Helmet>
+        <title>Buckletrack Career</title>
+        <meta
+          name="description"
+          content="This is the Career page of Buckletrack"
+        />
+        <meta property="og:title" content="Buckletrack Career Page" />
+        <meta
+          property="og:description"
+          content="This is the Career page for Buckletrack"
+        />
+      </Helmet>
       <Collapse
         items={items}
         defaultActiveKey={["1"]}

@@ -11,6 +11,7 @@ import CpTeam1 from "../../components/cp-team-page/CpTeamPage";
 import CpTeam2 from "../../components/cp-team-page/CpTeamPage1";
 import CpTeam3 from "../../components/cp-team-page/CpTeamPage2";
 import CpTeam4 from "../../components/cp-team-page/CpTeamPage3";
+import { Helmet } from "react-helmet-async";
 
 const Ourteam = () => {
   const ref = useRef();
@@ -21,6 +22,18 @@ const Ourteam = () => {
   // }, []);
   return (
     <>
+      <Helmet>
+        <title>Buckletrack Our Team</title>
+        <meta
+          name="description"
+          content="This is the Our Team page of Buckletrack"
+        />
+        <meta property="og:title" content="Buckletrack Our Team Page" />
+        <meta
+          property="og:description"
+          content="This is the Our Team page for Buckletrack"
+        />
+      </Helmet>
       <HomeComponent />
       <div className={Styles.resourceSection} ref={ref}>
         {/* {pathname.includes("kiran") ? (
