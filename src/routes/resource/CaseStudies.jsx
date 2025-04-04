@@ -33,28 +33,16 @@ const CaseStudies = ({ setRouteChange = () => {}, notBlogsPage = false }) => {
         // }}
       >
         <div className="blog-card">
-          <img src="../../images/blog/blog-1.png" alt="Blog Image" />
+          <img src="../../images/services/Boosts-Efficiency.jpg" alt="Blog Image" />
           <div className="blogs-content">
-            <h3>Logistics Solution: Streamlining Your Business Operations</h3>
+            <h3>BuckleTrack TMS Boosts Efficiency</h3>
             <p style={{ paddingBottom: "30px" }}>
               {notBlogsPage
-                ? `The right logistics solution is the backbone of the organization,
-                  is cost-effective and aids in customer satisfaction in today’s
-                  dynamic business environment. Whether you’re a small business or
-                  an international operator, working with a logistics partner and
-                  strategy you can count on to transport goods and services is
-                  important for any organization. The article outlines how a
-                  logistics solution can be a game-changer for your business...`.slice(
+                ? `A major retailer faced challenges in optimizing its supply chain operations, including inefficient logistics management`.slice(
                     0,
                     150
                   ) + "..."
-                : `The right logistics solution is the backbone of the organization,
-                  is cost-effective and aids in customer satisfaction in today’s
-                  dynamic business environment. Whether you’re a small business or
-                  an international operator, working with a logistics partner and
-                  strategy you can count on to transport goods and services is
-                  important for any organization. The article outlines how a
-                  logistics solution can be a game-changer for your business...`}
+                : `A major retailer faced challenges in optimizing its supply chain operations, including inefficient logistics management`}
             </p>
             {/* <a href="#" className="btn">Read More</a> */}
             <span className="btn" onClick={() => navigator(CASE1)}>
@@ -63,29 +51,15 @@ const CaseStudies = ({ setRouteChange = () => {}, notBlogsPage = false }) => {
           </div>
         </div>
         <div className="blog-card">
-          <img src="../../images/blog/b2b-logistics.png" alt="Blog Image" />
+          <img src="../../images/services/Secure-Packaging.jpg" alt="Blog Image" />
           <div className="blogs-content">
             <h3>
-              B2B Logistics: The Backbone of Efficient Business Operations
+            Sustainable & Secure Packaging by BuckleTrack
             </h3>
             <p style={{ paddingBottom: "30px" }}>
               {notBlogsPage
-                ? `B2B logistics & Transportation refers to the part of the supply
-                  chain that synchronises the flow of products between businesses
-                  and users, one of the most important components in today’s
-                  persistently shifting landscape of commerce. No matter if the
-                  company you are dealing with is a manufacturer, a retailer, or a
-                  wholesaler, the core of a well-organized B2B logistics system, is
-                  to deliver products at their scheduled destinations and the lowest
-                  price.`.slice(0, 150)
-                : `B2B logistics & Transportation refers to the part of the supply
-                  chain that synchronises the flow of products between businesses
-                  and users, one of the most important components in today’s
-                  persistently shifting landscape of commerce. No matter if the
-                  company you are dealing with is a manufacturer, a retailer, or a
-                  wholesaler, the core of a well-organized B2B logistics system, is
-                  to deliver products at their scheduled destinations and the lowest
-                  price.`}
+                ? `A giant logistics provider faced challenges in protecting products during transit and streamlining handling processes`.slice(0, 150)
+                : `A giant logistics provider faced challenges in protecting products during transit and streamlining handling processes`}
             </p>
             {/* <a href="#" className="btn">Read More</a> */}
             <span className="btn" onClick={() => navigator(CASE2)}>
@@ -95,28 +69,15 @@ const CaseStudies = ({ setRouteChange = () => {}, notBlogsPage = false }) => {
         </div>
 
         <div className="blog-card">
-          <img src="../../images/blog/blog-3.png" alt="Blog Image" />
+          <img src="../../images/services/real-time-tracking.jpg" alt="Blog Image" />
           <div className="blogs-content">
             <h3>
-              When to Use Full Truckload (FTL) vs. Partial Truckload (PTL) for
-              Cost-Effective Freight Management
+            Smart Route Planning with Real-Time Tracking
             </h3>
             <p>
               {notBlogsPage
-                ? `Efficient freight management is important for businesses that depend 
-                  on transportation to move goods from one location to another. 
-                  Choosing the right shipping method—Full Truckload (FTL) or Partial 
-                  Truckload (PTL)—can significantly impact cost, delivery speed, and 
-                  overall logistics efficiency. Knowing when to use Full Truckload 
-                  (FTL) or Part Truckload (PTL) ensures cost-effective freight management 
-                  while optimising operations.`.slice(0, 150)
-                : `Efficient freight management is important for businesses that depend 
-                  on transportation to move goods from one location to another. 
-                  Choosing the right shipping method—Full Truckload (FTL) or Partial 
-                  Truckload (PTL)—can significantly impact cost, delivery speed, and 
-                  overall logistics efficiency. Knowing when to use Full Truckload 
-                  (FTL) or Part Truckload (PTL) ensures cost-effective freight management 
-                  while optimising operations.`}
+                ? `A leading e-commerce company struggled with timely deliveries due to fluctuating demand and last-mile inefficiencies`.slice(0, 150)
+                : `A leading e-commerce company struggled with timely deliveries due to fluctuating demand and last-mile inefficiencies`}
             </p>
             {/* <a href="#" className="btn">Read More</a> */}
             <span

@@ -8,7 +8,7 @@ const CpWhyBuckle = () => {
   }, []);
   return (
     <section className={styles.section}>
-      <div className={styles.backlet}  data-aos="fade-up">
+      <div className={styles.backlet}>
         <div className={styles.column1}>
           <div className={styles.headingContainer}>
             {mockData.headings.map((heading, index) => (

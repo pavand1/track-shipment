@@ -45,7 +45,7 @@ const ServicesHome = () => {
             simplicity
           </p>
           <div className={Styles.services}>
-            <div className={Styles.card} data-aos="fade-up">
+            <div className={Styles.card}>
               <div
                 className={Styles.image}
                 onClick={() => navigate("/our-services/surface-transport")}
@@ -67,7 +67,7 @@ const ServicesHome = () => {
                 Read More
               </div>
             </div>
-            <div className={Styles.card} data-aos="fade-up">
+            <div className={Styles.card}>
               <div
                 className={Styles.image}
                 onClick={() => navigate("/our-services/express-delivery")}
@@ -89,7 +89,7 @@ const ServicesHome = () => {
                 Read More
               </div>
             </div>
-            <div className={Styles.card} data-aos="fade-up">
+            <div className={Styles.card}>
               <div
                 className={Styles.image}
                 onClick={() => navigate("/our-services/project-transport")}

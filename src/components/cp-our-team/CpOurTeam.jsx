@@ -129,7 +129,7 @@ const CpOurTeam = () => {
           </Swiper>
         ) : (
           <Swiper
-            slidesPerView={4}
+            slidesPerView={3}
             spaceBetween={20}
             loop={true}
             // pagination={{
