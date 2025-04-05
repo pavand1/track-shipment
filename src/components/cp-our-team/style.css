@@ -5,6 +5,7 @@
         align-items: center;
         margin: auto;
         padding: 0px 60px 20px;
+        flex-direction: column;
 }
 
 .custom-image-wrapper {
@@ -34,10 +35,10 @@
 }
 
 .custom-text-wrapper h3 {
-    font-size: 24px;
+    font-size: 26px;
     color: #555;
     margin-bottom: 15px;
-    text-align: left;
+    text-align: center;
     font-weight: 600;
 }
 
@@ -58,9 +59,10 @@
     padding: 12px;
 }
 .sectionTestimonials, .swiper-button-prev:after, .swiper-button-next:after{
-    background: #ffffff00;
+    background: #ffffffd6;
     color: #000000;
 }
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .custom-section {

@@ -18,22 +18,23 @@ const teamData = [
 export const restTeam = [
   {
     id: 1,
-    name: "Anuj Burde",
-    designation: "Business Planning & Strategy",
-    photo: "../../images/our-team/Anuj.jpg",
-  },
-  {
-    id: 2,
     name: "Aaron Mascarenhas",
     designation: "Operation/Commercial/Product",
     photo: "../../images/our-team/aaron.png",
   },
   {
-    id: 3,
+    id: 2,
     name: "Naresh Pujari",
     designation: "Finance & Accounts",
     photo: "../../images/our-team/Naresh.png",
   },
+  {
+    id: 3,
+    name: "Anuj Burde",
+    designation: "Business Planning & Strategy",
+    photo: "../../images/our-team/Anuj.jpg",
+  },
+
   {
     id: 4,
     name: "Vinitesh Thakur",
