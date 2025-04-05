@@ -107,7 +107,7 @@ const CpOurTeam = () => {
                   >
                     <h3
                       className={styles.name}
-                      style={{ color: "#FFFFFF", fontSize: "18px" }}
+                      style={{ color: "#FFFFFF", fontSize: "16px" }}
                     >
                       {member.name}
                     </h3>
@@ -115,7 +115,7 @@ const CpOurTeam = () => {
                       className={styles.designation}
                       style={{
                         color: "#FFFFFF",
-                        fontSize: "16px",
+                        fontSize: "14px",
                         textAlign: "center",
                       }}
                     >
@@ -128,8 +128,8 @@ const CpOurTeam = () => {
           </Swiper>
         ) : (
           <Swiper
-            slidesPerView={3}
-            spaceBetween={20}
+            slidesPerView={4}
+            spaceBetween={10}
             loop={true}
             // pagination={{
             //   clickable: false,
@@ -164,7 +164,7 @@ const CpOurTeam = () => {
                   >
                     <h3
                       className={styles.name}
-                      style={{ color: "#FFFFFF", fontSize: "18px" }}
+                      style={{ color: "#FFFFFF", fontSize: "16px" }}
                     >
                       {member.name}
                     </h3>
@@ -172,7 +172,7 @@ const CpOurTeam = () => {
                       className={styles.designation}
                       style={{
                         color: "#FFFFFF",
-                        fontSize: "16px",
+                        fontSize: "14px",
                         textAlign: "center",
                       }}
                     >

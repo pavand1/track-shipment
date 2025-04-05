@@ -12,12 +12,12 @@ const CpAboutBuckleTrack = () => {
       <section className={styles.section}>
         <h2 className={styles.mainHeading}>About BuckleTrack</h2>
         <div className={styles.about}>
-          <div className={styles.column} data-aos="fade-right">
+          <div className={styles.column}>
             <div className={styles.description}>
               <p>{mockData.description}</p>
             </div>
           </div>
-          <div className={styles.column} data-aos="fade-right">
+          <div className={styles.column}>
             <img
               src={mockData.imageSrc}
               alt={mockData.imageAlt}

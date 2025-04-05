@@ -30,7 +30,7 @@ const CpStory = () => {
             />
           </div>
         </div>
-        <div style={{marginTop:"20px"}}className={styles.column} data-aos="fade-right">
+        <div style={{marginTop:"20px"}}className={styles.column}>
         <ul className={styles.list}>
               <li><b>{"Future-Ready Solutions:"}</b> {"We aim to stay one step ahead of industry shifts and tech breakthroughs. Our drive to break new ground means we offer solutions that are not just cutting-edge and spot-on, but also prepare for tomorrow's challenges."}</li>
         </ul>

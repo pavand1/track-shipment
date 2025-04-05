@@ -7,13 +7,14 @@
 .blogs-content h3 {
   font-size: 22px;
   line-height: 29px;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   font-weight: 500;
-  margin-top: 20px;
+  margin-top: 10px;
   text-align: left;
 }
 .blogs-content p {
   text-align: left;
+  min-height: 125px;
 }
 .blogs-content .btn:hover {
   background-color: #ffffff;
