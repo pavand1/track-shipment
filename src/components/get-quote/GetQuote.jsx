@@ -51,76 +51,151 @@ const GetQuote = ({ partnerWithUs = false, close = () => {} }) => {
       style={{ position: partnerWithUs ? "static" : "absolute" }}
     >
       <div className={styles.right}>
-        <form
-          className={styles.form}
-          ref={form}
-          onSubmit={handleSendEmail}
-          style={{ position: "relative" }}
-        >
-          <h2 className={styles.heading}>{mockData.form.heading}</h2>
-          <div className={styles.formGroup}>
-            <input
-              type={"text"}
-              id={"name"}
-              name={"name"}
-              placeholder={"Name"}
-              required
-              value={name}
-              onChange={(e) => setName(e.target.value)}
-            />
-          </div>
-          <div className={styles.formGroup}>
-            <input
-              type={"email"}
-              id={"email"}
-              name={"email"}
-              placeholder={"Email"}
-              required
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-            />
-          </div>
-          <div className={styles.formGroup}>
-            <input
-              type={"text"}
-              id={"phone1"}
-              name={"phone"}
-              placeholder={"Phone Number"}
-              required
-              value={phone1}
-              onChange={(e) => setPhone1(e.target.value)}
-            />
-          </div>
-          <div className={styles.formGroup}>
-            <input
-              type={"text"}
-              id={"phone2"}
-              name={"phone 2"}
-              placeholder={"City"}
-              value={phone2}
-              onChange={(e) => setPhone2(e.target.value)}
-            />
-          </div>
-          <div className={styles.formGroup}>
-            <textarea
-              id={"message"}
-              name={"message"}
-              placeholder={"Message"}
-              rows="4"
-              required
-              value={message}
-              onChange={(e) => setMessage(e.target.value)}
-            />
-          </div>
-          <button
-            type="submit"
-            className={styles.submitButton}
-            disabled={isLoading}
+        {partnerWithUs ? (
+          <form
+            className={styles.form}
+            ref={form}
+            onSubmit={handleSendEmail}
+            style={{ position: "relative" }}
           >
-            {mockData.form.submitButtonText}
-          </button>
-          {error && <p className={styles.error}>{error}</p>}
-        </form>
+            <h2 className={styles.heading}>{mockData.form.heading}</h2>
+            <div className={styles.formInputs}>
+              <div className={styles.formGroup}>
+                <input
+                  type={"text"}
+                  id={"name"}
+                  name={"name"}
+                  placeholder={"Name"}
+                  required
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
+                />
+              </div>
+              <div className={styles.formGroup}>
+                <input
+                  type={"email"}
+                  id={"email"}
+                  name={"email"}
+                  placeholder={"Email"}
+                  required
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                />
+              </div>
+              <div className={styles.formGroup}>
+                <input
+                  type={"text"}
+                  id={"phone1"}
+                  name={"phone"}
+                  placeholder={"Phone Number"}
+                  required
+                  value={phone1}
+                  onChange={(e) => setPhone1(e.target.value)}
+                />
+              </div>
+              <div className={styles.formGroup}>
+                <input
+                  type={"text"}
+                  id={"phone2"}
+                  name={"phone 2"}
+                  placeholder={"City"}
+                  value={phone2}
+                  onChange={(e) => setPhone2(e.target.value)}
+                />
+              </div>
+            </div>
+            <div className={styles.formGroup}>
+              <textarea
+                id={"message"}
+                name={"message"}
+                placeholder={"Message"}
+                rows="4"
+                required
+                value={message}
+                onChange={(e) => setMessage(e.target.value)}
+              />
+            </div>
+            <button
+              type="submit"
+              className={styles.submitButton}
+              disabled={isLoading}
+            >
+              {mockData.form.submitButtonText}
+            </button>
+            {error && <p className={styles.error}>{error}</p>}
+          </form>
+        ) : (
+          <form
+            className={styles.form}
+            ref={form}
+            onSubmit={handleSendEmail}
+            style={{ position: "relative" }}
+          >
+            <h2 className={styles.heading}>{mockData.form.heading}</h2>
+            <div className={styles.formGroup}>
+              <input
+                type={"text"}
+                id={"name"}
+                name={"name"}
+                placeholder={"Name"}
+                required
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+              />
+            </div>
+            <div className={styles.formGroup}>
+              <input
+                type={"email"}
+                id={"email"}
+                name={"email"}
+                placeholder={"Email"}
+                required
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+              />
+            </div>
+            <div className={styles.formGroup}>
+              <input
+                type={"text"}
+                id={"phone1"}
+                name={"phone"}
+                placeholder={"Phone Number"}
+                required
+                value={phone1}
+                onChange={(e) => setPhone1(e.target.value)}
+              />
+            </div>
+            <div className={styles.formGroup}>
+              <input
+                type={"text"}
+                id={"phone2"}
+                name={"phone 2"}
+                placeholder={"City"}
+                value={phone2}
+                onChange={(e) => setPhone2(e.target.value)}
+              />
+            </div>
+            <div className={styles.formGroup}>
+              <textarea
+                id={"message"}
+                name={"message"}
+                placeholder={"Message"}
+                rows="4"
+                required
+                value={message}
+                onChange={(e) => setMessage(e.target.value)}
+              />
+            </div>
+            <button
+              type="submit"
+              className={styles.submitButton}
+              disabled={isLoading}
+            >
+              {mockData.form.submitButtonText}
+            </button>
+            {error && <p className={styles.error}>{error}</p>}
+          </form>
+        )}
       </div>
     </div>
   );
