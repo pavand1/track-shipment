@@ -27,7 +27,7 @@ const GetQuote = ({ partnerWithUs = false, close = () => {} }) => {
       .then(
         () => {
           console.log("SUCCESS!");
-          setError("Our Expert will get in touch with you shortly");
+          setError("Thank you, Our Expert will get in touch with you shortly");
           setName("");
           setEmail("");
           setMessage("");

@@ -8,13 +8,13 @@
   font-size: 22px;
   line-height: 29px;
   margin-bottom: 10px;
-  font-weight: 500;
+  font-weight: 600;
   margin-top: 10px;
   text-align: left;
 }
 .blogs-content p {
   text-align: left;
-  min-height: 125px;
+  min-height: 100px;
 }
 .blogs-content .btn:hover {
   background-color: #ffffff;

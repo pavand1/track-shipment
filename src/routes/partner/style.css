@@ -159,6 +159,7 @@ height: 100%;
     cursor: pointer;
     background-color: #ef4136;
     color: #ffffff;
+    margin-left: 10px;
 }
 .partner-btn:hover{
   border: 1px solid;

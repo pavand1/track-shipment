@@ -150,8 +150,8 @@ const CpFooter = ({ setRouteChange }) => {
               <div
                 className={styles.contactItem}
                 onClick={(e) => {
-                  window.location.href = `whatsapp://send?text=${contactInfo.whatsapp.text}`;
                   e.preventDefault();
+                  window.open('https://wa.me/917039004442', '_blank');
                 }}
               >
                 <img src={contactInfo.whatsapp.icon} alt="whatsapp" />

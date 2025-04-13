@@ -35,8 +35,8 @@ const CaseStudies = ({ setRouteChange = () => {}, notBlogsPage = false }) => {
         <div className="blog-card">
           <img src="../../images/services/Boosts-Efficiency.jpg" alt="Blog Image" />
           <div className="blogs-content">
-            <h3>BuckleTrack TMS Boosts Efficiency</h3>
-            <p style={{ paddingBottom: "30px" }}>
+            <h3>BuckleTrack TMS Boosts <br/>Efficiency</h3>
+            <p>
               {notBlogsPage
                 ? `A major retailer faced challenges in optimizing its supply chain operations, including inefficient logistics management`.slice(
                     0,
@@ -56,7 +56,7 @@ const CaseStudies = ({ setRouteChange = () => {}, notBlogsPage = false }) => {
             <h3>
             Sustainable & Secure Packaging by BuckleTrack
             </h3>
-            <p style={{ paddingBottom: "30px" }}>
+            <p>
               {notBlogsPage
                 ? `A giant logistics provider faced challenges in protecting products during transit and streamlining handling processes`.slice(0, 150)
                 : `A giant logistics provider faced challenges in protecting products during transit and streamlining handling processes`}
@@ -81,7 +81,7 @@ const CaseStudies = ({ setRouteChange = () => {}, notBlogsPage = false }) => {
             </p>
             {/* <a href="#" className="btn">Read More</a> */}
             <span
-              style={{ paddingBottom: "20px" }}
+        
               className="btn"
               onClick={() => navigator(CASE3)}
             >

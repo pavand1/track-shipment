@@ -22,7 +22,7 @@ const Blog1 = () => {
     <h1>Logistics Solution: Streamlining Your Business Operations</h1>
         <h2 className="blog-head">Transform your business with a logistics solution</h2>
         <p>The right logistics solution is the backbone of any organization, cost-effective and crucial for customer satisfaction in today’s dynamic business environment. Whether you’re a small business or an international operator, working with a logistics partner and strategy you can count on to transport goods and services is important for any organization.</p>
-        <p className="specialHeading">Transform your business with a logistics solution</p>
+        <p className="specialHeading" onClick={()=>navigator("/")}>Transform your business with a logistics solution</p>
         <h2 className="blog-head">What is a Logistics Solution?</h2>
         <p>A logistics solution involves managing the planning, implementation, and control of all aspects of movement and storage for the seamless flow of goods. This includes services such as shipping, warehousing, inventory management, and distribution, ensuring products are delivered on time and within budget.</p>
 
@@ -33,7 +33,7 @@ const Blog1 = () => {
             <li><strong>Scalability & Global Reach:</strong> A logistics solution that can scale with your business is flexible, adapting to your particular product range, customer base, and whether you decide to move into new markets. The appropriate logistics partner allows operations to move seamlessly with time. A trustworthy logistics ally is crucial for international expansion, supporting suppliers in navigating their deals shipping regulations, customs procedures, and cross-border trade. Allows businesses to embrace global opportunities to maintain a lean and effective supply chain for sustained growth and success.</li>
             <li><strong>Enhanced Customer Satisfaction:</strong> Within the logistics industry, customer satisfaction is directly proportionate to timely deliveries and transparent communications. A logistics solution that is well managed can help guarantee the timely arrival of products, minimizing the potential for delays or errors. Accurate tracking systems enable customers to stay updated regarding their orders, which creates trust and loyalty.</li>
         </ul>
-<p className="specialHeading">Optimize operations with BuckleTrack logistics solution</p>
+<p className="specialHeading" onClick={()=>navigator("/")}>Optimize operations with BuckleTrack logistics solution</p>
         <h2 className="blog-head">Key Components of an Effective Logistics Solution</h2>
         <ul className="blog-list">
             <li><strong>Transportation Management:</strong> Transportation is an integral part of any logistics solution. Businesses can ensure timely deliveries while also reducing transportation costs through route optimization and the right selection of modes of transport. A complete logistics solution considers the ideal ways for each explicit conveyance — whether via street, air, or sea transport.</li>

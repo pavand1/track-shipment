@@ -158,11 +158,18 @@ const CpContactUs = () => {
             <img src={contactInfo.address.icon} alt="Location" />
             <span>{contactInfo.address.text}</span>
           </div>
-          <div className={styles.contactItem1}>
+          <div className={styles.contactItem1}                 
+          onClick={(e) => {
+                            window.location.href = `mailto:${contactInfo.email.text}`;
+                            e.preventDefault();
+                          }}>
             <img src={contactInfo.email.icon} alt="Email" />
             <span>{contactInfo.email.text}</span>
           </div>
-          <div className={styles.contactItem1}>
+          <div className={styles.contactItem1} onClick={(e) => {
+                            window.location.href = `tel:${contactInfo.phone.text}`;
+                            e.preventDefault();
+                          }}>
             <img src={contactInfo.phone.icon} alt="Phone" />
             <span>{contactInfo.phone.text}</span>
           </div>

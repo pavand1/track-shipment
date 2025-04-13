@@ -139,7 +139,7 @@ const HomeComponent = () => {
               onClick={(e) => {
                 // window.location.href = `https://api.whatsapp.com/send?phone=7039004442`;
                 e.preventDefault();
-                window.open(`https://api.whatsapp.com/send?phone=7039004442`, '_blank');
+                window.open(`https://wa.me/917039004442`, '_blank');
               }}
               title={"7039004442"}
             >

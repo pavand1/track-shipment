@@ -117,13 +117,14 @@ const Partner = () => {
                 </li>
               </ul>
               <p className="register-txt">
+              Become a BuckleTrack partner
                 <span
                   className="partner-btn"
                   onClick={() => setIsModalOpen(!isModalOpen)}
                 >
                   Register now
                 </span>{" "}
-                and become a BuckleTrack partner!!
+               
               </p>
             </div>
             <div className="custom-column1">
@@ -164,13 +165,13 @@ const Partner = () => {
                 </li>
               </ul>
               <p className="register-txt">
+              Become a BuckleTrack partner
                 <span
                   className="partner-btn"
                   onClick={() => setIsModalOpen(!isModalOpen)}
                 >
                   Register now
                 </span>{" "}
-                and become a BuckleTrack partner!!
               </p>
             </div>
           </div>
@@ -221,13 +222,13 @@ const Partner = () => {
                 </li>
               </ul>
               <p className="register-txt">
+              Become a BuckleTrack partner
                 <span
                   className="partner-btn"
                   onClick={() => setIsModalOpen(!isModalOpen)}
                 >
                   Register now
                 </span>{" "}
-                and become a BuckleTrack partner!!
               </p>
             </div>
             <div className="custom-column1">
@@ -274,13 +275,13 @@ const Partner = () => {
                 </li>
               </ul>
               <p className="register-txt">
+              Become a BuckleTrack partner
                 <span
                   className="partner-btn"
                   onClick={() => setIsModalOpen(!isModalOpen)}
                 >
                   Register now
                 </span>{" "}
-                and become a BuckleTrack partner!!
               </p>
             </div>
           </div>

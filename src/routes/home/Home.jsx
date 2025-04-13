@@ -9,10 +9,16 @@ import CpCounter from "../../components/cp-counter/CpCounter";
 import ServicesHome from "../../components/home/Services";
 import CaseStudies from "../../components/home/CaseStudies";
 import { Helmet } from "react-helmet-async";
+import { useEffect, useRef } from "react";
 
 const Home = ({ setRouteChange }) => {
+  const ref=useRef();
+    useEffect(() => {
+      if (ref.current)
+        ref.current.scrollIntoView({ behavior: "smooth" });
+    }, []);
   return (
-    <div className={Styles.container}>
+    <div className={Styles.container}ref={ref}>
       <Helmet>
         <title>Buckletrack Home</title>
         <meta
