@@ -74,6 +74,80 @@ table {
 ul.blog-list li {
   padding-bottom: 20px;
 }
+.main-body {
+  padding: 10% 4%;
+  background: url('../../images/Case-study/case-1-bg.jpg');
+  background-size: auto;
+}
+.main-body1 {
+  padding: 10% 4%;
+  background: url('../../images/Case-study/case-2-bg.jpg');
+  background-size: auto;
+}
+.main-body2 {
+  padding: 10% 4%;
+  background: url('../../images/Case-study/case-bg-3.jpg');
+  background-size: auto;
+}
+.case-heading{
+  font-size: 28px;
+    text-align: left;
+    color: #000000;
+    font-weight: bold;
+    margin-bottom: 28px;
+}
+.custom-box-img {
+  width: 25%;
+  margin-bottom: 20px;
+}
+.custom-box-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.custom-box-column-left,
+.custom-box-column-right {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 48%;
+}
+
+.custom-box-column-right {
+  margin-top: 240px; /* push down right boxes */
+}
+
+.custom-box {
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 60px 50px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.custom-box-icon {
+  font-size: 28px;
+  color: #4CAF50;
+  margin-bottom: 10px;
+}
+
+.custom-box-heading {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+.custom-box-content {
+  font-size: 16px;
+  color: #555;
+  text-align: left;
+  margin-top: 20px;
+}
 
 @media (max-width:768px) {
   
@@ -95,5 +169,20 @@ ul.blog-list li {
 }
 .specialHeading{
   text-align: center;
+}
+
+.custom-box-container {
+  flex-direction: column;
+  gap: 0;
+}
+
+.custom-box-column-left,
+.custom-box-column-right {
+  width: 100%;
+  margin-top: 0;
+}
+
+.custom-box-column-right {
+  margin-top: 30px;
 }
 }

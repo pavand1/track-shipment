@@ -152,7 +152,7 @@
 
     .submitButton {
       padding: 1.2rem;
-      font-size: 1.4rem;
+      font-size: 1.8rem;
       background-color: $clr-secondary;
       color: $clr-root;
       border: none;
@@ -163,6 +163,7 @@
       width: 96%;
       margin-left: 1rem;
       margin-right: 1rem;
+      font-weight: 600;
       @media (max-width: 768px) {
         margin-bottom: 0rem;
         width: 100%;

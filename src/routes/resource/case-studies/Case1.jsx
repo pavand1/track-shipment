@@ -12,44 +12,72 @@ const Case1 = () => {
     <>
       <HomeComponent />
       <div className="blog" ref={ref}>
-        <div className="section-blog">
-          {/* <img
-            className="blog-featured-img"
-            src="../../images/blog/b2b-logistics.png"
-          /> */}
-          <h1>BuckleTrack TMS Boosts Efficiency</h1>
-          <p className="specialHeading">Problem Statement</p>
-          <p>
-            A major retailer faced challenges in optimizing its supply chain
-            operations, including inefficient logistics management, prolonged
-            lead times, and declining customer satisfaction. The lack of an
-            integrated system hindered real-time tracking and coordination,
-            impacting overall efficiency.
-          </p>
-          <p className="specialHeading">Solution</p>
-          <p>
-            BuckleTrack implemented an advanced Transportation Management System
-            (TMS) tailored to the retailer’s needs. The integrated solution
-            streamlined logistics operations enabled real-time tracking, and
-            enhanced coordination across the supply chain.
-          </p>
+        <div className="main-body">
+          <h2 className="case-heading">BuckleTrack TMS Boosts Efficiency</h2>
 
-          <h2 className="blog-head">Benefits</h2>
-          <p>
-            <strong>1. Streamlined logistics management.</strong>
-          </p>
-          <p>
-            <strong>2. Reduced lead times.</strong>
-          </p>
-          <p>
-            <strong>3. Increased customer satisfaction.</strong>
-          </p>
-          <p>
-            <strong>4. Real-time tracking and coordination.</strong>
-          </p>
-          <p>
-            <strong>5. Cost savings and operational efficiency.</strong>
-          </p>
+          <div className="custom-box-container">
+            <div className="custom-box-column-left">
+              <div className="custom-box">
+                <div className="custom-box-icon">
+                  <img
+                    className="custom-box-img"
+                    src="../../images/Case-study/idea.png"
+                  />
+                </div>
+                <div className="custom-box-heading">Problem Statement</div>
+                <div className="custom-box-content">
+                  A major retailer faced challenges in optimizing its supply
+                  chain operations, including inefficient logistics management,
+                  prolonged lead times, and declining customer satisfaction. The
+                  lack of an integrated system hindered real-time tracking and
+                  coordination, impacting overall efficiency.
+                </div>
+              </div>
+              <div className="custom-box">
+              <div className="custom-box-icon">
+                  <img
+                    className="custom-box-img"
+                    src="../../images/Case-study/solutions.png"
+                  />
+                </div>
+                <div className="custom-box-heading">Solution</div>
+                <div className="custom-box-content">
+                  BuckleTrack implemented an advanced Transportation Management
+                  System (TMS) tailored to the retailer’s needs. The integrated
+                  solution streamlined logistics operations enabled real-time
+                  tracking, and enhanced coordination across the supply chain.
+                </div>
+              </div>
+            </div>
+
+            <div className="custom-box-column-right">
+              <div className="custom-box">
+              <div className="custom-box-icon">
+                  <img
+                    className="custom-box-img"
+                    src="../../images/Case-study/benefit.png"
+                  />
+                </div>
+                <div className="custom-box-heading">Benefits</div>
+                <div className="custom-box-content">
+                  1. Streamlined logistics management.
+                  <br />
+                  2. Reduced lead times. <br />
+                  3. Increased customer satisfaction. <br />
+                  4. Real-time tracking and coordination. <br />
+                  5. Cost savings and operational efficiency.
+                </div>
+              </div>
+              {/* <div className="custom-box">
+                <div className="custom-box-icon">📞</div>
+                <div className="custom-box-heading">24/7 Support</div>
+                <div className="custom-box-content">
+                  We're here to assist you anytime with your questions or
+                  issues.
+                </div>
+              </div> */}
+            </div>
+          </div>
         </div>
       </div>
     </>
