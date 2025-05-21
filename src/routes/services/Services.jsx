@@ -12,10 +12,10 @@ const Services = ({ isRoot }) => {
   return (
     <div className={Styles.container} ref={ref}>
       <Helmet>
-        <title>Buckletrack Services</title>
+        <title>BuckleTrack Logistics | Surface, Express & Project Transport</title>
         <meta
           name="description"
-          content="This is the Services page of Buckletrack"
+          content="Discover BuckleTrack’s services: surface transport, express delivery, and project logistics—tailored to boost efficiency and meet your business needs."
         />
         <meta property="og:title" content="Buckletrack Services Page" />
         <meta

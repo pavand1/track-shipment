@@ -21,16 +21,17 @@ const CpFaq = () => {
   return (
     <>
       <Helmet>
-        <title>Buckletrack FAQ's</title>
+        <title>BuckleTrack FAQs | Your Questions Answered​</title>
         <meta
           name="description"
-          content="This is the FAQ's page of Buckletrack."
+          content="Get quick answers to common questions about BuckleTrack’s transport, delivery & logistics services to better understand how we support your business."
         />
         <meta property="og:title" content="Buckletrack FAQ's Page" />
         <meta
           property="og:description"
           content="This is the FAQ's page for Buckletrack"
         />
+        <link rel="canonical" href="https://buckletrack.com/resources/faqs" />
       </Helmet>
       <section className={styles.section}>
         <h2 className={styles.mainHeading}>FAQs</h2>

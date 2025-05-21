@@ -14,18 +14,18 @@ const Blogs = ({ setRouteChange = () => {}, notBlogsPage = false }) => {
 
   return (
     <>
-      <Helmet>
-        <title>Buckletrack Blogs</title>
+      {!notBlogsPage && <Helmet>
+        <title>BuckleTrack Blog | Insights on Logistics & Supply Chain Trends​</title>
         <meta
           name="description"
-          content="This is the Blogs page of my React app."
+          content="Explore expert insights on logistics, transportation, and supply chain trends with BuckleTrack’s blog—your go-to source for industry updates and tips."
         />
         <meta property="og:title" content="Buckletrack Blogs Page" />
         <meta
           property="og:description"
           content="This is the Blogs page for Buckletrack"
         />
-      </Helmet>
+      </Helmet>}
       <div
         className="blog-section"
         ref={ref}
@@ -91,13 +91,10 @@ const Blogs = ({ setRouteChange = () => {}, notBlogsPage = false }) => {
             <p>
               {notBlogsPage
                 ? `Efficient freight management is important for businesses that depend 
-              on transportation to move goods from one location to another. 
-              Choosing the right shipping method—Full Truckload (FTL) or Partial 
-              Truckload (PTL)—can significantly...`.slice(0, 150)
-                : `Efficient freight management is important for businesses that depend 
-              on transportation to move goods from one location to another. 
-              Choosing the right shipping method—Full Truckload (FTL) or Partial 
-              Truckload (PTL)—can significantly...`}
+              on transportation to move goods from...`.slice(0, 150)
+                : `Efficient freight management is important for businesses that depend on 
+                transportation to move goods from one location to another. Choosing the right 
+                shipping method—Full Truckload (FTL) or Partial Truckload (PTL)—can...`}
             </p>
             {/* <a href="#" className="btn">Read More</a> */}
             <span

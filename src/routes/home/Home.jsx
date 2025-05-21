@@ -20,10 +20,10 @@ const Home = ({ setRouteChange }) => {
   return (
     <div className={Styles.container}ref={ref}>
       <Helmet>
-        <title>Buckletrack Home</title>
+        <title>BuckleTrack | Tech Driven Transport & Supply Chain Solutions</title>
         <meta
           name="description"
-          content="This is the home page of my React app."
+          content="Experience seamless logistics with BuckleTrack, combining advanced technology & service to optimize your transportation & supply chain needs."
         />
         <meta property="og:title" content="Buckletrack Home Page" />
         <meta
