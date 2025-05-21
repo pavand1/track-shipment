@@ -7,16 +7,17 @@ const Contacts = () => {
   return (
     <>
       <Helmet>
-        <title>Buckletrack Contacts Page</title>
+        <title>Contact BuckleTrack | Logistics & Transport Support</title>
         <meta
           name="description"
-          content="This is the Contacts page of Buckletrack"
+          content="Reach out to BuckleTrack for expert logistics support. Find our contact details for quick assistance with transport and supply chain solutions."
         />
         <meta property="og:title" content="Buckletrack Contacts Page" />
         <meta
           property="og:description"
           content="This is the Contacts page for Buckletrack"
         />
+        <link rel="canonical" href="https://buckletrack.com/contact-us" />
       </Helmet>
       <HomeComponent />
       <CpContactUs />

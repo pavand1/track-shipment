@@ -9,16 +9,17 @@ const About = () => {
   return (
     <>
       <Helmet>
-        <title>Buckletrack About Page</title>
+        <title>BuckleTrack | Innovating Transport & Supply Chain Solutions</title>
         <meta
           name="description"
-          content="This is the About page of Buckletrack"
+          content="Learn about BuckleTrack's mission to revolutionize transportation and supply chains through technology and exceptional service."
         />
         <meta property="og:title" content="Buckletrack About Page" />
         <meta
           property="og:description"
           content="This is the About page for Buckletrack"
         />
+        <link rel="canonical" href="https://buckletrack.com/about-us" />
       </Helmet>
       <HomeComponent />
       <CpAboutBuckleTrack />

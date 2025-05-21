@@ -22,16 +22,17 @@ const AllResources = () => {
   return (
     <div className={Styles.allResources}>
       <Helmet>
-        <title>Buckletrack Resources</title>
+        <title>BuckleTrack Resources | FAQs & Support for Logistics Solutions​</title>
         <meta
           name="description"
-          content="This is the Resources page of Buckletrack"
+          content="Access BuckleTrack's comprehensive resources, including FAQs & support materials, to enhance your understanding of our transportation & supply chain.​"
         />
         <meta property="og:title" content="Buckletrack Resources Page" />
         <meta
           property="og:description"
           content="This is the Resources page for Buckletrack"
         />
+        <link rel="canonical" href="https://buckletrack.com/resources" />
       </Helmet>
       <div
         className="blog-card"

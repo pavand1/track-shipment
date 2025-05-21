@@ -14,10 +14,10 @@ const CaseStudies = ({ setRouteChange = () => {}, notBlogsPage = false }) => {
   return (
     <>
       <Helmet>
-        <title>Buckletrack Case Studies</title>
+        <title>BuckleTrack Case Studies | Transport & Supply Chain Success​</title>
         <meta
           name="description"
-          content="This is the Case Studies page of Buckletrack"
+          content="Explore BuckleTrack’s case studies highlighting successful transport and supply chain solutions that improved efficiency and client satisfaction."
         />
         <meta property="og:title" content="Buckletrack Case Studies Page" />
         <meta
@@ -25,6 +25,7 @@ const CaseStudies = ({ setRouteChange = () => {}, notBlogsPage = false }) => {
           content="This is the Case Studies page for Buckletrack"
         />
       </Helmet>
+      <link rel="canonical" href="https://buckletrack.com/resources/case-studies" />
       <div
         className="blog-section"
         ref={ref}

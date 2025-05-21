@@ -12,16 +12,17 @@ const Partner = () => {
   return (
     <>
       <Helmet>
-        <title>Buckletrack Partner with us</title>
+        <title>Partner with BuckleTrack | Expand Your Delivery Business​</title>
         <meta
           name="description"
-          content="This is the Partner with us page of Buckletrack"
+          content="Partner with BuckleTrack to grow your delivery business. Join our network and offer pickup and delivery services across India with trusted support."
         />
         <meta property="og:title" content="Buckletrack Partner with us Page" />
         <meta
           property="og:description"
           content="This is the Partner with us page for Buckletrack"
         />
+        <link rel="canonical" href="https://buckletrack.com/partner-with-us" />
       </Helmet>
       <HomeComponent />
       <div className="partner">

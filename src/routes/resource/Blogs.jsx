@@ -25,6 +25,7 @@ const Blogs = ({ setRouteChange = () => {}, notBlogsPage = false }) => {
           property="og:description"
           content="This is the Blogs page for Buckletrack"
         />
+        <link rel="canonical" href="https://buckletrack.com/resources/blogs" />
       </Helmet>}
       <div
         className="blog-section"

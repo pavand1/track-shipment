@@ -22,6 +22,7 @@ const Services = ({ isRoot }) => {
           property="og:description"
           content="This is the Services page for Buckletrack"
         />
+                <link rel="canonical" href="https://buckletrack.com/our-services" />
       </Helmet>
       <HomeComponent />
       <CpWhyBuckle />
