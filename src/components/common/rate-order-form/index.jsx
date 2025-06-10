@@ -21,7 +21,7 @@ const RateOrderForm = () => {
   const [startPin, setStartPin] = useState("");
   const [endPin, setEndPin] = useState("");
   const [weight, setWeight] = useState("");
-  const [vehicalType, setVehicalType] = useState("");
+  const [vehicleType, setVehicleType] = useState("");
   const ref = useRef();
   const form = useRef();
   const [shouldDDClose, setShouldDDClose] = useState(false);
@@ -109,8 +109,8 @@ const RateOrderForm = () => {
       setError("Start Pin & Destination Pin can not be empty");
       return;
     }
-    if (orderType === "ftl" && !vehicalType) {
-      setError("Enter Vehical type");
+    if (orderType === "ftl" && !vehicleType) {
+      setError("Enter Vehicle type");
       return;
     }
     if (orderType !== "ftl" && !weight) {
@@ -139,7 +139,7 @@ const RateOrderForm = () => {
     setStartPin("");
     setEndPin("");
     setIsOtpValid(false);
-    setVehicalType("");
+    setVehicleType("");
     setWeight("");
     setMobileNumber("");
     setOtp("");
@@ -242,7 +242,7 @@ const RateOrderForm = () => {
               <Dropdown
                 type={orderType}
                 setWeight={setWeight}
-                setVehicalType={setVehicalType}
+                setVehicleType={setVehicleType}
                 shouldDDClose={shouldDDClose}
                 setShouldDDClose={setShouldDDClose}
               />
@@ -254,9 +254,9 @@ const RateOrderForm = () => {
                   type="text"
                   className={Styles.textBox}
                   placeholder="Vehicle Type"
-                  value={vehicalType}
-                  name="vehicalType"
-                  onChange={(e) => setVehicalType(e.target.value)}
+                  value={vehicleType}
+                  name="vehicleType"
+                  onChange={(e) => setVehicleType(e.target.value)}
                 />
               ) : (
                 <input

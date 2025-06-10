@@ -4,7 +4,7 @@ import React from "react";
 
 const Dropdown = ({
   type,
-  setVehicalType,
+  setVehicleType,
   setWeight,
   shouldDDClose,
   setShouldDDClose,
@@ -65,7 +65,7 @@ const Dropdown = ({
   const handleItemClick = (e, item) => {
     setShowDropdown(!showDropdown);
     setSelectedValue(item.value);
-    if (type === "ftl") setVehicalType(item.value);
+    if (type === "ftl") setVehicleType(item.value);
     if (type === "ptl") setWeight(item.value);
     if (type === "express") setWeight(item.value);
   };
@@ -86,10 +86,8 @@ const Dropdown = ({
       className={Style.dropdown}
       onClick={() => setShowDropdown(!showDropdown)}
     >
-      <div>{selectedValue || (type === "ftl" ? "Vehical Type" : "Weight")}</div>
-      <div>
-        {showDropdown ? <UpOutlined />:<DownOutlined />}
-      </div>
+      <div>{selectedValue || (type === "ftl" ? "Vehicle Type" : "Weight")}</div>
+      <div>{showDropdown ? <UpOutlined /> : <DownOutlined />}</div>
       {showDropdown && (
         <div className={Style.items}>
           {items.map((item) => (
