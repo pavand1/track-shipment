@@ -81,11 +81,89 @@ const mainElement = (
     </div>
   </div>
 );
+
+const dataElementsalesmgr = (
+  <div className={Styles.heading}>
+    <h2>SALES MANAGERS</h2>
+    <h2>Sales Person</h2>
+    <div className={Styles.row}>
+      <div className={Styles.column}>
+        <div className={Styles.key}>Designation</div>
+        <div className={Styles.value}>Sales Manager</div>
+      </div>
+      <div className={Styles.column}>
+        <div className={Styles.key}>Work Experience</div>
+        <div className={Styles.value}>Min 4 years</div>
+      </div>
+      <div className={Styles.column}>
+        <div className={Styles.key}>Work Type</div>
+        <div className={Styles.value}>Full-Time / On-Site</div>
+      </div>
+      <div className={Styles.column}>
+        <div className={Styles.key}>Work Location</div>
+        <div className={Styles.value}>Mumbai (Andheri East)</div>
+      </div>
+      <div className={Styles.column}>
+        <div className={Styles.key}>No. of Positions</div>
+        <div className={Styles.value}>1</div>
+      </div>
+    </div>
+  </div>
+);
+
+
+
+const mainElementsalesmgr = (
+  <div className={Styles.main}>
+    <div className={Styles.row}>
+      <div className={Styles.title}>Key Requirements:</div>
+      <div className={Styles.content}>
+  <li>Identify and develop new business opportunities to expand the customer base.</li>
+  <li>Build and maintain strong relationships with potential and existing clients.</li>
+  <li>Understand customer needs and propose suitable products/services.</li>
+  <li>Develop and implement sales strategies to achieve revenue targets.</li>
+  <li>Generate leads, follow up, and convert prospects into customers.</li>
+  <li>Negotiate contracts, pricing, and terms with clients.</li>
+  <li>Attend industry events, trade shows, and networking meetings to promote the company.</li>
+  <li>Build and grow the sales team.</li>
+      </div>
+    </div>
+    <div className={Styles.row}>
+      <div className={Styles.title}>What’s in It for You?:</div>
+      <div className={Styles.content}>
+  <li>Expand Your Network – Build valuable connections with industry leaders and potential clients.</li>
+  <li>Sharpen Sales & Negotiation Skills – Master deal-closing, persuasion, and client management.</li>
+  <li>Develop Market Expertise – Gain deep insights into industry trends and competitor strategies.</li>
+  <li>Achieve & Exceed Targets – Unlock performance-based incentives and career growth.</li>
+  <li>Drive Business Success – Take ownership of sales strategies and contribute to company growth.</li>
+  <li>Enhance Analytical Thinking – Use data-driven insights to optimize sales performance.</li>
+  <li>Collaborate & Learn – Work with marketing, operations, and support teams for a holistic business view.</li>
+  <li>Boost Your Industry Presence – Attend events and networking opportunities to build your personal brand.</li>
+      </div>
+    </div>
+    <div className={Styles.row}>
+      <div className={Styles.title}>Qualifications & Skills:</div>
+      <div className={Styles.content}>
+  <li>Proven experience in FTL logistics sales.</li>
+  <li>Proven track record of achieving sales targets.</li>
+  <li>Ability to work independently and as part of a team.</li>
+  <li>Ability to make quick, data-driven decisions in a fast-paced environment.</li>
+      </div>
+    </div>
+  </div>
+);
 const items = [
   {
     key: "1",
     label: dataElement,
     children: mainElement,
+  },
+];
+const items1 = [
+  {
+    key: "2",
+    label: dataElementsalesmgr,
+    children: mainElementsalesmgr,
   },
 ];
 const Career = () => {
@@ -107,8 +185,8 @@ const Career = () => {
         />
       </Helmet>
       <Collapse
-        items={items}
-        defaultActiveKey={["1"]}
+        items={items1}
+        defaultActiveKey={["2"]}
         onChange={onChange}
         expandIconPosition="end"
         style={{ fontFamily: "Poppins-Regular" }}
@@ -119,6 +197,7 @@ const Career = () => {
         expandIconPosition="end"
         style={{ fontFamily: "Poppins-Regular" }}
       />
+
     </div>
   );
 };
